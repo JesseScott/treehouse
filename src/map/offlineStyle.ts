@@ -4,7 +4,6 @@ export const OFFLINE_COLORS = {
   space: '#0d2233',
   ocean: '#16384f',
   land: '#8fd19e',
-  coast: '#3f7d55',
 } as const;
 
 /**
@@ -26,12 +25,6 @@ export function offlineStyle(landUrl: string): StyleSpecification {
     layers: [
       { id: 'ocean', type: 'background', paint: { 'background-color': OFFLINE_COLORS.ocean } },
       { id: 'land', type: 'fill', source: 'land', paint: { 'fill-color': OFFLINE_COLORS.land } },
-      {
-        id: 'coast',
-        type: 'line',
-        source: 'land',
-        paint: { 'line-color': OFFLINE_COLORS.coast, 'line-width': 0.75 },
-      },
     ],
   };
 }

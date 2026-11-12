@@ -37,5 +37,10 @@ export default tseslint.config(
     files: ['**/*.mjs', '*.config.js'],
     languageOptions: { globals: globals.node },
   },
+  {
+    // The smoke test passes functions to Playwright that run inside the page.
+    files: ['harness/smoke.mjs'],
+    languageOptions: { globals: { ...globals.node, window: 'readonly' } },
+  },
   prettier,
 );
