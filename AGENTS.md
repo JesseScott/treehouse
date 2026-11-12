@@ -5,7 +5,8 @@ plan with its milestones, and `docs/HARNESS.md` explains how to validate a chang
 
 treehouse is a world-map family tree viewer: a static web app with no backend. It reads a GEDCOM file in the browser,
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
-uploaded. Status: **M0** (harness and empty shell) is built; M1 to M7 in `docs/PLAN.md` are not.
+uploaded. Status: **M0** (harness and empty shell) is built and live at https://jessescott.github.io/treehouse/;
+M1 to M7 in `docs/PLAN.md` are not.
 
 ## Privacy rules (these come first)
 
@@ -27,8 +28,9 @@ uploaded. Status: **M0** (harness and empty shell) is built; M1 to M7 in `docs/P
   you committed. **Never `git push` and never open a pull request unless Jesse asks.**
 - Anything that changes GitHub (pushing, branch protection, enabling Pages, secrets, labels) needs Jesse's explicit
   go-ahead each time.
-- Target convention once the repo is live: every change goes through a pull request into a protected `main`, squash
-  merged, with the **Verify** check required. Versions follow SemVer (`version` in `package.json`).
+- `main` is protected by a ruleset: every change goes through a pull request, squash merged, with the **Verify**
+  check required; nobody can push to it directly, force-push it or delete it. Work on a branch. Merging to `main`
+  deploys to GitHub Pages. Versions follow SemVer (`version` in `package.json`).
 - Line endings are LF (`.gitattributes`); the fixtures keep their BOM and CRLF on purpose.
 
 ## Commands
