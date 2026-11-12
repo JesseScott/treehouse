@@ -9,7 +9,6 @@ const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 
 };
 
 function currentCommit(): string {
-  if (process.env.GITHUB_SHA) return process.env.GITHUB_SHA;
   try {
     return execSync('git rev-parse HEAD', { stdio: ['ignore', 'pipe', 'ignore'] })
       .toString()

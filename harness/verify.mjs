@@ -55,7 +55,6 @@ for (const step of STEPS) {
     console.log(`SKIP  ${step.name} (the build failed)`);
     continue;
   }
-  process.stdout.write(`...   ${step.name}\r`);
   const t0 = performance.now();
   const run = spawnSync(step.cmd, { cwd: root, shell: true, encoding: 'utf8', env: process.env });
   const seconds = Math.round((performance.now() - t0) / 100) / 10;
