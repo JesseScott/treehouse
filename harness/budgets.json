@@ -9,7 +9,7 @@
     "accessibilityScore": 0.95,
     "bestPracticesScore": 0.95,
     "largestContentfulPaintMs": 4000,
-    "totalBlockingTimeMs": 300,
+    "totalBlockingTimeMs": 1500,
     "cumulativeLayoutShift": 0.1
   }
 }

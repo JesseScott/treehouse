@@ -129,8 +129,13 @@ assert against the manifest rather than hard-coding ids.
 `harness/budgets.json` holds the ceilings (bundle gzip sizes, largest contentful paint, total blocking time, layout
 shift) and floors (Lighthouse scores). They were set from the M0 shell with a little headroom: MapLibre and its
 worker are most of the JavaScript. If a change needs more room, raise the budget on purpose in its own commit and
-say why. Lighthouse runs in software-rendered headless Chromium, so its timings vary a little between machines;
-treat a narrow miss on a slow runner as a reason to look, not as proof of a regression.
+say why. Lighthouse runs in software-rendered headless Chromium, so its timings vary between machines; treat a
+narrow miss on a slow runner as a reason to look, not as proof of a regression.
+
+The timing budgets have to hold on the GitHub runner, which is much slower at drawing the globe in software than a
+laptop with a GPU. On the first CI run of the M0 shell, total blocking time was 976 ms on the runner against 54 to
+195 ms locally, and the performance score was 0.78 against 0.90 to 0.97. The total blocking time ceiling is
+therefore 1,500 ms: it is sized for the runner, so a local run sits far below it.
 
 ## CI, deploys and the monitor
 
