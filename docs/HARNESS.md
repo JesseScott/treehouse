@@ -139,8 +139,9 @@ therefore 1,500 ms: it is sized for the runner, so a local run sits far below it
 
 ## CI, deploys and the monitor
 
-The workflow files are in `.github/workflows/`. **They have not run yet**: nothing has been pushed, and Pages is not
-enabled. Treat this section as the design until the first run proves it.
+The workflow files are in `.github/workflows/`. The site is https://jessescott.github.io/treehouse/. CI and Deploy
+have run green on `main`. Two paths have not been exercised yet: the pull request metrics comment, and the monitor
+(its issue is only opened when production fails).
 
 - **`ci.yml` (Verify)**: on pull requests and on `main`. Runs `npm run verify`, uploads `reports/` as the
   `verify-reports` artifact, and on pull requests posts (and keeps updating) one comment with the metrics table
