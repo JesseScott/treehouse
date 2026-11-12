@@ -1,0 +1,9 @@
+dist
+reports
+test-results
+playwright-report
+package-lock.json
+fixtures/synthetic
+src/map/basemap
+tools/reference
+docs/PLAN.md

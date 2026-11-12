@@ -1,0 +1,58 @@
+{
+  "name": "treehouse",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A world-map family tree viewer: walk a GEDCOM tree and fly to where each person was born.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "smoke": "node harness/smoke.mjs",
+    "fixtures": "node tools/fixtures/generate.mjs",
+    "basemap": "node tools/basemap/build.mjs",
+    "check:privacy": "node harness/privacy-guard.mjs",
+    "check:fast": "npm run check:privacy && npm run typecheck && npm run lint && npm run format:check && npm run test",
+    "check:e2e": "npm run build && npm run e2e",
+    "check:perf": "npm run build && node harness/perf.mjs",
+    "verify": "node harness/verify.mjs"
+  },
+  "dependencies": {
+    "maplibre-gl": "^6.18.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "chrome-launcher": "^1.2.3",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.14.0",
+    "lighthouse": "^13.6.0",
+    "prettier": "^3.10.1",
+    "topojson-client": "^3.1.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}
