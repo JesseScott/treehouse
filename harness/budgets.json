@@ -1,0 +1,15 @@
+{
+  "bundle": {
+    "jsGzipKb": 550,
+    "cssGzipKb": 14,
+    "totalGzipKb": 610
+  },
+  "lighthouse": {
+    "performanceScore": 0.7,
+    "accessibilityScore": 0.95,
+    "bestPracticesScore": 0.95,
+    "largestContentfulPaintMs": 4000,
+    "totalBlockingTimeMs": 300,
+    "cumulativeLayoutShift": 0.1
+  }
+}
