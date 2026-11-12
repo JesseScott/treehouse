@@ -1,0 +1,100 @@
+name: Deploy
+
+# Builds main and publishes it to GitHub Pages, then smoke-tests the live site.
+# Rollback: run this workflow by hand with the last good commit as `ref`.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Commit, tag or branch to deploy (defaults to main)
+        required: false
+        default: main
+
+permissions:
+  contents: read
+
+# One deploy at a time; let a running deploy finish so the site is never half-published.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      commit: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+      - name: Resolve the commit being deployed
+        id: commit
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Privacy guard
+        run: npm run check:privacy
+      - name: Build (version.json carries the commit)
+        run: npm run build
+      - name: Check version.json
+        run: |
+          grep -q "\"commit\": \"${{ steps.commit.outputs.sha }}\"" dist/version.json
+          cat dist/version.json
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
+
+  smoke:
+    name: Post-deploy smoke test
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.build.outputs.commit }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Smoke-test production (version.json must name this commit)
+        # Pages can take a minute to serve the new files, so retry before failing.
+        run: >
+          npm run smoke --
+          --url "${{ needs.deploy.outputs.url }}"
+          --expect-commit "${{ needs.build.outputs.commit }}"
+          --retries 8 --retry-delay 20
+      - name: Upload the smoke report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: smoke-report
+          path: reports/smoke.json
+          if-no-files-found: warn

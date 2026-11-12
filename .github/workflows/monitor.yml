@@ -1,0 +1,101 @@
+name: Monitor
+
+# Daily smoke test of production. On failure it opens an issue labelled `monitor`
+# (or comments on the open one); when the site recovers it closes that issue.
+on:
+  schedule:
+    - cron: '17 14 * * *' # every day at 14:17 UTC (early morning in Vancouver)
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Site to test (defaults to the repository's Pages URL)
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    name: Production smoke test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      issues: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SITE_URL_OVERRIDE: ${{ inputs.url || vars.SITE_URL }}
+    steps:
+      - name: Work out which site to test
+        run: |
+          owner=$(echo "$GITHUB_REPOSITORY_OWNER" | tr '[:upper:]' '[:lower:]')
+          echo "SITE_URL=${SITE_URL_OVERRIDE:-https://$owner.github.io/${GITHUB_REPOSITORY#*/}/}" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      - name: Smoke-test production
+        id: smoke
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          npm run smoke -- --url "$SITE_URL" --retries 3 --retry-delay 30 | tee smoke.log
+
+      - name: Upload the smoke report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: monitor-smoke-report
+          path: |
+            reports/smoke.json
+            smoke.log
+          if-no-files-found: warn
+
+      - name: Open or update the monitor issue
+        if: steps.smoke.outcome == 'failure'
+        run: |
+          gh label create monitor --repo "$GITHUB_REPOSITORY" --color B60205 \
+            --description "Production monitor failures" 2>/dev/null || true
+          run_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          {
+            echo "The production smoke test failed on $(date -u '+%Y-%m-%d %H:%M UTC')."
+            echo
+            echo "- Site: $SITE_URL"
+            echo "- Run: $run_url"
+            echo
+            echo '```'
+            tail -n 40 smoke.log || echo "(no output captured)"
+            echo '```'
+            echo
+            echo "To reproduce: \`npm run smoke -- --url $SITE_URL\`. See docs/HARNESS.md."
+          } > body.md
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --label monitor --state open \
+            --limit 1 --json number --jq '.[0].number')
+          if [ -n "$existing" ] && [ "$existing" != "null" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body-file body.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --label monitor \
+              --title "Production monitor: smoke test failing" --body-file body.md
+          fi
+
+      - name: Close the monitor issue on recovery
+        if: steps.smoke.outcome == 'success'
+        run: |
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --label monitor --state open \
+            --limit 1 --json number --jq '.[0].number')
+          if [ -n "$existing" ] && [ "$existing" != "null" ]; then
+            gh issue close "$existing" --repo "$GITHUB_REPOSITORY" \
+              --comment "The production smoke test passed again on $(date -u '+%Y-%m-%d %H:%M UTC'). Closing."
+          fi
+
+      - name: Fail the run if the smoke test failed
+        if: steps.smoke.outcome == 'failure'
+        run: exit 1

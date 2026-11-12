@@ -1,0 +1,91 @@
+name: CI
+
+# Runs the whole check ladder on every pull request into main, and on main itself.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read # to fetch main's metrics for the comparison
+      pull-requests: write # to post the metrics comment
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Install Chromium for Playwright and Lighthouse
+        run: npx playwright install --with-deps chromium
+
+      - name: Check ladder (npm run verify)
+        run: npm run verify
+
+      - name: Add the summary to the run page
+        if: always()
+        run: cat reports/verify.md >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Upload reports, screenshots and traces
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: verify-reports
+          path: reports/
+          retention-days: 14
+          if-no-files-found: warn
+
+      # ---- pull requests: one comment with the metrics against main ----------
+      - name: Fetch the latest metrics from main
+        if: always() && github.event_name == 'pull_request'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow ci.yml --branch main \
+            --event push --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          if [ -n "$run_id" ] && [ "$run_id" != "null" ]; then
+            gh run download "$run_id" --repo "$GITHUB_REPOSITORY" --name verify-reports --dir base-reports
+          else
+            echo "No successful run on main yet."
+          fi
+
+      - name: Write the metrics comment
+        if: always() && github.event_name == 'pull_request'
+        run: node harness/metrics-comment.mjs reports/verify.json base-reports/verify.json > comment.md
+
+      - name: Post or update the metrics comment
+        if: always() && github.event_name == 'pull_request'
+        # A pull request from a fork gets a read-only token; the comment is a nicety, not a gate.
+        continue-on-error: true
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('node:fs');
+            const body = fs.readFileSync('comment.md', 'utf8');
+            const marker = '<!-- treehouse-metrics -->';
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner, repo, issue_number, per_page: 100,
+            });
+            const existing = comments.find((c) => c.body?.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
