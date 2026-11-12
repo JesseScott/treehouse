@@ -1,0 +1,9 @@
+# Store and check out text files with LF on every platform.
+* text=auto eol=lf
+
+# Synthetic GEDCOM fixtures carry a BOM and CRLF on purpose: never normalise them.
+fixtures/synthetic/*.ged -text
+
+*.png binary
+*.jpg binary
+*.webp binary

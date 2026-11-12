@@ -1,0 +1,19 @@
+node_modules/
+dist/
+reports/
+test-results/
+playwright-report/
+*.log
+*.tsbuildinfo
+.DS_Store
+
+# Privacy: real family data never enters the repo. Only generated fictional
+# fixtures under fixtures/synthetic/ are allowed (see harness/privacy-guard.mjs).
+*.ged
+*.gedcom
+*.zip
+!fixtures/synthetic/*.ged
+local-data/
+
+# Personal Claude Code overrides
+.claude/settings.local.json
