@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev)",
+      "Bash(npm run build)",
+      "Bash(npm run preview)",
+      "Bash(npm run typecheck)",
+      "Bash(npm run lint)",
+      "Bash(npm run format)",
+      "Bash(npm run format:check)",
+      "Bash(npm run test)",
+      "Bash(npm test)",
+      "Bash(npm run e2e)",
+      "Bash(npm run smoke)",
+      "Bash(npm run fixtures)",
+      "Bash(npm run basemap)",
+      "Bash(npm run check:privacy)",
+      "Bash(npm run check:fast)",
+      "Bash(npm run check:e2e)",
+      "Bash(npm run check:perf)",
+      "Bash(npm run verify)",
+      "PowerShell(npm run dev)",
+      "PowerShell(npm run build)",
+      "PowerShell(npm run preview)",
+      "PowerShell(npm run typecheck)",
+      "PowerShell(npm run lint)",
+      "PowerShell(npm run format)",
+      "PowerShell(npm run format:check)",
+      "PowerShell(npm run test)",
+      "PowerShell(npm test)",
+      "PowerShell(npm run e2e)",
+      "PowerShell(npm run smoke)",
+      "PowerShell(npm run fixtures)",
+      "PowerShell(npm run basemap)",
+      "PowerShell(npm run check:privacy)",
+      "PowerShell(npm run check:fast)",
+      "PowerShell(npm run check:e2e)",
+      "PowerShell(npm run check:perf)",
+      "PowerShell(npm run verify)"
+    ]
+  }
+}
