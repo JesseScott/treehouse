@@ -31,6 +31,10 @@ npm run verify                    # the whole check ladder; report in reports/ve
 Real family data never goes into this repository. The only GEDCOM files here are generated and fictional
 (`fixtures/synthetic/`), and a guard in the check ladder fails if anything else appears.
 
+## Licence
+
+treehouse is free software, licensed under the GNU General Public License, version 3. See [LICENSE](LICENSE).
+
 ## Credits
 
 Offline basemap made with [Natural Earth](https://www.naturalearthdata.com/) (public domain). Maps drawn with
