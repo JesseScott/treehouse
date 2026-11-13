@@ -1,4 +1,5 @@
 // check:perf — bundle-size and Lighthouse budgets for the built app.
+// Lighthouse runs three times (LIGHTHOUSE_RUNS) and each metric is judged by its median.
 //
 // Budgets live in harness/budgets.json. Writes reports/perf.json and
 // reports/lighthouse.html, and exits non-zero when a budget is exceeded.
@@ -9,6 +10,7 @@ import { chromium } from '@playwright/test';
 import lighthouse from 'lighthouse';
 import { WEBGL_ARGS } from './lib/browser.mjs';
 import { startPreview } from './lib/preview.mjs';
+import { median } from './lib/stats.mjs';
 
 const budgets = JSON.parse(readFileSync(new URL('./budgets.json', import.meta.url), 'utf8'));
 const dist = new URL('../dist/', import.meta.url);
@@ -61,56 +63,66 @@ const freePort = () =>
       probe.close(() => resolve(port));
     });
   });
-const debugPort = await freePort();
-let chrome;
+// One Lighthouse run is noisy, above all on a CI runner drawing the globe in software: the same
+// build has measured 280 ms and 1,474 ms of blocking time back to back. So run it several times
+// and judge each metric by its median. Each run gets a fresh browser, so a warm one cannot
+// flatter the later runs.
+const RUNS = Number(process.env.LIGHTHOUSE_RUNS ?? 3);
+const lighthouseConfig = {
+  extends: 'lighthouse:default',
+  settings: { onlyCategories: ['performance', 'accessibility', 'best-practices'] },
+};
 try {
-  chrome = await chromium.launch({
-    args: [`--remote-debugging-port=${debugPort}`, ...WEBGL_ARGS],
-  });
-  const run = await lighthouse(
-    server.url,
-    { port: debugPort, output: 'html', logLevel: 'error' },
-    {
-      extends: 'lighthouse:default',
-      settings: { onlyCategories: ['performance', 'accessibility', 'best-practices'] },
-    },
-  );
-  mkdirSync(reports, { recursive: true });
-  writeFileSync(new URL('lighthouse.html', reports), run.report);
+  const samples = [];
+  for (let i = 0; i < RUNS; i++) {
+    const debugPort = await freePort();
+    const chrome = await chromium.launch({
+      args: [`--remote-debugging-port=${debugPort}`, ...WEBGL_ARGS],
+    });
+    let run;
+    try {
+      run = await lighthouse(
+        server.url,
+        { port: debugPort, output: 'html', logLevel: 'error' },
+        lighthouseConfig,
+      );
+    } finally {
+      await chrome.close();
+    }
+    const { categories, audits, runtimeError } = run.lhr;
+    if (runtimeError) throw new Error(`Lighthouse: ${runtimeError.message}`);
+    samples.push({
+      report: run.report,
+      performance: categories.performance.score,
+      accessibility: categories.accessibility.score,
+      bestPractices: categories['best-practices'].score,
+      lcp: audits['largest-contentful-paint'].numericValue,
+      tbt: audits['total-blocking-time'].numericValue,
+      cls: audits['cumulative-layout-shift'].numericValue,
+    });
+  }
 
-  const { categories, audits, runtimeError } = run.lhr;
-  if (runtimeError) throw new Error(`Lighthouse: ${runtimeError.message}`);
+  // Keep the full report of the run whose performance score is the median one.
+  const byScore = [...samples].sort((a, b) => a.performance - b.performance);
+  mkdirSync(reports, { recursive: true });
+  writeFileSync(new URL('lighthouse.html', reports), byScore[byScore.length >> 1].report);
+
   const lh = budgets.lighthouse;
-  const score = (id) => Math.round(categories[id].score * 100) / 100;
-  measure('lighthouse: performance', score('performance'), lh.performanceScore, 'score', {
-    atLeast: true,
-  });
-  measure('lighthouse: accessibility', score('accessibility'), lh.accessibilityScore, 'score', {
-    atLeast: true,
-  });
-  measure('lighthouse: best practices', score('best-practices'), lh.bestPracticesScore, 'score', {
-    atLeast: true,
-  });
-  measure(
-    'lighthouse: largest contentful paint',
-    Math.round(audits['largest-contentful-paint'].numericValue),
-    lh.largestContentfulPaintMs,
-    'ms',
-  );
-  measure(
-    'lighthouse: total blocking time',
-    Math.round(audits['total-blocking-time'].numericValue),
-    lh.totalBlockingTimeMs,
-    'ms',
-  );
-  measure(
-    'lighthouse: cumulative layout shift',
-    Math.round(audits['cumulative-layout-shift'].numericValue * 1000) / 1000,
-    lh.cumulativeLayoutShift,
-    '',
-  );
+  const round = (value, places) => Math.round(value * 10 ** places) / 10 ** places;
+  /** Records the median of one metric across the runs, keeping every run's value beside it. */
+  const judge = (name, key, budget, unit, places, options) => {
+    const values = samples.map((sample) => round(sample[key], places));
+    measure(name, round(median(values), places), budget, unit, options);
+    results.at(-1).samples = values;
+  };
+  const floor = { atLeast: true };
+  judge('lighthouse: performance', 'performance', lh.performanceScore, 'score', 2, floor);
+  judge('lighthouse: accessibility', 'accessibility', lh.accessibilityScore, 'score', 2, floor);
+  judge('lighthouse: best practices', 'bestPractices', lh.bestPracticesScore, 'score', 2, floor);
+  judge('lighthouse: largest contentful paint', 'lcp', lh.largestContentfulPaintMs, 'ms', 0);
+  judge('lighthouse: total blocking time', 'tbt', lh.totalBlockingTimeMs, 'ms', 0);
+  judge('lighthouse: cumulative layout shift', 'cls', lh.cumulativeLayoutShift, '', 3);
 } finally {
-  await chrome?.close();
   await server.close();
 }
 
@@ -123,8 +135,9 @@ writeFileSync(
 
 for (const r of results) {
   const sign = r.direction === 'min' ? '>=' : '<=';
+  const runs = r.samples ? `; runs: ${r.samples.join(', ')}` : '';
   console.log(
-    `${r.ok ? 'PASS' : 'FAIL'}  ${r.name}: ${r.value}${r.unit && ' ' + r.unit} (budget ${sign} ${r.budget})`,
+    `${r.ok ? 'PASS' : 'FAIL'}  ${r.name}: ${r.value}${r.unit && ' ' + r.unit} (budget ${sign} ${r.budget}${runs})`,
   );
 }
 console.log(ok ? 'Performance budgets met.' : 'Performance budgets EXCEEDED.');
