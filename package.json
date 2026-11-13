@@ -2,6 +2,7 @@
   "name": "treehouse",
   "version": "0.1.0",
   "private": true,
+  "license": "GPL-3.0-only",
   "description": "A world-map family tree viewer: walk a GEDCOM tree and fly to where each person was born.",
   "type": "module",
   "engines": {
