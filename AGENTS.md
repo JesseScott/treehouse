@@ -94,3 +94,6 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 - Headless Chromium renders WebGL in software; the flags are in `playwright.config.ts` and `harness/lib/browser.mjs`.
 - Avoid pasting invisible characters (a byte-order mark, a raw carriage return) into source; build them with
   `String.fromCharCode` as the generator does.
+- After any `npm install` on Windows, read `git diff package-lock.json`. npm there can silently drop the
+  `@emnapi/core` and `@emnapi/runtime` entries that Linux needs, and `npm ci` then fails in CI. If they are gone,
+  restore the lockfile and redo the change, or delete `node_modules` and the lockfile and run `npm install` afresh.
