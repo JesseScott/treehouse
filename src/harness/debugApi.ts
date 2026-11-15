@@ -1,6 +1,6 @@
 import { moveCamera, projectionName, whenMapIdle } from '../map/camera';
 import { currentMap, mapWhenCreated } from '../map/mapRegistry';
-import { useAppStore } from '../state/appStore';
+import { screenOf, useAppStore } from '../state/appStore';
 import { flags } from './flags';
 import type { TreehouseDebugApi, TreehouseState } from './types';
 
@@ -21,21 +21,64 @@ function state(): TreehouseState {
       bearing: map?.getBearing() ?? 0,
       pitch: map?.getPitch() ?? 0,
     },
-    tree: null,
+    screen: screenOf(store),
+    library: {
+      loaded: store.libraryLoaded,
+      imports: store.library.map(({ id, name, people, families, rootId }) => ({
+        id,
+        name,
+        people,
+        families,
+        rootId,
+      })),
+    },
+    tree: store.open && {
+      importId: store.open.record.id,
+      name: store.open.record.name,
+      people: store.open.record.people,
+      families: store.open.record.families,
+      warnings: store.open.record.warnings,
+      rootId: store.open.record.rootId,
+    },
+    import: {
+      busy: store.importing,
+      attempts: store.importAttempts,
+      error: store.importError,
+      lastMs: store.lastImportMs,
+      alreadyImported: store.alreadyImported,
+    },
     focusedPersonId: store.focusedPersonId,
     threads: { lineage: 0, family: 0, ancestors: 0, migration: 0 },
     geocode: { places: 0, resolved: 0, approximate: 0, unresolved: 0 },
   };
 }
 
+/** Resolves once the library has been read and no file is being imported. */
+function whenDataSettled(): Promise<void> {
+  const settled = () => {
+    const { libraryLoaded, importing } = useAppStore.getState();
+    return libraryLoaded && !importing;
+  };
+  if (settled()) return Promise.resolve();
+  return new Promise((resolve) => {
+    const unsubscribe = useAppStore.subscribe(() => {
+      if (settled()) {
+        unsubscribe();
+        resolve();
+      }
+    });
+  });
+}
+
 async function whenIdle(): Promise<void> {
+  await whenDataSettled();
   await whenMapIdle(await mapWhenCreated());
 }
 
 const api: TreehouseDebugApi = {
   state,
   whenIdle,
-  // Stub: there is no tree to focus in until the GEDCOM import (M1) and focus fly-to (M3) land.
+  // Stub: focusing a person and flying to their birthplace arrives with M3.
   focus: async () => {
     await whenIdle();
     return { ok: false, reason: 'no-tree' };

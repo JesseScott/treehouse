@@ -1,22 +1,9 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import type { TreehouseState } from '../src/harness/types';
+import { openApp } from './helpers';
 
-const HARNESS = './?harness=1&motion=off';
 const VANCOUVER = { lng: -123.1207, lat: 49.2827 };
 const STORNOWAY = { lng: -6.3865, lat: 58.2093 };
-
-/** Opens the app with the debug API on and waits until the map is idle. */
-async function openApp(page: Page, url = HARNESS): Promise<TreehouseState> {
-  await page.goto(url);
-  await page.waitForFunction(() => window.__treehouse !== undefined);
-  return page.evaluate(async () => {
-    const api = window.__treehouse;
-    if (!api) throw new Error('debug API missing');
-    await api.whenIdle();
-    return api.state();
-  });
-}
 
 function flyTo(page: Page, target: { lng: number; lat: number; zoom: number }) {
   return page.evaluate(async (t) => {
@@ -48,6 +35,15 @@ test('the shell loads with a working offline globe', async ({ page }) => {
   expect(state.map.projection).toBe('globe');
   // Nothing is imported in the empty shell.
   expect(state.tree).toBeNull();
+  expect(state.screen).toBe('library');
+  expect(state.library).toEqual({ loaded: true, imports: [] });
+  expect(state.import).toEqual({
+    busy: false,
+    attempts: 0,
+    error: null,
+    lastMs: null,
+    alreadyImported: false,
+  });
   expect(state.focusedPersonId).toBeNull();
   expect(state.threads).toEqual({ lineage: 0, family: 0, ancestors: 0, migration: 0 });
   expect(state.geocode).toEqual({ places: 0, resolved: 0, approximate: 0, unresolved: 0 });
