@@ -78,6 +78,12 @@ function readSimple(text: string): DateParts {
     const month = monthNumber(m[1]);
     if (month) return { month, year: Number(m[2]) };
   }
+  // A day and month with no year ("14 Feb"): seen in real exports.
+  m = /^(\d{1,2}) ([A-Za-z]{3,9})$/.exec(clean);
+  if (m?.[1] && m[2]) {
+    const month = monthNumber(m[2]);
+    if (month) return { day: Number(m[1]), month };
+  }
   m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(clean);
   if (m?.[1] && m[2] && m[3] && inRange(Number(m[2]), 1, 12)) {
     return { year: Number(m[1]), month: Number(m[2]), day: Number(m[3]) };

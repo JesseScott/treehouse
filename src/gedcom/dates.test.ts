@@ -25,6 +25,8 @@ describe('parseDate', () => {
   it('reads partial dates', () => {
     expect(fields('Jul 1823')).toEqual({ qualifier: 'exact', month: 7, year: 1823 });
     expect(fields('1785')).toEqual({ qualifier: 'exact', year: 1785 });
+    // No year at all: keep what there is.
+    expect(fields('14 Feb')).toEqual({ qualifier: 'exact', day: 14, month: 2 });
     expect(fields('  1785 ')).toEqual({ qualifier: 'exact', year: 1785 });
   });
 
