@@ -16,15 +16,18 @@ Then read `reports/verify.md`. If it says PASSED and you looked at the app yours
 Each rung is slower and catches different things. Run the lowest rung that covers what you changed while you work,
 and the whole ladder before you commit.
 
-| Script                  | What it runs                                         | What it catches                                                |
-| ----------------------- | ---------------------------------------------------- | -------------------------------------------------------------- |
-| `npm run check:privacy` | `harness/privacy-guard.mjs`                          | Family data about to be committed                              |
-| `npm run check:fast`    | privacy guard, `tsc`, ESLint, Prettier check, Vitest | Type errors, logic bugs, fixture drift                         |
-| `npm run check:e2e`     | build, then Playwright against `vite preview`        | What a user would see: rendering, camera, flags, accessibility |
-| `npm run check:perf`    | build, then bundle sizes and Lighthouse              | Size and speed regressions against `harness/budgets.json`      |
-| `npm run verify`        | all of the above plus a local smoke test, once each  | Everything; writes the report                                  |
+| Script                  | What it runs                                                         | What it catches                                                |
+| ----------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `npm run check:privacy` | `harness/privacy-guard.mjs`                                          | Family data about to be committed                              |
+| `npm run check:fast`    | privacy guard, lockfile check, `tsc`, ESLint, Prettier check, Vitest | Type errors, logic bugs, fixture drift                         |
+| `npm run check:e2e`     | build, then Playwright against `vite preview`                        | What a user would see: rendering, camera, flags, accessibility |
+| `npm run check:perf`    | build, then bundle sizes and Lighthouse                              | Size and speed regressions against `harness/budgets.json`      |
+| `npm run verify`        | all of the above plus a local smoke test, once each                  | Everything; writes the report                                  |
 
-`check:data` (geocode coverage on Jesse's real export, local only) arrives with geocoding in M2.
+`npm run check:data -- <path to a .ged or .zip>` is local only and not part of `verify`. It runs the importer over a
+real export on this machine and prints aggregate numbers: counts, warnings by code, date and place coverage, and
+the masked shape of any date it could not get a year from (letters become `a`, digits `9`). It never prints or
+stores a name, place or date; the summary goes to git-ignored `reports/data.json`. Geocode coverage joins it in M2.
 
 First-time setup: `npm ci`, then `npx playwright install chromium`.
 
@@ -74,7 +77,35 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
     "bearing": 0,
     "pitch": 0,
   },
-  "tree": null, // the open import; null until M1
+  "screen": "tree", // "library", "root-picker" or "tree"
+  "library": {
+    "loaded": true, // false until IndexedDB has been read
+    "imports": [
+      {
+        "id": "<uuid>",
+        "name": "treehouse-30",
+        "people": 30,
+        "families": 11,
+        "rootId": "@I420000000001@",
+      },
+    ],
+  },
+  "tree": {
+    // the open import; null on the library screen
+    "importId": "<uuid>",
+    "name": "treehouse-30",
+    "people": 30,
+    "families": 11,
+    "warnings": 0, // lines and links in the file that could not be read
+    "rootId": "@I420000000001@", // the home person; null until one is chosen
+  },
+  "import": {
+    "busy": false,
+    "attempts": 1, // imports started in this page load
+    "error": null, // a fixed code such as "not-gedcom", never file content
+    "lastMs": 12, // worker time to read and parse the last import
+    "alreadyImported": false, // the file was already in the library and was opened instead
+  },
   "focusedPersonId": null, // until M3
   "threads": { "lineage": 0, "family": 0, "ancestors": 0, "migration": 0 }, // arcs drawn; M4
   "geocode": { "places": 0, "resolved": 0, "approximate": 0, "unresolved": 0 }, // coverage; M2
@@ -90,7 +121,31 @@ URL flags:
 - `?motion=off`: camera moves are instant. Use it in tests unless the test is about animation. The app also treats
   the reduced-motion system setting as motion off.
 
-Stable `data-testid`s so far: `app-shell` (also carries `data-map-loaded`), `app-header`, `map`, `empty-state`.
+`whenIdle()` waits for the map, for the library to have been read from IndexedDB, and for any import to finish.
+In a test, wait for `state().import.attempts` to go up after choosing a file, then call `whenIdle()`; see
+`importFile` in `e2e/helpers.ts`.
+
+Stable `data-testid`s so far:
+
+- Shell: `app-shell` (also carries `data-map-loaded` and `data-screen`), `app-header`, `map`, `drop-overlay`.
+- Library: `library-panel`, `empty-state`, `file-input`, `open-file-button`, `import-status`, `import-error` (carries
+  `data-error-code`), `library-list`, `library-item` (carries `data-import-id`), `library-open`, `rename-button`,
+  `rename-input`, `rename-save`, `delete-button`, `delete-confirm`.
+- Home-person picker: `root-picker`, `root-search`, `root-result-count`, `root-options`, `root-option` (carries
+  `data-person-id`), `root-cancel`, `back-to-library`.
+- Tree: `tree-panel`, `tree-name`, `tree-counts`, `home-person` (carries `data-person-id`), `tree-warnings`,
+  `already-imported`, `change-root`, `back-to-library`.
+
+To import a fixture by hand in the browser pane (the dev server serves the repository's files):
+
+```js
+const blob = await fetch('/fixtures/synthetic/treehouse-30.ged').then((r) => r.blob());
+const transfer = new DataTransfer();
+transfer.items.add(new File([blob], 'treehouse-30.ged'));
+const input = document.querySelector('[data-testid=file-input]');
+input.files = transfer.files;
+input.dispatchEvent(new Event('change', { bubbles: true }));
+```
 
 ## Checking a change in the browser pane
 
