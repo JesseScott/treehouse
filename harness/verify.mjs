@@ -16,6 +16,7 @@ mkdirSync(new URL('logs/', reports), { recursive: true });
 
 const STEPS = [
   { id: 'privacy', rung: 'fast', name: 'Privacy guard', cmd: 'npm run check:privacy' },
+  { id: 'lockfile', rung: 'fast', name: 'Lockfile check', cmd: 'npm run lockfile:check' },
   { id: 'typecheck', rung: 'fast', name: 'Typecheck', cmd: 'npm run typecheck' },
   { id: 'lint', rung: 'fast', name: 'Lint', cmd: 'npm run lint' },
   { id: 'format', rung: 'fast', name: 'Format check', cmd: 'npm run format:check' },
