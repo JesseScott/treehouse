@@ -103,6 +103,7 @@ const report = {
       total: unit.numTotalTests,
       passed: unit.numPassedTests,
       failed: unit.numFailedTests,
+      skipped: unit.numPendingTests ?? 0,
     },
     e2e: e2e && {
       total: e2e.stats.expected + e2e.stats.unexpected + e2e.stats.flaky + e2e.stats.skipped,
@@ -130,7 +131,8 @@ writeFileSync(new URL('verify.json', reports), JSON.stringify(report, null, 2) +
 
 // ---- Markdown summary ------------------------------------------------------
 const icon = (status) => ({ passed: 'pass', failed: '**FAIL**', skipped: 'skipped' })[status];
-const count = (t) => (t ? `${t.passed}/${t.total} passed` : 'no result');
+const count = (t) =>
+  t ? `${t.passed}/${t.total} passed${t.skipped ? ` (${t.skipped} skipped)` : ''}` : 'no result';
 const md = [
   `# treehouse verify: ${ok ? 'PASSED' : 'FAILED'}`,
   '',

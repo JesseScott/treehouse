@@ -17,7 +17,8 @@ export function renderComment(head, base) {
     return `${diff > 0 ? '+' : ''}${diff}`;
   };
   const unit = (m) => (m.unit && m.unit !== 'score' ? ` ${m.unit}` : '');
-  const count = (t) => (t ? `${t.passed}/${t.total}` : 'n/a');
+  const count = (t) =>
+    t ? `${t.passed}/${t.total}${t.skipped ? ` (${t.skipped} skipped)` : ''}` : 'n/a';
   return [
     COMMENT_MARKER,
     `### treehouse verify: ${head.ok ? 'passed' : 'FAILED'}`,
