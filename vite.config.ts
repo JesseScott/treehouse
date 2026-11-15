@@ -53,7 +53,12 @@ export default defineConfig({
   // MapLibre is one large chunk; harness/budgets.json is what guards bundle size.
   build: { sourcemap: true, chunkSizeWarningLimit: 1500 },
   test: {
-    include: ['src/**/*.test.ts', 'harness/**/*.test.mjs', 'tools/**/*.test.mjs'],
+    include: [
+      'src/**/*.test.ts',
+      'tests/**/*.test.ts',
+      'harness/**/*.test.mjs',
+      'tools/**/*.test.mjs',
+    ],
     environment: 'node',
   },
 });
