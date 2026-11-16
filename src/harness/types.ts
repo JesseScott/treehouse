@@ -15,8 +15,40 @@ export interface TreehouseState {
     bearing: number;
     pitch: number;
   };
-  /** The open tree, or null when nothing is imported (always null until M1). */
-  tree: { importId: string; people: number; families: number; rootId: string | null } | null;
+  /** Which side panel is showing. A tree with no home person yet shows the picker. */
+  screen: 'library' | 'root-picker' | 'tree';
+  /** Previous imports, newest first. `loaded` is false until IndexedDB has been read. */
+  library: {
+    loaded: boolean;
+    imports: {
+      id: string;
+      name: string;
+      people: number;
+      families: number;
+      rootId: string | null;
+    }[];
+  };
+  /** The open tree, or null on the library screen. */
+  tree: {
+    importId: string;
+    name: string;
+    people: number;
+    families: number;
+    /** Lines and links in the file that could not be read. */
+    warnings: number;
+    rootId: string | null;
+  } | null;
+  /** The file import in progress or just finished. `error` is a fixed code, never file content. */
+  import: {
+    busy: boolean;
+    /** How many imports have been started in this page load, successful or not. */
+    attempts: number;
+    error: string | null;
+    /** Worker time to read and parse the last successful import, in milliseconds. */
+    lastMs: number | null;
+    /** True when the last file chosen was already in the library and was opened instead. */
+    alreadyImported: boolean;
+  };
   focusedPersonId: string | null;
   /** Number of arcs drawn per thread type (all zero until M4). */
   threads: { lineage: number; family: number; ancestors: number; migration: number };
@@ -35,7 +67,7 @@ export type FocusResult = { ok: true } | { ok: false; reason: 'no-tree' | 'unkno
 export interface TreehouseDebugApi {
   /** A plain-JSON snapshot of what the app is showing. */
   state(): TreehouseState;
-  /** Resolves once the map has loaded, finished moving and rendered. */
+  /** Resolves once the map is idle, the library has loaded and no import is running. */
   whenIdle(): Promise<void>;
   /** Focuses a person and flies to their birthplace. A stub until M3: always `no-tree`. */
   focus(personId: string): Promise<FocusResult>;

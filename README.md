@@ -8,9 +8,15 @@ uploaded.
 
 ## Status
 
-Early. What exists today is the **empty shell and the test harness** (milestone M0): a globe that renders from a
-bundled offline map, a debug API for automated checks, synthetic test trees, and a check ladder. Importing a GEDCOM,
-geocoding places, profiles, journeys and threads are planned; see [`docs/PLAN.md`](docs/PLAN.md).
+Early. Two milestones exist so far:
+
+- **M0, the shell and test harness:** a globe that renders from a bundled offline map, a debug API for automated
+  checks, synthetic test trees, and a check ladder.
+- **M1, GEDCOM import:** open a `.ged` file or the `.zip` an export comes in (button or drag and drop), choose the
+  home person, and keep a library of imports in the browser that you can reopen, rename and delete.
+
+Nothing is drawn on the map from a tree yet. Geocoding places, profiles, journeys and threads are planned; see
+[`docs/PLAN.md`](docs/PLAN.md).
 
 ## Develop
 

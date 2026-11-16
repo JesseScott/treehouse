@@ -16,6 +16,7 @@ mkdirSync(new URL('logs/', reports), { recursive: true });
 
 const STEPS = [
   { id: 'privacy', rung: 'fast', name: 'Privacy guard', cmd: 'npm run check:privacy' },
+  { id: 'lockfile', rung: 'fast', name: 'Lockfile check', cmd: 'npm run lockfile:check' },
   { id: 'typecheck', rung: 'fast', name: 'Typecheck', cmd: 'npm run typecheck' },
   { id: 'lint', rung: 'fast', name: 'Lint', cmd: 'npm run lint' },
   { id: 'format', rung: 'fast', name: 'Format check', cmd: 'npm run format:check' },
@@ -102,6 +103,7 @@ const report = {
       total: unit.numTotalTests,
       passed: unit.numPassedTests,
       failed: unit.numFailedTests,
+      skipped: unit.numPendingTests ?? 0,
     },
     e2e: e2e && {
       total: e2e.stats.expected + e2e.stats.unexpected + e2e.stats.flaky + e2e.stats.skipped,
@@ -129,7 +131,8 @@ writeFileSync(new URL('verify.json', reports), JSON.stringify(report, null, 2) +
 
 // ---- Markdown summary ------------------------------------------------------
 const icon = (status) => ({ passed: 'pass', failed: '**FAIL**', skipped: 'skipped' })[status];
-const count = (t) => (t ? `${t.passed}/${t.total} passed` : 'no result');
+const count = (t) =>
+  t ? `${t.passed}/${t.total} passed${t.skipped ? ` (${t.skipped} skipped)` : ''}` : 'no result';
 const md = [
   `# treehouse verify: ${ok ? 'PASSED' : 'FAILED'}`,
   '',

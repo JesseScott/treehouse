@@ -17,5 +17,5 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["vite.config.ts", "playwright.config.ts", "e2e", "src/harness/types.ts"]
+  "include": ["vite.config.ts", "playwright.config.ts", "e2e", "tests", "src/harness/types.ts"]
 }

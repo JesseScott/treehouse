@@ -5,8 +5,8 @@ plan with its milestones, and `docs/HARNESS.md` explains how to validate a chang
 
 treehouse is a world-map family tree viewer: a static web app with no backend. It reads a GEDCOM file in the browser,
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
-uploaded. Status: **M0** (harness and empty shell) is built and live at https://jessescott.github.io/treehouse/;
-M1 to M7 in `docs/PLAN.md` are not.
+uploaded. Status: **M0** (harness and empty shell) and **M1** (GEDCOM import, library, home-person picker) are
+built; M2 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
 
 ## Privacy rules (these come first)
 
@@ -45,6 +45,9 @@ npm run check:e2e    # build, then Playwright against the built app
 npm run check:perf   # build, then bundle-size and Lighthouse budgets
 npm run verify       # the whole ladder; writes reports/verify.json and reports/verify.md
 
+npm run check:data -- <path>   # local only: aggregate import report for a real export (never names or places)
+npm run lockfile:check   # is package-lock.json complete for Linux? (part of check:fast)
+npm run lockfile:fix     # restore the entries npm drops on Windows, from origin/main
 npm run fixtures     # regenerate fixtures/synthetic/ from the generator
 npm run format       # Prettier
 npm run smoke -- --url <deployed url>   # smoke-test a deployed build
@@ -67,20 +70,31 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 ## Architecture
 
 - **Stack:** Vite, React, TypeScript (strict, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`),
-  MapLibre GL JS with the globe projection, Zustand. Planned: `idb`, `fflate`, a parser worker (see `docs/PLAN.md`).
+  MapLibre GL JS with the globe projection, Zustand, `idb` (IndexedDB) and `fflate` (reading `.zip` exports).
 - `src/main.tsx` installs the debug API and renders `src/App.tsx`.
 - `src/map/`: `MapView.tsx` owns the one MapLibre map and registers it in `mapRegistry.ts`. `camera.ts` is the single
   place that moves the camera (`moveCamera`: a flight, or a jump cut when motion is off) and decides when the map is
   idle. `offlineStyle.ts` is a style with no network needs: one bundled Natural Earth land GeoJSON
   (`src/map/basemap/`, built by `npm run basemap`), no tiles, glyphs or sprites. It is the only style until M3 adds
   an online basemap; tests must keep using the offline one.
-- `src/state/appStore.ts`: Zustand store for app-wide UI state.
+- `src/gedcom/`: everything about reading a file. `parse.ts` (text to `Tree`; forgiving, problems become coded
+  `warnings`), `dates.ts` (free-text dates), `types.ts` (the data model), `people.ts` (lifespan, name search),
+  `readGedcom.ts` (unzip, decode, check, parse, hash; throws `ImportError` with a fixed code),
+  `import.worker.ts` and `importFile.ts` (the same, off the main thread). Person and family ids are the GEDCOM
+  cross-reference ids, kept as written, because later milestones match people across re-exports by them.
+- `src/library/db.ts`: the IndexedDB library. An `ImportRecord` (name, file hash, counts, home person) and its
+  parsed `Tree` are stored together; a file with a hash already in the library is opened, not stored again.
+- `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`) and `messages.ts`, which holds the wording
+  for error codes and counts.
+- `src/state/appStore.ts`: Zustand store: the library, the open tree, import progress, and the actions the panels
+  call. `screenOf` derives which panel shows; a tree with no home person goes to the picker.
 - `src/harness/`: `flags.ts` reads `?harness=1` and `?motion=off`; `debugApi.ts` builds `window.__treehouse`;
   `types.ts` is its contract, shared with the e2e tests. When a feature adds state an agent should be able to
   assert, extend `TreehouseState` and the e2e tests in the same change.
 - `harness/` (repo root) is the check ladder: `verify.mjs`, `perf.mjs`, `smoke.mjs`, `privacy-guard.mjs`,
-  `budgets.json`. `e2e/` holds the Playwright specs. `tools/` holds generators and the Python reference scripts for
-  the M1 parser port (`tools/reference/`).
+  `budgets.json`, `check-data.mjs`. `e2e/` holds the Playwright specs and `e2e/helpers.ts`. `tests/` holds Vitest
+  tests that need Node (reading fixture files). `tools/` holds generators, the lockfile check, and the Python
+  reference scripts the parser was ported from (`tools/reference/`).
 - The build uses a relative base (`./`), so the same `dist/` works at `/` and under `/treehouse/` on GitHub Pages.
   Anything fetched from inside a worker needs an absolute URL (see `MapView.tsx`).
 
@@ -94,6 +108,10 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 - Headless Chromium renders WebGL in software; the flags are in `playwright.config.ts` and `harness/lib/browser.mjs`.
 - Avoid pasting invisible characters (a byte-order mark, a raw carriage return) into source; build them with
   `String.fromCharCode` as the generator does.
-- After any `npm install` on Windows, read `git diff package-lock.json`. npm there can silently drop the
-  `@emnapi/core` and `@emnapi/runtime` entries that Linux needs, and `npm ci` then fails in CI. If they are gone,
-  restore the lockfile and redo the change, or delete `node_modules` and the lockfile and run `npm install` afresh.
+- After any `npm install` on Windows, run `npm run lockfile:check`. npm there silently drops the `@emnapi/core`
+  and `@emnapi/runtime` entries that Linux needs, and `npm ci` then fails in CI. `npm run lockfile:fix` copies them
+  back from `origin/main`. `check:fast` runs the check, so a broken lockfile fails before it is pushed.
+- A test source file must not contain a line that is exactly a GEDCOM header (level 0, `HEAD`): the privacy guard
+  reads it as family data. Build test GEDCOMs from an array of lines, as `src/gedcom/parse.test.ts` does.
+- Error and warning values that reach the UI or the debug API are fixed codes (`ImportErrorCode`, `ParseWarning`),
+  never text from the file. Keep it that way: the debug state and the reports must be safe to paste anywhere.
