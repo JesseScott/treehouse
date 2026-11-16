@@ -5,8 +5,8 @@ plan with its milestones, and `docs/HARNESS.md` explains how to validate a chang
 
 treehouse is a world-map family tree viewer: a static web app with no backend. It reads a GEDCOM file in the browser,
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
-uploaded. Status: **M0** (harness and empty shell) and **M1** (GEDCOM import, library, home-person picker) are
-built; M2 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
+uploaded. Status: **M0** (harness and empty shell), **M1** (GEDCOM import, library, home-person picker) and **M2**
+(geocoding, place review, pins, opt-in online lookup) are built; M3 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
 
 ## Privacy rules (these come first)
 
@@ -19,8 +19,12 @@ built; M2 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.g
 - `npm run check:privacy` (`harness/privacy-guard.mjs`) enforces this and runs first in the ladder and in CI. Do not
   weaken it, and do not add exceptions to the `*.ged` / `*.zip` rules in `.gitignore`.
 - `reports/` is git-ignored. Anything produced from real data goes there or stays outside the repo.
-- The app sends nothing about a tree anywhere. Later milestones add opt-in place lookups (place string only) and
-  opt-in telemetry with a fixed vocabulary; neither may ever carry names, dates, places of people, or file content.
+- The app sends nothing about a tree anywhere, with one opt-in exception: the online lookup on the place-review
+  screen sends the text of a place, and only that, to Nominatim, and only after the user turns it on
+  (`src/geocode/nominatim.ts` is the only code that calls it). M7 adds opt-in telemetry with a fixed vocabulary.
+  Neither may ever carry names, dates or file content, and tests must never reach the real service.
+- `reports/data-places.json` (written by `check:data`) holds real place names. Do not print it, quote it or copy
+  from it; work from the aggregate numbers.
 
 ## Git rules
 
@@ -49,6 +53,7 @@ npm run check:data -- <path>   # local only: aggregate import report for a real 
 npm run lockfile:check   # is package-lock.json complete for Linux? (part of check:fast)
 npm run lockfile:fix     # restore the entries npm drops on Windows, from origin/main
 npm run fixtures     # regenerate fixtures/synthetic/ from the generator
+npm run gazetteer    # rebuild public/gazetteer/ from GeoNames (downloads; rarely needed)
 npm run format       # Prettier
 npm run smoke -- --url <deployed url>   # smoke-test a deployed build
 ```
@@ -82,12 +87,21 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   `readGedcom.ts` (unzip, decode, check, parse, hash; throws `ImportError` with a fixed code),
   `import.worker.ts` and `importFile.ts` (the same, off the main thread). Person and family ids are the GEDCOM
   cross-reference ids, kept as written, because later milestones match people across re-exports by them.
+- `src/geocode/`: putting place strings on the map. `normalize.ts` (how names are compared; `placeKey` is the
+  identity of a place, shared by every spelling), `gazetteer.ts` (the bundled data in memory), `match.ts` (the
+  matching rules: most specific known part wins, the country and region the string names are never left, a broader
+  match is flagged approximate), `geocoder.ts` (loads only the country files the strings need), `geocode.worker.ts`
+  and `geocodePlaces.ts` (the same, off the main thread), `treePlaces.ts` (a tree's distinct places and coverage),
+  `nominatim.ts` (the opt-in online lookup). The data is `public/gazetteer/`, built by `tools/gazetteer/build.mjs`.
 - `src/library/db.ts`: the IndexedDB library. An `ImportRecord` (name, file hash, counts, home person) and its
-  parsed `Tree` are stored together; a file with a hash already in the library is opened, not stored again.
-- `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`) and `messages.ts`, which holds the wording
-  for error codes and counts.
-- `src/state/appStore.ts`: Zustand store: the library, the open tree, import progress, and the actions the panels
-  call. `screenOf` derives which panel shows; a tree with no home person goes to the picker.
+  parsed `Tree` are stored together; a file with a hash already in the library is opened, not stored again. The
+  `places` store holds pins and online answers by `placeKey`, shared by every import. Gazetteer matches are not
+  stored: they are recomputed when a tree is opened, so a better gazetteer improves old imports.
+- `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`, `PlacesPanel`) and `messages.ts`, which
+  holds the wording for error codes, counts and place outcomes.
+- `src/state/appStore.ts`: Zustand store: the library, the open tree and its places, import and lookup progress,
+  and the actions the panels call. `screenOf` derives which panel shows; a tree with no home person goes to the
+  picker. `src/map/PlacePin.tsx` draws the selected place's pin and turns map clicks and drags into pins.
 - `src/harness/`: `flags.ts` reads `?harness=1` and `?motion=off`; `debugApi.ts` builds `window.__treehouse`;
   `types.ts` is its contract, shared with the e2e tests. When a feature adds state an agent should be able to
   assert, extend `TreehouseState` and the e2e tests in the same change.
@@ -113,5 +127,9 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   back from `origin/main`. `check:fast` runs the check, so a broken lockfile fails before it is pushed.
 - A test source file must not contain a line that is exactly a GEDCOM header (level 0, `HEAD`): the privacy guard
   reads it as family data. Build test GEDCOMs from an array of lines, as `src/gedcom/parse.test.ts` does.
+- A database schema change bumps the version in `src/library/db.ts` and adds an `oldVersion` step; never edit an
+  earlier step, because browsers that already hold a library run only the new ones.
+- `public/gazetteer/` is generated: never edit it by hand, and rebuild it in its own commit.
 - Error and warning values that reach the UI or the debug API are fixed codes (`ImportErrorCode`, `ParseWarning`),
-  never text from the file. Keep it that way: the debug state and the reports must be safe to paste anywhere.
+  never text from the file. The debug state has place counts only; `__treehouse.place(text)` answers for a string
+  the caller already has. Keep it that way: the debug state and the reports must be safe to paste anywhere.
