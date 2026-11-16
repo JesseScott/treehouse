@@ -1,0 +1,182 @@
+Abapó Viejo	-18.886	-63.383	08	2419
+Achacachi	-16.047	-68.685	04	8447
+Achocalla	-16.574	-68.151	04	19583
+Aiquile	-18.204	-65.181	02	8224
+Amarete	-15.237	-68.985	04	2203
+Andamarca	-18.779	-67.508	05
+Arani	-17.569	-65.769	02	3906
+Ascención de Guarayos	-15.893	-63.189	08	18816
+Ascensión	-15.7	-63.083	08	14429
+Atocha	-20.935	-66.221	07	1833
+Azurduy	-20.106	-64.414	01
+Batallas	-16.3	-68.533	04	2597
+Belen	-17.367	-67.55	04	620
+Bermejo	-22.732	-64.337	09	35411
+Betanzos	-19.553	-65.454	07	4847
+Boyuibe	-20.433	-63.282	08	3075
+Buena Vista	-17.458	-63.671	08	4282
+Calchani	-17.323	-66.691	02	1074
+Camargo	-20.641	-65.209	01	4715
+Camatindi	-20.983	-63.433	01
+Camiri	-20.041	-63.524	08	27961
+Campamento Colquiri	-17.392	-67.125	04	3933
+Capinota	-17.711	-66.261	02	5157
+Caranavi	-15.834	-67.566	04	45747
+Carandayti	-20.75	-63.067	01
+Cañada Hornillos	-17.686	-65.139	02	518
+Challapata	-18.902	-66.77	05	8016
+Charagua	-19.79	-63.198	08	3025
+Chaunaca	-19.017	-65.467	01
+Chimoré	-16.994	-65.153	02	5147
+Chulumani	-16.409	-67.529	04	2952
+Chuqui Chuqui	-18.817	-65.067	01
+Ckochas	-19.907	-64.865	07	14338
+Cliza	-17.588	-65.933	02	8654
+Cobija	-11.027	-68.769	06	26585
+Cochabamba	-17.382	-66.16	02	841276
+Colcapirhua	-17.386	-66.238	02	52732
+Colchani	-20.3	-66.933	07	11988
+Colomi	-17.35	-65.867	02	3921
+Colquechaca	-18.7	-66.004	07	1706
+Comarapa	-17.915	-64.532	08	4445
+Concepción	-16.433	-60.9	08	6900
+Copacabana	-16.17	-69.079	04	6000
+Coripata	-16.3	-67.6	04	2107
+Coroico	-16.194	-67.73	04	2361
+Cotoca	-17.817	-63.05	08	18347
+Cotoca	-17.75	-62.834	08
+Cruz de Machacamarca	-18.884	-68.42	05
+Culpina	-20.824	-64.945	01
+Curahuara de Carangas	-17.843	-68.409	05	1613
+Desaguadero	-16.568	-69.034	04	8635
+El Torno	-18	-63.387	08	15543
+Entre Ríos	-21.527	-64.173	09	2685
+Eucaliptus	-17.583	-67.517	04	2373
+Guanay	-15.498	-67.883	04
+Guayaramerín	-10.826	-65.358	03	36008
+Huachacalla	-18.793	-68.262	05
+Huajlaya	-20.6	-64.55	01
+Huanuni	-18.289	-66.836	05	15492
+Huarina	-16.191	-68.601	04	1616
+Huata	-19.017	-65.25	01
+Huatajata	-16.209	-68.7	04	3700
+Huayllas	-19.17	-65.326	01
+Independencia	-17.084	-66.818	02
+Irpa Irpa	-17.717	-66.267	02	2968
+Ixiamas	-13.768	-68.128	04	5625
+Jorochito	-18.056	-63.428	08	4013
+La Bélgica	-17.55	-63.217	08	5501
+La Cueva	-20.933	-64.9	01
+La Paz	-16.5	-68.15	04	2004652
+Lahuachaca	-17.377	-67.675	04	3235
+Laja	-16.533	-68.383	04	18023
+Las Carreras	-21.25	-65.283	01
+Las Carreras	-21.208	-65.21	01
+Limoncito	-18.028	-63.403	08	3622
+Lintaca	-20.767	-65.333	01
+Llallagua	-18.425	-66.578	07	28069
+Los Negros	-17.733	-63.433	08	3046
+Machacamarca	-18.173	-67.021	05	2044
+Mairana	-18.12	-63.961	08	4298
+Mapiri	-15.25	-68.167	04	2597
+Maragua	-19.046	-65.429	01
+Mecapaca	-16.668	-68.018	04	13289
+Mineros	-17.119	-63.232	08	14385
+Mizque	-17.941	-65.34	02	30481
+Mocomoco	-15.456	-68.998	04	3742
+Mojocoya	-18.764	-64.62	01
+Mojotoro	-18.917	-65.067	01
+Monteagudo	-19.8	-63.956	01	8289
+Montero	-17.339	-63.251	08	88616
+Morochata	-17.235	-66.532	02	504
+Nueva Manoa	-9.718	-65.395	06
+Okinawa Número Uno	-17.233	-62.817	08	4944
+Okinawa Uno	-17.219	-62.895	08	12482
+Oruro	-17.972	-67.093	05	208684
+Padilla	-19.309	-64.303	01	2920
+Pailón	-17.664	-62.718	08	9304
+Patacamaya	-17.236	-67.914	04	12260
+Paurito	-17.881	-62.941	08	2191
+Pilaya	-20.95	-64.75	01
+Piocera	-18.75	-65.4	01
+Pocpo	-18.833	-65.367	01
+Poopó	-18.38	-66.969	05	1720
+Porco	-21.053	-66.43	07	5959
+Portachuelo	-17.354	-63.396	08	11485
+Potolo	-19.006	-65.529	01
+Potosí	-19.584	-65.753	07	141251
+Presto	-18.929	-64.939	01
+Pucarani	-16.4	-68.478	04	5325
+Puearto Pailas	-17.663	-62.812	08
+Puerto Pailas	-17.668	-62.79	08	2675
+Puerto Quijarro	-17.783	-57.767	08	10392
+Puerto Suárez	-18.967	-57.801	08	12546
+Puerto Villarroel	-16.843	-64.8	02	1778
+Pulqui	-19.233	-65.217	01
+Punata	-17.542	-65.835	02	15194
+Quillacollo	-17.392	-66.278	02	172405
+Quime	-16.983	-67.217	04	2404
+Reyes	-14.295	-67.336	03	7376
+Riberalta	-11.01	-66.053	03	99070
+Roboré	-18.335	-59.761	08	9882
+Rosario del Ingre	-20.583	-63.9	01
+Rurrenabaque	-14.441	-67.528	03	11749
+Sacaba	-17.398	-66.038	02	180726
+Salitre	-20.883	-64.917	01
+Samaipata	-18.178	-63.876	08	3500
+San Borja	-14.852	-66.75	03	24610
+San Carlos	-17.404	-63.732	08	4180
+San Francisco	-20.717	-64.7	01
+San Ignacio de Moxo	-14.995	-65.641	03	10054
+San Ignacio de Velasco	-16.378	-60.965	08	23569
+San Juan	-21.267	-65.3	01
+San Juan del Surutú	-17.483	-63.7	08	3707
+San Julian	-17.783	-62.867	08	7706
+San Matías	-16.36	-58.4	08	6352
+San Pablo de Tiquina	-16.218	-68.843	04	3245
+San Pedro	-16.237	-68.851	04	5002
+San Pedro	-18.287	-59.817	08	2990
+San Pedro	-19.617	-64.5	01
+San Ramón	-13.266	-64.615	03	4389
+Santa Ana de Yacuma	-13.744	-65.427	03	12783
+Santa Bárbara	-20.917	-66.05	07	2434
+Santa Cruz de la Sierra	-17.786	-63.181	08	1831434
+Santa Elena	-20.55	-64.783	01
+Santa Fe	-17.908	-63.04	08
+Santa Rita	-17.98	-63.371	08	2444
+Santa Rosa de Yacuma	-14.077	-66.793	03	4459
+Santa Rosa del Sara	-17.108	-63.6	08	5251
+Santiago de Cotagaita	-20.817	-65.661	07	1904
+Santiváñez	-17.546	-66.246	02	1046
+Sapirangui	-19.933	-63.783	01
+Sipe Sipe	-17.454	-66.357	02	47000
+Sorata	-15.773	-68.65	04	2190
+Sotomayor	-19.34	-64.999	01
+Sucre	-19.033	-65.263	01	224838
+Tarabuco	-19.182	-64.915	01	2428
+Tarata	-17.609	-66.021	02	8043
+Tarija	-21.535	-64.73	09	159269
+Tiahuanaco	-16.552	-68.68	04	3037
+Tiquipaya	-17.338	-66.216	02	62675
+Tomina	-19.183	-64.533	01
+Totora	-17.727	-65.193	02	1597
+Totoral	-18.496	-66.874	05	1645
+Trinidad	-14.832	-64.903	03	84259
+Tupiza	-21.443	-65.719	07	22233
+Uncía	-18.467	-66.567	07	8902
+Urubichá	-15.393	-62.947	08	3267
+Uyuni	-20.46	-66.825	07	10293
+Vallegrande	-18.489	-64.108	08	8422
+Viacha	-16.65	-68.3	04	86218
+Villa Charcas	-20.723	-64.885	01
+Villa Serrano	-19.125	-64.323	01
+Villa Yapacaní	-17.4	-63.833	08	18187
+Villamontes	-21.262	-63.469	09	39800
+Villazón	-22.087	-65.594	07	30253
+Viloco	-16.95	-67.55	04	1900
+Vinto	-17.391	-66.317	02	58739
+Warnes	-17.516	-63.168	08	22036
+Yacuiba	-22.016	-63.678	09	82803
+Yamparáez	-19.189	-65.123	01
+Yotala	-19.159	-65.264	01
+Yumani	-16.036	-69.148	04	2500

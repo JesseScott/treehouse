@@ -17,3 +17,6 @@ local-data/
 
 # Personal Claude Code overrides
 .claude/settings.local.json
+
+# Downloaded GeoNames dumps, kept between gazetteer builds
+tools/gazetteer/.cache/

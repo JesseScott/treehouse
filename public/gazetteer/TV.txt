@@ -1,0 +1,12 @@
+Alapi Village	-8.521	179.197	FUN	1024
+Asau Village	-7.49	178.68	VAI	250
+Fakaifou Village	-8.518	179.201	FUN	1007
+Funafuti	-8.524	179.194	FUN	6320
+Kulia Village	-6.108	177.334	NIT	224
+Motufoua School	-7.49	178.693	VAI	506
+Savave Village	-8.027	178.314	NKF	586
+Senala Village	-8.517	179.198	FUN	1122
+Tanrake Village	-7.246	177.145	NUI	408
+Teone Village	-8.499	179.195	FUN	540
+Toga Village	-6.288	176.315	NMG	258
+Vaiaku Village	-8.525	179.194	FUN	516

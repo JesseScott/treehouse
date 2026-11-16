@@ -1,0 +1,35 @@
+Argir	61.996	-6.772	ST	2504
+Eiði	62.299	-7.092	OS	634
+Eystur	62.209	-6.752	OS
+Fuglafjørður	62.244	-6.814	OS	1542
+Hov	61.507	-6.76	SU	149
+Hoyvík	62.034	-6.781	ST	4712
+Hvalba	61.602	-6.961	SU	673
+Kirkja	62.319	-6.316	NO	31
+Klaksvík	62.227	-6.589	NO	5013
+Kollafjørður	62.112	-6.911	ST	830
+Kunoy	62.304	-6.648	NO	70
+Kvívík	62.117	-7.075	ST	608
+Leirvík	62.21	-6.693	OS	1048
+Miðvágur	62.051	-7.194	VG	1040
+Norðragøta	62.201	-6.742	OS	668
+Porkeri	61.481	-6.745	SU	396
+Runavík	62.109	-6.721	OS	591
+Saltangará	62.116	-6.718	OS	1116
+Sandavágur	62.054	-7.15	VG	779
+Sandur	61.843	-6.808	SA	608
+Skopun	61.903	-6.882	SA	457
+Skálavík	61.831	-6.662	SA	171
+Skáli	62.155	-6.779	OS	751
+Skúvoy	61.771	-6.805	SA	53
+Strendur	62.107	-6.757	OS	970
+Sørvágur	62.072	-7.307	VG	1148
+Toftir	62.093	-6.735	OS	964
+Trongisvágur	61.563	-6.848	SU	533
+Tvøroyri	61.556	-6.811	SU	862
+Tórshavn	62.01	-6.772	ST	13200
+Vestmanna	62.154	-7.173	ST	1260
+Við Sjógv	62.12	-6.75	OS	1158
+Viðareiði	62.36	-6.531	NO
+Vágur	61.473	-6.812	SU	1333
+Ytri Skáli	62.159	-6.783	ST	621

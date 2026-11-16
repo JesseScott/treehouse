@@ -1,0 +1,138 @@
+Armenia	17.155	-88.746	02	2421
+August Pine Ridge	17.973	-88.725	04	2160
+Belize City	17.5	-88.198	01	65222
+Bella Vista	16.509	-88.532	06	6259
+Belmopan	17.254	-88.764	02	13381
+Benque Viejo el Carmen	17.075	-89.139	02	7160
+Big Fall	16.257	-88.891	06	846
+Billy White	17.211	-89.05	02	1057
+Biscayne	17.717	-88.457	01	702
+Blackman Eddy	17.217	-88.917	02	660
+Bladen	16.472	-88.625	06	766
+Blue Creek Village	17.893	-88.89	04	841
+Buena Vista	17.251	-88.941	02	911
+Buena Vista	18.237	-88.527	03	508
+Bullet Tree Falls	17.168	-89.111	02	3932
+Burrell Boom	17.569	-88.405	01	2615
+Calcutta	18.362	-88.439	03	852
+Caledonia	18.227	-88.477	03	1373
+Callac Creek	17.127	-89.137	02	613
+Camelote	17.239	-88.827	02	3132
+Carmelita	18.013	-88.543	04	1936
+Caye Caulker	17.737	-88.028	01	2729
+Chan Chen	18.433	-88.417	03	869
+Chan Pine Ridge	18.037	-88.583	04	578
+Chunox	18.298	-88.357	03	1821
+Concepcion	18.323	-88.474	03	1481
+Consejo	18.457	-88.301	03	649
+Corozal	18.394	-88.388	03	9815
+Cotton Tree	17.274	-88.714	02	2338
+Cowpen	16.567	-88.533	05	1582
+Cristo Rey	17.131	-89.055	02	1254
+Cristo Rey	18.349	-88.495	03	872
+Crooked Tree	17.776	-88.542	01	910
+Dangriga	16.97	-88.233	05	9927
+Dolores	15.989	-89.211	06	694
+Double Head Cabbage	17.544	-88.557	01	639
+Douglas	18.235	-88.601	04	586
+Duck Run	17.219	-89.016	02	758
+Duck Run 2	17.242	-89.027	02	600
+Duck Run 3	17.259	-89.04	02	776
+El Arenal	17.024	-89.153	02	945
+Eldridgeville	16.138	-88.841	06	652
+Esperanza	17.175	-89.044	02	1162
+Forest Home	16.139	-88.833	06	517
+Franks Eddy	17.261	-88.637	02	659
+Gardenia	17.67	-88.419	01	507
+Georgetown	16.653	-88.508	05	659
+Georgeville	17.191	-88.975	02	953
+Guinea Grass	17.967	-88.598	04	3821
+Hattieville	17.448	-88.394	01	2184
+Hicattee	16.283	-88.877	06	530
+Hope Creek	17.003	-88.313	05	1244
+Hopkins	16.863	-88.284	05	1767
+Independence and Mango Creek	16.534	-88.419	05	4878
+Indian Creek	17.752	-88.719	04	1080
+Indian Creek Village	16.315	-88.832	06	837
+Jalacte	16.158	-89.147	06	759
+Ladyville	17.554	-88.29	01	7655
+Libertad	18.308	-88.454	03	1489
+Little Belize	18.198	-88.408	03	2888
+Lord’s Bank	17.545	-88.333	01	4876
+Los Tambos	17.324	-89.012	02	715
+Louisville	18.319	-88.51	03	892
+Lower Barton Creek	17.158	-88.915	02	518
+Mahogany Heights	17.339	-88.567	01	869
+Maskall	17.878	-88.312	01	1260
+Maya Center	16.798	-88.382	05	731
+Maya Mopan	16.66	-88.525	05	998
+Neuland	18.052	-88.248	03	1080
+New Road Area	16.108	-88.813	06	539
+Ontario Village	17.221	-88.892	02	960
+Orange Walk	18.081	-88.563	04	15298
+Paraiso	18.408	-88.394	03	1267
+Patchchacan	18.401	-88.471	03	1517
+Placencia	16.514	-88.366	05	4300
+Pomona	16.995	-88.374	05	2122
+Progresso	18.231	-88.411	03	1403
+Pueblo Viejo	16.205	-89.142	06	671
+Punta Gorda	16.098	-88.81	06	5406
+Ranchito	18.378	-88.41	03	1649
+Red Bank Village	16.616	-88.559	05	2323
+Roaring Creek	17.259	-88.796	02	2430
+San Andres	18.389	-88.409	03	1243
+San Antonio	17.079	-89.024	02	2738
+San Antonio	16.244	-89.024	06	1447
+San Antonio	18.402	-88.4	03	767
+San Estevan	18.154	-88.511	04	2115
+San Felipe	17.873	-88.773	04	1898
+San Felipe	16.133	-88.905	06	518
+San Fernando	18.321	-88.354	03	593
+San Ignacio	17.159	-89.07	02	21229
+San Isidro	16.512	-88.545	06	999
+San Joaquin	18.353	-88.442	03	1528
+San Jose	18.196	-88.571	04	3499
+San Jose	16.267	-89.094	06	889
+San Jose Palmar	18.062	-88.563	04	2146
+San Jose Soccoths	17.085	-89.13	02	2424
+San Juan	16.562	-88.515	05	1039
+San Lazaro	18.038	-88.663	04	1210
+San Margos	16.217	-88.901	06	868
+San Miguel	16.293	-88.932	06	812
+San Narciso	18.304	-88.521	03	2784
+San Pablo	18.211	-88.566	04	1238
+San Pablo	16.612	-88.58	06	599
+San Pedro	17.916	-87.966	01	17429
+San Pedro	16.272	-88.954	06	1454
+San Pedro	18.338	-88.495	03	608
+San Roman Village	16.653	-88.474	05	2195
+San Victor	18.259	-88.576	03	1094
+Sand Hill	17.64	-88.368	01	2168
+Santa Clara	18.294	-88.512	03	975
+Santa Cruz	16.698	-88.425	05	3008
+Santa Cruz	16.234	-89.077	06	532
+Santa Elena	17.161	-89.055	02	8587
+Santa Familia	17.186	-89.074	02	2600
+Santa Martha	17.97	-88.384	04	719
+Santa Rosa Village	16.666	-88.454	05	1958
+Sarawina	16.971	-88.274	05	926
+Sarteneja	18.353	-88.145	03	3550
+Seine Bight Village	16.569	-88.365	05	1895
+Seven Miles El Progresso	17.102	-88.949	02	954
+Shipyard	17.894	-88.655	04	4070
+Silk Grass	16.883	-88.333	05	2627
+Silver Creek	16.28	-88.89	06	718
+Spanish Lookout	17.263	-89.009	02	3108
+St. Margaret	17.09	-88.611	02	1405
+St. Matthew's	17.274	-88.644	02	1398
+Steadfast	16.999	-88.424	05	694
+Teakettle Village	17.23	-88.855	02	1999
+Trial Farm	18.101	-88.566	04	5850
+Trinidad	18.024	-88.687	04	628
+Trio Village	16.515	-88.636	06	1726
+Unitedville	17.21	-88.934	02	1232
+Valley Community	17.002	-88.449	02	988
+Valley of Peace	17.335	-88.835	02	3246
+Western Paradise	17.471	-88.295	01	1414
+Xaibe	18.387	-88.434	03	1783
+Yo Creek	18.091	-88.646	04	1885

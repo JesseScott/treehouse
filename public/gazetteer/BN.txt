@@ -1,0 +1,63 @@
+Bandar Seri Begawan	4.89	114.94	02	64409
+Bangar	4.709	115.072	03	3970
+Batu Marang	4.982	115.035	00	870
+Bukit Bendera	4.814	114.663	04	931
+Bukit Panggal	4.828	114.726	04	781
+Junjongan	4.81	114.853	02	2006
+Kampong Ayer	4.883	114.945	02	10250
+Kampong Bintauran	4.881	114.737	00	984
+Kampong Birau	4.782	114.755	04	918
+Kampong Burong Pingai Berakas	4.929	114.929	02	564
+Kampong Kebia	4.771	114.745	04	735
+Kampong Kiajong	4.889	114.919	02	4735
+Kampong Lambak A	4.966	114.943	02	7293
+Kampong Luagan Dudok	4.817	114.73	04	844
+Kampong Meragang	4.933	114.917	00	9190
+Kampong Mulaut	4.867	114.833	00	5981
+Kampong Pangkalan Mau	4.758	114.74	04	573
+Kampong Sinaut	4.815	114.748	00	879
+Kampung Batang Mitus	4.754	114.76	02	634
+Kampung Beribi	4.883	114.895	02	6490
+Kampung Jerudong	4.929	114.835	02	3650
+Kampung Labi	4.389	114.46	01	727
+Kampung Lugu	4.875	114.805	02	5795
+Kampung Mata-Mata	4.903	114.896	02	7159
+Kampung Panaga	4.608	114.296	01	10301
+Kampung Pangkalan Gadong	4.913	114.913	02	3356
+Kampung Peninjau	4.937	114.842	02	4240
+Kampung Rimba	4.941	114.906	02	5284
+Kampung Selayun	4.902	114.85	02	2956
+Kampung Sungai Kelugos	4.808	114.764	02	844
+Kampung Sungai Teraban	4.584	114.181	01	1082
+Kampung Tanah Jambu	4.992	114.998	02	11695
+Kampung Tanjong Nangka	4.876	114.828	02	3838
+Kapok	5.024	115.047	02	2791
+Katok	4.916	114.894	02	2427
+Keriam	4.816	114.694	04	8589
+Kiudang	4.75	114.733	04	5063
+Kota Batu	4.883	114.95	00	12676
+Kuala Belait	4.584	114.231	01	31178
+Kulapis	4.85	114.823	02	1986
+Kupang	4.843	114.794	04	1795
+Lamunin	4.682	114.715	04	3641
+Liang	4.677	114.496	01	16813
+Lumapas	4.85	114.917	00	8058
+Madewa	4.856	114.895	00	865
+Mentiri	4.971	115.021	02	39324
+Muara	5.027	115.069	02	2539
+Pad Nunok	4.717	114.728	04	771
+Penanjong	4.838	114.68	04	1856
+Pengkalan Batu	4.783	114.833	00	11560
+Perumahan Negara Panchor	4.967	115.017	00	13358
+Rambai	4.639	114.651	04	980
+Salambigar	4.979	114.988	02	1184
+Sengkarai	4.805	114.646	04	1694
+Sengkurong	4.883	114.833	02	40972
+Serasa	5.018	115.058	02	18569
+Seria	4.606	114.325	01	2659
+Sinarubai	4.838	114.875	02	2319
+Subok	4.893	114.966	02	2681
+Sungai Hanching	4.968	114.978	02	6129
+Telamba	4.73	114.567	04	13253
+Telisai	4.736	114.563	04	13253
+Tutong	4.803	114.649	04	19151

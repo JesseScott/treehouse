@@ -1,0 +1,26 @@
+Anse Boileau	-4.717	55.483	02	4183
+Anse Royale	-4.733	55.517	05	3818
+Anse aux Pins	-4.686	55.522	01	4685
+Baie Lazare	-4.75	55.475	06	4795
+Baie Sainte Anne	-4.32	55.753	07	5063
+Beau Vallon	-4.621	55.43	08	4142
+Bel Air	-4.629	55.445	09	3129
+Bel Ombre	-4.617	55.417	10	4163
+Cascade	-4.669	55.5	11	7263
+English River	-4.614	55.455	26	4236
+Glacis	-4.576	55.437	12	4496
+Grand'Anse	-4.331	55.722	14	4344
+Grand'Anse	-4.667	55.467	24	4140
+La Digue	-4.355	55.835	25	3934
+La Passe	-4.348	55.833	25
+Les Mamelles	-4.646	55.468	29	2719
+Mont Buxton	-4.616	55.448	17	3383
+Mont Fleuri	-4.627	55.454	09	4055
+Perseverance	-4.604	55.464		6209
+Plaisance	-4.641	55.462	18	4622
+Pointe La Rue	-4.673	55.513	20	3750
+Port Glaud	-4.663	55.418	27	3243
+Roche Caïman	-4.64	55.469	30	3828
+Saint Louis	-4.625	55.444	22	3692
+Takamaka	-4.767	55.5	23	2580
+Victoria	-4.62	55.455	26	22881

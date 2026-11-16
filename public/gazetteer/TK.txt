@@ -1,0 +1,3 @@
+Atafu Village	-8.542	-172.516	A	524
+Fale old settlement	-9.385	-171.247	F	120
+Nukunonu	-9.2	-171.848	N	531

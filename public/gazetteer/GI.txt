@@ -1,0 +1,7 @@
+Catalan Bay	36.14	-5.342		526
+Gibraltar	36.145	-5.353	00	26544
+Reclamation Areas	36.144	-5.357		13690
+Sandpits	36.14	-5.356		2020
+South District	36.114	-5.347		5380
+Town Area	36.122	-5.349		3238
+Upper Town	36.136	-5.351		2483

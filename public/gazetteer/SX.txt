@@ -1,0 +1,7 @@
+Cul de Sac	18.049	-63.065	00	8467
+Koolbaai	18.04	-63.084	00	6000
+Little Bay	18.026	-63.065		5581
+Lower Prince’s Quarter	18.05	-63.038	00	8000
+Philipsburg	18.026	-63.046		1400
+Simson Bay Village	18.038	-63.119	00	700
+Upper Prince’s Quarter	18.033	-63.031	00	4020

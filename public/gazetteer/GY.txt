@@ -1,0 +1,23 @@
+Anna Regina	7.266	-58.483	16	12448
+Bartica	6.405	-58.623	11	11486
+Corriverton	5.933	-57.149	13	11488
+Fort Wellington	6.392	-57.596	15	118
+Georgetown	6.804	-58.155	12	235017
+Helena Number One	6.673	-57.925	12	1568
+Ituni	5.537	-58.256	18	676
+Lethem	3.373	-59.8	19	3893
+Linden	6.008	-58.307	18	44690
+Mabaruma	8.204	-59.781	10	6366
+Mahaica Village	6.682	-57.922	12	4867
+Mahaicony Village	6.572	-57.806	15	2130
+Mahdia	5.285	-59.15	17	4200
+New Amsterdam	6.249	-57.516	13	35039
+Paradise	6.763	-58	12	2050
+Parika	6.837	-58.429	14	4081
+Rose Hall	6.256	-57.355	13	8000
+Rose Hall	6.238	-57.359	13	4532
+Rosignol	6.271	-57.537	15	5782
+Skeldon	5.87	-57.147	13	5859
+Tuschen	6.877	-58.343	14	8286
+Vreed-en-Hoop	6.811	-58.194	14	3073
+Windsor Forest	6.846	-58.235	14	1602

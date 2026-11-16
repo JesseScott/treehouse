@@ -1,0 +1,41 @@
+All Saints	17.067	-61.793	07	2526
+Barbuda Parish	17.624	-61.777	01	1634
+Barnes Hill	17.142	-61.808	03	537
+Bendals	17.068	-61.836	04	973
+Bolands	17.066	-61.875	05	1657
+Buckleys	17.072	-61.813	04	801
+Carlisle	17.132	-61.804	03	831
+Cedar Grove	17.162	-61.818	04	789
+Codrington	17.639	-61.824	01	1325
+Crosbies	17.166	-61.824	04	788
+English Harbour Town	17.016	-61.767	06	778
+Falmouth	17.027	-61.781	06	619
+Freemans	17.079	-61.786	07	860
+Freetown	17.048	-61.703	08	623
+Grays Hill	17.106	-61.847	04	542
+Herberts	17.094	-61.814	04	741
+Jacks Hill	17.109	-61.863	04	1151
+Jennings	17.078	-61.866	08	609
+Jolly Harbour	17.066	-61.886	05	855
+Liberta	17.041	-61.791	06	2560
+New Winthorpes	17.146	-61.813	03	1266
+Old Road	17.017	-61.836	05	623
+Pares	17.085	-61.754	07	575
+Parham	17.097	-61.77	07	969
+Piggotts	17.117	-61.8	03	1878
+Potters Village	17.113	-61.82	04	1433
+Saint Clare	17.085	-61.823	04	898
+Saint Johnston Village	17.119	-61.827	04	515
+Saint John’s	17.121	-61.843	04	51737
+Sea View Farm	17.088	-61.803	03	792
+St. George Parish	17.117	-61.796	03	8055
+St. Mary Parish	17.072	-61.874	05	7341
+St. Paul Parish	17.023	-61.769	06	8128
+St. Peter Parish	17.085	-61.712	08	5325
+St. Philip Parish	17.054	-61.727	08	3347
+Sugar Factory	17.088	-61.818	04	1051
+Swetes	17.05	-61.801	06	1837
+Tomlinson	17.113	-61.808	04	808
+Urlings	17.027	-61.876	05	738
+Vernons	17.092	-61.771	07	564
+Willikies	17.087	-61.709	08	1270

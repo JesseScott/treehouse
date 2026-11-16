@@ -1,0 +1,121 @@
+Admiralty	1.441	103.801		13920
+Alexandra Estate	1.294	103.82	00	13490
+Anak Bukit	1.341	103.773		22960
+Ang Mo Kio New Town	1.38	103.84	02	159340
+Bangkit	1.38	103.773		21010
+Bedok New Town	1.326	103.942	04	276990
+Bencoolen	1.299	103.85		1340
+Bishan New Town	1.35	103.849	00	87320
+Boon Lay	1.311	103.694	00	29510
+Braddell Heights Estate	1.345	103.865	00	9810
+Brickworks Estate	1.287	103.808	00	19820
+Bugis	1.301	103.855		1150
+Bukit Batok New Town	1.359	103.764	00	158030
+Bukit Ho Swee Estate	1.288	103.83	00	14390
+Bukit Mandai Village	1.412	103.757	00	2120
+Bukit Merah Estate	1.284	103.823	00	151250
+Bukit Panjang New Town	1.38	103.765	05	138050
+Bukit Timah	1.328	103.791	00	85900
+Bulim	1.374	103.718	00	8280
+Changi Village	1.39	103.987	04	1850
+Chia Keng	1.36	103.892	00	539
+Choa Chu Kang New Town	1.383	103.75	03	187550
+Clementi Housing Estate	1.316	103.765	00	92420
+Dairy Farm	1.366	103.774		7860
+Dover	1.305	103.78		11290
+Eunos	1.323	103.898		32820
+Faber Hills	1.321	103.76	00	5360
+Fajar	1.384	103.771		26420
+Farrer Park	1.313	103.854		2570
+Geylang	1.32	103.887	00	110201
+Ghim Moh	1.311	103.788	00	13160
+HarbourFront	1.265	103.82	01	3620
+Henderson Estate	1.289	103.823	00	13320
+Hillcrest Park	1.335	103.809	00	9470
+Holland Drive	1.31	103.793		12010
+Holland Village	1.312	103.793	00	10840
+Hong Kah	1.359	103.723	00	26150
+Hougang New Town	1.357	103.891	00	227560
+Institution Hill	1.3	103.833		3760
+Jelebu	1.38	103.763		29960
+Jurong East	1.329	103.74	04	72960
+Jurong Town	1.334	103.723	05	262730
+Jurong West	1.35	103.723	00	253840
+Kaki Bukit Estate	1.338	103.909	00	37150
+Kallang	1.333	103.867	00	101290
+Kampong Java Teban	1.333	103.733	00	10530
+Kampong Loyang	1.378	103.959	00	15340
+Kampong Pasir Ris	1.378	103.932	00	144260
+Kampong Potong Pasir	1.333	103.867	00	11720
+Kampong Ubi	1.317	103.9	00	11800
+Kampong Ulu Pandan	1.346	103.745	00	11020
+Kangkar	1.376	103.902	00	32290
+Keat Hong Village	1.378	103.744	00	39370
+Kembangan	1.322	103.911	00	130252
+Kent Ridge	1.293	103.784	00	2250
+Lam San Village	1.377	103.731	00	3270
+Lavender	1.307	103.863		9690
+Leedon Park	1.317	103.794	00	6440
+Leonie Hill	1.298	103.832		3850
+Loyang	1.379	103.972	00	15340
+Lucky Hills	1.326	103.953	00	7240
+MacPherson	1.327	103.884	01	26850
+Margaret Drive	1.297	103.808		24160
+Marina Bay	1.281	103.86		3034
+Marine Parade	1.303	103.908	03	47180
+Marsiling	1.433	103.774	03	22000
+Matilda Estate	1.399	103.903	00	52200
+Mount Emily Park	1.305	103.847	00	1630
+Mount Vernon	1.336	103.898	00	1192
+Nature Reserve	1.373	103.776		3980
+Nee Soon Estate	1.403	103.818	00	890
+Newton	1.309	103.838	01	8260
+Novena	1.317	103.844	02	53160
+One North	1.3	103.787		1010
+One Tree Hill	1.302	103.827	00	2320
+Orchard	1.303	103.835	01	920
+Outram Park	1.283	103.838	00	18340
+Oxley	1.298	103.841		1630
+Pandan Valley	1.318	103.776	00	11020
+Pasir Panjang	1.293	103.771	00	4510
+Pasir Ris New Town	1.372	103.948	04	54420
+Paya Lebar	1.354	103.891	00	16920
+Peng Siang	1.38	103.741		33860
+Punggol	1.414	103.907	02	204150
+Queenstown Estate	1.294	103.803	00	101480
+Radin Mas	1.274	103.824	00	2498
+River Valley	1.296	103.836		10070
+Rochor	1.304	103.852		12920
+Saujana	1.383	103.768		25000
+Sembawang Estate	1.451	103.829	00	110090
+Sembawang Hills Estate	1.373	103.83	00	6850
+Sengkang New Town	1.392	103.894	02	267600
+Senja	1.385	103.761		23830
+Sennett Estate	1.332	103.872	00	7190
+Sentosa	1.25	103.831		1940
+Serangoon	1.363	103.898	00	116900
+Serangoon Garden	1.364	103.858	00	36080
+Serangoon New Town	1.351	103.871	00	116900
+Simei New Town	1.341	103.956	00	39450
+Singapore	1.29	103.85		5638700
+Somapah	1.342	103.964	00	1850
+Sungai Simpang	1.438	103.827	03	20000
+Tai Seng	1.336	103.904	00	13830
+Tampines Estate	1.358	103.94	00	265340
+Tampines New Town	1.349	103.95	00	259900
+Tanglin	1.317	103.817	00	21810
+Tanglin Halt	1.301	103.798	00	10590
+Tanjong Pagar	1.283	103.833	01	670
+Teck Whye	1.38	103.752		24560
+Telok Blangah	1.275	103.812	00	19320
+Thomson	1.349	103.844	00	29390
+Tiong Bahru Estate	1.283	103.833	01	15120
+Toa Payoh New Town	1.336	103.85	00	120650
+Tyersall Park	1.311	103.814	00	539
+Ulu Bedok	1.333	103.933	00	276990
+West Coast Village	1.317	103.75	00	6870
+Woodlands	1.438	103.789	03	254440
+Woodlands North Coast	1.451	103.784		11430
+Yew Tee	1.397	103.747	03	39100
+Yio Chu Kang	1.391	103.851	00	28350
+Yishun New Town	1.433	103.831	03	228730

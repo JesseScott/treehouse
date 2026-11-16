@@ -1,0 +1,2294 @@
+Abancay	-13.634	-72.884	03	72277
+Acarí	-15.424	-74.614	04	4445
+Acas	-10.458	-77.327	02	449
+Accha	-13.971	-71.832	08
+Acco	-12.929	-74.027	05	709
+Accocunca	-14.778	-71.251	08	247
+Accomarca	-13.801	-73.904	05	639
+Achanizo	-15.805	-73.967	04	352
+Achaya	-15.285	-70.161	21	117
+Achoma	-15.661	-71.701	04
+Aco	-10.497	-77.241	02	418
+Aco	-9.368	-77.565	02	322
+Aco	-8.523	-77.878	02	284
+Aco	-11.957	-75.37	12
+Acobamba	-9.144	-77.741	02	685
+Acobamba	-12.867	-74.567	09
+Acobamba	-11.353	-75.662	12
+Acobamba	-8.326	-77.582	02
+Acobambilla	-12.664	-75.324	09
+Acochaca	-9.115	-77.368	02
+Acocro	-13.219	-74.042	05	543
+Acolla	-11.732	-75.546	12	6805
+Acomayo	-9.801	-76.072	10
+Acomayo	-13.917	-71.681	08
+Acopalca	-11.988	-75.102	12	584
+Acopampa	-9.294	-77.626	02	865
+Acopía	-14.058	-71.493	08
+Acora	-15.974	-69.797	21
+Acoria	-12.643	-74.862	09
+Acos	-13.951	-71.739	08	759
+Acos	-11.274	-76.821	15	507
+Acostambo	-12.365	-75.055	09	901
+Acosvinchos	-13.113	-74.1	05
+Acpitán	-13.843	-72.416	03	563
+Acraquia	-12.407	-74.901	09
+Aczo	-9.152	-76.989	02	464
+Agallpampa	-7.985	-78.548	13	580
+Agua Blanca	-7.046	-79.061	06	466
+Agua Blanca	-6.723	-76.696	22
+Aguas Verdes	-3.481	-80.245	24	9106
+Aguaytía	-9.038	-75.509	25	18318
+Ahuac	-12.086	-75.321	12
+Ahuaycha	-12.407	-74.891	09	794
+Aija	-9.781	-77.61	02	843
+Ajoyani	-14.23	-70.224	21
+Alamor	-4.48	-80.399	20	511
+Alayo	-11.886	-75.299	12	616
+Alca	-15.135	-72.765	04	481
+Alcamenca	-13.657	-74.147	05
+Alegría	-12.119	-69.12	17	708
+Alerta	-11.658	-69.235	17	986
+Alexander von Humboldt	-8.828	-75.051	25
+Alfonso Ugarte	-7.823	-74.828	16	572
+Algamarca	-7.607	-78.245	06	532
+Alianza Cristiana	-3.475	-76.434	16	471
+Alis	-12.279	-75.787	15	198
+Alto Larán	-13.441	-76.087	11
+Alto Mayo	-5.698	-77.472	22	548
+Alto Perillo	-7.079	-75.143	16	554
+Alto Perú	-8.948	-78.58	02	788
+Alto Perú	-6.299	-77.098	22	774
+Alto Salaverry	-8.187	-78.986	13	5014
+Alto San Ildefonso	-7.144	-79.585	13	517
+Alto de la Cruz	-5.346	-80.77	20	992
+Amantaní	-15.657	-69.718	21
+Amashca	-9.239	-77.646	02	730
+Amaybamba	-13.287	-73.267	08
+Ambar	-10.733	-77.267	15	462
+Ambato	-12.75	-74.822	09	631
+Ambo	-10.131	-76.205	10	6865
+Amotape	-4.882	-81.016	20
+Ananea	-14.679	-69.535	21
+Anapia	-16.314	-68.853	21
+Ancahuasi	-13.457	-72.3	08
+Anchayaque	-14.619	-72.065	08	511
+Anchihuay	-12.864	-73.583	05
+Anchonga	-12.913	-74.691	09	280
+Ancobamba	-14.035	-73.1	03	623
+Ancomarca	-9.987	-76.065	10	566
+Andabamba	-12.695	-74.624	09	940
+Andabamba	-10.007	-76.244	10	862
+Andabamba	-6.663	-78.817	06
+Andahua	-15.499	-72.357	04
+Andahuaylas	-13.656	-73.387	03	17444
+Andahuaylillas	-13.672	-71.679	08
+Andajes	-10.793	-76.909	15	621
+Andamarca	-11.728	-74.802	12	395
+Andamarca	-14.387	-73.961	05
+Andarapa	-13.526	-73.366	03	427
+Andaray	-15.797	-72.861	04	351
+Andas	-11.626	-75.109	12	528
+Andaymarca	-12.315	-74.635	09	306
+Angaiza	-5.819	-77.388	22	768
+Angasmarca	-10.242	-76.231	10	792
+Angasmarca	-8.133	-78.067	13
+Anguía	-6.342	-78.605	06	339
+Aniso	-14.807	-73.282	05	195
+Annape	-6.523	-80.002	14	654
+Anra	-9.235	-76.926	02	416
+Anta	-13.471	-72.148	08	5859
+Anta	-12.271	-74.963	09	663
+Anta	-9.357	-77.598	02	614
+Anta	-12.812	-74.639	09	517
+Antabamba	-14.361	-72.876	03
+Antapallpa	-14.13	-71.718	08	505
+Antaparco	-13.076	-74.411	09	555
+Antauta	-14.3	-70.292	21
+Apata	-11.855	-75.353	12
+Aplao	-16.076	-72.494	04
+Apongo	-14.013	-73.932	05	898
+Aquia	-10.074	-77.145	02	809
+Arahuante	-5.311	-75.725	16	941
+Arahuay	-11.622	-76.669	15	356
+Aramachay	-11.917	-75.413	12	693
+Aramango	-5.416	-78.436	01
+Arancay	-9.172	-76.749	10	394
+Arapa	-15.139	-70.11	21	907
+Arena Baja	-13.149	-76.384	15	595
+Arenal	-4.883	-81.027	20
+Arequipa	-16.399	-71.537	04	1195700
+Aricapampa	-7.806	-77.72	13	734
+Arin	-13.313	-72.01	08	687
+Arirahua	-15.665	-72.937	04	735
+Arma	-13.126	-75.542	09	284
+Ascencion	-12.784	-74.981	09	9086
+Ascope	-7.714	-79.108	13	14015
+Asentamiento Humano Nicolas de Pierola	-11.936	-76.706	15	5800
+Asia	-12.779	-76.557	15	890
+Asillo	-14.787	-70.354	21
+Asquipata	-14.055	-73.91	05	178
+Asunción	-7.323	-78.519	06	940
+Atacocha	-10.573	-76.215	19	920
+Atahualpa	-4.846	-77.482	16	628
+Atalaya	-10.731	-73.759	25	16700
+Ataura	-11.801	-75.44	12
+Atico	-16.209	-73.622	04	199
+Atiquipa	-15.796	-74.364	04	137
+Atuncolla	-15.689	-70.144	21	12654
+Aucallama	-11.558	-77.181	15
+Aucara	-14.281	-73.976	05
+Aucayacu	-8.931	-76.113	10
+Aucayo	-3.861	-73.152	16	743
+Aurahuá	-13.035	-75.57	09	492
+Ayabaca	-4.64	-79.715	20	5270
+Ayacancha	-12.292	-74.911	09	501
+Ayacucho	-13.164	-74.223	05	140033
+Ayahuasi	-15.147	-72.743	04	647
+Ayahuay	-14.209	-73.059	03	342
+Ayamarca	-14.002	-75.049	09	712
+Ayapata	-13.777	-70.323	21	2594
+Ayauca	-12.592	-76.036	15	283
+Ayavarí	-12.382	-76.139	15
+Ayaviri	-14.886	-70.589	21	22247
+Ayaviri	-13.703	-75.351	09
+Ayna	-12.65	-73.917	05	4588
+Ayo	-15.682	-72.274	04	262
+Ayrampuni	-15.063	-69.881	21	338
+Ayrihuanca	-14.115	-72.614	03	537
+Azángaro	-14.914	-70.198	21	13290
+Azángaro	-12.998	-75.837	15	194
+Bagua	-5.633	-78.534	01
+Bagua Grande	-5.756	-78.441	01	20382
+Bajo Naranjillo	-5.815	-77.383	22
+Bajo Pichanaqui	-10.927	-74.874	12
+Balcones de Talandracas	-5.088	-80.075	20	629
+Balsapuerto	-5.83	-76.56	16
+Balsas	-6.833	-78.017	01	259
+Bambamarca	-6.683	-78.533	06	13351
+Bambamarca	-7.441	-77.695	13	841
+Bambas	-8.602	-77.997	02	159
+Barranca	-10.75	-77.767	15	46290
+Barranca	-4.833	-76.676	16	5779
+Barranco	-12.143	-77.019	15	37525
+Barranquita	-6.72	-76.595	22	524
+Barranquita	-6.267	-76.017	22
+Barraza	-8.111	-78.972	13	683
+Baños	-10.077	-76.735	10
+Belen	-3.76	-73.25	16	57824
+Belen	-5.03	-80.163	20	508
+Bella Unión	-15.45	-74.658	04
+Bellavista	-7.056	-76.591	22	15231
+Bellavista	-5.666	-78.679	06	6320
+Bellavista	-11.274	-74.658	12	654
+Bellavista	-4.89	-80.681	20
+Bello Horizonte	-6.529	-76.301	22	605
+Belén	-13.809	-73.758	05	506
+Bernal	-5.45	-80.75	20	5916
+Betania	-11.051	-73.751	12	689
+Bolognesi	-8.351	-78.05	02	470
+Bolognesi	-10.064	-74.005	25
+Bolívar	-6.977	-79.178	06	571
+Bolívar	-7.154	-77.703	13
+Boquerón	-9.059	-75.636	25
+Borja	-4.468	-77.544	16	522
+Boza	-11.585	-77.204	15	744
+Bretaña	-5.267	-74.283	16
+Breu	-9.483	-72.717	25
+Breña	-12.056	-77.053	15	81909
+Buena Vista	-11.546	-77.254	15	988
+Buena Vista	-8.48	-78.633	13	971
+Buena Vista	-13.693	-73.479	03	643
+Buena Vista Alta	-9.432	-78.207	02
+Buenos Aires	-5.267	-79.968	20	7932
+Buenos Aires	-6.794	-76.327	22	780
+Buenos Aires	-5.923	-77.079	22	578
+Buenos Aires	-8.139	-79.04	13
+Buenos Aires	-9.124	-78.497	02
+Caballococha	-3.906	-70.516	16	11100
+Cabana	-15.649	-70.322	21	824
+Cabana	-8.4	-78.033	02
+Cabana	-14.289	-73.967	05
+Cabanaconde	-15.621	-71.979	04
+Cabanilla	-15.62	-70.346	21	895
+Cabuyal	-3.717	-80.437	24	869
+Cacachaqui	-11.835	-76.375	15	721
+Cacatachi	-6.463	-76.451	22
+Cachachi	-7.449	-78.269	06	355
+Cachaquito	-4.434	-79.974	20	538
+Cachimayo	-13.477	-72.068	08
+Cachinche	-6.522	-79.808	14	693
+Cachora	-13.512	-72.813	03	805
+Cacra	-12.813	-75.783	15	179
+Cahuac	-9.853	-76.63	10
+Cahuacho	-15.506	-73.479	04	252
+Cahuanuyo	-14.341	-71.463	08	3935
+Caicay	-13.597	-71.696	08	333
+Caimito	-8.854	-74.315	25	581
+Cairani	-17.286	-70.363	23	604
+Caja	-12.917	-74.466	09
+Cajabamba	-7.617	-78.05	06	13486
+Cajacay	-10.155	-77.44	02	636
+Cajamarca	-7.164	-78.5	06	201329
+Cajamarquilla	-10.354	-77.199	02	421
+Cajamarquilla	-9.633	-77.742	02	340
+Cajaruro	-5.736	-78.426	01	7281
+Cajay	-9.326	-77.158	02
+Calacoa	-16.75	-70.7	18
+Calamarca	-8.17	-78.412	13	364
+Calana	-17.943	-70.189	23	875
+Calango	-12.526	-76.544	15	651
+Calapuja	-15.31	-70.222	21	375
+Calca	-13.333	-71.95	08	9179
+Calca	-11.304	-75.713	12	774
+Caldera	-11.086	-77.459	15	537
+Calderones	-14.157	-75.701	11	997
+Caleta Cruz	-3.637	-80.592	24
+Caleta Vidal	-10.855	-77.703	15	949
+Caleta de Carquín	-11.092	-77.627	15	5514
+Callahuanca	-11.828	-76.616	15
+Callalli	-15.508	-71.446	04
+Callanca	-14.181	-71.141	08	4046
+Callancas	-7.766	-78.482	13	587
+Callanmarca	-12.867	-74.623	09	652
+Callao	-12.052	-77.135	07	1226200
+Callayuc	-6.181	-78.91	06	525
+Callejones	-5.031	-80.281	20	627
+Calquis	-6.98	-78.85	06
+Calzada	-6.032	-77.066	22
+Camaná	-16.624	-72.711	04	16434
+Cambrune	-16.825	-70.678	18	820
+Camilaca	-17.268	-70.38	23	274
+Caminaca	-15.324	-70.073	21	113
+Camisea	-11.719	-72.946	08
+Campanilla	-7.483	-76.65	22
+Campo Verde	-8.476	-74.806	25	8945
+Canaria	-13.921	-73.905	05
+Canayre	-12.281	-74.026	05
+Cancas	-3.947	-80.942	24
+Cancha Cancha	-13.606	-74.313	05	978
+Canchabamba	-8.885	-77.123	10	532
+Canchaque	-5.376	-79.61	20	871
+Canchayllo	-11.802	-75.718	12	746
+Candarave	-17.268	-70.249	23	3415
+Canelos	-7.059	-75.112	16	657
+Cangallo	-13.629	-74.144	05
+Canis	-10.338	-77.171	02	662
+Canta	-11.467	-76.624	15
+Capachica	-15.642	-69.831	21	961
+Capachique	-7.875	-78.307	13	796
+Capacmarca	-14.008	-72.001	08	624
+Capaso	-17.184	-69.745	21
+Capaya	-14.117	-73.321	03	276
+Capillas	-13.293	-75.542	09
+Carabamba	-8.117	-78.617	13
+Carabayllo	-11.853	-77.038	15
+Carac	-11.192	-76.78	15	375
+Caracoto	-15.568	-70.102	21	782
+Caracucho	-6.48	-79.95	14	713
+Caral	-10.889	-77.504	15	628
+Carampa	-13.653	-74.239	05	924
+Carampoma	-11.661	-76.514	15
+Carania	-12.344	-75.868	15	233
+Carapo	-13.837	-74.315	05	560
+Caraybamba	-14.378	-73.161	03	630
+Caraz	-9.048	-77.81	02	10926
+Carhuac	-9.262	-77.692	02	275
+Carhuacallanga	-12.355	-75.201	12	828
+Carhuacatac	-11.446	-75.694	12	504
+Carhuamayo	-10.917	-76.033	12	9122
+Carhuanca	-13.742	-73.788	05	500
+Carhuaz	-9.282	-77.645	02	5044
+Caritamaya	-16.008	-69.756	21	540
+Carmen Alto	-13.182	-74.225	05
+Carmen De La Legua Reynoso	-12.054	-77.098	07	41863
+Carumas	-16.809	-70.695	18	923
+Casa Blanca	-13.034	-76.455	15	638
+Casa Blanqueada	-3.737	-80.454	24	888
+Casa Grande	-7.744	-79.186	13
+Casacancha	-12.788	-74.632	09	821
+Casacancha	-11.905	-75.257	12	527
+Casca	-8.855	-77.398	02	212
+Cascapara	-9.226	-77.716	02	158
+Cascas	-7.483	-78.817	13	4299
+Cashapampa	-8.561	-77.653	02
+Casma	-9.475	-78.302	02
+Caspisapa	-6.957	-76.418	22
+Castillo Grande	-9.278	-76.009	10	12438
+Castrovirreyna	-13.267	-75.317	09
+Catac	-9.8	-77.433	02
+Catacaos	-5.267	-80.683	20	57304
+Catache	-6.674	-79.033	06	717
+Catahuasi	-12.799	-75.892	15	386
+Catilluc	-6.802	-78.779	06
+Catán	-7.3	-78.933	06	316
+Cauday	-7.574	-78.07	06	637
+Caujul	-10.805	-76.979	15	412
+Cauri	-10.142	-76.625	10
+Cayara	-13.796	-73.991	05	919
+Cayarani	-14.672	-72.022	04	457
+Cayco	-14.345	-71.161	08	529
+Cayhuayna	-9.959	-76.249	10
+Caylloma	-15.189	-71.773	04
+Cayma	-16.383	-71.551	04
+Cayna	-10.272	-76.389	10	976
+Cayrán	-9.981	-76.284	10	527
+Cayumba	-9.483	-75.948	10	733
+Cañaris	-6.045	-79.265	14	323
+Cañaveral	-3.942	-80.651	24	351
+Ccapi	-13.853	-72.082	08	862
+Ccaquiracunca	-14.277	-71.45	08	4098
+Ccarancalla	-13.648	-73.403	03	515
+Ccarhuayo	-13.595	-71.4	08
+Ccatca	-13.605	-71.564	08	538
+Ccochaccasa	-12.926	-74.77	09
+Ccolo	-15.506	-71.492	04	3857
+Ccorca	-13.585	-72.06	08
+Ccuntuma	-14.125	-71.412	08	3511
+Celendín	-6.865	-78.146	06	14660
+Centenario	-9.517	-77.53	02	47581
+Cerezal	-5.058	-80.633	20	548
+Cerrillo	-7.127	-78.489	06	821
+Cerro Libre	-13.087	-76.315	15	557
+Cerro Verde	-16.45	-71.616	04	3602
+Cerro de Pasco	-10.666	-76.253	19	58899
+Chaca	-12.784	-74.206	05	947
+Chacabamba	-9.901	-76.611	10	238
+Chacapalpa	-11.733	-75.756	12	376
+Chacapampa	-12.345	-75.247	12	303
+Chacas	-9.162	-77.366	02
+Chaccho	-9.06	-77.059	02
+Chaccrampa	-13.961	-73.608	03	693
+Chachapoyas	-6.232	-77.869	01	32026
+Chachas	-15.501	-72.27	04	563
+Chaclacayo	-11.983	-76.767	15
+Chaclla	-11.74	-76.647	15
+Chacoche	-13.943	-72.991	03
+Chacos	-10.359	-76.17	10	553
+Chadín	-6.471	-78.419	06	424
+Chafán Grande	-7.316	-79.38	13	527
+Chaglla	-9.844	-75.903	10
+Chala	-15.866	-74.247	04
+Chalaco	-5.409	-80.761	20	570
+Chalaco	-5.041	-79.796	20
+Chalamarca	-6.503	-78.48	06	776
+Chalcos	-13.848	-73.753	05	253
+Chalhuanca	-15.718	-71.321	04	617
+Chalhuanca	-14.301	-73.231	03
+Challabamba	-13.212	-71.653	08	875
+Challas	-8.439	-77.324	13	986
+Challhuahuacho	-14.117	-72.25	03
+Chalán	-6.65	-78.232	06	538
+Chamaca	-14.302	-71.853	08	689
+Chambara	-12.028	-75.374	12	688
+Chancay	-11.571	-77.267	15	26958
+Chancay	-7.388	-78.124	06
+Changuillo	-14.664	-75.223	11	247
+Chaná	-9.403	-77.011	02
+Chao	-8.543	-78.679	13
+Chapaya	-5.188	-79.426	20	664
+Chapimarca	-13.975	-73.065	03	343
+Characato	-16.469	-71.484	04
+Charat	-7.833	-78.45	13	189
+Charcana	-15.241	-73.071	04	367
+Charcani Chico	-16.309	-71.501	04	583
+Charupa	-5.006	-75.865	16	589
+Chasquitambo	-10.313	-77.616	02
+Chaulán	-10.056	-76.485	10
+Chaupimarca	-10.407	-76.462	19	28666
+Chavin	-9.432	-77.535	02	646
+Chavin de Pariarca	-9.423	-76.771	10	977
+Chavinillo	-9.858	-76.609	10
+Chaviña	-14.983	-73.833	05
+Chavín	-13.077	-75.913	11	502
+Chazuta	-6.571	-76.138	22	8029
+Checacupe	-14.027	-71.453	08	3440
+Checca	-14.474	-71.394	08	3810
+Checcapucara	-14.184	-71.694	08	571
+Chepén	-7.224	-79.425	13	41992
+Chetilla	-7.147	-78.673	06	405
+Cheto	-6.256	-77.7	01	378
+Chiara	-14.091	-71.401	08	634
+Chiara	-13.867	-73.669	03	566
+Chiara	-13.273	-74.206	05	328
+Chicama	-7.845	-79.147	13	14915
+Chicche	-12.296	-75.298	12	250
+Chicchicay	-12.723	-75.953	15	598
+Chichas	-15.547	-72.919	04	185
+Chicla	-11.706	-76.268	15
+Chiclayo	-6.77	-79.855	14	609400
+Chignayhua	-14.246	-71.444	08	3912
+Chiguata	-16.402	-71.392	04	464
+Chiguirip	-6.428	-78.721	06	403
+Chijichaya	-16.171	-69.689	21	892
+Chilca	-12.086	-75.208	12	73371
+Chilca	-12.521	-76.737	15	12884
+Chilcas	-13.171	-73.907	05	252
+Chilcaymarca	-15.286	-72.378	04
+Chilete	-7.221	-78.84	06
+Chillia	-8.125	-77.515	13
+Chimbo	-16.275	-69.202	21	510
+Chimbote	-9.075	-78.594	02	316966
+Chimbán	-6.252	-78.478	06	727
+Chimuch	-6.513	-78.329	06
+Chincha Alta	-13.41	-76.132	11	153076
+Chincha Baja	-13.459	-76.163	11
+Chinchaypujio	-13.629	-72.233	08	943
+Chinchero	-13.392	-72.048	08
+Chincheros	-13.518	-73.722	03
+Chinchihuasi	-12.519	-74.546	09	438
+Chincho	-12.967	-74.367	09	83
+Chinchán	-10.475	-76.151	19	683
+Chingalpa	-8.339	-77.598	02
+Chingas	-9.119	-76.992	02	729
+Chingora	-15.384	-70.166	21	595
+Chipao	-14.366	-73.877	05
+Chipe	-4.807	-78.303	01	749
+Chipispaya	-17.498	-70.217	23	1932
+Chiquintirca	-13.06	-73.707	05	530
+Chiriaco	-5.16	-78.289	01
+Chirinos	-5.305	-78.898	06
+Chisquilla	-5.883	-77.733	01
+Chivay	-15.638	-71.601	04	4543
+Choccecancha	-13.683	-73.264	03	640
+Choco	-15.577	-72.129	04	219
+Chocope	-7.791	-79.222	13	32370
+Chocos	-12.915	-75.863	15	328
+Chojata	-16.389	-70.729	18	727
+Chongos Alto	-12.311	-75.289	12	828
+Chongos Bajo	-12.134	-75.268	12
+Chongoyape	-6.641	-79.389	14	16061
+Chontabamba	-10.583	-75.483	19
+Chontalí	-5.646	-79.088	06
+Choquecancha	-13.034	-72.033	08	599
+Choras	-9.91	-76.606	10
+Choropampa	-6.371	-78.412	06	320
+Choros	-5.9	-78.694	06	367
+Chosgón	-5.93	-78.009	01	737
+Chosica	-11.943	-76.709	15	88606
+Chota	-6.55	-78.65	06	14240
+Chucatamani	-17.48	-70.123	23	261
+Chuco	-7.325	-78.09	06	658
+Chucuito	-15.894	-69.89	21
+Chugay	-7.782	-77.868	13
+Chugur	-6.671	-78.739	06	234
+Chullin	-8.646	-77.582	02
+Chullune	-15.819	-69.991	21	510
+Chulucanas	-5.092	-80.162	20	68835
+Chumpi	-15.095	-73.748	05
+Chumpón	-7.719	-79.319	13	574
+Chumuch	-6.603	-78.2	06	237
+Chungui	-13.222	-73.621	05	551
+Chupa	-15.106	-69.987	21
+Chupaca	-12.067	-75.283	12	9877
+Chupaca	-12.523	-74.83	09	623
+Chupamarca	-13.038	-75.609	09	274
+Chupuro	-12.155	-75.245	12
+Chupán	-9.747	-76.649	10
+Chuquibamba	-6.935	-77.855	01	623
+Chuquibamba	-15.838	-72.654	04
+Chuquibambilla	-14.102	-72.707	03
+Chuquis	-9.677	-76.705	10	840
+Chuquitira	-17.289	-70.043	23	4220
+Churcampa	-12.7	-74.4	09
+Churubamba	-9.826	-76.133	10	323
+Churuja	-6.014	-77.953	01	248
+Chuschi	-13.586	-74.351	05
+Chusis	-5.523	-80.813	20	506
+Chílcayoc	-13.883	-73.728	05	310
+Cieneguilla	-12.133	-76.817	15
+Circa	-13.874	-72.873	03	243
+Circamarca	-13.725	-74.123	05	694
+Ciudad Constitución	-9.865	-75.008	19	183
+Ciudad De Dios	-7.304	-79.477	13	667
+Ciudad Satelite	-16.431	-71.529	04	76410
+Coalaque	-16.651	-71.021	18	365
+Coasa	-13.987	-70.018	21
+Coata	-15.571	-69.949	21	460
+Coayllo	-12.733	-76.467	15	363
+Cocabamba	-6.6	-78.017	01
+Cocachacra	-17.088	-71.757	04	8799
+Cocachacra	-11.911	-76.54	15	763
+Cocas	-13.276	-75.373	09	158
+Cochabamba	-9.786	-76.16	10	922
+Cochabamba	-9.095	-76.837	10	588
+Cochabamba	-9.802	-76.815	10	538
+Cochabamba	-9.494	-77.859	02	470
+Cochabamba	-6.474	-78.886	06
+Cochamal	-6.406	-77.583	01	104
+Cochamarca	-10.862	-77.129	15	424
+Cochapetí	-9.987	-77.646	02	255
+Cocharcas	-13.611	-73.739	03	529
+Cochas	-10.034	-76.502	10	792
+Cochas	-11.66	-75.102	12	488
+Cochas	-12.295	-76.16	15	262
+Codo del Pozuzo	-9.673	-75.462	10	871
+Coishco	-9.023	-78.616	02	15083
+Cojata	-15.015	-69.365	21	1490
+Colasay	-5.979	-79.069	06	975
+Colaya	-6.084	-79.509	14	654
+Colca	-13.713	-74.034	05	714
+Colca	-12.318	-75.223	12
+Colcabamba	-14.006	-73.255	03	532
+Colcabamba	-9.595	-77.809	02	359
+Colcabamba	-12.411	-74.681	09
+Colcamar	-6.301	-77.972	01
+Colcha	-13.852	-71.803	08	194
+Coletas	-4.851	-80.001	20	599
+Collazos	-14	-75.765	11	963
+Collonce	-6.283	-78.211	01	628
+Collud	-6.787	-79.771	14	580
+Colonia	-12.633	-75.891	15	190
+Colpas	-10.269	-76.414	10	361
+Colquemarca	-14.284	-72.04	08
+Colquepata	-13.36	-71.673	08	559
+Colta	-15.163	-73.294	05	324
+Comas	-11.718	-75.082	12	967
+Combapata	-14.101	-71.429	08	3472
+Compañia	-13.069	-74.255	05	821
+Compín	-7.699	-78.626	13	557
+Conayca	-12.52	-75.007	09
+Concacha	-13.551	-72.798	03	663
+Concepción	-11.918	-75.314	12	11330
+Concepción	-13.533	-73.875	05	365
+Conchamarca	-10.038	-76.215	10	358
+Concho	-11.725	-75.571	12
+Conchopata	-14.47	-71.198	08	3977
+Conchucos	-8.269	-77.852	02
+Conchán	-6.444	-78.656	06	419
+Concordia	-4.567	-74.783	16
+Condoroma	-15.3	-71.138	08
+Conduriri	-16.622	-69.709	21
+Congalla	-12.956	-74.493	09	675
+Congas	-10.336	-77.442	02	607
+Congona	-6.836	-78.222	06	619
+Conima	-15.458	-69.438	21	803
+Cono Norte	-16.324	-71.582	04	47347
+Contamana	-7.333	-75.017	16	20900
+Contumazá	-7.366	-78.805	06
+Copa	-10.372	-77.487	02	491
+Copa	-10.388	-77.08	15	481
+Copa Chico	-9.28	-77.567	02	512
+Copani	-16.4	-69.04	21
+Coporaque	-14.8	-71.532	08	265
+Coporaque	-15.627	-71.646	04
+Coracora	-15.033	-73.783	05	7420
+Corani	-13.869	-70.604	21	340
+Corcona	-11.91	-76.58	15	977
+Corculla	-15.262	-73.2	05	303
+Corire	-16.224	-72.471	04
+Coris	-9.833	-77.75	02	453
+Coronado	-5.47	-80.733	20	763
+Corongo	-8.583	-77.917	02
+Corpanqui	-10.285	-77.199	02	597
+Cosos	-16.058	-72.487	04	544
+Cospán	-7.427	-78.542	06	665
+Costa Rica	-7.271	-76.673	22	653
+Cotabambas	-13.747	-72.356	03
+Cotahuasi	-15.213	-72.889	04
+Cotaparaco	-9.994	-77.588	02	395
+Cotaruse	-14.416	-73.205	03	539
+Coviriali	-11.291	-74.627	12	175
+Coya	-13.388	-71.9	08
+Coyllurqui	-13.837	-72.432	03
+Coyona	-5.301	-79.615	20	560
+Crucero	-14.361	-70.024	21	7413
+Cruz Blanca	-3.668	-80.424	24	726
+Cruz Blanca	-6.498	-79.869	14	514
+Cruz Blanca	-11.097	-77.592	15
+Cruz Pampa	-9.712	-76.773	10	639
+Cucho	-9.895	-76.019	10	772
+Cuchumbaya	-16.751	-70.686	18	683
+Cuenca	-12.433	-75.039	09	422
+Cuispes	-5.917	-77.933	01	364
+Cujillo	-6.117	-78.533	06
+Cullashpampa	-9.014	-77.81	02	693
+Cullcuyre	-14.093	-71.331	08	3593
+Cullhuas	-12.223	-75.172	12	559
+Culqui	-4.632	-80.005	20	609
+Cultambo	-7.333	-79.429	13	997
+Cumba	-5.933	-78.663	01
+Cumbibirá	-5.295	-80.733	20	811
+Cupi	-14.906	-70.867	21	317
+Cupisa	-13.682	-73.282	03	679
+Curahuasi	-13.55	-72.7	03
+Curasco	-14.062	-72.567	03
+Curgos	-7.86	-77.943	13
+Curibaya	-17.381	-70.334	23	135
+Curimaná	-8.434	-75.153	25
+Curimarca	-11.576	-75.333	12	632
+Curpahuasi	-14.064	-72.67	03	424
+Cusca	-8.513	-77.865	02	494
+Cusco	-13.532	-71.967	08	428450
+Cusco	-7.256	-76.476	22
+Cusipata	-13.907	-71.503	08
+Cutervo	-6.367	-78.85	06
+Cuyocuyo	-14.471	-69.537	21
+Cuyuchugo	-7.833	-78.393	13	528
+Cuñumbuqui	-6.511	-76.48	22
+Cóndor Cerro	-8.414	-77.486	02	534
+Córdova	-14.04	-75.184	09	379
+Daguas	-6.227	-77.741	01	50
+Desaguadero	-16.566	-69.042	21	5329
+Deustua	-15.641	-70.348	21
+Dos Palmas	-13.721	-75.962	11	862
+Dos Palos	-6.577	-80.033	14	506
+Dos Pueblos	-5.45	-80.767	20
+Dos Unidos	-7.179	-76.513	22	632
+Dos de Mayo	-7.184	-77.057	22	789
+Dos de Mayo	-6.717	-77.801	01	751
+Duraznopampa	-6.593	-77.808	01	249
+Echarate	-12.735	-72.616	08
+El Algarrobal	-17.623	-71.268	18	38
+El Alto	-4.269	-81.217	20	9303
+El Cardo	-16.603	-72.727	04	744
+El Carmen	-13.971	-75.729	11	991
+El Carmen	-13.497	-76.057	11
+El Descanso	-14.534	-71.307	08
+El Hornito	-7.419	-79.547	13	570
+El Ingenio	-14.645	-75.058	11	427
+El Mantaro	-11.822	-75.391	12
+El Papayo	-4.997	-80.316	20	953
+El Parco District	-5.624	-78.476	01
+El Pedregal	-16.363	-72.192	04	20063
+El Porvenir	-8.083	-79	13
+El Prado	-7.034	-79.011	06	259
+El Rosario	-11.785	-75.675	12	311
+El Sol	-11.044	-77.592	15	803
+El Tambo	-4.887	-81.004	20	937
+El Tambo	-12.067	-75.217	12
+El Triunfo ( El Cruce)	-16.493	-71.853	04	6386
+El Verde	-6.438	-79.736	14	566
+El Ñuro	-4.216	-81.172	20	973
+Encañada	-7.085	-78.343	06
+Esperanza Baja	-11.438	-77.224	15	784
+Espindola	-4.643	-79.492	20	688
+Esquena	-13.927	-69.953	21	642
+Estación de Pucará	-15.034	-70.338	21
+Estique	-17.542	-70.019	23	262
+Estique Pampa	-17.538	-70.032	23	402
+Eten	-6.908	-79.864	14	13693
+Fala	-6.674	-79.787	14	510
+Farías	-7.807	-79.225	13	614
+Ferreñafe	-6.639	-79.789	14	34357
+Florida ( Pomacochas)	-5.826	-77.97	01	3570
+Fonavi	-14.033	-75.737	11	6654
+Francisco de Orellana	-3.414	-72.769	16	924
+Frias	-4.93	-79.948	20
+Fátima	-5.072	-80.111	20	549
+Gallito	-3.835	-73.154	16	607
+Garbanzal	-3.611	-80.435	24	792
+Genaro Herrera	-4.907	-73.668	16
+Gorgor	-10.583	-77.033	15
+Gorgorillo	-10.335	-77.126	02	500
+Goyllarisquizga	-10.474	-76.409	19
+Granada	-6.099	-77.627	01	143
+Guadalupe	-7.25	-79.483	13	25376
+Guadalupe	-13.986	-75.773	11
+Guadalupito	-8.95	-78.623	13
+Guzmango	-7.385	-78.896	06	222
+Habana	-6.082	-77.091	22
+Hacienda Huancane	-15.822	-70.886	21	7831
+Hacienda Pucala	-6.779	-79.603	14	6277
+Haquira	-14.213	-72.19	03
+Hatumplaya	-5.852	-77.238	22	696
+Herbay Bajo	-13.13	-76.395	15	635
+Hongos	-12.811	-75.765	15	371
+Honoria	-8.769	-74.709	10	787
+Horacio Zeballos Gamez	-16.492	-71.507	04	8365
+Huabal	-5.613	-78.9	06	732
+Huac Huas	-14.131	-74.942	05
+Huaca Rajada	-6.8	-79.602	14	566
+Huacachi	-9.316	-76.936	02	829
+Huacapampa	-6.925	-78.133	06	891
+Huacar	-10.16	-76.237	10
+Huacaschuque	-8.307	-78.005	02	242
+Huacaybamba	-9.038	-76.953	10
+Huacaña	-14.174	-73.886	05	395
+Huaccana	-13.388	-73.69	03	887
+Huacchis	-9.2	-76.788	02	485
+Huachac	-12.02	-75.341	12
+Huachis	-9.41	-77.1	02	734
+Huacho	-11.117	-77.606	15	54545
+Huacho	-9.306	-77.95	02	557
+Huachocolpa	-13.032	-74.947	09	892
+Huachocolpa	-12.048	-74.595	09
+Huachos	-13.22	-75.534	09	754
+Huachón	-10.636	-75.949	19
+Huacllán	-9.798	-77.675	02	332
+Huacoy	-11.856	-77.008	15	522
+Huacrachuco	-8.65	-77.083	10
+Huacrapuquio	-12.174	-75.219	12
+Huaja	-6.599	-76.738	22	920
+Hualcán	-9.256	-77.614	02	629
+Hualgayoc	-6.764	-78.607	06
+Hualhuas	-11.971	-75.251	12
+Huallanca	-8.818	-77.862	02	400
+Huallanca	-9.898	-76.941	02
+Huallhua	-12.42	-74.489	05
+Hualmay	-11.096	-77.614	15	26658
+Huamachuco	-7.8	-78.067	13	21768
+Huamali	-11.807	-75.424	12
+Huamancaca Chico	-12.08	-75.245	12	4019
+Huamanguilla	-14.074	-75.689	11	557
+Huamanguilla	-13.011	-74.173	05
+Huamanquiquia	-13.728	-74.273	05	518
+Huamantanga	-11.5	-76.749	15	595
+Huamatambo	-13.095	-75.677	09	174
+Huambalpa	-13.75	-73.931	05	433
+Huambo	-6.429	-77.538	01	680
+Huambo	-13.679	-74.192	05	565
+Huambo	-15.73	-72.108	04	530
+Huambos	-6.453	-78.961	06
+Huampara	-12.35	-76.183	15	241
+Huanca	-16.033	-71.878	04	929
+Huanca Huanca	-12.917	-74.611	09	853
+Huancabamba	-5.239	-79.451	20	8553
+Huancabamba	-13.734	-73.35	03
+Huancabamba	-10.35	-75.533	19
+Huancacarpa Alto	-5.134	-79.524	20	594
+Huancano	-13.6	-75.617	11	355
+Huancané	-15.201	-69.763	21	7544
+Huancaní	-11.864	-75.414	12
+Huancapallac	-9.894	-76.415	10
+Huancapi	-13.757	-74.067	05
+Huancarama	-13.645	-73.086	03
+Huancarane	-13.505	-71.654	08
+Huancaray	-13.759	-73.527	03	409
+Huancaraylla	-13.719	-74.102	05	573
+Huancarqui	-16.096	-72.473	04
+Huancas	-6.174	-77.865	01	803
+Huancas	-13.477	-73.372	03	559
+Huancaspata	-8.457	-77.298	13
+Huancavelica	-12.787	-74.973	09	49570
+Huancaya	-12.203	-75.799	15	629
+Huancayo	-12.069	-75.21	12	456250
+Huancayoc	-9.505	-76.998	02	533
+Huanchaco	-8.081	-79.119	13
+Huanchaquito Alto	-8.088	-79.097	13	7282
+Huanchar	-11.874	-75.319	12	644
+Huanchay	-9.733	-77.833	02	398
+Huanchay	-10.531	-77.422	02	64
+Huanchuy	-9.361	-78.154	02	695
+Huanchán	-9.943	-76.492	10	547
+Huancullani	-16.63	-69.322	21	2469
+Huancán	-12.106	-75.217	12
+Huando	-12.564	-74.947	09
+Huandoval	-8.331	-77.975	02	709
+Huangala	-4.841	-80.599	20	3739
+Huangascar	-12.9	-75.831	15	309
+Huangashanga	-6.865	-78.287	06	561
+Huanipaca	-13.492	-72.934	03	910
+Huanoquite	-13.683	-72.017	08
+Huanta	-12.933	-74.25	05	18627
+Huanta	-3.488	-72.052	16	756
+Huantashiri	-11.207	-74.523	12	639
+Huantán	-12.457	-75.812	15	549
+Huanuara	-17.314	-70.322	23	750
+Huanza	-11.657	-76.503	15
+Huaquirca	-14.34	-72.895	03	962
+Huaracayo	-11.352	-75.627	12	758
+Huaral	-11.495	-77.208	15	62174
+Huarancante	-15.768	-71.46	04	4638
+Huaranchal	-7.683	-78.45	13
+Huarango	-5.273	-78.776	06
+Huarango Mocho	-14.193	-75.696	11	625
+Huarapa	-9.77	-76.207	10	622
+Huaraz	-9.526	-77.529	02	118836
+Huari	-9.347	-77.171	02	4406
+Huariaca	-10.442	-76.19	19
+Huaribamba	-12.279	-74.938	09	787
+Huarichancara	-15.64	-71.061	04	4445
+Huaricolca	-11.512	-75.652	12
+Huaripampa	-8.952	-77.815	02	331
+Huaripampa	-11.808	-75.471	12
+Huarmaca	-5.566	-79.522	20
+Huarmey	-10.068	-78.152	02	16172
+Huaro	-13.688	-71.636	08
+Huarocondo	-13.413	-72.206	08
+Huaros	-11.407	-76.575	15	341
+Huarán	-13.313	-72.028	08	649
+Huasahuasi	-11.265	-75.647	12	5146
+Huasicaj	-6.22	-79.295	14	735
+Huasicancha	-12.332	-75.282	12	691
+Huasimal	-5.152	-80.167	20	755
+Huasmín	-6.838	-78.245	06	216
+Huaso	-8.225	-78.414	13	301
+Huasta	-10.124	-77.146	02	681
+Huata	-15.615	-69.971	21	823
+Huata	-9.016	-77.861	02	228
+Huatasani	-15.06	-69.802	21	1412
+Huaura	-11.07	-77.599	15	20723
+Huayacundo Arma	-13.534	-75.315	09	250
+Huayana	-14.051	-73.609	03	539
+Huayhuay	-11.723	-75.905	12
+Huaylas	-8.872	-77.893	02	576
+Huaylillas	-8.187	-77.345	13	598
+Huaylla	-10.149	-76.19	10	534
+Huayllabamba	-8.536	-77.568	02
+Huayllabamba	-13.338	-72.065	08
+Huayllacayán	-10.245	-77.435	02	258
+Huayllahuara	-12.409	-75.178	09	581
+Huayllapampa	-10.055	-77.535	02	679
+Huayllapampa	-7.217	-78.535	06	524
+Huayllati	-13.929	-72.485	03	515
+Huayllay	-11.004	-76.365	19
+Huayllay Grande	-12.942	-74.702	09
+Huayllo	-14.132	-73.269	03	178
+Huayllán	-8.858	-77.436	02
+Huayna Alcalde	-14.27	-71.096	08	4298
+Huaynacotas	-15.127	-72.81	04	849
+Huayo	-10.49	-76.372	19	584
+Huaypira	-4.645	-80.538	20	695
+Huayrapata	-15.321	-69.341	21
+Huaytará	-13.604	-75.353	09	818
+Huayucachi	-12.138	-75.223	12	5827
+Huayán	-9.875	-77.708	02	428
+Huepetuhe	-12.995	-70.525	17	4056
+Huertas	-11.76	-75.469	12	681
+Huicungo	-7.319	-76.776	22	6757
+Huipoca	-8.978	-75.447	25
+Huiyán	-9.847	-76.001	10	549
+Humay	-13.723	-75.887	11	662
+Huyro	-13.007	-72.554	08
+Huántar	-9.452	-77.175	02	859
+Huánuco	-9.929	-76.24	10	196627
+Iberia	-11.406	-69.493	17	4386
+Iberia	-5.667	-74.15	16
+Ica	-14.075	-75.734	11	282407
+Ichic Huaylas	-9.037	-77.815	02	503
+Ichocán	-7.368	-78.13	06	616
+Ichupampa	-15.65	-71.687	04	710
+Ichuña	-16.141	-70.538	18
+Iguara	-14.371	-69.499	21	877
+Ihuari	-11.189	-76.951	15	426
+Ilabaya	-17.421	-70.513	23	9492
+Ilave	-16.083	-69.667	21	22200
+Ilo	-17.632	-71.341	18	53476
+Imperial	-13.059	-76.353	15	32344
+Inahuaya	-7.15	-75.283	16
+Incahuasi	-6.237	-79.315	14	644
+Inchupalla	-15.009	-69.682	21	267
+Incuyo	-15.249	-73.571	05	776
+Independencia	-11.99	-77.046	15	3987
+Independencia	-13.7	-76.033	11
+Indiana	-3.5	-73.051	16
+Ingata	-14.262	-71.899	08	355
+Ingenio	-11.89	-75.266	12	963
+Inguer	-6.246	-79.069	06	748
+Inguilpata	-6.241	-77.957	01	410
+Insculas	-5.756	-79.859	14	676
+Iparia	-9.305	-74.441	25
+Iquipi	-15.94	-73.131	04	362
+Iquitos	-3.748	-73.253	16	377609
+Iray	-15.854	-72.63	04	305
+Iscos	-12.098	-75.293	12	695
+Iscozacín	-10.186	-75.15	19
+Islandia	-4.353	-70.041	16
+Islay (Matarani)	-16.996	-72.101	04	4823
+Ispacas	-15.758	-72.919	04	820
+Ite	-17.861	-70.965	23	998
+Izcuchaca	-12.501	-74.997	09	580
+Iñapari	-10.955	-69.582	17	959
+Jacas Grande	-9.54	-76.736	10	478
+Jacobo Hunter	-16.441	-71.553	04	46092
+Jacocha	-5.192	-79.53	20	624
+Jamalca	-5.867	-78.262	01
+Jambur	-4.608	-79.945	20	966
+Jangas	-9.402	-77.576	02
+Janjaillo	-11.765	-75.611	12	91
+Jaquí	-15.477	-74.442	04
+Jardin	-13.162	-74.213	05
+Jarpa	-12.126	-75.436	12
+Jatun Orcochiri	-15.75	-71.346	04	4358
+Jauja	-11.776	-75.497	12	21057
+Jayanca	-6.391	-79.822	14	6126
+Jayobamba	-14.094	-71.339	08	3593
+Jayune	-15.563	-71.303	04	4256
+Jaén	-5.707	-78.808	06	52493
+Jeberos	-5.283	-76.283	16
+Jecuán	-11.469	-77.271	15	741
+Jepelacio	-6.117	-76.95	22	7150
+Jesus Maria	-12.07	-77.045	15	66171
+Jesús	-7.25	-78.38	06
+Jilili	-4.583	-79.797	20	351
+Jimbe	-9.013	-78.138	02
+Jircan	-9.247	-76.718	10	282
+Jivia	-10.024	-76.679	10	405
+Jorobamba	-5.853	-78.614	01	544
+José Leonardo Ortiz	-6.743	-79.851	14
+Juan Guerra	-6.583	-76.33	22
+Juanjuí	-7.177	-76.728	22	37715
+Jucul	-10.949	-76.745	15	235
+Julcamarca	-13.014	-74.445	09	816
+Julcan	-11.76	-75.436	12	845
+Juli	-16.217	-69.45	21	8566
+Juliaca	-15.5	-70.133	21	245675
+Junín	-11.159	-75.993	12	15320
+Junín Pablo	-8.852	-74.201	25	689
+Juzgara	-5.293	-79.475	20	768
+Kana	-13.808	-70.319	21	501
+Kelluyo	-16.727	-69.25	21
+Kimbiri	-12.619	-73.788	05	4369
+Kishuara	-13.691	-73.118	03	857
+La Arena	-5.347	-80.711	20
+La Banda	-6.493	-76.342	22	24932
+La Breita	-4.257	-80.886	20	17693
+La Caleta Culebras	-9.949	-78.225	02
+La Capilla	-16.757	-71.179	18	214
+La Coipa	-5.393	-78.906	06
+La Colorada	-6.493	-79.998	14	720
+La Colpa	-7.835	-78.064	13	603
+La Cuesta	-7.919	-78.705	13	75
+La Curva	-17.144	-71.821	04
+La Esmeralda	-5.009	-81.065	20	590
+La Esmeralda	-12.683	-74.587	09
+La Esperanza	-6.593	-78.895	06	179
+La Esperanza	-8.076	-79.044	13
+La Esperanza	-17.995	-70.248	23
+La Floresta	-5.573	-78.806	06	518
+La Florida	-5.949	-77.342	22	768
+La Florida	-6.869	-79.123	06	592
+La Grama	-7.464	-78.129	06	535
+La Horca	-4.779	-80.593	20	839
+La Huaca	-4.912	-80.96	20	8468
+La Huaca	-11.527	-77.199	15	687
+La Jalca	-6.486	-77.815	01
+La Joya	-12.616	-69.226	17	545
+La Joya	-16.424	-71.818	04
+La Legua - San Jacinto	-5.236	-80.659	20	7548
+La Libertad	-16.38	-71.569	04
+La Libertad de Pallán	-6.724	-78.282	06
+La Matanza	-5.213	-80.091	20	5828
+La Merced	-12.788	-74.359	09	647
+La Merced	-9.735	-77.617	02	307
+La Merced	-11.061	-75.335	12
+La Molina	-12.083	-76.95	15
+La Morada	-8.791	-76.249	10	653
+La Noria	-4.796	-80.745	20	614
+La Nueva Esperanza	-11.834	-75.328	12	561
+La Oroya	-11.519	-75.899	12	33345
+La Otra Banda	-6.942	-79.58	14	586
+La Pampa	-8.662	-77.901	02	857
+La Pampa	-16.486	-71.524	04	697
+La Pampa	-16.614	-72.699	04
+La Pared	-6.558	-79.806	14	506
+La Pareja	-5.31	-79.735	20	950
+La Peca	-5.611	-78.435	01	27045
+La Peña	-3.669	-80.454	24	634
+La Planchada	-16.401	-73.222	04	516
+La Portada de la Sierra	-7.338	-79.384	13	709
+La Pradera	-6.779	-79.886	14	10072
+La Quebrada	-4.963	-80.583	20	879
+La Quinua	-10.617	-76.179	19	831
+La Ramada	-6.253	-78.576	06
+La Raya	-6.518	-79.836	14	867
+La Rinconada	-14.631	-69.446	21	29678
+La Rinconada Ana Maria (La Rinconada)	-14.634	-69.447	21	12183
+La Sacilia	-6.007	-78.7	06
+La Soledad	-8.028	-77.474	13	997
+La Tinguiña	-14.036	-75.7	11
+La Traposa	-6.423	-79.574	14	767
+La Unión	-5.402	-80.742	20	34834
+La Unión	-9.827	-76.802	10	4788
+La Victoria	-7.135	-76.742	22	644
+La Viña	-5.047	-80.156	20	723
+La Viña	-6.371	-79.764	14	722
+Lacabamba	-8.26	-77.898	02	378
+Lachaqui	-11.553	-76.627	15	766
+Lagunas	-5.227	-75.675	16	9197
+Lagunas	-4.789	-79.844	20	246
+Lahuaytambo	-12.1	-76.4	15	383
+Lajas	-6.56	-78.735	06
+Lamas	-6.417	-76.533	22	13693
+Lamay	-13.365	-71.92	08
+Lambayeque	-6.701	-79.906	14	43710
+Lambrama	-13.871	-72.77	03	650
+Lampa	-15.35	-70.367	21	4780
+Lampa	-15.184	-73.349	05	353
+Lampian	-11.237	-76.839	15	329
+Lamud	-6.137	-77.954	01
+Langa	-12.126	-76.421	15	548
+Langui	-14.432	-71.273	08	3969
+Lanlacuni Bajo	-13.439	-70.402	21
+Laramarca	-13.948	-75.035	09	796
+Laramate	-14.286	-74.843	05
+Laraos	-12.348	-75.787	15	530
+Laraos	-11.665	-76.539	15
+Laraqueri	-16.133	-70.05	21
+Laredo	-8.09	-78.96	13	24691
+Lares	-13.104	-72.044	08	522
+Lari	-15.622	-71.769	04
+Laria	-12.561	-75.037	09	496
+Las Canteras	-6.719	-79.598	14	839
+Las Flores de Mamonaquihua	-6.663	-76.466	22	625
+Las Huacas	-13.49	-76.113	11	553
+Las Lomas	-4.653	-80.247	20	9450
+Las Mónicas	-4.93	-80.285	20	543
+Las Nazarenas	-13.155	-74.216	05	14316
+Las Palmas	-6.527	-76.343	22	942
+Las Palmas	-9.384	-76.005	10
+Las Pirias	-5.627	-78.853	06	778
+Las Salinas	-12.544	-76.723	15	520
+Las Yaras	-17.864	-70.561	23	585
+Laylla	-11.381	-74.59	12
+Layo	-14.494	-71.155	08	3978
+Ledoy	-7.129	-76.649	22	922
+Leoncio Prado	-6.984	-76.259	22	705
+Leticia	-11.377	-75.752	12
+Levanto	-6.308	-77.899	01	485
+Licupis	-6.424	-79.242	06	193
+Lima	-12.043	-77.028	LMA	7737002
+Lima Pampa	-14.09	-71.337	08	3569
+Limatambo	-13.48	-72.443	08
+Limbani	-14.15	-69.691	21
+Limoncarro	-7.301	-79.417	13	3758
+Lincha	-12.799	-75.665	15	198
+Linderos	-5.691	-78.801	06	750
+Lircay	-13	-74.717	09
+Lishinas	-6.037	-79.136	06	581
+Lives	-7.079	-79.041	06	507
+Livitaca	-14.313	-71.689	08	948
+Llacanora	-7.194	-78.427	06	648
+Llaclla	-10.299	-77.146	02	487
+Llacllin	-10.069	-77.621	02	723
+Llacta	-9.03	-77.828	02	553
+Llalli	-14.933	-70.881	21
+Llama	-6.515	-79.12	06	968
+Llama	-8.915	-77.301	02	175
+Llapa	-6.98	-78.807	06	732
+Llapo	-8.514	-78.042	02	679
+Llata	-9.417	-76.783	10	4585
+Llata	-9.55	-76.816	10
+Llauta	-14.244	-74.92	05	267
+Llipa	-10.381	-77.207	02	627
+Llipata	-14.563	-75.207	11	336
+Llique	-14.534	-72.135	08	507
+Llochegua	-12.414	-73.91	05
+Llocllapampa	-11.817	-75.624	12	643
+Llongasora	-15.64	-71.299	04	4753
+Lloque	-16.333	-70.733	18	466
+Lluchubamba	-7.522	-77.971	06
+Llusco	-14.339	-72.115	08	967
+Lluta	-16.015	-72.014	04	5998
+Lobitos	-4.457	-81.285	20
+Locroja	-12.74	-74.442	09
+Locumba	-17.613	-70.763	23	993
+Longar	-6.385	-77.546	01	957
+Longar	-14.009	-75.747	11	548
+Longotea	-7.067	-77.917	13
+Longuita	-6.414	-77.969	01	198
+Lonya Chico	-6.229	-77.955	01	345
+Lonya Grande	-6.095	-78.421	01
+Los Angeles	-5.937	-77.013	22	698
+Los Aquijes	-14.097	-75.691	11	7848
+Los Baños del Inca	-7.164	-78.465	06
+Los Medanos	-16.489	-71.815	04	641
+Los Organos	-4.178	-81.125	20
+Los Palos	-18.286	-70.439	23
+Lucanas	-14.622	-74.233	05
+Lucma	-7.641	-78.551	13	652
+Lucma	-13.053	-72.937	08	395
+Lucma	-8.919	-77.411	02	146
+Lucmapampa	-6.941	-78.092	06	214
+Lucre	-13.95	-73.226	03	119
+Lucre	-13.636	-71.737	08
+Luricocha	-12.899	-74.274	05
+Luya	-6.164	-77.945	01
+Maca	-15.641	-71.769	04	908
+Macabí Alto	-7.716	-79.369	13	666
+Macacará	-4.918	-80.86	20	567
+Macachacra	-12.983	-74.2	05	466
+Macari	-14.772	-70.903	21
+Macate	-8.76	-78.06	02	321
+Machaguay	-15.649	-72.506	04	370
+Mache	-8.03	-78.535	13	708
+Machupicchu	-13.155	-72.524	08	4446
+Maco	-11.486	-75.551	12	932
+Macuaco	-6.802	-79.238	14	679
+Macusani	-14.083	-70.433	21	11242
+Madean	-12.944	-75.777	15	258
+Madrigal	-15.608	-71.808	04	690
+Magdalena	-6.373	-77.902	01	694
+Magdalena	-7.251	-78.659	06
+Maino	-6.337	-77.88	01	473
+Mala	-12.658	-76.631	15	17260
+Maldonadillo	-10.74	-73.725	25	929
+Malingas	-4.953	-80.251	20	775
+Mallay	-10.723	-76.872	15	522
+Malvas	-9.93	-77.658	02	362
+Mamara	-14.229	-72.59	03	663
+Mamonaquihua	-6.658	-76.439	22	556
+Manacamiri	-3.72	-73.283	16	607
+Manchaybamba	-13.589	-73.334	03	797
+Mancos	-9.191	-77.713	02
+Mangas	-10.369	-77.103	02	454
+Manta	-12.62	-75.211	09	362
+Mantaro	-12.322	-73.94	08	729
+Manuel Antonio Mesones Muro	-6.644	-79.738	14
+Mara	-14.086	-72.102	03
+Maranganí	-14.357	-71.169	08	3709
+Maranura	-12.964	-72.664	08	730
+Maras	-13.335	-72.157	08
+Maravillas	-6.536	-79.885	14	517
+Maray	-10.936	-76.834	15	240
+Marca	-10.088	-77.475	02	635
+Marcabal	-7.7	-78.033	13	447
+Marcabamba	-15.151	-73.342	05	442
+Marcaja	-16.226	-68.97	21
+Marcapata	-13.59	-70.972	08
+Marcapomacocha	-11.407	-76.336	12	358
+Marcará	-9.323	-77.604	02
+Marcas	-12.889	-74.4	09	680
+Marcavelica	-4.878	-80.705	20	25645
+Marco	-11.741	-75.563	12
+Margos	-10.006	-76.522	10
+Mariano Melgar	-16.399	-71.503	04
+Marias	-9.606	-76.706	10
+Mariatana	-12.25	-76.333	15	268
+Mariposa	-11.406	-74.752	12	510
+Mariscal Benavides	-6.387	-77.504	01	928
+Mariscal Castilla	-7.299	-79.408	13	851
+Mariscal Castilla	-6.898	-76.262	22	501
+Mariscal Cáceres	-12.534	-74.933	09	760
+Mariscal Cáceres	-12.39	-74.858	09
+Mariscal La Mar	-7.268	-79.408	13	530
+Mariátegui	-6.71	-79.858	14	794
+Masanca	-7.376	-79.478	13	771
+Masin	-9.366	-77.097	02
+Masisea	-8.605	-74.305	25
+Masma	-11.787	-75.429	12	785
+Masma Chicche	-11.786	-75.382	12	354
+Massiapo	-14.09	-69.243	21
+Matacoto	-9.177	-77.747	02	218
+Matahuasi	-11.894	-75.344	12
+Matalaque	-16.482	-70.826	18	349
+Matapalo	-3.682	-80.199	24	343
+Matará	-7.255	-78.26	06	763
+Matucana	-11.85	-76.4	15	4517
+Maucallacta	-13.558	-73.492	03	595
+Mavila	-11.934	-69.119	17	978
+Maya	-9.288	-77.678	02	635
+Mayas	-8.27	-77.662	02	643
+Mayocc	-12.806	-74.39	09	711
+Mazamari	-11.326	-74.531	12	6826
+Mazo Cruz	-16.742	-69.716	21	829
+Mazuko	-13.1	-70.367	17	3586
+Mañazo	-15.8	-70.333	21
+Mejía	-17.102	-71.906	04	683
+Mendoza	-6.394	-77.482	01
+Menocucho	-8.023	-78.839	13	681
+Milpuc	-6.494	-77.435	01	386
+Minas de Marcona	-15.212	-75.11	11	15478
+Miracosta	-6.405	-79.284	06	180
+Miraflores	-12.113	-77.033	15	187401
+Miraflores	-5.165	-80.614	20	859
+Miraflores	-5.91	-77.369	22	645
+Miraflores	-4.842	-80.689	20	631
+Miraflores	-12.274	-75.85	15	322
+Miraflores	-9.494	-76.819	10
+Miraflores	-16.398	-71.52	04
+Miramar	-8.179	-78.994	13	9614
+Mirave	-17.479	-70.549	23	564
+Mirgas	-9.079	-77.093	02	654
+Miricharo	-11.014	-75.012	12	708
+Mishqui	-9.259	-77.66	02	545
+Mito	-11.937	-75.339	12	660
+Mitupampa	-5.33	-79.481	20	517
+Moche	-8.171	-79.009	13	22581
+Mochumí	-6.544	-79.862	14	7460
+Mocupe	-6.989	-79.619	14
+Mocán	-7.656	-79.241	13	915
+Moho	-15.35	-69.5	21
+Molino	-9.912	-76.015	10
+Molinos	-11.738	-75.446	12	754
+Mollebamba	-14.429	-72.915	03	560
+Mollebaya	-16.488	-71.467	04	426
+Mollendo	-17.023	-72.015	04	28953
+Mollepampa	-13.3	-75.4	09	141
+Mollepata	-8.193	-77.958	13	179
+Mollepata	-13.509	-72.528	08
+Monobamba	-11.361	-75.327	12	344
+Monsefú	-6.874	-79.869	14	25707
+Monte Bello	-6.165	-75.167	16	645
+Monte Hermoso	-6.47	-79.957	14	651
+Monte Israel	-3.884	-71.442	16	6000
+Montero	-4.631	-79.829	20
+Monterrico	-12.825	-73.592	08	551
+Montevideo	-6.618	-77.823	01	619
+Moquegua	-17.197	-70.936	18	69882
+Morales	-6.48	-76.385	22
+Morcolla	-14.109	-73.872	05	511
+Moro	-9.139	-78.182	02
+Morococha	-11.588	-76.063	12	7890
+Morropón	-5.187	-79.971	20	12307
+Mosca	-10.343	-76.292	10	775
+Mosoc Cancha	-14.285	-71.088	08	4450
+Mosoc Llacta	-14.12	-71.473	08	3802
+Motupe	-6.152	-79.714	14	13681
+Moya	-12.423	-75.154	09	693
+Moyobamba	-6.034	-76.974	22	50073
+Moyobamba	-14.376	-73.893	05	596
+Mucllo	-11.619	-75.09	12	365
+Mungui	-15.183	-72.906	04	219
+Muqui	-11.834	-75.435	12
+Muquiyauyo	-11.814	-75.455	12
+Muruhuay	-11.349	-75.653	12	850
+Musga	-8.906	-77.339	02
+Muñani	-14.768	-69.953	21
+Máncora	-4.108	-81.047	20	9101
+Mórrope	-6.535	-80.011	14	6662
+Namballe	-5.004	-79.089	06
+Namora	-7.202	-78.325	06
+Nanchoc	-6.96	-79.242	06	264
+Naranjillo	-9.249	-75.994	10
+Naranjitos	-5.818	-78.276	01	666
+Naranjos	-5.743	-77.497	22
+Nauta	-4.506	-73.58	16	14646
+Nauta	-6.655	-76.731	22	680
+Navarro	-6.333	-75.75	22	498
+Naván	-10.839	-77.011	15	362
+Nazca	-14.831	-74.939	11	23556
+Negritos	-4.654	-81.305	20
+Nepeña	-9.172	-78.359	02
+Nicasio	-15.236	-70.261	21	433
+Niepos	-6.927	-79.129	06	638
+Ninabamba	-6.65	-78.788	06
+Ninacaca	-10.85	-76.117	19
+Nueva Arica	-6.873	-79.343	14
+Nueva Cajamarca	-5.941	-77.308	22
+Nueva Esperanza	-3.642	-80.607	24	699
+Nueva Luz	-11.468	-73.032	08	689
+Nueva Requena	-8.311	-74.862	25
+Nueva Santa Cruz	-5.868	-77.422	22	501
+Nueva Vida	-5.552	-76.693	16	740
+Nuevo Andoas	-2.808	-76.455	16	624
+Nuevo Celedin	-6.586	-76.537	22	741
+Nuevo Horizonte	-5.836	-78.526	01	555
+Nuevo Imperial	-13.075	-76.317	15	32344
+Nuevo Lima	-7.1	-76.472	22
+Nuevo Occoro	-12.595	-75.02	09
+Nuevo Progreso	-8.452	-76.324	10
+Nuevo Reque	-6.88	-79.815	14	773
+Nuevo Sullana	-4.921	-80.727	20	5484
+Nuñoa	-14.477	-70.636	21	4271
+Obas	-9.795	-76.666	10
+Ocaña	-14.399	-74.823	05	572
+Ochonga	-11.317	-75.756	12	661
+Ocobamba	-13.483	-73.56	03	772
+Ocobamba	-12.872	-72.447	08	168
+Ocongate	-13.627	-71.385	08
+Ocoruro	-15.052	-71.129	08	158
+Ocoto Alto	-4.953	-80.393	20	948
+Ocoto Bajo	-4.928	-80.408	20	537
+Ocoyo	-14.008	-75.022	09	212
+Ocoña	-16.433	-73.108	04
+Ocros	-10.403	-77.397	02	840
+Ocros	-13.391	-73.915	05	592
+Ocucaje	-14.349	-75.669	11
+Ocuviri	-15.114	-70.909	21	823
+Oidor	-3.722	-80.459	24	645
+Ollachea	-13.794	-70.472	21
+Ollantaytambo	-13.257	-72.263	08	2000
+Olleros	-6.049	-77.646	01	104
+Olleros	-9.667	-77.466	02
+Olmos	-5.985	-79.745	14	9800
+Olto	-6.102	-77.959	01	498
+Omacha	-14.071	-71.74	08	398
+Omas	-12.517	-76.283	15	249
+Omate	-16.683	-70.983	18
+Omia	-6.468	-77.396	01	604
+Ondores	-11.084	-76.147	12	872
+Ongoy	-13.404	-73.67	03	230
+Onza de Oro	-5.488	-80.746	20	572
+Orcopampa	-15.266	-72.342	04	5643
+Orcotuna	-11.969	-75.308	12	4199
+Orellana	-6.9	-75.167	16
+Oronccoy	-13.38	-73.435	05
+Oropesa	-13.595	-71.764	08	4022
+Oropesa	-14.256	-72.555	03
+Orurillo	-14.728	-70.512	21
+Otoca	-14.49	-74.686	05	923
+Otuto	-7.516	-78.069	06	660
+Otuzco	-7.9	-78.583	13	10134
+Oventeni	-10.751	-74.22	25	895
+Oxahuay	-4.555	-79.785	20	640
+Oxamarca	-7.042	-78.068	06	449
+Oxapampa	-10.577	-75.402	19	12000
+Oyolo	-15.179	-73.185	05	622
+Oyotún	-6.844	-79.301	14	6330
+Oyón	-10.668	-76.772	15	6276
+Paca	-11.709	-75.518	12	769
+Pacaipampa	-4.995	-79.668	20
+Pacanga	-7.167	-79.5	13	8750
+Pacapausa	-14.949	-73.368	05	520
+Pacaraos	-11.186	-76.647	15	404
+Pacarán	-12.866	-76.055	15	918
+Pacasmayo	-7.401	-79.571	13	29165
+Pacaycasa	-13.057	-74.214	05	466
+Pacayhua	-9.99	-76.529	10	930
+Paccaritambo	-13.756	-71.956	08	734
+Paccha	-11.996	-75.209	12	805
+Paccha	-11.854	-75.507	12	665
+Paccha	-6.497	-78.424	06
+Paccha	-11.474	-75.96	12
+Paccha Huallhua	-13.852	-73.877	05	52
+Paccho	-10.957	-76.932	15	393
+Pachachupan	-9.789	-76.102	10	878
+Pachaconas	-14.223	-73.016	03	723
+Pachamarca	-12.515	-74.526	09
+Pachas	-9.707	-76.771	10
+Pachascucho	-11.755	-75.535	12	586
+Pacherrez	-6.778	-79.526	14	722
+Pachin Bajo	-7.886	-78.626	13	517
+Pachiza	-7.297	-76.772	22
+Pachía	-17.897	-70.155	23	380
+Paclas	-6.062	-77.977	01	365
+Pacllón	-10.234	-77.072	02	892
+Pacobamba	-13.616	-73.086	03	373
+Pacocha	-17.646	-71.345	18	7588
+Pacopampa	-6.337	-79.021	06	549
+Pacora	-6.429	-79.839	14
+Pacucha	-13.609	-73.344	03
+Paico	-14.038	-73.642	05	472
+Paiján	-7.733	-79.301	13	21128
+Paimas	-4.627	-79.945	20
+Paita	-5.089	-81.114	20	56151
+Pajarillo	-7.179	-76.688	22	912
+Palca	-15.237	-70.598	21	969
+Palca	-17.778	-69.96	23	189
+Palca	-11.346	-75.569	12
+Palcamayo	-11.295	-75.774	12
+Palco	-14.412	-74.651	05
+Palianñuñas	-12.04	-75.191	12	4049
+Pallanchacra	-10.415	-76.236	19
+Pallar Alto	-7.756	-77.906	13	729
+Pallar Bajo	-7.757	-77.899	13	516
+Pallasca	-8.253	-77.999	02
+Pallca	-12.657	-74.981	09
+Palmapampa	-12.768	-73.656	05
+Palo	-13.128	-76.303	15	664
+Palo Blanco	-5.402	-79.806	20	640
+Palo Blanco	-5.054	-80.088	20	501
+Palo Seco	-11.905	-75.327	12	517
+Palpa	-14.534	-75.186	11	5883
+Palpacachi	-13.872	-72.508	03	423
+Paltashaco	-5.103	-79.887	20	301
+Pampa Cangallo	-13.559	-74.195	05
+Pampa Elera Alta	-4.706	-80.12	20	737
+Pampa Elera Baja	-4.697	-80.148	20	691
+Pampa Hermosa	-7.2	-75.3	16
+Pampa Yanamayo	-14.002	-69.276	21	573
+Pampa de Tate	-14.145	-75.692	11	5180
+Pampachacra	-12.804	-74.921	09	559
+Pampachacra	-8.902	-77.246	02
+Pampachiri	-14.187	-73.545	03	690
+Pampacolca	-15.713	-72.574	04
+Pampaconga	-13.444	-72.387	08	627
+Pampahuasi	-14.101	-75.477	11	120
+Pampamarca	-14.146	-71.459	08	3811
+Pampamarca	-9.705	-76.703	10	544
+Pampamarca	-14.427	-73.207	03	520
+Pamparomas	-9.073	-77.982	02	411
+Pampas	-12.399	-74.868	09	5521
+Pampas	-9.667	-77.833	02	412
+Pampas	-13.229	-73.894	05	127
+Pampas	-8.195	-77.896	02
+Pampas Chico	-10.115	-77.398	02	248
+Pampas Grande	-9.655	-77.827	02
+Pampas del Carmen	-9.579	-76.795	10	685
+Panao	-9.898	-75.993	10
+Pancan	-11.749	-75.486	12	704
+Pangoa	-12.117	-73	08	6638
+Panti	-12.036	-74.774	12	606
+Pantoja	-0.964	-75.181	16	564
+Papaplaya	-6.209	-75.782	22	1276
+Papayal	-4.078	-80.737	24	5484
+Papayal	-3.571	-80.235	24
+Paracas	-13.867	-76.267	11	1196
+Paragsha- San Andres - Jose Carlos Mariategui	-10.671	-76.271	19	6316
+Paramonga	-10.667	-77.833	15	27631
+Paranshique	-7.831	-78.019	13	508
+Pararca	-15.217	-73.464	05
+Pararín	-10.05	-77.654	02	366
+Paras	-13.552	-74.628	05	638
+Paratia	-15.454	-70.599	21
+Paratushiali	-11.29	-74.699	12	563
+Parco	-11.801	-75.543	12	535
+Parcona	-14.042	-75.698	11
+Parcoy	-8.035	-77.482	13	903
+Pariacolca	-9.322	-77.993	02	561
+Pariacoto	-9.559	-77.891	02
+Pariahuanca	-9.365	-77.581	02	539
+Pariamarca	-11.493	-76.629	15	518
+Paric	-6.284	-79.134	06	553
+Parinari	-4.567	-74.433	16
+Parobamba	-8.696	-77.43	02	543
+Parrapos	-7.779	-78.769	13	628
+Paruro	-13.763	-71.849	08
+Pasaraya	-6.765	-76.815	22
+Patambuco	-14.36	-69.619	21	455
+Patay	-11.31	-75.57	12	597
+Pataypampa	-14.177	-72.672	03	243
+Pativilca	-10.7	-77.783	15	13583
+Pativilca	-6.457	-79.666	14	760
+Paucamarca	-7.274	-78.16	06
+Paucar	-10.37	-76.445	19	702
+Paucarbamba	-12.554	-74.532	09	786
+Paucarbamba	-9.945	-76.223	10
+Paucarbambilla	-12.727	-74.481	09
+Paucarcolla	-15.745	-70.056	21	616
+Paucarpata	-16.433	-71.497	04
+Paucartambo	-10.773	-75.811	19	4438
+Paucartambo	-13.315	-71.594	08
+Paucas	-9.152	-76.898	02	868
+Pausa	-15.28	-73.346	05
+Pay Pay	-7.253	-79.235	06	535
+Pazos	-12.259	-75.07	09
+Pebas	-3.329	-71.855	16
+Pedregal	-5.242	-79.985	20	559
+Pedregal Chico	-5.301	-80.695	20	770
+Pedro Ruiz Gallo	-5.945	-77.98	01	5602
+Pelejo	-6.217	-75.817	22
+Penachi	-6.169	-79.475	14	512
+Perené	-10.949	-75.226	12	6844
+Phara	-14.152	-69.665	21
+Pichari	-12.5	-73.817	08	10655
+Pichigua	-14.681	-71.417	08	266
+Pichihua	-14.148	-73.174	03
+Pichirhua	-13.861	-73.074	03	128
+Pichiupata	-13.677	-73.076	03	610
+Pichos	-12.236	-74.939	09
+Picota	-6.92	-76.331	22	6697
+Picoy	-11.326	-75.689	12	627
+Picsi	-6.718	-79.77	14	43610
+Piedra Blanca	-17.971	-70.181	23	647
+Pilchaca	-12.401	-75.084	09	413
+Pilcomayo	-9.047	-77.811	02	13295
+Pilcomayo	-12.047	-75.249	12	8169
+Pilcuyo	-16.11	-69.554	21	769
+Pillcopata	-13.067	-71.167	08
+Pillpinto	-13.953	-71.762	08	587
+Pilluana	-6.777	-76.291	22	486
+Pilpichaca	-13.33	-74.977	09	673
+Pimentel	-6.837	-79.934	14	15552
+Pimpingos	-6.062	-78.758	06
+Pinchollo	-15.615	-71.839	04	579
+Pinra	-8.925	-77.015	10
+Pinto Recodo	-6.379	-76.604	22	1116
+Pira	-9.582	-77.708	02	510
+Pirca	-11.234	-76.656	15	489
+Pisac	-13.422	-71.847	08	2000
+Pisco	-13.71	-76.205	11	61869
+Piscoyacu	-6.98	-76.768	22
+Pitumarca	-13.98	-71.417	08
+Piura	-5.182	-80.657	20	630000
+Piura La Vieja	-5.152	-80.074	20	535
+Pizacoma	-16.909	-69.37	21
+Pión	-6.162	-78.483	06	471
+Platería	-15.949	-69.833	21	554
+Pocohuanca	-14.218	-73.087	03	332
+Pocollay	-17.996	-70.22	23
+Pocsi	-16.518	-71.39	04	203
+Polobaya	-16.566	-71.368	04
+Pomabamba	-8.833	-77.467	02	4453
+Pomabamba	-13.604	-74.235	05	437
+Pomacancha	-11.739	-75.624	12	63
+Pomacanchi	-14.027	-71.567	08
+Pomachaca	-11.384	-75.688	12	546
+Pomacocha	-14.084	-73.591	03	691
+Pomacocha	-12.874	-74.532	09	408
+Pomahuaca	-5.932	-79.23	06
+Pomalca	-6.767	-79.777	14
+Pomata	-16.273	-69.292	21
+Pona Alta	-5.898	-78.364	01	655
+Pongo de Caynarachi	-6.331	-76.284	22
+Pongobamba	-13.424	-72.038	08	548
+Ponto	-9.326	-77.004	02
+Poroto	-8.011	-78.768	13	753
+Poroy	-13.497	-72.043	08	961
+Posic	-6.014	-77.164	22
+Potoni	-14.39	-70.105	21	420
+Potrerillo	-4.7	-80.102	20	571
+Poyentimari	-12.327	-72.886	08	645
+Pozuzo	-10.067	-75.533	19
+Progreso	-14.072	-72.477	03	708
+Progreso Bajo	-4.955	-80.516	20	797
+Providencia	-6.297	-78.24	01	265
+Puca Cruz	-12.746	-74.629	09	625
+Pucacaca	-6.852	-76.342	22
+Pucallpa	-8.379	-74.554	25	326040
+Pucara	-15.98	-71.46	04	4335
+Pucará	-6.042	-79.13	06
+Pucará	-15.039	-70.368	21
+Pucará	-12.172	-75.145	12
+Pucayacu	-8.75	-76.121	10	776
+Pucusana	-12.483	-76.8	15
+Pucuto	-12.59	-74.9	09	507
+Pucyura	-13.479	-72.112	08
+Pueblo Libre	-4.942	-80.257	20	790
+Pueblo Libre	-9.111	-77.802	02
+Pueblo Nuevo	-5.717	-79.883	14	12471
+Pueblo Nuevo	-7.188	-79.515	13	5766
+Pueblo Nuevo	-5.238	-79.991	20	786
+Pueblo Nuevo	-9.079	-76.063	10
+Pueblo Nuevo	-14.128	-75.707	11
+Pueblo Nuevo	-17.615	-71.338	18
+Puente Viru	-8.425	-78.781	13	8995
+Puente de Los Serranos	-4.784	-80.61	20	861
+Puerta Pulache	-4.741	-80.159	20	736
+Puerto Alegría	-4.121	-70.053	16	553
+Puerto Alegría	-4.325	-77.215	16	502
+Puerto Amargura	-12.407	-73.906	05	543
+Puerto América	-4.728	-77.06	16	678
+Puerto Callao	-8.358	-74.574	25
+Puerto Casma	-9.461	-78.383	02	384
+Puerto Enrique	-5.92	-74.841	16	656
+Puerto Galilea	-4.015	-77.758	01
+Puerto Huarmey	-10.1	-78.17	02	810
+Puerto Inca	-9.377	-74.966	10
+Puerto Maldonado	-12.589	-69.199	17	85024
+Puerto Ocopa	-11.145	-74.308	12	915
+Puerto Rico	-6.992	-76.419	22
+Puerto Rosario de Laberinto	-12.717	-69.587	17	3660
+Puerto San Antonio	-12.216	-74.49	09
+Puerto Santa	-8.99	-78.646	02	14066
+Puerto de Lomas	-15.569	-74.85	04
+Pujocucho	-17.154	-70.357	23	4120
+Pullo	-15.21	-73.827	05	567
+Pulluri	-13.547	-73.285	03	615
+Pumachuco	-13.333	-73.739	03	597
+Pumahuasi	-9.185	-75.953	10
+Punchao	-9.462	-76.82	10
+Pundin	-5.224	-79.501	20	615
+Puno	-15.84	-70.022	21	128637
+Puno	-14.145	-75.708	11	637
+Punta Arena	-4.975	-80.537	20	937
+Punta Hermosa	-12.333	-76.817	15
+Punta de Bombón	-17.172	-71.792	04	6336
+Puquina	-16.624	-71.184	18	910
+Puquio	-14.7	-74.133	05	10491
+Pusi	-15.442	-69.929	21	909
+Putina	-14.917	-69.867	21	10750
+Putina	-15.475	-69.431	21	8118
+Putina Punco	-14.112	-69.048	21
+Puyca	-15.059	-72.692	04	676
+Puños	-9.497	-76.885	10
+Pátapo	-6.733	-79.636	14	15270
+Pías	-7.872	-77.547	13	544
+Pólvora	-7.908	-76.671	22	776
+Qquea	-14.183	-71.358	08	3482
+Quebrada Honda	-12.682	-72.278	08
+Quehue	-14.38	-71.455	08	257
+Quellouno	-12.637	-72.559	08
+Quemazon	-6.525	-79.975	14	588
+Quequeña	-16.557	-71.451	04	924
+Querco	-13.98	-74.976	09	505
+Querecotillo	-4.838	-80.646	20	25396
+Querobal	-7.841	-77.935	13	626
+Querobamba	-14.013	-73.84	05
+Querocotillo	-6.274	-79.038	06	901
+Querocoto	-6.359	-79.035	06	417
+Queromarca	-14.184	-71.383	08	3496
+Queropalca	-10.182	-76.803	10	863
+Quiaca	-14.422	-69.345	21	369
+Quicacha	-15.626	-73.798	04	312
+Quichas	-10.577	-76.767	15	654
+Quiches	-8.395	-77.491	02	627
+Quichuas	-12.469	-74.771	09	661
+Quichuay	-11.89	-75.286	12
+Quilahuani	-17.318	-70.258	23	3176
+Quilca	-16.717	-72.425	04	207
+Quilcapuncu	-14.893	-69.73	21
+Quilcas	-11.936	-75.26	12
+Quilcata	-15.246	-73.451	05	662
+Quilcate	-6.819	-78.724	06	509
+Quillabamba	-12.863	-72.693	08	25300
+Quillo	-9.329	-78.042	02	596
+Quillupampa	-8.188	-78.053	13	633
+Quilmaná	-12.949	-76.381	15	6442
+Quince Mil	-13.231	-70.754	08
+Quinches	-12.307	-76.143	15	809
+Quinistaquillas	-16.749	-70.88	18	524
+Quinjalca	-6.092	-77.678	01	143
+Quinocay	-12.367	-76.233	15	227
+Quinua	-13.049	-74.139	05
+Quinuabamba	-8.697	-77.399	02
+Quio	-10.216	-76.372	10	719
+Quipran	-9.496	-76.773	10	606
+Quiquijana	-13.823	-71.542	08
+Quiruvilca	-7.967	-78.2	13	9226
+Quishuar	-12.244	-74.777	09	854
+Quispe	-6.21	-78.286	01	734
+Quito-Arma	-13.529	-75.328	09
+Quivilla	-9.599	-76.725	10
+Quiñota	-14.312	-72.139	08	726
+Ragash	-8.532	-77.666	02
+Rahuapampa	-9.359	-77.079	02
+Raján	-10.387	-77.219	02	449
+Ramón Castilla	-4.261	-69.957	16	5495
+Ranracancha	-13.534	-73.605	03
+Ranrahirca	-9.173	-77.723	02	936
+Rapayan	-9.205	-76.761	02	801
+Raquía	-10.158	-77.47	02	332
+Raura	-10.451	-76.752	10	537
+Recuay	-9.722	-77.456	02
+Remanso	-2.408	-71.177	16
+Reque	-6.866	-79.818	14	9808
+Requena	-5.061	-73.85	16	25300
+Ricardo Palma	-11.92	-76.656	15	4842
+Ricrán	-11.543	-75.523	12	735
+Riecito	-4.718	-80.51	20	546
+Rioja	-6.057	-77.167	22	25057
+Roaboya	-7.764	-74.929	16	805
+Rocchacc	-13.44	-73.6	03
+Rondobamba	-9.023	-76.979	10	524
+Rondocán	-13.779	-71.782	08	289
+Rondos	-9.984	-76.689	10	709
+Roque	-6.4	-76.8	22
+Rosario	-12.618	-73.845	05	884
+Rosario	-12.721	-74.582	09
+Rosario de Yauca	-14.135	-75.574	11	531
+Rosaspata	-15.234	-69.527	21	478
+Rumisapa	-6.449	-76.472	22
+Río Blanco	-13.435	-73.822	03	307
+Río Chari Alto	-11.089	-74.652	12	828
+Río Grande	-14.516	-75.199	11	4689
+Río Negro	-11.209	-74.659	12
+Río Seco	-10.91	-75.293	12	538
+Sabaino	-14.313	-72.945	03	737
+Sabandia	-16.467	-71.5	04
+Sacanche	-7.069	-76.715	22
+Sachaca	-16.427	-71.566	04
+Sacsamarca	-13.943	-74.313	05	977
+Sacsamarca	-11.415	-75.723	12	679
+Sacuaya	-16.759	-70.714	18	656
+Salala	-5.112	-79.465	20	716
+Salamanca	-7.821	-79.274	13	887
+Salamanca	-15.505	-72.834	04	547
+Salas	-6.275	-79.604	14
+Salaverry	-8.221	-78.977	13	10066
+Salcabamba	-12.202	-74.781	09	208
+Salcahuasi	-12.104	-74.752	09	377
+Salinera Colán	-5.033	-81.067	20	14210
+Salitral	-4.857	-80.681	20	5385
+Sallacconi	-14.138	-69.993	21	808
+Sallique	-5.657	-79.316	06	894
+Salpo	-8.005	-78.606	13	709
+Salvación	-12.836	-71.365	17	330
+Sama Grande	-17.791	-70.5	23	826
+Samanco	-9.262	-78.496	02
+Samaniato	-12.66	-73.7	08	506
+Samegua	-17.179	-70.899	18
+Samito	-3.858	-73.583	16	596
+Samne	-7.991	-78.681	13	554
+Samán	-6.139	-75.042	16	575
+Samán	-15.292	-70.017	21	407
+San Agustin	-11.99	-75.244	12	5998
+San Agustin de Huayopampa	-11.353	-76.824	15	590
+San Alejandro	-8.829	-75.213	25	3594
+San Andrés	-13.729	-76.221	11
+San Andrés de Cutervo	-6.238	-78.713	06
+San Antonio	-17.217	-70.926	18	15633
+San Antonio	-14.283	-75.652	11	523
+San Antonio	-14.17	-72.623	03	314
+San Antonio	-6.367	-76.35	22
+San Antonio de Cheni	-11.271	-73.695	12	658
+San Antonio de Cusicancha	-13.503	-75.294	09
+San Antonio de Esquilache	-16.102	-70.286	21	17
+San Antonio de Ocopa	-11.836	-75.291	12	174
+San Antonio de Rancas	-10.687	-76.249	19
+San Antonio del Estrecho	-2.45	-72.669	16	8000
+San António	-3.811	-71.571	16	766
+San Bartolo	-12.383	-76.783	15	5733
+San Bartolomé	-11.911	-76.53	15	896
+San Benito	-7.425	-78.927	06	546
+San Bernardino	-7.169	-78.828	06	179
+San Buenaventura	-8.767	-77.186	10	420
+San Buenaventura	-11.489	-76.662	15	134
+San Carlos	-5.967	-77.933	01	295
+San Clemente	-13.667	-76.15	11	15815
+San Cristobal	-16.74	-70.706	18	879
+San Cristobal de Jacas Chico	-9.886	-76.503	10	667
+San Cristóbal	-11.735	-76.063	12	845
+San Cristóbal	-5.41	-79.587	20	544
+San Cristóbal	-14.743	-74.222	05
+San Damián	-12.017	-76.392	15	818
+San Felipe	-5.77	-79.314	06	382
+San Fernando	-8.398	-74.538	25	67844
+San Fernano	-5.901	-77.271	22
+San Francisco	-8.276	-74.641	25	1263
+San Francisco	-13.482	-76.082	11	586
+San Francisco	-12.625	-73.788	05
+San Francisco De Borja	-12.089	-76.999	15	105076
+San Francisco de Ravacayco	-14.997	-73.351	05	174
+San Francisco de Sangayaico	-13.795	-75.248	09
+San Genaro	-13.194	-75.142	09	886
+San Gregorio	-7.057	-79.095	06	189
+San Gregorio	-16.573	-72.716	04
+San Ignacio	-5.146	-79.001	06	7912
+San Isidro	-12.097	-77.043	15	68309
+San Isidro	-3.865	-71.353	16	621
+San Jacinto	-16.591	-72.707	04	894
+San Jacinto	-4.843	-80.876	20
+San Jacinto	-3.642	-80.447	24
+San Javier de Alpabamba	-15.057	-73.322	05	80
+San Jeronimo De Tunan	-11.956	-75.284	12	8772
+San Jerónimo	-13.651	-73.364	03	5609
+San Joaquín	-12.284	-76.146	15	260
+San Joaquín de Omaguas	-4.271	-73.412	16	597
+San Jose De Sisa	-6.614	-76.693	22	6546
+San José	-6.738	-79.827	14	7434
+San José	-8.335	-74.596	25	1939
+San José	-6.295	-78.479	06	541
+San José	-16.618	-72.737	04
+San José	-14.682	-70.159	21
+San José de Andaychagua	-11.751	-76.012	12	679
+San José de Huarcaya	-13.827	-74.385	05	557
+San José de Lourdes	-5.105	-78.914	06
+San José de Quero	-12.085	-75.536	12	383
+San José de Saramuro	-4.718	-74.922	16	946
+San José de Secce	-12.766	-74.253	05	625
+San José de Tomate	-14.338	-74.777	05	538
+San José de Ushua	-15.225	-73.227	05	127
+San José del Alto	-5.465	-79.018	06
+San Juan	-3.776	-73.281	16	78153
+San Juan	-15.365	-75.162	11	12795
+San Juan	-8.323	-74.604	25	1528
+San Juan	-7.292	-78.498	06	908
+San Juan	-14.66	-74.202	05	712
+San Juan	-13.203	-75.635	09	146
+San Juan	-3.885	-73.567	16
+San Juan Bautista	-14.011	-75.736	11	6871
+San Juan Bautista	-13.164	-74.222	05
+San Juan de Cacazú	-10.656	-75.115	19	590
+San Juan de Chacña	-13.924	-73.182	03	593
+San Juan de Chito	-13.64	-73.926	05	549
+San Juan de Cutervo	-6.163	-78.598	06
+San Juan de Cuturapi	-16.27	-69.178	21
+San Juan de Huirpacancha	-13.956	-75.239	09	583
+San Juan de Iris	-11.683	-76.525	15	998
+San Juan de La Libertad	-11.251	-75.691	12	747
+San Juan de Lanca	-11.875	-76.545	15	114
+San Juan de Rontoy	-9.175	-77.003	02
+San Juan de Salinas	-14.991	-70.106	21	181
+San Juan de Tantaranche	-12.113	-76.183	15	319
+San Juan de Virundo	-14.251	-72.681	03
+San Juan de la Virgen	-3.627	-80.431	24	1559
+San Juan del Oro	-14.221	-69.154	21
+San Lorenzo	-4.817	-76.6	16	10500
+San Lorenzo	-5.54	-78.823	06	700
+San Lorenzo	-11.454	-69.322	17	263
+San Lorenzo	-11.847	-75.381	12
+San Lorenzo de Huachupama	-11.718	-76.585	15
+San Lorenzo de Quinti	-12.145	-76.213	15
+San Lucas ( Pueblo Nuevo de Colan)	-4.909	-81.057	20	9874
+San Luis	-12.077	-76.994	15	8862
+San Luis	-9.083	-77.35	02
+San Luis Grande	-7.157	-78.868	06
+San Luis de Lucma	-6.294	-78.604	06
+San Luis de Shuaro	-10.888	-75.287	12	948
+San Marcos	-9.525	-77.157	02
+San Marcos	-7.333	-78.183	06
+San Marcos de Rocchac	-12.094	-74.864	09
+San Martin	-5.186	-80.669	20	130000
+San Martín	-6.511	-76.74	22
+San Martín de Pangoa	-11.429	-74.488	12	16262
+San Mateo	-11.759	-76.301	15
+San Miguel	-15.478	-70.125	21	60850
+San Miguel	-13.012	-73.981	05	8400
+San Miguel	-12.015	-75.346	12
+San Miguel de Cauri	-10.138	-76.623	10	5326
+San Miguel de Eneñas	-10.748	-75.217	19	908
+San Miguel de Ollaraya	-16.22	-68.991	21
+San Miguel de Pallaques	-7	-78.851	06
+San Nicolás	-8.976	-77.189	02
+San Pablo	-14.203	-71.316	08	3486
+San Pablo	-6.808	-76.573	22	979
+San Pablo	-7.117	-78.833	06
+San Pablo de Pillao	-9.787	-75.999	10	1182
+San Pedrillo	-4.905	-80.289	20	630
+San Pedro	-5.088	-80.035	20	642
+San Pedro	-5.596	-78.574	01	527
+San Pedro	-14.767	-74.098	05	517
+San Pedro	-12.13	-76.216	15	243
+San Pedro	-14.187	-71.342	08
+San Pedro	-13.399	-76.159	11
+San Pedro	-13.048	-75.648	11
+San Pedro De Cachora	-13.633	-72.883	03
+San Pedro Huamburque	-13.397	-73.594	03
+San Pedro de Cachi	-13.085	-74.393	05	138
+San Pedro de Cajas	-11.251	-75.861	12	5758
+San Pedro de Chonta	-8.656	-76.875	10	577
+San Pedro de Chunan	-11.726	-75.486	12	558
+San Pedro de Chuparo	-13.524	-73.684	03	564
+San Pedro de Coris	-12.579	-74.41	09	894
+San Pedro de Larcay	-14.169	-73.573	05	553
+San Pedro de Lloc	-7.429	-79.504	13	16250
+San Pedro de Pillao	-10.437	-76.497	19
+San Rafael	-4.992	-80.596	20	805
+San Rafael	-7.03	-76.475	22
+San Rafael	-10.338	-76.183	10
+San Ramón	-11.124	-75.357	12	14708
+San Regis	-4.511	-73.904	16	861
+San Roque de Cumbaza	-6.386	-76.436	22	735
+San Salvador	-13.492	-71.778	08
+San Salvador de Quije	-13.968	-73.735	05	355
+San Sebastián	-13.531	-71.931	08
+San Silvestre de Cochán	-6.978	-78.774	06
+San Vicente de Cañete	-13.076	-76.385	15	25517
+San Vicente de Paúl	-7.005	-77.923	13	968
+Sanachgan	-8.806	-77.279	02
+Sancor	-4.985	-80.165	20	737
+Sancos	-15.063	-73.952	05	526
+Sandia	-14.321	-69.465	21	3675
+Sangallaya	-12.167	-76.267	15
+Sangarará	-13.948	-71.603	08
+Santa	-8.989	-78.612	02
+Santa Ana	-12.867	-72.717	08	25145
+Santa Ana	-13.072	-75.14	09	78
+Santa Ana de Huaycahuacho	-14.227	-73.957	05	730
+Santa Ana de Tusi	-10.472	-76.355	19
+Santa Anita - Los Ficus	-12.05	-76.973	15	184614
+Santa Barbara de Carhuacayan	-11.204	-76.286	12	647
+Santa Bárbara	-13.066	-76.454	15	713
+Santa Catalina	-6.112	-78.061	01	423
+Santa Catalina de Pulán	-6.739	-78.92	06
+Santa Clara de Cosme	-12.573	-74.659	09
+Santa Clemencia	-8.997	-78.539	02	504
+Santa Cruz	-6.615	-76.727	22	862
+Santa Cruz	-8.554	-76.283	22	824
+Santa Cruz	-13.078	-76.443	15	643
+Santa Cruz	-13.832	-76.135	11	619
+Santa Cruz	-11.06	-76.93	15	187
+Santa Cruz	-14.484	-75.245	11	39
+Santa Cruz	-5.55	-75.8	16
+Santa Cruz	-6.095	-78.853	06
+Santa Cruz De Succhabamba	-6.625	-78.946	06	4660
+Santa Cruz de Andamarca	-11.195	-76.634	15	430
+Santa Dominguita	-14.272	-75.672	11	692
+Santa Elena	-5.323	-80.776	20	816
+Santa Elena	-6.026	-74.091	16	785
+Santa Eulalia	-11.901	-76.663	15
+Santa Isabel	-6.483	-79.964	14	980
+Santa Isabel	-5.767	-74.517	16
+Santa Isabel de Sihuas	-16.321	-72.101	04
+Santa Lucía	-15.698	-70.607	21	4320
+Santa Lucía	-9.124	-76.021	10	543
+Santa Lucía	-14.978	-74.524	05	200
+Santa Maria de Chicmo	-13.657	-73.495	03	618
+Santa María	-12.005	-76.893	15	14853
+Santa María de Ojeal	-3.603	-73.167	16	507
+Santa María del Valle	-9.863	-76.169	10
+Santa Mercedes	-1.789	-73.412	16	269
+Santa Paula	-4.956	-80.529	20	548
+Santa Rita de Siguas	-16.496	-72.087	04	4014
+Santa Rosa	-10.919	-74.885	12	18057
+Santa Rosa	-6.758	-79.827	14	10625
+Santa Rosa	-12.687	-73.735	05	4702
+Santa Rosa	-6.216	-79.084	06	528
+Santa Rosa	-12.335	-73.971	05	512
+Santa Rosa	-8.527	-78.068	02	380
+Santa Rosa	-14.14	-72.657	03	331
+Santa Rosa	-6.452	-77.455	01
+Santa Rosa	-6.881	-79.92	14
+Santa Rosa	-6.683	-76.617	22
+Santa Rosa	-14.607	-70.787	21
+Santa Rosa	-11.799	-77.173	15
+Santa Rosa	-5.434	-78.567	06
+Santa Rosa Alta	-13.095	-76.39	15	698
+Santa Rosa de Alto Yanajanca	-8.655	-76.315	10
+Santa Rosa de Ocopa	-11.877	-75.295	12
+Santa Rosa de Sacco	-11.551	-75.943	12	11257
+Santa Rosa de Tambo	-13.689	-75.276	09
+Santa Teresa	-13.132	-72.591	08
+Santiago	-13.527	-71.984	08	64075
+Santiago	-14.185	-75.711	11	10449
+Santiago	-12.096	-76.23	15
+Santiago de Cao	-7.959	-79.239	13	21982
+Santiago de Chilcas	-10.439	-77.366	02	350
+Santiago de Chocorvos	-13.825	-75.258	09	507
+Santiago de Chuco	-8.141	-78.173	13	6759
+Santiago de Lucanamarca	-13.844	-74.372	05	620
+Santiago de Paucaray	-14.045	-73.639	05	275
+Santiago de Pupuja	-15.054	-70.277	21	210
+Santiago de Quirehuara	-14.056	-74.976	09
+Santiago de Surco	-12.136	-77.007	15	251648
+Santiago de Tucuma	-12.31	-74.892	09
+Santiago de Tuna	-11.984	-76.525	15	533
+Santo Domingo	-8.105	-78.911	13	665
+Santo Domingo	-5.029	-79.876	20
+Santo Domingo de Capilla	-6.245	-78.855	06
+Santo Domingo de Capillas	-13.737	-75.243	09	219
+Santo Domingo de Los Olleros	-12.215	-76.512	15	91
+Santo Domingo del Prado	-11.898	-75.318	12
+Santo Tomas	-14.446	-72.084	08	4134
+Santo Tomás	-6.151	-78.682	06
+Santo Tomás de Pata	-13.113	-74.419	09	556
+Santo Toribio	-8.865	-77.914	02
+Sapalache	-5.151	-79.435	20	487
+Sapallanga	-12.141	-75.158	12
+Sapame	-6.484	-79.828	14	524
+Sapillica	-4.779	-79.982	20	821
+Saposoa	-6.934	-76.772	22	14894
+Sapuena	-4.766	-73.625	16	506
+Saquena	-4.667	-73.517	16	4362
+Saramiriza	-4.566	-77.416	16
+Sarhua	-13.673	-74.32	05
+Sartimbamba	-7.7	-77.741	13	600
+Sarín	-7.912	-77.905	13	727
+Satipo	-11.252	-74.639	12	15532
+Sauce	-6.691	-76.215	22
+Saucepampa	-6.691	-78.917	06
+Saurama	-13.695	-73.759	05	326
+Sausa	-11.793	-75.484	12
+Sausal	-5.083	-80.205	20	971
+Sayapullo	-7.596	-78.468	13	764
+Sayla	-15.32	-73.222	04
+Saylla	-13.57	-71.828	08
+Saysa	-14.94	-74.416	05
+Sayán	-11.133	-77.195	15	6196
+Saña	-6.919	-79.582	14	39200
+Sañayca	-14.205	-73.347	03	550
+Saño	-11.957	-75.257	12
+Sechura	-5.557	-80.822	20	23020
+Segunda Jerusalén - Azunguillo	-5.989	-77.277	22	6412
+Selva Alegre	-16.371	-71.527	04	72696
+Sepahua	-11.146	-73.043	25
+Sexi	-6.564	-79.051	06	279
+Shamboyacu	-7.023	-76.133	22
+Shanao	-6.411	-76.594	22
+Shapaja	-6.58	-76.263	22
+Shatoja	-6.528	-76.718	22
+Shelby	-10.811	-76.224	19	850
+Shilla	-9.231	-77.626	02	943
+Shimbillo	-6.826	-76.34	22	526
+Shirac	-7.349	-78.048	06	626
+Shucushuyacu	-6.017	-75.85	16
+Shumba Alto	-5.569	-78.815	06	559
+Shunqui	-9.731	-76.783	10	570
+Shupluy	-9.217	-77.694	02	173
+Sibayo	-15.487	-71.457	04	527
+Sicaya	-12.015	-75.28	12	6842
+Sicuani	-14.269	-71.226	08	33575
+Siempre Viva	-5.747	-78.668	01	557
+Sihuas	-8.567	-77.617	02
+Sihuayro	-16.257	-69.379	21	506
+Sillapata	-9.758	-76.774	10	504
+Simbal	-7.976	-78.813	13	805
+Sina	-14.497	-69.28	21	363
+Sinchao	-5.417	-80.667	20
+Sinchi Roca	-4.882	-80.435	20	599
+Sincos	-11.891	-75.387	12
+Singa	-9.387	-76.813	10
+Singo	-5.285	-79.482	20	730
+Sinsicap	-7.852	-78.756	13	327
+Sion	-7.666	-76.787	22	750
+Siracat	-7.412	-78.583	06	549
+Sisa	-6.611	-76.693	22	9477
+Sitabamba	-8.023	-77.732	13	867
+Sitajara	-17.376	-70.134	23	451
+Sivia	-12.512	-73.858	05
+Sobraya	-17.995	-70.195	23	695
+Socabaya	-16.47	-71.528	04
+Socos	-13.215	-74.289	05	758
+Socospata	-13.781	-73.462	03	523
+Socota	-6.315	-78.7	06
+Sojo	-4.901	-80.816	20
+Solecape	-6.593	-79.935	14	652
+Soledad	-5.661	-76.575	16	644
+Soloco	-6.262	-77.744	01	298
+Sondondo	-14.298	-73.939	05	566
+Sondor	-5.315	-79.411	20	987
+Sondorillo	-5.339	-79.429	20	311
+Soplín Vargas	-0.373	-74.676	16	537
+Soras	-14.115	-73.604	05
+Soraya	-14.165	-73.315	03	147
+Soritor	-6.139	-77.104	22	10858
+Sorochuco	-6.912	-78.255	06	713
+Subtanjalla	-14.019	-75.758	11	9096
+Succha	-9.823	-77.65	02	372
+Sucre	-8.962	-77.843	02	626
+Sucre	-6.943	-78.136	06
+Suitucancha	-11.787	-75.937	12	538
+Sullana	-4.904	-80.685	20	160789
+Sumbilca	-11.407	-76.82	15	442
+Sunampe	-13.427	-76.164	11
+Sunchubamba	-7.478	-78.396	06	816
+Supe	-10.797	-77.713	15	13719
+Supe Puerto	-10.801	-77.743	15	11450
+Surco	-11.884	-76.44	15	969
+Surcubamba	-12.116	-74.63	09
+Surpampa	-4.428	-79.929	20	674
+Susapaya	-17.354	-70.133	23	420
+Suyo	-4.514	-80.002	20	985
+Tabaconas	-5.315	-79.283	06	443
+Tabaloslos	-6.386	-76.633	22	7282
+Tabalosos	-6.35	-76.683	22	14744
+Tablazo Norte	-5.384	-80.764	20	4303
+Tacabamba	-6.393	-78.611	06
+Tacarpo	-5.397	-79.397	20	517
+Tacna	-18.015	-70.254	23	286240
+Talandracas	-5.109	-80.063	20	538
+Talanquera	-5.171	-80.066	20	532
+Talara	-4.577	-81.272	20	99074
+Talavera	-13.653	-73.429	03	7381
+Tamanco	-5.85	-74.317	16
+Tamarindo	-7.307	-79.443	13	590
+Tamarindo	-4.877	-80.973	20
+Tambillo	-13.195	-74.111	05	192
+Tambillo	-9.867	-76.04	10
+Tambo	-14.798	-73.924	05	5032
+Tambo	-12.948	-74.02	05
+Tambo Grande	-4.927	-80.345	20	30033
+Tambo Quemado	-14.728	-74.67	05	338
+Tambo Real	-13.477	-72.239	08	534
+Tambobamba	-13.945	-72.171	03
+Tambopata	-12.672	-69.355	17	38966
+Tamboya	-5.166	-79.777	20	633
+Tamburco	-13.617	-72.871	03
+Tanguche	-8.747	-78.522	13	601
+Tanta	-12.122	-76.014	15	449
+Tantamayo	-9.392	-76.72	10	319
+Tantara	-13.074	-75.645	09	406
+Tapacocha	-10.01	-77.568	02	312
+Tapairihua	-14.141	-73.141	03	278
+Tapay	-15.578	-71.939	04	121
+Tapo	-11.391	-75.564	12
+Taquile	-15.767	-69.683	21	2000
+Taraco	-15.298	-69.978	21	1862
+Tarapoto	-6.501	-76.366	22
+Tarata	-17.474	-70.033	23	3052
+Taray	-13.427	-71.867	08	489
+Tarica	-9.394	-77.575	02
+Tarma	-11.419	-75.69	12	51350
+Tarucachi	-17.526	-70.032	23	416
+Tarucani	-16.183	-71.062	04	296
+Tarucuyo	-14.89	-71.548	08	506
+Tate de La Capilla	-14.153	-75.718	11	392
+Tauca	-8.47	-78.038	02
+Tauria	-15.354	-73.232	04	182
+Tauribamba	-12.04	-74.583	09	571
+Taurija	-8.309	-77.422	13
+Tauripampa	-12.583	-76.117	15
+Taurisma	-15.175	-72.85	04	247
+Tayabamba	-8.277	-77.296	13
+Tembladera	-7.253	-79.131	06
+Tiabaya	-16.45	-71.59	04
+Tiambra	-11.238	-75.69	12	548
+Tibillo	-14.093	-75.172	11	178
+Ticaco	-17.448	-70.047	23	741
+Ticapampa	-9.757	-77.445	02
+Ticaraya	-16.309	-69.209	21	525
+Ticlacayán	-10.534	-76.164	19	1212
+Ticllas	-13.132	-74.333	05	169
+Ticllos	-10.252	-77.191	02	612
+Ticrapo	-13.382	-75.433	09
+Tinco	-9.271	-77.678	02	560
+Tingo	-6.372	-77.912	01	162
+Tingo María	-9.295	-75.996	10	53177
+Tingo de Ponasa	-6.932	-76.252	22	421
+Tingo de Saposoa	-7.094	-76.642	22	675
+Tinicachi	-16.199	-68.962	21
+Tinta	-14.145	-71.407	08	3466
+Tintay	-13.96	-73.185	03	740
+Tintay	-14.075	-73.861	05	551
+Tintay	-12.152	-74.545	09
+Tinyahuarco	-10.768	-76.275	19	5066
+Tipán	-15.723	-72.502	04	151
+Tiquillaca	-15.797	-70.187	21	261
+Tirapata	-14.955	-70.403	21	691
+Tiruntán	-7.944	-74.84	16	652
+Tisco	-15.347	-71.447	04	199
+Titili	-15.515	-69.348	21	154
+Tocache	-8.188	-76.52	22	29029
+Tocmoche	-6.412	-79.362	06	219
+Tocota	-15.659	-74.091	04	91
+Tolón	-7.297	-79.303	06	729
+Toma	-9.272	-77.668	02	538
+Tomas	-12.239	-75.745	15	358
+Tomay Kichwa	-10.077	-76.212	10
+Tomepampa	-15.173	-72.831	04	357
+Tongod	-6.757	-78.825	06
+Tongos	-12.283	-74.983	09	618
+Torata	-17.077	-70.843	18	7054
+Toraya	-14.053	-73.295	03	550
+Toro	-15.264	-72.929	04	364
+Tororumi	-12.783	-74.59	09	550
+Totora	-6.492	-77.473	01	133
+Totorabamba	-13.543	-73.664	03	706
+Totorales	-17.406	-70.366	23	1976
+Totoroma	-16.755	-69.363	21	762
+Totos	-13.567	-74.524	05
+Tournavista	-8.929	-74.705	10	903
+Tranca Sasape	-6.493	-79.939	14	692
+Trapiche	-11.72	-76.964	15	561
+Tres Unidos	-6.807	-76.229	22
+Tres de Diciembre	-12.11	-75.246	12
+Trinidad	-7.349	-79.03	06	233
+Trita	-6.147	-78.013	01	771
+Trompeteros	-3.814	-75.058	16
+Trujillo	-8.116	-79.03	13	1067700
+Tucsipampa	-13.001	-74.788	09	551
+Tulin	-14.644	-75.069	11	892
+Tumbadén	-7.025	-78.74	06
+Tumbes	-3.556	-80.443	24	96946
+Tumpa	-9.174	-77.666	02	891
+Tunal	-5.213	-79.679	20	568
+Tungasuca	-14.164	-71.477	08	3791
+Tupac Amaru	-13.711	-76.15	11	11159
+Tupe	-12.741	-75.809	15	300
+Tupicocha	-12.001	-76.474	15
+Turpay	-14.228	-72.622	03	603
+Turpo	-13.786	-73.474	03	739
+Tuti	-15.533	-71.55	04	747
+Tutumberos	-5.342	-78.446	01	650
+Tápuc	-10.455	-76.462	19
+Túcume	-6.506	-79.857	14	7043
+Ubinas	-16.4	-70.867	18	498
+Uchiza	-8.459	-76.463	22	17742
+Uchumarca	-7.047	-77.806	13
+Uchumayo	-16.425	-71.672	04
+Uco	-9.188	-76.928	02	833
+Ucrania	-5.946	-77.282	22	783
+Ucuncha	-7.133	-77.883	13
+Ulcumayo	-10.967	-75.878	12
+Ullpayacu	-4.652	-76.588	16
+Ullulluco	-8.456	-77.427	02	258
+Ullusca	-11.82	-75.511	12	578
+Ulpamache	-5.323	-79.506	20	522
+Umachiri	-14.853	-70.754	21	780
+Umamarca	-14.053	-73.566	03	730
+Umbe	-8.623	-77.535	02	303
+Unión Capiri	-11.092	-74.702	12	760
+Upaca	-10.671	-77.736	15	535
+Upahuacho	-14.907	-73.398	05	191
+Uranmarca	-13.672	-73.67	03
+Urasqui	-16.032	-73.174	04	223
+Urb. Santo Domingo	-11.877	-77.033	15	5000
+Urcos	-13.686	-71.623	08	5479
+Uripa	-13.532	-73.677	03
+Urpay	-7.796	-78.079	13	805
+Urpay	-8.348	-77.392	13	555
+Urpish	-9.276	-76.725	10	550
+Urubamba	-13.305	-72.116	08	7540
+Usicayos	-14.125	-69.966	21
+Usquil	-7.816	-78.419	13	961
+Utao	-9.761	-76.213	10	935
+Utco	-6.896	-78.063	06	80
+Utcurarca	-6.663	-76.287	22	443
+Uticyacu	-6.607	-78.794	06	201
+Uñón	-15.728	-72.433	04	263
+Valle Nuevo	-6.581	-79.916	14	504
+Vaquería	-7.756	-77.971	13	609
+Vaquería	-3.706	-80.452	24	590
+Varillal	-3.881	-73.344	16	818
+Velille	-14.509	-71.885	08
+Velinga	-15.274	-73.022	04	59
+Venecia	-7.252	-78.037	06
+Ventanilla	-11.875	-77.118	07
+Vicas	-11.712	-76.602	15	515
+Vicco	-10.841	-76.236	19
+Vice	-5.417	-80.783	20	12915
+Vicos	-9.328	-77.552	02	623
+Vicso	-11.972	-75.355	12	598
+Victor Raul	-8.405	-78.823	13	8369
+Viduque	-5.25	-80.661	20	555
+Vilavila	-15.188	-70.66	21	990
+Vilca	-12.477	-75.183	09	293
+Vilcabamba	-14.078	-72.625	03	991
+Vilcabamba	-9.785	-76.177	10	914
+Vilcabamba	-11.357	-75.629	12	711
+Vilcabamba	-10.478	-76.447	19
+Vilcacoto	-12.015	-75.181	12	539
+Vilcanchos	-13.612	-74.532	05	388
+Villa Alto Camilaca	-17.243	-70.389	23
+Villa Capiri	-11.129	-74.673	12	736
+Villa El Milagro	-6.898	-79.843	14	818
+Villa Kintiarina	-12.919	-73.528	08
+Villa Poeta José Gálvez Barrenechea	-12.213	-76.905	15	61000
+Villa Rica	-10.739	-75.27	19	7448
+Villa Virgen	-13.002	-73.513	08
+Vilque	-15.767	-70.259	21	731
+Vilque Chico	-15.215	-69.689	21	511
+Vinchos	-13.242	-74.354	05	669
+Vinchos	-10.44	-76.284	19	544
+Vinto Bajo	-10.689	-77.695	15	509
+Viques	-12.16	-75.232	12
+Viraco	-15.657	-72.525	04
+Viracochan	-12.594	-74.331	05
+Virginniyoc	-15.009	-71.643	08
+Virú	-8.416	-78.752	13	20774
+Viscas	-9.145	-76.841	02	739
+Vischongo	-13.589	-73.995	05	736
+Vista Alegre	-7.356	-78.549	06	707
+Vista Alegre	-5.825	-77.395	22	547
+Vista Alegre	-6.151	-77.301	01	291
+Vitarte	-12.033	-76.933	15
+Vitis	-12.224	-75.808	15	503
+Vizcachane	-15.809	-71.201	04	4407
+Viñac	-12.931	-75.779	15	266
+Viñas	-12.416	-74.862	09	597
+Végueta	-11.023	-77.644	15	6219
+Vítor	-16.466	-71.935	04
+Wanchaq	-13.525	-71.965	08	59134
+Yacango	-17.094	-70.865	18	951
+Yacus	-9.985	-76.505	10
+Yamango	-5.181	-79.751	20	973
+Yambrasbamba	-5.736	-77.925	01	661
+Yanac	-8.618	-77.864	02	311
+Yanac	-13.208	-75.784	11
+Yanaca	-14.226	-73.16	03	648
+Yanacancha	-10.666	-76.255	19	24105
+Yanacancha	-10.241	-76.646	10	23175
+Yanacancha	-12.201	-75.386	12	586
+Yanacocha	-10.471	-76.502	19	553
+Yanahuanca	-10.517	-76.499	19	5992
+Yanahuara	-16.386	-71.54	04
+Yanahuaya	-14.259	-69.169	21
+Yanama	-9.021	-77.471	02	556
+Yanamuclo	-11.874	-75.38	12	897
+Yanaoca	-14.218	-71.432	08	3913
+Yanaquihua	-15.775	-72.876	04	554
+Yanas	-9.159	-76.798	02	915
+Yanas	-9.715	-76.749	10	894
+Yangas	-11.695	-76.847	15	568
+Yanque	-15.649	-71.658	04
+Yantaló	-5.974	-77.02	22
+Yarabamba	-16.547	-71.475	04	323
+Yarumayo	-10.005	-76.469	10
+Yarusyacán	-10.49	-76.197	19	917
+Yauca	-15.661	-74.527	04
+Yauli	-11.713	-75.474	12	843
+Yauli	-11.666	-76.087	12
+Yauli	-12.77	-74.851	09
+Yauri	-14.791	-71.41	08	23867
+Yaurisque	-13.661	-71.923	08	492
+Yaután	-9.512	-77.996	02
+Yauya	-8.991	-77.291	02	9092
+Yauyos	-12.459	-75.917	15
+Yauyos	-11.781	-75.499	12
+Yauyucán	-6.677	-78.819	06	802
+Yavirironi	-11.077	-74.717	12	645
+Yorongos	-6.14	-77.144	22
+Yucay	-13.321	-72.082	08
+Yumbatos	-6.32	-76.298	22	852
+Yunga	-16.2	-70.683	18
+Yungar	-9.378	-77.592	02	595
+Yungay	-9.138	-77.744	02	5269
+Yunguyo	-16.25	-69.083	21	11946
+Yupán	-8.615	-77.969	02	689
+Yura	-16.252	-71.68	04	5686
+Yuracmarca	-8.738	-77.904	02
+Yuracmayo	-11.47	-75.525	12	586
+Yuracyacu	-5.931	-77.227	22
+Yurimaguas	-5.902	-76.122	16	41827
+Yuyapichis	-9.628	-74.975	10	739
+Zapatero	-6.531	-76.491	22	766
+Zapotal	-5.398	-78.705	06	687
+Zarumilla	-3.503	-80.273	24	16907
+Zepita	-16.497	-69.103	21
+Zorritos	-3.68	-80.678	24	12261
+Zurite	-13.455	-72.256	08
+Zúngaro Cocha	-3.83	-73.356	16	841
+Ñahuimpuquio	-12.329	-75.069	09

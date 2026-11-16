@@ -1,0 +1,10 @@
+Gouyave	12.165	-61.73	04	3378
+Grand Roy	12.132	-61.745	04	2400
+Grenville	12.123	-61.625	01	2476
+Hillsborough	12.483	-61.456	10	1000
+Saint David’s	12.049	-61.669	02	1321
+Saint George's	12.053	-61.752	03	7500
+Sauteurs	12.218	-61.639	06	1320
+Tivoli	12.173	-61.616	01	700
+Upper La Taste	12.193	-61.618	06	1300
+Victoria	12.19	-61.707	05	2256

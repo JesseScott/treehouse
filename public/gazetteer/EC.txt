@@ -1,0 +1,542 @@
+Abdón Calderón	-1.03	-80.343	14
+Achupallas	-2.283	-78.769	06
+Aguas Negras	-0.131	-76.3	22
+Ahuano	-1.059	-77.546	23
+Alangasí	-0.307	-78.416	18
+Alausí	-2.201	-78.848	06	14294
+Alfredo Baquerizo Moreno	-1.917	-79.517	10	12617
+Amarillos	-3.872	-79.693	12
+Ambatillo	-1.229	-78.658	19
+Ambato	-1.249	-78.617	19	387309
+Anchayacu	0.955	-79.059	09
+Antonio José de Holguín	-1.098	-78.604	07
+Antonio Sotomayor	-1.642	-79.802	13
+Arajuno	-1.233	-77.687	17
+Arcapamba	-3.648	-79.617	08
+Archidona	-0.909	-77.808	23	7309
+Arenillas	-3.554	-80.067	08	26000
+Ascázubi	-0.083	-78.293	18
+Asunción	-1.665	-79.039	03
+Atacames	0.869	-79.848	09
+Atahualpa	-1.218	-78.611	19
+Atuntaqui	0.328	-78.219	11	17456
+Ayapamba	-3.611	-79.678	08
+Azogues	-2.74	-78.846	04	34877
+Baba	-1.784	-79.679	13	8790
+Babahoyo	-1.805	-79.525	13	76279
+Bahía de Caráquez	-0.6	-80.424	14	37056
+Balao	-2.911	-79.815	10	12205
+Balsas	-3.761	-79.824	08	7875
+Balzar	-1.366	-79.905	10	40115
+Barraganete	-0.777	-79.697	14
+Baños	-1.397	-78.423	19	9501
+Bella María	-3.5	-79.892	08
+Bella María	-3.761	-79.848	08
+Bellavista	-1.349	-80.285	14
+Biblián	-2.713	-78.89	04
+Boca Suno	-0.698	-77.141	24	20313
+Bolívar	0.446	-80.044	09
+Bolívar	0.502	-77.905	05
+Borbón	1.088	-78.99	09
+Boyacá	-0.57	-80.178	14
+Buena Vista	-3.363	-79.845	08
+Buenavista	-3.892	-79.716	12
+Cahuasquí	0.514	-78.213	11
+Calceta	-0.846	-80.164	14	17286
+Calderón	-0.105	-78.431	18
+Calpi	-1.646	-78.743	06
+Caluma	-1.631	-79.257	03
+Camarones	0.854	-78.965	09
+Cangahua	-0.063	-78.167	18
+Cangonamá	-3.965	-79.703	12
+Canoa	-0.464	-80.454	14
+Canuto	-0.799	-80.129	14
+Cariamanga	-4.328	-79.556	12	16862
+Carondelet	1.126	-78.762	09
+Casacay	-3.323	-79.723	08
+Cascol	-1.664	-80.459	14
+Catacocha	-4.05	-79.65	12	10872
+Catamayo	-3.987	-79.358	12	18565
+Catarama	-1.571	-79.473	13	9723
+Cayambe	0.041	-78.146	18	26582
+Cañar	-2.559	-78.938	04	9900
+Cebadas	-1.912	-78.644	06
+Celica	-4.103	-79.956	12	5499
+Cevallos	-1.355	-78.616	19
+Chaguarpamba	-3.878	-79.645	12
+Chamanga	0.269	-79.955	09
+Chambo	-1.731	-78.597	06
+Changaimina	-4.222	-79.524	12
+Chantaco	-3.879	-79.329	12
+Charapotó	-0.837	-80.488	14
+Chicaña	-3.727	-78.747	20
+Chiguinda	-3.229	-78.72	15
+Chigüilpe	-0.038	-79.26	26
+Chile	-4.289	-79.503	12
+Chilla	-3.458	-79.581	08
+Chillanes	-1.943	-79.066	03
+Chinca	0.771	-79.568	09
+Chiquintad	-2.813	-79.002	02
+Chone	-0.698	-80.092	14	44751
+Chongón	-2.236	-80.082	10
+Chontaduro	0.931	-79.436	09
+Chontaduro	0.736	-79.757	09
+Chordeleg	-2.923	-78.775	02
+Chucchilán	-0.8	-78.921	07
+Chuga	0.375	-77.905	11
+Chumundé	0.831	-79.419	09
+Chunchi	-2.29	-78.92	06
+Chuquiribamba	-3.842	-79.345	12
+Cojimíes	0.366	-80.036	14
+Colaisaca	-4.318	-79.693	12
+Colimes	-1.546	-80.012	10	9384
+Colón	-1.113	-80.414	14
+Colón Eloy del María	1.019	-78.91	09
+Comité del Pueblo	-0.095	-78.528	18
+Concepción	0.605	-78.127	05
+Concepción	1.037	-78.829	09
+Conocoto	-0.293	-78.476	18
+Convento	-0.277	-80.037	14
+Cordoncillo	-3.592	-79.648	08
+Coronel Marcelino Maridueña	-2.21	-79.437	10	7303
+Cotacachi	0.299	-78.266	11	8238
+Cotaló	-1.431	-78.513	19
+Cristóbal Colón	0.606	-77.812	05
+Cuatro de Diciembre	-0.25	-79.488	14
+Cube	0.574	-79.644	09
+Cubijíes	-1.645	-78.588	06
+Cuellaje	0.398	-78.527	11
+Cuenca	-2.895	-78.996	02	636996
+Cumandá	-2.205	-79.136	06
+Cumbaratza	-3.994	-78.867	20
+Cumbayá	-0.199	-78.43	18
+Curtincapa	-3.731	-79.549	08
+Cuyabeno	-0.265	-75.892	22
+Cuyuja	-0.415	-78.026	23
+Daule	-1.86	-79.977	10	173684
+Daule	0.406	-80.013	09
+Diez de Agosto	-1.458	-77.906	17
+Doctor Miguel Egas Cabezas	0.25	-78.244	11
+Déleg	-2.772	-78.919	04
+Echeandía	-1.432	-79.28	03
+El Carmen	-0.275	-79.462	14
+El Chaco	-0.339	-77.811	23
+El Chaupi	-0.602	-78.643	18
+El Cisne	-3.851	-79.426	12
+El Corazón	-1.137	-79.081	07
+El Empalme	-1.045	-79.638	10	48754
+El Eno	-0.067	-76.879	22
+El Esfuerzo	-0.416	-79.276	26
+El Güismi	-3.557	-78.564	20
+El Pangui	-3.626	-78.588	20
+El Paraíso	-0.226	-76.848	24
+El Paraíso de Celén	-3.601	-79.339	12
+El Porvenir del Carmen	-4.547	-79.035	20
+El Quinche	-0.111	-78.297	18
+El Reventador	-0.046	-77.529	22
+El Rosario	-3.785	-79.606	12
+El Rosario	-1.052	-79.812	10
+El Salitre	-1.83	-79.818	10
+El Triunfo	-1.933	-79.967	10	32282
+El Triunfo	-1.305	-78.404	19
+El Triunfo	-2.333	-79.4	10
+El Ángel	0.62	-77.941	05	3983
+Eloy Alfaro	-2.169	-79.84	10	315724
+Eloy Alfaro	-0.401	-80.08	14
+Eloy Alfaro	-1.471	-80.534	14
+Emilio María Terán	-1.223	-78.513	19
+Esmeraldas	0.959	-79.654	09	218727
+Facundo Vela	-1.206	-79.065	03
+Febres Cordero	-1.994	-79.355	13
+Fernández Salvador	0.6	-77.752	05
+Flavio Alfaro	-0.405	-79.905	14
+Fátima	-1.428	-77.999	17
+Galera	0.817	-80.046	09
+García Moreno	0.56	-77.948	05
+General Leonidas Plaza Gutiérrez	-2.967	-78.432	15
+General Morales	-2.408	-79.023	04
+General Proaño	-2.267	-78.13	15
+General Vernaza	-1.763	-79.791	10
+Gima	-3.191	-78.958	02
+Girón	-3.16	-79.148	02
+Gonzalo Pizarro	0.017	-77.379	22
+Gonzanamá	-4.231	-79.435	12
+Gonzol	-2.262	-78.847	06
+Guabo	-3.244	-79.829	08	26635
+Guadalupe	-3.847	-78.889	20
+Gualaceo	-2.894	-78.779	02	17122
+Gualaquiza	-3.404	-78.581	15	4611
+Guale	-1.63	-80.239	14
+Gualel	-3.77	-79.376	12
+Guambaló	-1.388	-78.532	19
+Guamote	-1.935	-78.71	06
+Guanando	-1.546	-78.544	06
+Guanazán	-3.459	-79.492	08
+Guano	-1.607	-78.637	06	12659
+Guanujo	-1.56	-79.009	03
+Guaranda	-1.591	-78.999	03	22199
+Guasaganda Centro	-0.803	-79.16	07
+Guasuntos	-2.232	-78.813	06
+Guayaquil	-2.196	-79.886	10	2723665
+Guayquichuma	-3.823	-79.574	12
+Guaytacama	-0.825	-78.642	07
+Guizhaguiña	-3.693	-79.552	08
+Huambi	-2.537	-78.163	15
+Huamboya	-1.946	-77.991	15
+Huaquillas	-3.475	-80.231	08	39757
+Huertas	-3.607	-79.632	08
+Ibarra	0.349	-78.125	11	221149
+Ilapo	-1.542	-78.587	06
+Imantag	0.357	-78.249	11
+Isidro Ayora	-1.88	-80.145	10
+Isinliví	-0.759	-78.87	07
+Isla de Bejucal	-1.677	-79.645	13
+Izamba	-1.227	-78.586	19
+Jama	-0.202	-80.264	14
+Jambelí	0.085	-77.076	22
+Jesús María	-2.568	-79.546	10
+Jipijapa	-1.348	-80.579	14	35901
+Joséguango Bajo	-0.818	-78.595	07
+Juan Benigno Vela	-1.302	-78.694	19
+Julcuy	-1.477	-80.626	14
+Junín	-0.928	-80.206	14	9128
+La Avanzada	-3.538	-79.959	08
+La Bocana	0.86	-79.875	09
+La Bocana	-3.689	-79.903	08
+La Concordia	0.008	-79.395	26
+La Dolorasa del Priorato	0.385	-78.109	11
+La Esperanza	0.298	-78.119	11
+La Esperanza	-0.966	-79.423	13
+La Joya de Los Sachas	-0.294	-76.856	24
+La Libertad	-2.233	-80.91	10	75881
+La Libertad	0.653	-77.944	05
+La Maná	-0.941	-79.227	07	16450
+La Merced	-0.293	-78.4	18
+La Merced de Buenos Aires	0.618	-78.317	11
+La Paz	-3.701	-78.897	20
+La Paz	0.51	-77.866	05
+La Providencia	-1.552	-78.543	06
+La Puntilla	-2.136	-79.866	10
+La Susaya	-3.677	-79.691	08
+La Tingue	-3.911	-79.578	12
+La Troncal	-2.425	-79.342	04	36353
+La Unión	-2.85	-78.783	02	1622
+La Unión	-1.708	-79.394	13
+La Unión	0.81	-79.866	09
+La Victoria de Imbana	-3.847	-79.12	20
+Lagarto	1.043	-79.28	09
+Las Mercedes	-1.27	-79.322	03
+Las Naves	-1.286	-79.315	03
+Las Nieves	-3.342	-79.115	02
+Lascano	-1.531	-80.23	14
+Latacunga	-0.934	-78.615	07	205624
+Laurel	-1.785	-79.909	10
+Leonidas Plaza Gutiérrez	-0.628	-80.425	14
+Licto	-1.805	-78.604	06
+Limoncocha	-0.411	-76.624	22
+Lincán	-1.653	-78.706	06
+Llacao	-2.867	-78.883	02	4501
+Llano Chico	-0.127	-78.444	18
+Loja	-3.993	-79.204	12	274112
+Loma de Franco	-3.343	-79.793	08
+Lomas de Sargentillo	-1.881	-80.084	10	7542
+Los Andes	0.498	-77.938	05
+Los Encuentros	-3.76	-78.648	20
+Luz de América	-0.406	-79.303	26
+Macará	-4.382	-79.945	12	13035
+Macas	-2.307	-78.12	15	23687
+Machachi	-0.513	-78.571	18	25742
+Machala	-3.259	-79.959	08	289141
+Machalilla	-1.474	-80.764	14
+Madre Tierra	-1.542	-78.035	17
+Magdalena	-1.664	-79.068	03
+Majua	0.704	-79.529	09
+Malacatos	-4.219	-79.26	12
+Maldonado	1.07	-78.909	09
+Malimpia	0.414	-79.429	09
+Malvas	-3.659	-79.627	08
+Manta	-0.949	-80.731	14	264281
+Manuel J. Calle	-2.356	-79.399	04
+Marcabelí	-3.784	-79.912	08	5450
+Marcos Espinel	-1.174	-78.524	19
+Mariano Acosta	0.297	-77.983	11
+Mariano Moreno	-2.856	-78.731	02
+Matus	-1.558	-78.503	06
+Membrillal	-1.238	-80.665	14
+Mera	-1.461	-78.113	17
+Milagro	-2.134	-79.593	10	133508
+Milagro	-3.628	-79.661	08
+Mindo	-0.052	-78.776	18
+Mira	0.551	-78.04	05
+Mocache	-1.189	-79.506	13
+Mocha	-1.419	-78.662	19
+Montalvo	-1.79	-79.288	13	15547
+Montalvo	-2.049	-77.009	17
+Montalvo	1.05	-79.312	09
+Montecristi	-1.046	-80.659	14	18351
+Morales	-3.719	-79.543	08
+Moraspungo	-1.174	-79.223	07
+Muisne	0.61	-80.019	09	13393
+Mulaló	-0.781	-78.575	07
+Muluncay	-3.636	-79.636	08
+Nabón	-3.339	-79.066	02
+Nambacola	-4.141	-79.431	12
+Naranjal	-2.676	-79.617	10	32045
+Naranjito	-2.171	-79.465	10	34206
+Nayón	-0.158	-78.439	18
+Nazón	-2.702	-78.91	04
+Noboa	-1.411	-80.394	14
+Nono	-0.067	-78.577	18
+Nueva Loja	0.086	-76.895	22	24211
+Nueva Tarqui	-3.459	-78.664	15
+Nuevo Rocafuerte	-0.926	-75.402	24	657
+Nulti	-2.917	-78.85	02	4589
+Olmedo	-3.934	-79.646	12
+Olmedo	-1.395	-80.211	14
+Otavalo	0.235	-78.262	11	32330
+Oyacachi	-0.213	-78.088	23
+Oyambarillo	-0.195	-78.332	18	8000
+Pablo Arenas	0.501	-78.192	11
+Pacayacu	-0.041	-76.586	22
+Paccha	-3.588	-79.666	08
+Paccha	-2.899	-78.935	02
+Pacto	0.142	-78.767	18
+Padre Juan Bautista Aguirre	-1.877	-79.862	10
+Paján	-1.553	-80.428	14	9183
+Palanda	-4.65	-79.132	20
+Palenque	-1.438	-79.757	13	9083
+Palestina	-1.937	-79.714	10	9364
+Palestina	-1.628	-79.979	10
+Pallatanga	-1.999	-78.966	06
+Palmira	-2.082	-78.731	06
+Palora	-1.701	-77.966	15	6472
+Pampanal de Bolívar	1.353	-78.894	09	1118
+Papallacta	-0.377	-78.142	23
+Pasaje	-3.326	-79.807	08	44860
+Paute	-2.78	-78.762	02
+Pañacocha	-0.451	-76.069	22
+Pedernales	0.072	-80.052	14	5983
+Pedro Carbo	-1.816	-80.234	10	23372
+Pedro Pablo Gómez	-1.627	-80.561	14
+Pedro Vicente Maldonado	0.085	-79.051	18
+Pelileo	-1.331	-78.545	19	16572
+Pelileo Grande	-1.33	-78.528	19
+Penipe	-1.566	-78.532	06
+Perucho	0.11	-78.424	18
+Piartal	0.566	-77.772	05
+Picoazá	-1.036	-80.493	14
+Piedras	-3.637	-79.915	08
+Pimampiro	0.391	-77.941	11	7408
+Pimocha	-1.833	-79.608	13
+Piñas	-3.68	-79.682	08	16981
+Piñas Grande	-3.668	-79.696	08
+Playa de Oro	0.876	-78.795	09
+Playas	-2.632	-80.388	10	30564
+Pomasqui	-0.054	-78.454	18	28724
+Portovelo	-3.716	-79.619	08	9708
+Portoviejo	-1.058	-80.451	14	321800
+Posorja	-2.709	-80.247	10	30886
+Pueblo Nuevo	-1.209	-80.069	14
+Pueblo Viejo	-1.551	-79.534	13
+Puela	-1.515	-78.507	06
+Puembo	-0.178	-78.359	18
+Puerto Ayora	-0.74	-90.314	01	12696
+Puerto Baquerizo Moreno	-0.902	-89.61	01	7290
+Puerto Bolívar	-3.266	-79.997	08	8300
+Puerto Francisco de Orellana	-0.45	-76.997	24	48144
+Puerto Jelí	-3.414	-79.995	08
+Puerto Libre	0.191	-77.488	22
+Puerto Limón	-0.388	-79.373	26
+Puerto López	-1.559	-80.809	14
+Puerto Napo	-1.042	-77.794	23
+Puerto Pechiche	-1.426	-79.56	13
+Puerto Quito	0.121	-79.254	18
+Puerto Villamil	-0.955	-90.967	01	2200
+Puerto de Cayo	-1.349	-80.739	14
+Pujilí	-0.958	-78.696	07	16168
+Pungalá	-1.817	-78.593	06
+Punín	-1.766	-78.657	06
+Puyo	-1.492	-78.003	17	24881
+Píllaro	-1.174	-78.551	19	7462
+Quero	-1.381	-78.608	19
+Quevedo	-1.029	-79.463	13	213842
+Quimiag	-1.658	-78.567	06
+Quingue	0.718	-80.094	09
+Quinsaloma	-1.206	-79.314	13
+Quiroga	0.283	-78.285	11
+Quisapincha	-1.235	-78.685	19
+Quito	-0.23	-78.525	18	2781641
+Ricaurte	-2.862	-78.964	02
+Ricaurte	-1.571	-79.468	13
+Ricaurte	-0.583	-80.041	14
+Riobamba	-1.665	-78.659	06	264048
+Rocafuerte	-0.924	-80.45	14	10274
+Rocafuerte	1.067	-79.374	09
+Rosa Zarate	0.328	-79.474	09	42121
+Rumipamba	-0.084	-76.986	24
+Río Verde	1.073	-79.413	09
+Ríochico	-0.995	-80.417	14
+Sabanilla	-3.966	-79.057	20
+Sabanilla	-1.843	-80.222	10
+Salango	-1.592	-80.843	14
+Salima	0.324	-79.964	09
+Salinas	-2.215	-80.952	25	43862
+Salinas	0.494	-78.131	11
+Salvias	-3.638	-79.548	08
+Samborondón	-1.961	-79.726	10	24118
+San Andrés	-1.592	-78.702	06
+San Antonio	-3.982	-79.665	12
+San Antonio	0.333	-78.17	11
+San Antonio	-0.289	-78.577	18
+San Antonio de Bayushig	-1.549	-78.52	06
+San Antonio de Manú	-3.486	-79.411	12
+San Bartolomé de Pinllo	-1.298	-78.727	19
+San Blas	0.413	-78.205	11
+San Carlos	-1.116	-79.436	13
+San Felipe de Oña	-3.47	-79.154	02
+San Francisco de Chinimbimi	-2.679	-78.214	15
+San Francisco de Natabuela	0.338	-78.194	11
+San Francisco de Onzole	0.887	-79.078	09
+San Francisco del Vergel	-4.678	-79.045	20
+San Gabriel	0.594	-77.831	05	14487
+San Gerardo de Pacaicaguán	-1.639	-78.616	06
+San Gregorio	0.528	-79.97	09
+San Isidro	0.602	-77.987	05
+San Isidro	-0.379	-80.186	14
+San Isidro de Patulú	-1.586	-78.69	06
+San Jacinto de Bua	-0.148	-79.394	26
+San Jacinto de Buena Fé	-0.894	-79.49	13
+San José	-3.628	-79.655	08
+San José de Ancón	-1.76	-80.769	25
+San José de Chaltura	0.354	-78.195	11
+San José de Chazo	-1.53	-78.553	06
+San José de Quichinche	0.237	-78.289	11
+San José del Tambo	-1.956	-79.236	03
+San Juan	-1.667	-79.767	13	12819
+San Juan	-1.627	-79.56	13
+San Juan	-1.634	-78.783	06
+San Juan Bosco	-3.119	-78.531	15
+San Juan de Ilumán	0.273	-78.234	11
+San Juan de Pastocalle	-0.727	-78.635	07
+San Lorenzo	-1.676	-78.997	03
+San Lorenzo de Esmeraldas	1.286	-78.835	09	20209
+San Lucas	-3.737	-79.263	12
+San Luis	-1.709	-78.645	06
+San Luis de Pambil	-1.234	-79.24	03
+San Mateo	-0.96	-80.811	14
+San Miguel	-1.046	-78.59	07	10838
+San Miguel de Bolívar	-1.709	-79.042	03	12575
+San Miguelito	-1.204	-78.538	19
+San Pablo de Tenta	-3.598	-79.288	12
+San Pedro de La Bendita	-3.943	-79.435	12
+San Pedro de Los Cofanes	-0.138	-76.853	22
+San Pedro de Suma	-0.218	-79.541	14
+San Pedro de Vilcabamba	-4.243	-79.222	12
+San Rafael	-0.312	-78.459	18
+San Roque	-3.727	-79.669	08
+San Roque	0.302	-78.233	11
+San Sebastián de Yuluc	-3.371	-79.438	12
+San Sebastián del Coca	-0.339	-77.006	24
+San Simón	-1.641	-78.99	03
+San Vicente	-0.59	-80.407	14
+San Vicente	-0.304	-76.536	22
+San Vicente de Pusir	0.493	-78.046	05
+Sangolquí	-0.334	-78.452	18	5114
+Santa Ana de Vuelta Larga	-1.208	-80.371	14	12833
+Santa Clara	-1.264	-77.887	17
+Santa Elena	-2.227	-80.858	25	42214
+Santa Fé	-1.614	-79.012	03
+Santa Lucía	-2.183	-80	10	12523
+Santa Lucía	-1.716	-79.986	10
+Santa María del Toachi	-0.64	-79.23	26
+Santa Rosa	-3.456	-79.964	08	41816
+Santa Rosa	-1.282	-78.664	19
+Santa Rosa de Flandes	-2.637	-79.647	10
+Santiago	-3.794	-79.282	12
+Santiago	-1.7	-79	03
+Santiago de Méndez	-2.719	-78.319	15
+Santo Domingo de Onzole	0.799	-79.07	09
+Santo Domingo de los Colorados	-0.254	-79.176	26	458580
+Saquisilí	-0.84	-78.667	07	3778
+Saraguro	-3.625	-79.239	12
+Sardinas	-0.384	-77.837	23
+Selva Alegre	-3.551	-79.345	12
+Selva Alegre	0.932	-78.86	09
+Sevilla	0.085	-77.126	22
+Sevilla Don Bosco	-2.316	-78.101	15
+Shell	-1.505	-78.063	17
+Shushufindi	-0.186	-76.645	22
+Sibambe	-2.226	-78.891	06
+Siete de Julio	-0.186	-76.782	22
+Sigchos	-0.705	-78.889	07
+Sigsig	-3.051	-78.796	02
+Simiatug	-1.292	-78.961	03
+Simón Bolívar	-2.185	-80.359	10
+Simón Bolívar	-2.002	-79.485	10
+Sinaí	-2.095	-78.053	15
+Sinincay	-2.851	-79.015	02
+Sinsao	-3.664	-79.583	08
+Sucre	-1.28	-80.418	14	15286
+Sucre	-1.264	-78.495	19
+Sucúa	-2.457	-78.171	15	7413
+Suscal	-2.437	-79.052	04
+Tababela	-0.186	-78.344	18
+Tabacundo	0.048	-78.22	18
+Taisha	-2.34	-77.46	15
+Tambo	-2.51	-78.927	04
+Tanicuchí	-0.781	-78.638	07
+Taquil	-3.89	-79.289	12
+Tarapoa	-0.124	-76.346	22
+Tarifa	-1.979	-79.755	10
+Tayuza	-2.698	-78.239	15
+Telembí	0.808	-78.928	09
+Tena	-0.996	-77.813	23	17172
+Tendales	-3.122	-79.846	08
+Tenguel	-2.995	-79.792	10
+Timbiré	0.959	-78.865	09
+Tiputini	-0.788	-75.529	24
+Tisaleo	-1.349	-78.669	19
+Tixán	-2.152	-78.803	06
+Toacaso	-0.757	-78.687	07
+Tocachi	0.044	-78.289	18
+Tonchigüe	0.828	-79.946	09
+Tonsupa	0.89	-79.81	09
+Torata	-3.601	-79.887	08
+Tosagua	-0.786	-80.235	14	14680
+Tres Postes	-1.987	-79.605	10	7000
+Tulcán	0.812	-77.717	05	86498
+Tumbabiro	0.461	-78.192	11
+Tumbaco	-0.215	-78.401	18
+Tupigachi	0.077	-78.181	18
+Tutupali	-3.529	-78.951	20
+Uimbí	0.958	-78.772	09
+Urcuquí	0.418	-78.195	11
+Urdaneta	-3.605	-79.211	12
+Uzhcurrumi	-3.323	-79.595	08
+Vacas Galindo	0.304	-78.567	11
+Valdez	1.249	-78.983	09	11441
+Valdez	0.984	-78.894	09
+Valencia	-0.953	-79.355	13	18841
+Valladolid	-4.551	-79.132	20
+Valle Hermoso	-0.087	-79.279	26
+Valle de La Virgen	-1.74	-80.196	10
+Veintiocho de Mayo	-3.636	-78.927	20
+Ventanas	-1.443	-79.463	13	38168
+Ventura	-2.248	-79.124	04
+Viche	0.658	-79.541	09
+Vilcabamba	-4.261	-79.223	12
+Villa La Unión	-1.702	-78.773	06
+Vinces	-1.556	-79.752	13	32497
+Wilfrido Loor Moreira	-0.353	-79.66	14
+Yaguachi Nuevo	-2.098	-79.693	10	27947
+Yamana	-4	-79.698	12
+Yanayacu	-1.434	-78.665	19
+Yantzaza	-3.833	-78.761	20	9970
+Yaruquí	-0.165	-78.316	18
+Yaruquíes	-1.689	-78.676	06
+Yerbero	0.585	-79.484	09
+Zambi	-3.914	-79.536	12
+Zamora	-4.064	-78.951	20	15276
+Zaruma	-3.692	-79.613	08	12505
+Zumbahua	-0.961	-78.898	07
+Zuña	-2.188	-78.359	15

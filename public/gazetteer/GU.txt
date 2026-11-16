@@ -1,0 +1,28 @@
+Adacao	13.492	144.845	MA	3638
+Agana Heights Village	13.466	144.748	AH	3940
+Agat Village	13.383	144.66	AT	3292
+Anao	13.529	144.918	YG	2385
+Apotgan	13.488	144.776	TM	5224
+Apra Harbor	13.428	144.653	SR	2930
+Asan	13.472	144.716	AS	860
+Asan-Maina Village	13.472	144.717	AS	2137
+Barrigada Village	13.469	144.799	BA	8875
+Chaguian	13.572	144.881	YG	2524
+Chalan Pago-Ordot Village	13.447	144.759	CP	6822
+Dededo Village	13.518	144.839	DD	44943
+Hagåtña	13.476	144.749	AN	1051
+Hagåtña Village	13.473	144.758	AN	1051
+Inarajan Village	13.274	144.748	IN	3052
+Ipan	13.354	144.767	TF	901
+Mangilao Village	13.448	144.801	MA	15191
+Merizo Village	13.266	144.669	ME	2152
+Mongmong-Toto-Maite Village	13.469	144.782	MT	6825
+Piti Village	13.463	144.693	PI	1666
+Santa Rita Village	13.386	144.672	SR	7500
+Sinajana Village	13.463	144.754	SJ	2853
+Talofofo Village	13.355	144.758	TF	3215
+Tamuning	13.488	144.781	TM	19685
+Tamuning-Tumon-Harmon Village	13.488	144.781	TM	19685
+Umatac Village	13.298	144.663	UM	903
+Yigo Village	13.536	144.889	YG	20539
+Yona Village	13.41	144.777	YN	6484

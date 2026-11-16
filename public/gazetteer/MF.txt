@@ -1,0 +1,9 @@
+Agrément	18.075	-63.078	00	1876
+Colombier	18.072	-63.06	00	3335
+Concordia	18.065	-63.078	00	6102
+Grand-Case	18.105	-63.054	00	6333
+Marigot	18.068	-63.083	00	5700
+Oyster Pond	18.059	-63.016		1830
+Quartier d’Orléans	18.069	-63.035	00	3385
+Saint-James	18.065	-63.086	00	1739
+Sandy Ground	18.059	-63.099	00	3493

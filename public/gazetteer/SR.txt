@@ -1,0 +1,35 @@
+Albina	5.498	-54.055	13	3985
+Alkmaar	5.849	-55.018	11	5561
+Beekhuizen	5.806	-55.174	16	17185
+Benzdorp (Monte Hermon)	3.672	-54.104	18	600
+Blauwgrond	5.843	-55.119	16	31483
+Brokopondo	5.056	-54.98	10	14662
+Brownsweg	5.004	-55.153	10	4793
+Calcutta	5.839	-55.674	17	1647
+Flora	5.8	-55.2	16	19538
+Glasgow	5.917	-56.917	14	776
+Groningen	5.8	-55.467	17	3216
+Jarikaba	5.808	-55.327	17	5963
+Kampong Baroe	5.75	-55.4	17	2248
+Latour	5.797	-55.209	16	29526
+Lelydorp	5.7	-55.233	19	18223
+Livorno	5.78	-55.181	16	8209
+Mariënburg	5.877	-55.043	11	4427
+Meerzorg	5.808	-55.141	11	12405
+Moengo	5.614	-54.401	13	10834
+Munder Buiten	5.841	-55.182	16	17234
+Nieuw Amsterdam	5.886	-55.089	11	4935
+Nieuw Nickerie	5.926	-56.973	14	12818
+Onverwacht	5.59	-55.195	15	2105
+Paradijs	5.898	-56.904	14	966
+Paramaribo	5.866	-55.167	16	223757
+Pontbuiten	5.788	-55.209	19	23211
+Powakka	5.445	-55.08	15	1920
+Rainville	5.834	-55.138	16	22747
+Tamanredjo	5.786	-55.025	11	6601
+Tammenga	5.829	-55.202	16	15819
+Totness	5.876	-56.326	12	2150
+Van Pettenpolder	5.928	-56.993	14	966
+Wageningen	5.76	-56.665	14	2937
+Weg naar Zee	5.871	-55.215	16	16037
+Welgelegen	5.842	-55.219	16	19304

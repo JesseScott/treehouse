@@ -1,0 +1,23 @@
+Apatou	5.155	-54.343	GF	10059
+Awala-Yalimapo	5.736	-53.909	GF	1549
+Bellevue	5.477	-53.261	GF	536
+Cayenne	4.938	-52.335	GF	61550
+Charvein	5.576	-53.896	GF	1600
+Grand-Santi	4.273	-54.381	GF	9668
+Iracoubo	5.48	-53.205	GF	1536
+Javouhey	5.607	-53.819	GF	1000
+Kourou	5.163	-52.643	GF	24029
+Macouria	4.912	-52.374	GF	8773
+Mana	5.669	-53.779	GF	5885
+Maripasoula	3.642	-54.032	GF	8423
+Matoury	4.849	-52.324	GF	26350
+Roura	4.729	-52.325	GF	2229
+Régina	4.313	-52.131	GF	1657
+Rémire	4.886	-52.279	GF
+Rémire-Montjoly	4.917	-52.267	GF	19029
+Résidence Arc-en-Ciel	4.893	-52.287	00	2000
+Résidence Cogneau-Larivot	4.894	-52.341	00	2730
+Saint-Georges	3.889	-51.802	GF	2742
+Saint-Laurent-du-Maroni	5.502	-54.029	GF	24287
+Sinnamary	5.377	-52.957	GF	3180
+Tonate	5.012	-52.472	GF

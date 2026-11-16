@@ -1,0 +1,11 @@
+Blue Hills Settlements	21.807	-72.277	00	1156
+Bottle Creek Settlements	21.884	-71.922	00	645
+Cockburn Harbour	21.493	-71.533	00	811
+Cockburn Town	21.461	-71.142	00	3720
+Five Cays Settlement	21.757	-72.268	00	3592
+Kew	21.913	-71.993	00	1477
+Palm Grove	21.452	-71.144	00	664
+Providenciales	21.783	-72.252		23769
+The Bight Settlements	21.78	-72.204	00	2288
+Wheeland	21.814	-72.282	00	3210
+Whitby	21.954	-71.966	00	562

@@ -1,0 +1,564 @@
+Aldeía Nova	-8.615	15.11	05
+Alfândega	-7.537	15.838	15
+Alto Chicapa	-10.932	19.151	18
+Alto Cuito	-13.433	18.867	14
+Alto Hama	-12.233	15.55	08	36661
+Ambiula	-7.445	14.649	15
+Amboíva	-11.527	14.737	06
+Ambriz	-7.846	13.108	19	11640
+Andulo	-11.487	16.697	02	50000
+Assango	-10.982	14.411	06
+Atóme	-11.748	14.498	06
+Babaera	-12.899	14.805	01
+Bailundo	-9.575	15.994	12	70481
+Bailundo	-12.2	15.867	08
+Baixo Longa	-15.713	18.64	CBG
+Balombo	-12.354	14.772	01	108965
+Bambi	-14.051	15.572	09
+Banga	-8.73	15.167	05
+Banza Damba	-6.888	15.015	15	12000
+Barra do Cuanza	-9.309	13.137	20
+Barra do Dande	-8.472	13.37	19	75000
+Baía Farta	-12.604	13.197	01	107841
+Bela Vista	-7.812	13.799	19	10648
+Belize	-4.65	12.767	03	24430
+Belo Horizonte	-11.914	16.9	02
+Bembe	-7.029	14.307	15
+Benfica	-8.944	13.164	20	191828
+Bengo	-8.236	15.888	15
+Benguela	-12.577	13.403	01	555124
+Bentiaba	-14.258	12.391	13
+Bibala	-14.766	13.349	13	10500
+Bimbe	-11.817	15.833	08
+Bindo	-8.153	15.21	05
+Biópio	-12.467	13.737	01
+Boa Entrada	-10.865	14.33	06
+Bocoio	-12.47	14.137	01	164685
+Bolongongo	-8.464	15.248	05
+Bolonguera	-13.545	13.577	01
+Bom Jesus	-9.167	13.567	19
+Bondo Caíla	-17.317	18.35	04
+Botera	-11.616	14.263	06
+Buco	-9.558	16.146	12	13217
+Buco Zau	-4.767	12.55	03	40953
+Buela	-5.917	14.55	16
+Buenga-Sul	-6.948	15.862	15
+Bula Atumba	-8.674	14.797	19	30537
+Bungo	-7.44	15.385	15
+Béu	-6.23	15.467	15
+Cabinda	-5.562	12.195	03	550000
+Cabiri	-8.922	13.659	19
+Cabo Ledo	-9.656	13.239	19
+Cabolombo	-8.994	13.181	20
+Cabombo	-8.21	16.636	12
+Cabuta	-9.836	14.863	06
+Cachimo	-8.355	21.33	17
+Cachingues	-13.073	16.751	02
+Cacimbas	-14.07	13.59	13
+Cacolo	-10.145	19.266	18	13498
+Cacoma	-12.595	15.208	08
+Caconda	-13.736	15.062	09	15000
+Cacongo	-5.239	12.144	03	15000
+Cacuaco	-8.78	13.375	20	146867
+Cacula	-14.496	14.116	09
+Caculama	-9.483	16.85	12
+Caculo Cabaça	-8.755	15.271	05
+Caculo Cahango	-9.301	14.068	19
+Cacuso	-9.421	15.747	12	39302
+Cafunfo	-8.767	17.996	17	90000
+Cage Mazumbo	-8.3	14.345	19	16093
+Cahama	-16.286	14.31	07	70061
+Caianda	-11.006	23.531	14
+Caiave	-12.836	13.99	01
+Caieie	-12.209	16.993	02
+Caimbambo	-13.022	14.003	01	14544
+Cainde	-15.498	13.37	13
+Caiongo	-7.739	15.913	15
+Caita	-7.805	20.7	17
+Caitou	-14.483	13.083	13
+Caiuera	-11.921	17.264	02
+Caiundo	-15.7	17.458	CBG
+Calai	-17.889	19.771	CBG	8741
+Calandula	-9.09	15.954	12	9000
+Calandula	-13.467	19.617	14	9000
+Calima	-12.881	15.832	08
+Calonamba	-13.774	15.091	09	15000
+Caluango	-8.268	19.699	17
+Caluca	-6.783	14.112	16
+Calucinga	-11.323	16.196	02	15000
+Calulo	-10.001	14.895	06	44000
+Calumbo	-9.147	13.419	19	652270
+Calunda	-12.122	23.479	14
+Caluquembe	-13.867	14.433	09	31000
+Caluquembe	-13.787	14.689	09
+Camabatela	-8.188	15.375	05	21767
+Camacupa	-12.017	17.483	02	59000
+Camama	-8.936	13.265	20	667094
+Camame	-8.988	14.991	05
+Camanongue	-11.436	20.165	14	12930
+Camatambo	-6.505	15.315	15
+Camaxilo	-8.338	18.911	17
+Cambamba	-8.166	14.765	15
+Cambaxe	-9.405	16.485	12
+Cambo Suinginge	-8.812	16.786	12
+Camboio	-12.927	14.099	01	14544
+Cambondo	-9.163	14.664	05
+Cambuengo	-11.611	16.086	08
+Cambundi	-7.469	17.038	12	17212
+Cambundi	-10.895	17.764	12	17212
+Cambundi Catembo	-10.075	17.551	12	17212
+Cambândua	-12.51	17.324	02
+Cameia	-11.691	20.839	14	14138
+Cameia	-11.558	20.781	14	4972
+Camissombo	-8.156	20.656	17
+Camucuio	-14.114	13.241	13	66112
+Camuine	-13.76	14.342	01
+Canacassala	-8.163	14.117	19	20913
+Cangamba	-13.698	19.86	14
+Cangandala	-9.783	16.433	12	52220
+Cangola	-7.959	15.864	15
+Cangombe	-14.435	20.035	14
+Cangote	-12.731	16.631	02
+Cangumbe	-11.957	19.203	14
+Canhamela	-13.258	14.088	01
+Canhoca	-9.25	14.683	05
+Canjala	-12.01	13.97	01
+Canzar	-7.623	21.563	17
+Capaia	-8.336	20.217	17
+Capangombe	-15.097	13.136	13
+Capelongo	-14.885	15.082	09
+Capenda Camulemba	-9.418	18.435	17
+Capolo	-10.391	13.986	06
+Capunda	-11.133	14.467	06	21260
+Capunda	-10.678	17.368	12
+Capunda Cavilongo	-14.967	13.983	09
+Capupa	-13.442	14.28	01
+Cariamba	-8.599	15.198	05
+Cariango	-10.581	15.33	06
+Caribo	-9.655	16.668	12
+Cassai-Sul	-10.589	21.97	18
+Cassamba	-13.134	20.299	14
+Cassanguidi	-7.484	21.303	17	20000
+Cassanje	-11.058	14.954	06
+Cassanje Calucala	-8.911	17.644	17
+Casseche	-7.579	14.964	15
+Cassengo	-9.682	20.404	18
+Cassinga	-15.118	16.086	09
+Cassoneca	-9.243	13.853	19
+Cassongo	-12.11	20.293	14
+Cassongue	-11.85	15.05	06
+Cassumbe	-11.142	16.6	02
+Catabola	-12.15	17.283	02	28831
+Catata	-13.397	15.416	08
+Catchiungo	-12.566	16.226	08	120677
+Cateco Cangola	-8.46	15.826	12
+Catengue	-13.03	13.738	01
+Catete	-9.106	13.688	ICB
+Catumbela	-12.43	13.547	01	95034
+Caungula	-8.422	18.636	17
+Cavunga	-8.923	14.653	05
+Caxicane	-9.221	13.725	19
+Caxinga	-9.544	17.02	12
+Caxito	-8.578	13.664	19	55000
+Cazage	-11.067	20.701	18	4764
+Cazenga	-8.838	13.284	20	394170
+Cazombo	-11.899	22.902	14	34000
+Cazombo	-8.732	15.371	05	34000
+Cazuangongo	-8.192	14.472	19	2928
+Caála	-12.852	15.561	08	130000
+Cela	-11.422	15.123	06	90000
+Chela	-12.303	15.434	08	5811
+Chiaca	-12.709	14.842	08
+Chiange	-15.737	13.892	09
+Chibemba	-15.753	14.076	09
+Chibia	-15.183	13.699	09	10000
+Chicala	-12.803	17.059	02
+Chicomba	-14.133	14.917	09	9428
+Chicuma	-12.191	14.126	01
+Chicungo	-14.877	14.191	09
+Chila	-12.069	14.487	01
+Chilata	-13.261	15.156	08
+Chiluage	-9.519	21.796	18
+Chindumbo	-11.95	14.467	01	32013
+Chindumbo	-12.468	14.946	01
+Chingo	-14.22	12.896	13
+Chinguanja	-15.03	16.936	CBG
+Chinguar	-12.557	16.338	02	26811
+Chinhama	-13.105	16.431	08
+Chinjenje	-12.825	14.928	08
+Chinjenje	-12.932	14.992	08
+Chipeta	-12.264	17.129	02
+Chipindo	-13.814	15.79	09	10000
+Chissamba	-12.167	17.333	02	7677
+Chissuata	-15.347	16.881	07
+Chitado	-17.313	13.905	07
+Chitato	-7.3	20.733	17	246880
+Chitato	-7.345	20.82	17
+Chitembo	-13.55	16.633	02	25000
+Chitembo	-13.514	16.757	02
+Chiuca	-11.497	18.55	02
+Chivaúlo	-11.64	16.461	02
+Chiéde	-17.173	15.994	07
+Chiúme	-15.136	21.176	14
+Chongoroi	-13.574	13.941	01	12000
+Conda	-11.109	14.336	06	21260
+Condé	-10.845	14.676	06
+Cota	-9.267	16.096	12
+Coxe	-8.478	14.79	19	4904
+Cuale	-8.354	16.16	12
+Cuangar	-17.611	18.622	CBG
+Cuango Calumbo	-7.677	15.107	15	9977
+Cuango-Luzamba	-9.146	18.045	17	55000
+Cuanza	-11.994	17.66	02
+Cubal	-13.039	14.246	01	90367
+Cubal do Lumbo	-12.313	14.127	01	18451
+Cuchi	-14.65	16.899	CBG	15000
+Cucumbi	-10.28	19.05	18
+Cuemba	-12.15	18.083	02	19995
+Cuilo	-8.236	19.526	17	26577
+Cuilo Camboso	-5.916	16.513	15
+Cuilo Futa	-6.425	15.729	15
+Cuilo Pombo	-7.203	15.723	15
+Cuima	-13.246	15.637	08
+Culamagia	-9.804	16.897	12
+Cumbira	-12.179	15.144	08
+Cunga Palanga	-10.367	17.042	12
+Cunhinga	-12.233	16.783	02	11812
+Cunjamba	-15.372	20.139	CUB
+Cunje	-12.342	16.954	02
+Cunjo	-11.158	14.564	06
+Cusse	-13.51	15.185	09
+Cutato	-14.373	16.493	CBG
+Cutato	-12.385	16.437	02
+Cutenda	-14.371	15.073	09
+Cutuile	-15.119	20.999	CUB
+Cuvango	-14.466	16.292	09
+Cuvelai	-15.664	15.803	07
+Cuímba	-6.121	14.621	16	41878
+Cuíto	-12.383	16.933	02	355423
+Cuíto Cuanavale	-15.165	19.174	CUB
+Cêrca	-9.059	14.569	05
+Cünga diá Samba	-8.096	14.952	15
+Dala	-11.033	20.2	18	7514
+Dala	-13.783	16.717	02	7514
+Dala Cachibo	-10.465	14.646	06
+Damba	-6.679	15.131	15	12000
+Dambi	-7.768	15.173	15
+Dando	-11.243	17.415	02
+Dange ya Menha	-9.532	14.653	05
+Demba Chio	-9.852	14.037	19
+Dimuca	-7.887	15.507	15
+Dinde	-14.27	13.693	09
+Dinge	-5	12.333	03
+Dirico	-17.984	20.778	CUB
+Dombe Grande	-12.952	13.103	01	25000
+Dombo wa Zanga	-8.556	15.886	12
+Dondo	-9.685	14.428	05	64643
+Dondo	-9.05	15.317	05	64643
+Dongo	-14.595	15.719	09
+Dumba Cambango	-10.348	17.426	12
+Dumbi	-11.688	14.853	06
+Dundo	-7.366	20.816	17	177604
+Ebo	-11.05	14.717	06	10000
+Ecunna	-12.679	15.506	08	82541
+Egito Praia	-11.962	13.764	01
+Evale	-16.553	15.74	07
+Funda	-8.844	13.548	19
+Gabela	-10.851	14.38	06	116903
+Galanga	-12.063	15.138	08
+Galangue	-13.794	16.106	09
+Gama	-8.567	13.476	19	66202
+Gamba	-11.751	17.112	02
+Ganda	-13.016	14.635	01	65000
+Gangula	-11.005	13.913	06
+Golfe	-8.866	13.262	20	655796
+Golungo Alto	-9.133	14.767	05	19992
+Gombe	-8.124	14.291	19	19209
+Gungo	-11.813	14.149	06
+Gungue	-13.734	15.409	09
+Hengue	-11.65	15.65	08
+Hoji ya Henda	-8.805	13.29	20	642050
+Hoque	-14.663	13.898	09
+Huambo	-12.776	15.739	08	595304
+Huila	-15.05	13.544	09
+Humbe	-16.686	14.903	07	35985
+Humpata	-15.01	13.377	09
+Iambala	-13.366	14.503	01
+Icoca	-6.199	16.196	15
+Impulo	-13.902	13.677	09
+Ingombota	-8.818	13.229	20	144911
+Inhuca	-4.85	12.4	03
+Iona	-16.883	12.57	13
+Iongo	-9.206	17.749	17
+Jamba	-17.5	22.667	CUB	12000
+Jamba Cueio	-15.425	17.976	04
+Jamba Mineira	-14.687	16.034	09
+Jau	-15.223	13.515	09
+Kikolo	-8.781	13.334	20	728205
+Kilamba	-8.849	13.275	20	237528
+Kima Kieza	-8.834	13.295	20	428855
+Kiwaba Nzoji	-8.946	16.508	12
+Kunda dya Baze	-8.908	17.053	12	15965
+Lago Dilolo	-11.504	22.015	14
+Lemba	-8.775	17.244	12
+Liambo	-5.557	12.283	03
+Liangongo	-11.659	20.693	14
+Lobito	-12.364	13.536	01	393079
+Lola	-14.305	13.607	13
+Lombe	-9.487	16.153	12
+Londuimbali	-12.237	15.317	08	17000
+Longa	-14.606	18.478	CBG
+Longonjo	-12.908	15.248	08	92103
+Lonhe	-10.826	15.552	06
+Luacano	-11.218	21.645	14
+Luali	-5.091	12.474	03
+Luanda	-8.837	13.234	20	2776168
+Luando	-11.615	18.467	02
+Luangue	-9.54	19.61	17
+Luau	-10.707	22.225	14	55432
+Lubalo	-9.154	19.281	17	26103
+Lubango	-14.917	13.493	09	600751
+Lucala	-9.273	15.252	05	19422
+Lucapa	-8.419	20.745	17	110000
+Lucira	-13.865	12.525	13
+Lucunga	-7.568	15.275	15
+Lucusse	-12.525	20.819	14
+Luena	-11.783	19.917	14	273675
+Luengue	-16.702	20.258	CUB
+Lufico	-6.371	13.506	16
+Luia	-8.17	21.552	17
+Luiana	-17.508	22.729	CUB
+Luinga	-8.468	15.609	05
+Luma Cassai	-11.232	19.781	18
+Lumbala	-14.102	21.435	14	19000
+Lumbala Caquengue	-12.641	22.587	14
+Lumbala Nguimbo	-14.133	21.383	14
+Lunge	-12.215	16.108	08
+Lupire	-14.64	19.603	CUB
+Luquembo	-10.739	17.718	12	69420
+Luremo	-8.515	17.827	17
+Lutembo	-13.487	21.375	14
+Lutuai	-12.658	20.13	14
+Luvaca	-5.983	14.767	16
+Luvemba	-11.956	15.444	08
+Luvo	-5.849	14.084	16
+Luvuei	-13.073	21.166	14
+Lépi	-12.875	15.393	08
+Léua	-11.658	20.448	14	5168
+Lêmboa	-6.85	14.919	15
+Lóvua	-7.342	20.172	17
+Lóvua do Zambeze	-11.556	23.546	14
+Lúbia	-11.021	17.096	02
+Mabaia	-6.958	14.792	15
+Mabubas	-8.524	13.686	19	16981
+Maca Mombolo	-12.14	14.704	01
+Macocola	-6.983	16.135	15
+Macolo	-7.085	16.729	15
+Macondo	-12.583	23.758	14
+Madimba	-6.567	14.368	16
+Maianga	-8.847	13.237	20	727681
+Malanje	-9.54	16.341	12	455000
+Malembo	-5.337	12.188	03
+Malengue	-13.92	16.818	02
+Mamué	-13.8	13.118	13
+Mangando	-8.047	17.127	12
+Maquela do Zombo	-6.057	15.11	15	42000
+Marimba	-8.36	17.023	12
+Massabi	-4.967	12.083	03
+Massangano	-9.628	14.258	05
+Massango	-8.034	16.343	15
+Massau	-7.231	16.921	15
+Matala	-14.733	15.035	09	78000
+Mateus	-7.573	15.121	15
+Mauengue	-14.348	14.261	09
+Maué	-16.915	19.313	CBG
+Mavengue	-17.14	19.618	04
+Mavinga	-15.793	20.364	CUB	10000
+Mbanji ya Ngola	-8.438	16.67	12
+Mbanza Kongo	-6.267	14.238	16	148000
+Mbave	-12.445	15.892	08
+Menongue	-14.658	17.691	CBG	251178
+Micanda	-8.514	16.364	12
+Miconje	-4.45	12.883	03
+Milando	-8.815	17.555	12
+Milunga	-6.925	16.349	15
+Moma	-10.354	17.497	12
+Mona Quimbundo	-9.916	20.011	18
+Monte Belo	-12.419	14.392	01
+Mossamedes	-15.196	12.152	13	255000
+Mpala	-6.14	13.742	16
+Muangueji	-9.606	20.416	18
+Mucaba	-7.262	15.078	15
+Muconda	-10.592	21.318	18	8000
+Mucope	-16.386	14.888	07
+Mucusso	-18.021	21.426	CUB
+Mufuma	-9.107	17.049	12
+Muinha	-11.864	17.514	02
+Muié	-14.356	20.412	14
+Mulenvos	-8.867	13.334	20	882014
+Mulondo	-15.643	15.197	09
+Mumbondo	-10.199	14.12	19
+Mumbué	-13.895	17.297	02
+Mundundo	-13.022	15.074	08
+Munenga	-10.023	14.637	06
+Mungo	-11.833	16.236	08	21662
+Munhango	-12.158	18.556	02
+Mupa	-16.177	15.746	07
+Muquixe	-9.5	16.65	12
+Muriege	-9.907	21.215	18
+Mussende	-10.514	16.02	06	33558
+Musserra	-7.615	13.035	16
+Mussulo	-8.945	13.075	20
+Mussuma Mitete	-14.201	21.911	14
+Mussungue	-7.414	20.791	17
+Mutumbo	-13.181	17.397	02
+Muvulege	-8.983	18.768	17
+Muxaluando	-8.123	14.288	19	21052
+Muxima	-9.52	13.958	19	8166
+Máua	-8.281	15.312	05
+Môngua	-16.726	15.355	07
+N'dalatando	-9.298	14.912	05	161584
+N'zeto	-7.228	12.87	16	28840
+Namacunde	-17.306	15.845	07
+Nana Candundo	-11.516	23.016	14
+Nancova	-16.39	18.987	04
+Naulila	-17.202	14.681	07
+Navegantes	-12.59	13.391	01	240075
+Necuto	-4.95	12.617	03
+Negage	-7.759	15.272	15	92950
+Negola	-14.14	14.494	09
+Nehone	-16.637	16.03	07
+Nharêa	-11.475	16.965	02	18000
+Ninda	-14.807	21.384	14
+Nova Esperança	-6.733	15.888	15
+Nova Vida	-8.906	13.222	20	464985
+Nsosso	-6.898	15.317	15
+Nzagi	-8.385	15.301	05	60000
+Nzaji	-7.689	21.362	17
+Nóqui	-5.875	13.432	16
+Ombala yo Mungu	-17.083	15.127	07
+Oncócua	-16.656	13.423	07
+Ondjiva	-17.067	15.733	07	121537
+Otchindjau	-16.503	13.924	07
+Palanca	-15.044	13.451	09
+Pambangala	-11.707	15.249	06
+Pango Aluquém	-8.713	14.463	19	16080
+Panguíla	-8.693	13.449	19	158068
+Paredes	-8.607	14.667	19	6300
+Pedra do Feitiço	-5.919	12.963	16
+Piri	-8.534	14.436	19	26265
+Porto Amboim	-10.733	13.768	06	91605
+Praia Bebe	-12.41	13.503	01	9082
+Pungo a Ndongo	-9.67	15.589	12
+Puri	-7.695	15.654	15	7598
+Quela	-9.262	17.071	12
+Quenha	-10.146	15.454	06
+Quiage	-8.507	14.95	19	5635
+Quiangombe	-9.077	15.253	05
+Quibala	-10.734	14.98	06	27128
+Quibala Norte	-7.187	13.86	16
+Quibaxe	-8.501	14.586	19	8268
+Quibocolo	-6.274	15.067	15
+Quicabo	-8.309	13.832	19	10852
+Quicombo	-11.319	13.817	06
+Quiculungo	-8.519	15.312	05
+Quicunzo	-8.182	14.451	19	13761
+Quifangondo	-8.765	13.433	20
+Quihita	-15.38	13.964	09
+Quihuhu	-7.754	16.592	12
+Quilenda	-11.467	14.133	06	13726
+Quilenda	-10.641	14.336	06
+Quilengues	-14.075	14.076	09
+Quilombo dos Dembos	-8.91	14.725	05
+Quilombo quía Puto	-9.083	14.713	05
+Quimbango	-10.964	17.575	12
+Quimbele	-6.523	16.216	15
+Quindeje	-7.156	13.637	16
+Quinguengue	-7.64	16.958	12
+Quinzau	-6.869	12.757	16
+Quipedro	-6.896	15.879	15
+Quipeio	-12.433	15.5	08
+Quipungo	-14.819	14.535	09	23014
+Quiquiemba	-8.338	14.907	05
+Quirima	-10.895	18.084	12
+Quirimbo	-10.674	14.258	06
+Quissecula	-11.392	15.092	06	90000
+Quisseque	-7.879	15.216	15
+Quissongo	-10.042	15.08	06
+Quitapa	-10.301	18.199	17
+Quitexe	-7.94	15.041	15
+Quivuenga	-7.092	14.854	15
+Quixico	-7.986	14.42	19	14531
+Quixinge	-9.961	14.424	19
+Quêlo	-6.445	12.741	16
+Quêssua	-9.471	16.293	12
+Ramiros	-9.063	13.046	20	323576
+Rangel	-8.826	13.263	20	190569
+Ringoma	-12.399	17.544	02
+Rito	-16.692	19.088	CBG
+Rivungo	-16.334	22.036	CUB
+Sacandica	-5.978	15.957	15
+Sachinemuna	-11.651	17.974	02
+Sacomar	-15.121	12.149	13
+Samba	-8.88	13.196	20	364986
+Samba Cajú	-8.762	15.408	05
+Samba Lucala	-8.99	15.584	05
+Sambizanga	-8.789	13.275	20	177808
+Sambo	-13.059	16.12	08
+Samboto	-13.322	16.01	08
+Sande	-12.306	17.35	02
+Sanga	-11.129	15.426	06
+Santa Clara	-10.192	15.434	06	29000
+Sanza Pombo	-7.315	16.002	15	23000
+Saurimo	-9.661	20.392	18	393000
+Sautar	-11.186	18.441	12
+Savate	-16.833	17.962	CBG
+Sende	-5.645	12.213	03
+Sequele	-8.807	13.456	19
+Serra de Canda	-6.299	14.788	16
+Sessa	-13.913	20.796	14
+Soma Cuanza	-13.505	17.364	02
+Sombo	-8.745	20.983	18
+Songo	-7.352	14.846	15	31382
+Soqueco	-9.262	15.81	12
+Soyo	-6.135	12.369	16	221555
+Sumbe	-11.206	13.844	06	205832
+São Pedro da Quilemba	-9.683	14.791	05
+Tabi	-8.18	13.357	19	13016
+Talatona	-8.918	13.186	20	500000
+Tando Zinze	-5.367	12.5	03
+Tango	-8.094	15.635	05
+Tchicuaqueia	-14.616	14.302	09
+Tchimporo-Yonde	-16.321	16.696	07
+Terreiro	-8.432	15.106	05
+Tombôco	-6.805	13.33	16	20358
+Tômbua	-15.804	11.845	13	46573
+Uaba	-13.874	14.89	09
+Uamba	-7.32	16.167	15
+Uando Mucaba	-7.048	14.997	15
+Ucu Seles	-11.412	14.307	06	47421
+Ucuma	-12.961	15.06	08	21809
+Ucuma	-12.851	15.064	08
+Umpulo	-12.704	17.691	02
+Ussoque	-12.354	15.102	08
+Uíge	-7.609	15.061	15	322531
+Viana	-8.906	13.375	20	865863
+Viangombe	-13.032	14.126	01
+Vila Flor	-8.98	13.308	20	256066
+Virei	-15.727	12.95	13	42607
+Vissati	-14.207	16.741	CBG
+Vista Alegre	-7.606	15.761	15
+Viti Vivali	-14.437	14.041	09
+Waku Kungo	-11.357	15.117	06	10970
+Xamavera	-17.905	20.44	CUB
+Xandel	-9.386	17.194	12
+Xangongo	-16.744	14.975	07	35000
+Xassengue	-10.459	18.533	18
+Xinge	-9.776	19.136	17
+Xipundo	-16.671	22.221	CUB
+Xá Muteba	-9.523	17.808	17
+Zala	-7.838	14.06	19	12313
+Zango	-9.012	13.384	20	198538
+Zenza do Itombe	-9.287	14.211	05
+Zone (Zona) E	-12.567	13.411	01
+Úcua	-8.652	14.157	19	41654

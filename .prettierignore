@@ -7,3 +7,4 @@ fixtures/synthetic
 src/map/basemap
 tools/reference
 docs/PLAN.md
+public/gazetteer
