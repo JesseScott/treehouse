@@ -50,7 +50,19 @@ async function attempt(baseUrl) {
     );
   }
 
-  // 2. The app boots, the map loads, and the camera goes where it is told.
+  // 2. The bundled gazetteer is there: without it no place can be put on the map.
+  try {
+    const response = await fetch(new URL(`gazetteer/index.json?t=${Date.now()}`, baseUrl), {
+      cache: 'no-store',
+    });
+    const index = response.ok ? await response.json() : null;
+    const shards = Object.keys(index?.shards ?? {}).length;
+    check('gazetteer is served', shards > 100, `HTTP ${response.status}, ${shards} country files`);
+  } catch (error) {
+    check('gazetteer is served', false, String(error));
+  }
+
+  // 3. The app boots, the map loads, and the camera goes where it is told.
   const browser = await chromium.launch({ args: WEBGL_ARGS });
   try {
     const page = await browser.newPage();
