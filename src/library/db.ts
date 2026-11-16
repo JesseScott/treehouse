@@ -18,9 +18,25 @@ export interface ImportRecord {
   rootId: string | null;
 }
 
+/**
+ * A location the app could not work out from its bundled gazetteer: a pin the user set, or
+ * the answer of an online lookup. Shared by every import, keyed by `placeKey` of the text.
+ */
+export interface StoredPlace {
+  key: string;
+  source: 'manual' | 'online';
+  /** Null when an online lookup found nothing, so the same place is not asked about twice. */
+  location: { lng: number; lat: number } | null;
+  /** What the online service called the place. Empty for a pin. */
+  label: string;
+  /** ISO timestamp. */
+  updatedAt: string;
+}
+
 interface TreehouseDb extends DBSchema {
   imports: { key: string; value: ImportRecord; indexes: { hash: string } };
   trees: { key: string; value: Tree };
+  places: { key: string; value: StoredPlace };
 }
 
 export const DB_NAME = 'treehouse';
@@ -28,10 +44,14 @@ export const DB_NAME = 'treehouse';
 let connection: Promise<IDBPDatabase<TreehouseDb>> | undefined;
 
 function db(): Promise<IDBPDatabase<TreehouseDb>> {
-  connection ??= openDB<TreehouseDb>(DB_NAME, 1, {
-    upgrade(database) {
-      database.createObjectStore('imports', { keyPath: 'id' }).createIndex('hash', 'hash');
-      database.createObjectStore('trees');
+  connection ??= openDB<TreehouseDb>(DB_NAME, 2, {
+    upgrade(database, oldVersion) {
+      if (oldVersion < 1) {
+        database.createObjectStore('imports', { keyPath: 'id' }).createIndex('hash', 'hash');
+        database.createObjectStore('trees');
+      }
+      // Version 2 (M2): pins and online lookups.
+      if (oldVersion < 2) database.createObjectStore('places', { keyPath: 'key' });
     },
   });
   return connection;
@@ -81,6 +101,19 @@ export async function deleteImport(id: string): Promise<void> {
     tx.objectStore('trees').delete(id),
     tx.done,
   ]);
+}
+
+/** Every pin and online lookup, for all imports. */
+export async function listPlaces(): Promise<StoredPlace[]> {
+  return (await db()).getAll('places');
+}
+
+export async function savePlace(place: StoredPlace): Promise<void> {
+  await (await db()).put('places', place);
+}
+
+export async function deletePlace(key: string): Promise<void> {
+  await (await db()).delete('places', key);
 }
 
 /** Closes the connection so a test can start from a fresh database. */

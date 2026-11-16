@@ -1,11 +1,16 @@
 import { displayName, eventOf, lifespan } from '../gedcom/people';
 import { useAppStore, type OpenTree } from '../state/appStore';
-import { familyCount, peopleCount } from './messages';
+import { coverageOf } from '../geocode/treePlaces';
+import { coverageSummary, familyCount, peopleCount } from './messages';
 
 export function TreePanel({ open }: { open: OpenTree }) {
   const setPickingRoot = useAppStore((s) => s.setPickingRoot);
   const closeTree = useAppStore((s) => s.closeTree);
   const alreadyImported = useAppStore((s) => s.alreadyImported);
+  const places = useAppStore((s) => s.places);
+  const geocoding = useAppStore((s) => s.geocoding);
+  const geocodeError = useAppStore((s) => s.geocodeError);
+  const setReviewingPlaces = useAppStore((s) => s.setReviewingPlaces);
 
   const root = open.tree.people.find((person) => person.id === open.record.rootId);
   const years = root ? lifespan(root) : '';
@@ -32,6 +37,27 @@ export function TreePanel({ open }: { open: OpenTree }) {
           <span className="person-meta">{[years, birthPlace].filter(Boolean).join(' · ')}</span>
         )}
       </p>
+
+      <h3>Places</h3>
+      <p role="status" data-testid="geocode-summary">
+        {geocoding
+          ? 'Finding places on the map…'
+          : geocodeError
+            ? 'The built-in list of places could not be loaded.'
+            : coverageSummary(coverageOf(places))}
+      </p>
+      <div className="row">
+        <button
+          type="button"
+          className="button"
+          data-testid="review-places"
+          onClick={() => {
+            setReviewingPlaces(true);
+          }}
+        >
+          Review places
+        </button>
+      </div>
 
       {open.record.warnings > 0 && (
         <p className="hint" data-testid="tree-warnings">
