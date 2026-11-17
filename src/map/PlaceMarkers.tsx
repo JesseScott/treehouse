@@ -27,9 +27,13 @@ export function PlaceMarkers() {
     [open, places],
   );
 
+  const hasTree = open !== null;
+
+  // The layers exist only while a tree is open. Setting up circle layers is costly with
+  // software WebGL, and the library screen, the first thing anyone sees, has nothing to draw.
   useEffect(() => {
     const map = currentMap();
-    if (!mapLoaded || !map) return;
+    if (!mapLoaded || !map || !hasTree) return;
     map.addSource(MARKER_SOURCE, {
       type: 'geojson',
       data: EMPTY,
@@ -101,7 +105,7 @@ export function PlaceMarkers() {
       }
       if (map.getSource(MARKER_SOURCE)) map.removeSource(MARKER_SOURCE);
     };
-  }, [mapLoaded, openPlace]);
+  }, [mapLoaded, hasTree, openPlace]);
 
   useEffect(() => {
     if (!mapLoaded) return;
