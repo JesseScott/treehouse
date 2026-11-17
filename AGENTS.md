@@ -5,8 +5,9 @@ plan with its milestones, and `docs/HARNESS.md` explains how to validate a chang
 
 treehouse is a world-map family tree viewer: a static web app with no backend. It reads a GEDCOM file in the browser,
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
-uploaded. Status: **M0** (harness and empty shell), **M1** (GEDCOM import, library, home-person picker) and **M2**
-(geocoding, place review, pins, opt-in online lookup) are built; M3 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
+uploaded. Status: **M0** (harness and empty shell), **M1** (GEDCOM import, library, home-person picker), **M2**
+(geocoding, place review, pins, opt-in online lookup) and **M3** (place markers, focus fly-to, profile, navigation,
+search) are built; M4 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
 
 ## Privacy rules (these come first)
 
@@ -76,32 +77,43 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 
 - **Stack:** Vite, React, TypeScript (strict, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`),
   MapLibre GL JS with the globe projection, Zustand, `idb` (IndexedDB) and `fflate` (reading `.zip` exports).
-- `src/main.tsx` installs the debug API and renders `src/App.tsx`.
+- `src/main.tsx` installs the debug API and the focus camera, and renders `src/App.tsx`.
 - `src/map/`: `MapView.tsx` owns the one MapLibre map and registers it in `mapRegistry.ts`. `camera.ts` is the single
   place that moves the camera (`moveCamera`: a flight, or a jump cut when motion is off) and decides when the map is
   idle. `offlineStyle.ts` is a style with no network needs: one bundled Natural Earth land GeoJSON
-  (`src/map/basemap/`, built by `npm run basemap`), no tiles, glyphs or sprites. It is the only style until M3 adds
-  an online basemap; tests must keep using the offline one.
+  (`src/map/basemap/`, built by `npm run basemap`), no tiles, glyphs or sprites (so map layers cannot draw text).
+  It is the only style until an online basemap is added; tests must keep using the offline one.
+  `PlaceMarkers.tsx` draws one clustered circle per place on the map (`markerData.ts` builds the GeoJSON);
+  `focusCamera.ts` is a store subscription that flies to each newly focused person, so the flight has started
+  before anything awaits idle; `FocusPin.tsx` marks where the focused person is shown.
 - `src/gedcom/`: everything about reading a file. `parse.ts` (text to `Tree`; forgiving, problems become coded
   `warnings`), `dates.ts` (free-text dates), `types.ts` (the data model), `people.ts` (lifespan, name search),
   `readGedcom.ts` (unzip, decode, check, parse, hash; throws `ImportError` with a fixed code),
   `import.worker.ts` and `importFile.ts` (the same, off the main thread). Person and family ids are the GEDCOM
   cross-reference ids, kept as written, because later milestones match people across re-exports by them.
+  `relatives.ts` reads parents, spouses, children and siblings, labels the relationship to the home person
+  (genealogists' terms: "2nd great-grandfather", "1st cousin once removed", "Wife of uncle") with the line between
+  them, and decides where each arrow key goes. `testTree.ts` builds small made-up trees for unit tests.
 - `src/geocode/`: putting place strings on the map. `normalize.ts` (how names are compared; `placeKey` is the
   identity of a place, shared by every spelling), `gazetteer.ts` (the bundled data in memory), `match.ts` (the
   matching rules: most specific known part wins, the country and region the string names are never left, a broader
   match is flagged approximate), `geocoder.ts` (loads only the country files the strings need), `geocode.worker.ts`
-  and `geocodePlaces.ts` (the same, off the main thread), `treePlaces.ts` (a tree's distinct places and coverage),
-  `nominatim.ts` (the opt-in online lookup). The data is `public/gazetteer/`, built by `tools/gazetteer/build.mjs`.
+  and `geocodePlaces.ts` (the same, off the main thread), `treePlaces.ts` (a tree's distinct places, coverage,
+  and who has events at each), `focusPlace.ts` (where a person is shown: birth, then baptism, earliest residence,
+  marriage, death, burial, then the nearest relative's place; anything but an exactly found birthplace is
+  approximate), `nominatim.ts` (the opt-in online lookup). The data is `public/gazetteer/`, built by `tools/gazetteer/build.mjs`.
 - `src/library/db.ts`: the IndexedDB library. An `ImportRecord` (name, file hash, counts, home person) and its
   parsed `Tree` are stored together; a file with a hash already in the library is opened, not stored again. The
   `places` store holds pins and online answers by `placeKey`, shared by every import. Gazetteer matches are not
   stored: they are recomputed when a tree is opened, so a better gazetteer improves old imports.
-- `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`, `PlacesPanel`) and `messages.ts`, which
-  holds the wording for error codes, counts and place outcomes.
+- `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`, `PlacesPanel`), the focused person's
+  `Profile`, `Navigation.tsx` (search, breadcrumb, pedigree), `useArrowKeys.ts`, `PlaceCard` (the people at a
+  clicked marker) and `messages.ts`, which holds the wording for error codes, counts, events and place outcomes.
 - `src/state/appStore.ts`: Zustand store: the library, the open tree and its places, import and lookup progress,
   and the actions the panels call. `screenOf` derives which panel shows; a tree with no home person goes to the
-  picker. `src/map/PlacePin.tsx` draws the selected place's pin and turns map clicks and drags into pins.
+  picker. Opening a tree focuses its home person. `src/state/focus.ts` derives the focused person, where they are
+  shown and their relationship, memoised so components and the debug API share one answer.
+  `src/map/PlacePin.tsx` draws the selected place's pin and turns map clicks and drags into pins.
 - `src/harness/`: `flags.ts` reads `?harness=1` and `?motion=off`; `debugApi.ts` builds `window.__treehouse`;
   `types.ts` is its contract, shared with the e2e tests. When a feature adds state an agent should be able to
   assert, extend `TreehouseState` and the e2e tests in the same change.

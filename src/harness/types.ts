@@ -50,6 +50,28 @@ export interface TreehouseState {
     alreadyImported: boolean;
   };
   focusedPersonId: string | null;
+  /**
+   * The focused person: how they are related to the home person (a fixed genealogical term
+   * such as "2nd great-grandfather", never a name) and which event they are shown at.
+   */
+  focus: {
+    personId: string;
+    relationship: { kind: 'self' | 'blood' | 'spouse' | 'in-law' | 'none'; label: string };
+    /** People on the line from the home person to this person, both included; 0 if unrelated. */
+    pathLength: number;
+    /** Null when nobody close has a place on the map, so the camera stays where it is. */
+    shownAt: {
+      basis: 'birth' | 'baptism' | 'residence' | 'marriage' | 'death' | 'burial' | 'relative';
+      approximate: boolean;
+      level: 'place' | 'area' | 'region' | 'country';
+      lng: number;
+      lat: number;
+    } | null;
+  } | null;
+  /** Place markers: one per place on the map, and how many markers and clusters are drawn now. */
+  markers: { places: number; rendered: number };
+  /** The list of people at a clicked place. */
+  placeCard: { open: boolean; people: number };
   /** Number of arcs drawn per thread type (all zero until M4). */
   threads: { lineage: number; family: number; ancestors: number; migration: number };
   /**
@@ -111,8 +133,13 @@ export interface TreehouseDebugApi {
   whenIdle(): Promise<void>;
   /** Where a place string of the open tree is, or null when the tree does not name it. */
   place(text: string): PlaceLocation | null;
-  /** Focuses a person and flies to their birthplace. A stub until M3: always `no-tree`. */
+  /**
+   * Focuses a person as a click on them would, then waits until the camera has arrived at
+   * where they are shown (their birthplace, or the fallback in `state().focus.shownAt`).
+   */
   focus(personId: string): Promise<FocusResult>;
+  /** Where a point is on screen, in page pixels, for clicking a marker. Null off the globe. */
+  project(at: { lng: number; lat: number }): { x: number; y: number } | null;
   /** Moves the camera the way a focus will (instant with `?motion=off`), then waits for idle. */
   flyTo(target: CameraTarget): Promise<void>;
 }

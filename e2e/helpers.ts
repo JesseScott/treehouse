@@ -17,6 +17,14 @@ export interface FixtureManifest {
     lat: number;
     lng: number;
   }[];
+  quirks: {
+    twoParentFamilies: string[];
+    duplicates: [string, string][];
+    detached: string[];
+    detachedFamily: string;
+    /** People with no place on any event: shown at a relative's place. */
+    noPlaces: string[];
+  };
 }
 
 const fixtureDir = new URL('../fixtures/synthetic/', import.meta.url);

@@ -1,4 +1,6 @@
 import type { ImportErrorCode } from '../gedcom/readGedcom';
+import type { FamilyEventType, PersonEventType } from '../gedcom/types';
+import type { FocusPlace, OwnBasis } from '../geocode/focusPlace';
 import type { Coverage } from '../geocode/treePlaces';
 import type { PlaceLevel, PlaceResult } from '../geocode/types';
 
@@ -54,4 +56,39 @@ export function placeOutcome(result: PlaceResult): string {
   return result.status === 'resolved'
     ? `Found: ${result.label}`
     : `Approximate, ${LEVELS[result.level]}: ${result.label}`;
+}
+
+/** The verb for each kind of event on a timeline. */
+export const EVENT_WORDS: Record<PersonEventType | FamilyEventType, string> = {
+  birth: 'Born',
+  baptism: 'Baptised',
+  residence: 'Lived',
+  marriage: 'Married',
+  divorce: 'Divorced',
+  death: 'Died',
+  burial: 'Buried',
+};
+
+const BASIS_PLACES: Record<OwnBasis, string> = {
+  birth: 'birthplace',
+  baptism: 'baptism place',
+  residence: 'earliest home',
+  marriage: 'marriage place',
+  death: 'place of death',
+  burial: 'burial place',
+};
+
+/** Why the focused person is shown where they are, in words. */
+export function focusNote(place: FocusPlace | null, relativeName?: string): string {
+  if (!place) return 'Nobody close to this person has a place on the map yet.';
+  if (place.basis === 'relative') {
+    const theirs = BASIS_PLACES[place.relativeBasis ?? 'birth'];
+    return `Approximate: shown at ${relativeName ?? 'a relative'}’s ${theirs}, as no place of their own is on the map.`;
+  }
+  if (place.basis === 'birth') {
+    return place.approximate
+      ? 'Shown at their birthplace, which is only placed roughly.'
+      : 'Shown at their birthplace.';
+  }
+  return `Approximate: shown at their ${BASIS_PLACES[place.basis]}, as their birthplace is not on the map.`;
 }

@@ -2,7 +2,10 @@ import { moveCamera, projectionName, whenMapIdle } from '../map/camera';
 import { currentMap, mapWhenCreated } from '../map/mapRegistry';
 import { placeKey } from '../geocode/normalize';
 import { coverageOf } from '../geocode/treePlaces';
+import { placeVisits, peopleCountAt } from '../geocode/treePlaces';
+import { MARKER_LAYERS, MARKER_SOURCE, markerCollection } from '../map/markerData';
 import { screenOf, useAppStore } from '../state/appStore';
+import { focusOf } from '../state/focus';
 import { flags } from './flags';
 import type { PlaceLocation, TreehouseDebugApi, TreehouseState } from './types';
 
@@ -50,6 +53,23 @@ function state(): TreehouseState {
       alreadyImported: store.alreadyImported,
     },
     focusedPersonId: store.focusedPersonId,
+    focus: focusState(store),
+    markers: {
+      places: store.open
+        ? markerCollection(store.places, placeVisits(store.open.tree)).features.length
+        : 0,
+      rendered:
+        map?.getSource(MARKER_SOURCE) && map.loaded()
+          ? map.queryRenderedFeatures({ layers: [...MARKER_LAYERS] }).length
+          : 0,
+    },
+    placeCard: {
+      open: store.openedPlaceKey !== null,
+      people:
+        store.open && store.openedPlaceKey !== null
+          ? peopleCountAt(placeVisits(store.open.tree).get(store.openedPlaceKey))
+          : 0,
+    },
     threads: { lineage: 0, family: 0, ancestors: 0, migration: 0 },
     geocode: {
       busy: store.geocoding,
@@ -60,6 +80,25 @@ function state(): TreehouseState {
     },
     placeReview: { selected: store.selectedPlaceKey !== null, pinning: store.pinning },
     onlineLookup: { ...store.online },
+  };
+}
+
+function focusState(store: ReturnType<typeof useAppStore.getState>): TreehouseState['focus'] {
+  const focus = focusOf(store);
+  if (!focus) return null;
+  const { kind, label, path } = focus.relationship;
+  const at = focus.place;
+  return {
+    personId: focus.person.id,
+    relationship: { kind, label },
+    pathLength: path.length,
+    shownAt: at && {
+      basis: at.basis,
+      approximate: at.approximate,
+      level: at.level,
+      lng: at.lng,
+      lat: at.lat,
+    },
   };
 }
 
@@ -100,10 +139,21 @@ const api: TreehouseDebugApi = {
   state,
   whenIdle,
   place,
-  // Stub: focusing a person and flying to their birthplace arrives with M3.
-  focus: async () => {
+  focus: async (personId) => {
     await whenIdle();
-    return { ok: false, reason: 'no-tree' };
+    const store = useAppStore.getState();
+    if (!store.open) return { ok: false, reason: 'no-tree' };
+    if (!store.focusPerson(personId)) return { ok: false, reason: 'unknown-person' };
+    await whenIdle();
+    return { ok: true };
+  },
+  project: (at) => {
+    const map = currentMap();
+    if (!map) return null;
+    const point = map.project([at.lng, at.lat]);
+    const box = map.getCanvas().getBoundingClientRect();
+    if (!Number.isFinite(point.x) || !Number.isFinite(point.y)) return null;
+    return { x: box.left + point.x, y: box.top + point.y };
   },
   flyTo: async (target) => {
     const map = await mapWhenCreated();

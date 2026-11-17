@@ -58,13 +58,14 @@ A failed build skips the rungs that need one; every other step still runs, so on
 The app exposes a small API so tests and agents can assert what the app is doing without comparing pixels. It is on
 in the dev server, and in a production build only when the URL has `?harness=1`.
 
-| Call                                          | Returns                                                                    |
-| --------------------------------------------- | -------------------------------------------------------------------------- |
-| `__treehouse.state()`                         | A plain-JSON snapshot (below)                                              |
-| `await __treehouse.whenIdle()`                | Resolves when the map has loaded, stopped moving and rendered              |
-| `__treehouse.place(text)`                     | Where a place string of the open tree is (below), or `null`                |
-| `await __treehouse.focus(id)`                 | Focus a person. A stub until M3: always `{ ok: false, reason: 'no-tree' }` |
-| `await __treehouse.flyTo({ lng, lat, zoom })` | Move the camera the way a focus will, then wait for idle                   |
+| Call                                          | Returns                                                                                                                                           |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `__treehouse.state()`                         | A plain-JSON snapshot (below)                                                                                                                     |
+| `await __treehouse.whenIdle()`                | Resolves when the map has loaded, stopped moving and rendered                                                                                     |
+| `__treehouse.place(text)`                     | Where a place string of the open tree is (below), or `null`                                                                                       |
+| `await __treehouse.focus(id)`                 | Focus a person as a click would, and wait until the camera has arrived. `{ ok: true }`, or `{ ok: false, reason: 'no-tree' \| 'unknown-person' }` |
+| `await __treehouse.flyTo({ lng, lat, zoom })` | Move the camera the way a focus will, then wait for idle                                                                                          |
+| `__treehouse.project({ lng, lat })`           | Where that point is on screen in page pixels, for `page.mouse.click`; `null` off the globe                                                        |
 
 `state()` returns:
 
@@ -111,7 +112,23 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
     "lastMs": 12, // worker time to read and parse the last import
     "alreadyImported": false, // the file was already in the library and was opened instead
   },
-  "focusedPersonId": null, // until M3
+  "focusedPersonId": "@I420000000006@", // the home person when a tree is opened
+  "focus": {
+    // null with no tree open
+    "personId": "@I420000000006@",
+    "relationship": { "kind": "blood", "label": "Great-grandfather" }, // kind: self, blood, spouse, in-law, none
+    "pathLength": 4, // people on the line from the home person, both ends included; 0 if unrelated
+    "shownAt": {
+      // null when nobody close has a place on the map (the camera then stays put)
+      "basis": "birth", // or baptism, residence, marriage, death, burial, relative
+      "approximate": false, // true unless it is the birthplace, found exactly
+      "level": "place",
+      "lng": -71.28,
+      "lat": 45.58,
+    },
+  },
+  "markers": { "places": 25, "rendered": 9 }, // places with a marker; markers and clusters drawn right now
+  "placeCard": { "open": false, "people": 0 }, // the people list of a clicked marker
   "threads": { "lineage": 0, "family": 0, "ancestors": 0, "migration": 0 }, // arcs drawn; M4
   "geocode": {
     // the open tree's distinct places; resolved + approximate + unresolved = places
@@ -135,7 +152,8 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
 }
 ```
 
-`state()` never contains a place string, so it stays safe to paste. To ask about one place, call
+`state()` never contains a place string or a name (the relationship label is a fixed term), so it stays safe to
+paste. To ask about one place, call
 `__treehouse.place('Barvas, Lewis, Ross and Cromarty, Scotland')`: it returns `{ status: 'unresolved' }`, or
 `{ status: 'resolved' | 'approximate', lng, lat, level, source }` where `level` is `place`, `area`, `region` or
 `country` and `source` is `gazetteer`, `online` or `manual`; `null` when the open tree does not name that place.
@@ -163,8 +181,18 @@ Stable `data-testid`s so far:
   `rename-input`, `rename-save`, `delete-button`, `delete-confirm`.
 - Home-person picker: `root-picker`, `root-search`, `root-result-count`, `root-options`, `root-option` (carries
   `data-person-id`), `root-cancel`, `back-to-library`.
-- Tree: `tree-panel`, `tree-name`, `tree-counts`, `home-person` (carries `data-person-id`), `tree-warnings`,
-  `already-imported`, `change-root`, `back-to-library`, `geocode-summary`, `review-places`.
+- Tree: `tree-panel`, `tree-name`, `tree-counts`, `home-person` (carries `data-person-id`), `focus-home`,
+  `tree-warnings`, `already-imported`, `change-root`, `back-to-library`, `geocode-summary`, `review-places`,
+  `projection-toggle`.
+- Profile and navigation: `profile` (carries `data-person-id`), `profile-name`, `profile-relationship` (carries
+  `data-kind`), `profile-place` (carries `data-basis` and `data-approximate`), `show-on-map`, `profile-timeline`,
+  `timeline-event` (carries `data-type`), `timeline-place`, `relative-chip` (carries `data-relation` and
+  `data-person-id`), `person-search`, `search-results`, `search-result`, `search-empty`, `breadcrumb`,
+  `breadcrumb-item`, `pedigree`, `pedigree-person`, `pedigree-empty`, `pedigree-self`, and `focus-pin` (on the map;
+  carries `data-approximate`).
+- Place card: `place-card`, `place-people`, `place-person` (carries `data-person-id`), `close-place-card`. Markers
+  are drawn on the map canvas, not as elements: click one with `project()` and `page.mouse.click`, as
+  `e2e/focus.spec.ts` does.
 - Places: `places-panel`, `places-summary`, `geocode-error`, `filter-attention`, `filter-all`, `places-empty`,
   `place-list`, `place-option` (carries `data-status`), `place-actions`, `pin-place`, `reset-place`, `pin-hint`,
   `online-opt-in`, `online-start`, `online-stop`, `online-status`, `online-error`, `back-to-tree`, and `place-pin`
