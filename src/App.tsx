@@ -1,8 +1,11 @@
 import { useEffect, useState, type DragEvent } from 'react';
 import { MapView } from './map/MapView';
+import { FocusPin } from './map/FocusPin';
+import { PlaceMarkers } from './map/PlaceMarkers';
 import { PlacePin } from './map/PlacePin';
 import { screenOf, useAppStore } from './state/appStore';
 import { LibraryPanel } from './ui/LibraryPanel';
+import { PlaceCard } from './ui/PlaceCard';
 import { PlacesPanel } from './ui/PlacesPanel';
 import { RootPicker } from './ui/RootPicker';
 import { TreePanel } from './ui/TreePanel';
@@ -49,11 +52,14 @@ export function App() {
       </header>
       <main className="app-main">
         <MapView />
+        <PlaceMarkers />
+        <FocusPin />
         <PlacePin />
         {screen === 'library' && <LibraryPanel />}
         {screen === 'root-picker' && open && <RootPicker key={open.record.id} open={open} />}
         {screen === 'tree' && open && <TreePanel open={open} />}
         {screen === 'places' && open && <PlacesPanel open={open} />}
+        {screen === 'tree' && open && <PlaceCard open={open} />}
         {dragging && (
           <div className="drop-overlay" data-testid="drop-overlay">
             Drop the file to open it

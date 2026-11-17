@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { importFile as readInWorker } from '../gedcom/importFile';
 import type { ImportErrorCode } from '../gedcom/readGedcom';
+import { indexTree, step, type Direction } from '../gedcom/relatives';
 import type { Tree } from '../gedcom/types';
 import { geocodePlaces } from '../geocode/geocodePlaces';
 import { lookUpOnline, NOMINATIM_INTERVAL_MS } from '../geocode/nominatim';
@@ -70,7 +71,12 @@ export interface OpenTree {
 /** App-wide state. Threads arrive in a later milestone. */
 interface AppState {
   mapLoaded: boolean;
+  /** The person whose profile is open and whose place the camera is over. */
   focusedPersonId: string | null;
+  /** The people the left and right arrows move between, kept so a step back returns. */
+  navRow: string[] | null;
+  /** `key` of the place whose marker was clicked, listing the people there. */
+  openedPlaceKey: string | null;
 
   /** Previous imports, newest first. */
   library: ImportRecord[];
@@ -104,6 +110,11 @@ interface AppState {
   alreadyImported: boolean;
 
   setMapLoaded: (loaded: boolean) => void;
+  /** Opens a person's profile; the camera flies to where they are shown. */
+  focusPerson: (personId: string) => boolean;
+  /** Moves the focus the way an arrow key does. False when there is nobody that way. */
+  stepFocus: (direction: Direction) => boolean;
+  openPlace: (key: string | null) => void;
   loadLibrary: () => Promise<void>;
   importFile: (file: File) => Promise<void>;
   openImport: (id: string) => Promise<void>;
@@ -129,6 +140,9 @@ interface AppState {
 const stripExtension = (fileName: string) => fileName.replace(/\.(ged|gedcom|zip)$/i, '');
 
 const NO_TREE_PLACES = {
+  focusedPersonId: null,
+  navRow: null,
+  openedPlaceKey: null,
   places: [],
   geocoding: false,
   geocodeError: null,
@@ -154,6 +168,7 @@ export const useAppStore = create<AppState>((set, get) => {
       open,
       pickingRoot: false,
       ...NO_TREE_PLACES,
+      focusedPersonId: open.record.rootId,
       online: { ...get().online, running: false, done: 0, total: 0, error: null },
       ...extra,
     });
@@ -191,7 +206,6 @@ export const useAppStore = create<AppState>((set, get) => {
 
   return {
     mapLoaded: false,
-    focusedPersonId: null,
     library: [],
     libraryLoaded: false,
     open: null,
@@ -206,6 +220,32 @@ export const useAppStore = create<AppState>((set, get) => {
 
     setMapLoaded: (mapLoaded) => {
       set({ mapLoaded });
+    },
+
+    focusPerson: (personId) => {
+      const open = get().open;
+      if (!open || !indexTree(open.tree).people.has(personId)) return false;
+      set({ focusedPersonId: personId, navRow: null });
+      return true;
+    },
+
+    stepFocus: (direction) => {
+      const { open, focusedPersonId, navRow } = get();
+      if (!open || focusedPersonId === null) return false;
+      const next = step(
+        indexTree(open.tree),
+        open.record.rootId,
+        focusedPersonId,
+        direction,
+        navRow,
+      );
+      if (!next) return false;
+      set({ focusedPersonId: next.personId, navRow: next.row });
+      return true;
+    },
+
+    openPlace: (openedPlaceKey) => {
+      set({ openedPlaceKey });
     },
 
     loadLibrary: async () => {
@@ -283,7 +323,13 @@ export const useAppStore = create<AppState>((set, get) => {
       if (!open?.tree.people.some((p) => p.id === personId)) return;
       const record = await updateImport(open.record.id, { rootId: personId });
       if (!record) return;
-      set({ open: { record, tree: open.tree }, pickingRoot: false, library: await listImports() });
+      set({
+        open: { record, tree: open.tree },
+        pickingRoot: false,
+        focusedPersonId: personId,
+        navRow: null,
+        library: await listImports(),
+      });
     },
 
     setPickingRoot: (pickingRoot) => {

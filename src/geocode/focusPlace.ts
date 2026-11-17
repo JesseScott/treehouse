@@ -17,7 +17,11 @@ export interface FocusPlace {
   place: string;
   /** Whose place it is, when it is borrowed from a relative. */
   relativeId?: string;
+  /** Which of the relative's places it is. */
+  relativeBasis?: OwnBasis;
 }
+
+export type OwnBasis = Exclude<FocusBasis, 'relative'>;
 
 /** Where a place string is on the map, or undefined when the tree does not name it. */
 export type Locate = (place: string) => PlaceResult | undefined;
@@ -28,7 +32,7 @@ const MAX_RELATIVE_STEPS = 3;
 const yearOrLast = (year: number | undefined) => year ?? Number.POSITIVE_INFINITY;
 
 /** A person's own events with a place, in the order the plan prefers them. */
-function ownCandidates(index: TreeIndex, person: Person): { basis: FocusBasis; place: string }[] {
+function ownCandidates(index: TreeIndex, person: Person): { basis: OwnBasis; place: string }[] {
   const of = (type: Person['events'][number]['type']) =>
     person.events.filter((e) => e.type === type && e.place !== undefined);
   const residences = of('residence')
@@ -48,7 +52,11 @@ function ownCandidates(index: TreeIndex, person: Person): { basis: FocusBasis; p
   ];
 }
 
-function ownPlace(index: TreeIndex, person: Person, locate: Locate): FocusPlace | null {
+function ownPlace(
+  index: TreeIndex,
+  person: Person,
+  locate: Locate,
+): (FocusPlace & { basis: OwnBasis }) | null {
   for (const { basis, place } of ownCandidates(index, person)) {
     const result = locate(place);
     if (!result || result.status === 'unresolved') continue;
@@ -96,7 +104,13 @@ export function focusPlaceOf(
         seen.add(relative.id);
         const theirs = ownPlace(index, relative, locate);
         if (theirs) {
-          return { ...theirs, basis: 'relative', approximate: true, relativeId: relative.id };
+          return {
+            ...theirs,
+            basis: 'relative',
+            approximate: true,
+            relativeId: relative.id,
+            relativeBasis: theirs.basis,
+          };
         }
         next.push(relative);
       }

@@ -89,6 +89,7 @@ describe('where a person is shown', () => {
     expect(focus('placeless')).toMatchObject({
       basis: 'relative',
       relativeId: 'born',
+      relativeBasis: 'birth',
       approximate: true,
       lng: 1,
     });
