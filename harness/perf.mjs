@@ -25,14 +25,28 @@ function measure(name, value, budget, unit, { atLeast = false } = {}) {
 
 // ---- bundle size -----------------------------------------------------------
 function bundleSizes() {
-  const sizes = { js: 0, css: 0, other: 0 };
+  const sizes = {
+    js: 0,
+    css: 0,
+    other: 0,
+    gazetteerIndex: 0,
+    gazetteerLargest: 0,
+    gazetteerRaw: 0,
+  };
   const walk = (dir) => {
     for (const entry of readdirSync(dir, { withFileTypes: true })) {
       const url = new URL(entry.name + (entry.isDirectory() ? '/' : ''), dir);
       if (entry.isDirectory()) walk(url);
       else if (!entry.name.endsWith('.map')) {
-        const gz = gzipSync(readFileSync(url)).length;
-        if (/\.m?js$/.test(entry.name)) sizes.js += gz;
+        const bytes = readFileSync(url);
+        const gz = gzipSync(bytes).length;
+        // The gazetteer is not part of the page load: one country file at a time is fetched
+        // when a tree is opened. It has its own budgets, so it cannot hide in the total.
+        if (url.pathname.includes('/gazetteer/')) {
+          sizes.gazetteerRaw += bytes.length;
+          if (entry.name === 'index.json') sizes.gazetteerIndex = gz;
+          else sizes.gazetteerLargest = Math.max(sizes.gazetteerLargest, gz);
+        } else if (/\.m?js$/.test(entry.name)) sizes.js += gz;
         else if (entry.name.endsWith('.css')) sizes.css += gz;
         else sizes.other += gz;
       }
@@ -51,6 +65,20 @@ measure(
   kb(sizes.js + sizes.css + sizes.other),
   budgets.bundle.totalGzipKb,
   'kB',
+);
+
+measure('gazetteer: index (gzip)', kb(sizes.gazetteerIndex), budgets.gazetteer.indexGzipKb, 'kB');
+measure(
+  'gazetteer: largest country file (gzip)',
+  kb(sizes.gazetteerLargest),
+  budgets.gazetteer.largestFileGzipKb,
+  'kB',
+);
+measure(
+  'gazetteer: all files',
+  Math.round((sizes.gazetteerRaw / 1024 / 1024) * 10) / 10,
+  budgets.gazetteer.totalMb,
+  'MB',
 );
 
 // ---- Lighthouse ------------------------------------------------------------

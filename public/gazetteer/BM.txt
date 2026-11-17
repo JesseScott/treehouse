@@ -1,0 +1,12 @@
+Devonshire Parish	32.306	-64.757	01	7330
+Hamilton	32.295	-64.783	03	902
+Hamilton Parish	32.342	-64.73	02	5862
+Paget Parish	32.28	-64.783	04	5702
+Pembroke Parish	32.3	-64.792	05	11160
+Saint George	32.382	-64.678	06	1896
+Sandys Parish	32.296	-64.869	08	7653
+Smith's Parish	32.314	-64.739	09	5406
+Somerset	32.298	-64.868	08	1000
+Southampton Parish	32.252	-64.855	10	6633
+St George's Parish	32.372	-64.698	07	5659
+Warwick Parish	32.266	-64.809	11	8615

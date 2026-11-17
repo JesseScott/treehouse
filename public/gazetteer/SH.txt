@@ -1,0 +1,6 @@
+Edinburgh of the Seven Seas	-37.068	-12.312	03	2860
+Georgetown	-7.929	-14.412	01	5012
+Half Tree Hollow	-15.937	-5.72	02	1034
+Jamestown	-15.925	-5.718	02	637
+Longwood	-15.949	-5.686	02	765
+St. Paul's	-15.945	-5.725	02	928

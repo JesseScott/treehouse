@@ -1,0 +1,116 @@
+Albion	-20.208	57.408	12	3254
+Amaury	-20.131	57.659	19	2912
+Anse La Raye	-19.991	57.632		6060
+Arsenal	-20.106	57.535	16	2599
+Baie aux Huîtres	-19.694	63.408	23	2500
+Baie du Tombeau	-20.119	57.491	16	15301
+Bambous	-20.257	57.406	12	17818
+Bambous Virieux	-20.343	57.758	14	1540
+Bananes	-20.347	57.589	14	652
+Beau Bassin-Rose Hill	-20.233	57.466	17	111355
+Beau Vallon	-20.423	57.704	14	7016
+Bel Air Rivière Sèche	-20.258	57.75	13	18036
+Bel Ombre	-20.502	57.406	20	2417
+Belle Vue Harel	-20.066	57.594	16	7607
+Belle Vue Maurel	-20.12	57.664	19	7607
+Belle Vue Pilot	-20.055	57.584	16	4518
+Bois des Amourettes	-20.363	57.731	14	1986
+Bon Accueil	-20.175	57.672	13	6553
+Brisée Verdière	-20.164	57.647	13	7696
+Calebasses	-20.112	57.554	16	4648
+Calodyne	-20.002	57.642	19	6252
+Camp Diable	-20.463	57.579	20	5082
+Camp Ithier	-20.216	57.746	13	4401
+Camp Thorel	-20.215	57.616	15	2299
+Camp de Masque	-20.236	57.676	13	2721
+Cap Malheureux	-19.984	57.614	19	4803
+Cargados Carajos	-16.603	59.659	22	63
+Cascavelle	-20.287	57.407	12	2613
+Centre de Flacq	-20.19	57.714	13	17710
+Chamarel	-20.425	57.391	12	723
+Chamouny	-20.486	57.474	20	4913
+Chemin Grenier	-20.493	57.469	20	12457
+Cluny	-20.367	57.604	14	1629
+Clémencia	-20.264	57.706	13	1835
+Congomah	-20.149	57.591	16	1956
+Cottage	-20.06	57.629	19	3646
+Crève Coeur	-20.193	57.563	16	3097
+Curepipe	-20.316	57.526	17	78618
+Dagotière	-20.245	57.562	15	7468
+Dubreuil	-20.301	57.599	15	2726
+Ebene	-20.245	57.492	17	1001
+Ecroignard	-20.226	57.736	13	5952
+Espérance Trébuchet	-20.07	57.642	19	2323
+Flic en Flac	-20.278	57.372	12	2010
+Fond du Sac	-20.047	57.584	16	5796
+Goodlands	-20.038	57.651	19	21063
+Grand Baie	-20.018	57.58	19	12173
+Grand Bois	-20.419	57.544	20	7804
+Grand Gaube	-20.006	57.661	19	7706
+Grand Sable	-20.314	57.764	14	2208
+Grande Rivière Noire	-20.36	57.366	12	2361
+Grande Rivière Sud Est	-20.286	57.776	13	2472
+Gros Cailloux	-20.207	57.43	12	3361
+Lallmatie	-20.018	57.58		11910
+Lalmatie	-20.19	57.661	13	10641
+Laventure	-20.146	57.677	13	6171
+Le Hochet	-20.139	57.53	16	15662
+Long Mountain	-20.151	57.573	16	7775
+L’Escalier	-20.47	57.612	14	7899
+Mahébourg	-20.408	57.7	14	17042
+Mapou	-20.076	57.601	19	1288
+Mare La Chaux	-20.198	57.749	13	2058
+Melrose	-20.27	57.632	15	2002
+Midlands	-20.338	57.567	17	4546
+Moka	-20.219	57.511	15	9364
+Montagne Blanche	-20.285	57.659	00	9440
+Morcellement Saint André	-20.072	57.568	16	6150
+New Grove	-20.409	57.614	14	11023
+Notre Dame	-20.143	57.56	16	3959
+Nouvelle France	-20.371	57.561	14	7238
+Olivia	-20.288	57.731	13	3980
+Pailles	-20.193	57.488	15	10622
+Pamplemousses	-20.104	57.57	16	9682
+Petit Bel Air	-20.4	57.695	14	1000
+Petit Raffray	-20.02	57.623	19	9410
+Petite Case Noyale	-20.404	57.371	12	1525
+Petite Rivière	-20.196	57.446	12	5331
+Piton	-20.09	57.63	19	5909
+Plaine Magnien	-20.43	57.67	14	10778
+Plaine des Papayes	-20.065	57.573	16	7925
+Plaines des Roches	-20.118	57.696	19	4218
+Pointe aux Piments	-20.065	57.523	16	7556
+Port Louis	-20.162	57.499	18	155226
+Port Mathurin	-19.683	63.417	23	8350
+Poste de Flacq	-20.163	57.731	13	8659
+Poudre d’Or	-20.06	57.677	19	2373
+Providence	-20.245	57.612	15	3126
+Péreybère	-19.999	57.589	19	5000
+Quartier Militaire	-20.248	57.597	15	6424
+Quatre Bornes	-20.264	57.479	17	77308
+Quatre Cocos	-20.202	57.774	13	5724
+Quatre Soeurs	-20.299	57.771	13	3515
+Queen Victoria	-20.22	57.708	13	3025
+Richelieu	-20.193	57.46	12	9178
+Rivière des Anguilles	-20.493	57.563	20	9927
+Rivière du Poste	-20.424	57.567	20	2170
+Rivière du Rempart	-20.103	57.685	19	10825
+Roche Terre	-20.019	57.645	19	3199
+Roches Noire	-20.111	57.712	19	5733
+Rose Belle	-20.4	57.597	14	12619
+Rouge Terre	-20.043	57.568	16	10760
+Saint Aubin	-20.496	57.55	20	1659
+Saint Hubert	-20.364	57.638	14	4170
+Saint Julien	-20.208	57.676	13	3188
+Saint Pierre	-20.221	57.534	15	16704
+Sebastopol	-20.291	57.688	13	5745
+Souillac	-20.517	57.517	20	4434
+Surinam	-20.51	57.505	20	10621
+Tamarin	-20.326	57.371	12	4371
+Terre Rouge	-20.128	57.531	16	11210
+The Vale	-20.03	57.602	19	3707
+Triolet	-20.058	57.55	16	24361
+Trou aux Biches	-20.033	57.55	16	14706
+Vacoas	-20.298	57.478	17	115289
+Verdun	-20.234	57.555	15	2208
+Vingt Cinq	-10.388	56.618	21	250

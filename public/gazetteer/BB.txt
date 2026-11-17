@@ -1,0 +1,16 @@
+Bathsheba	13.211	-59.526	06	1765
+Blackmans	13.185	-59.545	06	623
+Bridgetown	13.107	-59.62	08	98511
+Checker Hall	13.284	-59.642	07
+Crab Hill	13.32	-59.638	07	727
+Crane	13.105	-59.449	10	935
+Four Cross Roads	13.17	-59.522	05
+Greenland	13.258	-59.578	02	623
+Hastings	13.075	-59.597	01	1500
+Holetown	13.187	-59.638	04	1350
+Mile and a Quarter	13.266	-59.622	09	1382
+Oistins	13.071	-59.546	01	2285
+Six Cross Roads	13.118	-59.477	01	1005
+Speightstown	13.251	-59.644	09	3634
+Welchman Hall	13.187	-59.577	11
+White Hill	13.214	-59.581	02	5139

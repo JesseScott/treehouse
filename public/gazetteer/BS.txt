@@ -1,0 +1,37 @@
+Abraham’s Bay	22.367	-72.967	16	235
+Alice Town	25.728	-79.297	05	949
+Andros Town	24.705	-77.769	47	2455
+Arthur’s Town	24.622	-75.672	06	1175
+Black Point	24.09	-76.391	36	414
+Bullocks Harbour	25.752	-77.869	32	342
+Clarence Town	23.1	-74.983	15	1752
+Cockburn Town	24.052	-74.531	35	831
+Colonel Hill	22.755	-74.204	40	240
+Cooper’s Town	26.871	-77.511	46	8413
+Duncan Town	22.191	-75.726	18	70
+Dunmore Town	25.502	-76.636	22	1726
+Eight Mile Rock	26.517	-78.783	54	9640
+Freeport	26.533	-78.7	25	26910
+Freetown	24.779	-76.277	52	3137
+George Town	23.516	-75.787	10	7314
+Governor’s Harbour	25.167	-76.233	39
+Grand Cay	27.22	-78.328	42	383
+Hard Bargain	26.317	-77.567	45
+High Rock	26.627	-78.282	41	3744
+Hope Town	26.539	-76.957	43	458
+Kemps Bay	24.027	-77.533	51	273
+Killarney	25.05	-77.417	23	17679
+Lucaya	26.533	-78.667	25	46525
+Mangrove Cay	24.26	-77.663	44
+Marsh Harbour	26.541	-77.064	37	5314
+Masons Bay	22.544	-73.878	24
+Matthew Town	20.95	-73.673	13	452
+Nassau	25.058	-77.343	23	227940
+Port Nelson	23.65	-74.842	49	91
+Rock Sound	24.866	-76.16	52	961
+San Andros	25.067	-78.05	47	7800
+Sandy Point	26.021	-77.39	50	547
+Spanish Wells	25.547	-76.764	53	1500
+Treasure Cay	26.677	-77.286	46	1187
+Upper Bogue	25.45	-76.667	48	190
+West End	26.687	-78.977	54	12724

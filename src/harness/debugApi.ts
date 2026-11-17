@@ -1,8 +1,10 @@
 import { moveCamera, projectionName, whenMapIdle } from '../map/camera';
 import { currentMap, mapWhenCreated } from '../map/mapRegistry';
+import { placeKey } from '../geocode/normalize';
+import { coverageOf } from '../geocode/treePlaces';
 import { screenOf, useAppStore } from '../state/appStore';
 import { flags } from './flags';
-import type { TreehouseDebugApi, TreehouseState } from './types';
+import type { PlaceLocation, TreehouseDebugApi, TreehouseState } from './types';
 
 function state(): TreehouseState {
   const map = currentMap();
@@ -49,15 +51,34 @@ function state(): TreehouseState {
     },
     focusedPersonId: store.focusedPersonId,
     threads: { lineage: 0, family: 0, ancestors: 0, migration: 0 },
-    geocode: { places: 0, resolved: 0, approximate: 0, unresolved: 0 },
+    geocode: {
+      busy: store.geocoding,
+      error: store.geocodeError,
+      ...coverageOf(store.places),
+      pinned: store.places.filter((p) => sourceOf(p.result) === 'manual').length,
+      online: store.places.filter((p) => sourceOf(p.result) === 'online').length,
+    },
+    placeReview: { selected: store.selectedPlaceKey !== null, pinning: store.pinning },
+    onlineLookup: { ...store.online },
   };
 }
 
-/** Resolves once the library has been read and no file is being imported. */
+const sourceOf = (result: PlaceLocation) => (result.status === 'unresolved' ? null : result.source);
+
+function place(text: string): PlaceLocation | null {
+  const key = placeKey(text);
+  const result = useAppStore.getState().places.find((p) => p.key === key)?.result;
+  if (!result) return null;
+  if (result.status === 'unresolved') return { status: 'unresolved' };
+  const { status, lng, lat, level, source } = result;
+  return { status, lng, lat, level, source };
+}
+
+/** Resolves once the library has been read and no import, geocoding or lookup is running. */
 function whenDataSettled(): Promise<void> {
   const settled = () => {
-    const { libraryLoaded, importing } = useAppStore.getState();
-    return libraryLoaded && !importing;
+    const { libraryLoaded, importing, geocoding, online } = useAppStore.getState();
+    return libraryLoaded && !importing && !geocoding && !online.running;
   };
   if (settled()) return Promise.resolve();
   return new Promise((resolve) => {
@@ -78,6 +99,7 @@ async function whenIdle(): Promise<void> {
 const api: TreehouseDebugApi = {
   state,
   whenIdle,
+  place,
   // Stub: focusing a person and flying to their birthplace arrives with M3.
   focus: async () => {
     await whenIdle();

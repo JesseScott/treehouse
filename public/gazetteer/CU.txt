@@ -1,0 +1,210 @@
+Abreus	22.278	-80.569	08	16711
+Aguada de Moya	22.547	-79.72	16	2967
+Aguada de Pasajeros	22.385	-80.848	08	23606
+Alacranes	22.767	-81.568	03	5843
+Alamar	23.158	-82.278	02	100000
+Almendares	23.11	-82.423	02	240000
+Alquízar	22.805	-82.584	AR	15275
+Alta Habana	23.063	-82.395	02	7865
+Amancio	20.829	-77.579	13	41523
+Antilla	20.832	-75.736	12
+Arroyo Naranjo	23.038	-82.377	02	210053
+Artemisa	22.814	-82.758	AR	68073
+Australia	22.499	-81.136	03	5250
+Bahía Honda	22.903	-83.16	AR	19834
+Balcón de la Lisa	23.053	-82.448	02	147415
+Banes	20.961	-75.723	12	53104
+Baracoa	20.348	-74.497	10	48362
+Baraguá	21.682	-78.626	07	15268
+Bartolomé Masó	20.167	-76.944	09	53024
+Batabanó	22.717	-82.29	MA	13832
+Bauta	22.982	-82.548	AR	45768
+Bayamo	20.374	-76.643	09	192632
+Bejucal	22.928	-82.389	MA	18123
+Bolivia	22.084	-78.341	07
+Bolondrón	22.763	-81.448	03	6778
+Boyeros	23.007	-82.402	02	188593
+Buey Arriba	20.172	-76.756	09
+Báguano	20.752	-76.026	12
+Cabaiguán	22.078	-79.496	14	44515
+Cabañas	22.979	-82.922	AR	5894
+Cacocum	20.737	-76.326	12	42623
+Caibarién	22.52	-79.466	16	39140
+Caimito	22.952	-82.598	AR
+Calabazar de Sagua	22.646	-79.896	16	10455
+Calimete	22.534	-80.911	03	23255
+Calixto	20.92	-76.87	13
+Camagüey	21.381	-77.917	05	347562
+Camajuaní	22.483	-79.75	16	35515
+Campechuela	20.233	-77.279	09	25069
+Campo Florido	22.812	-81.002	03	8269
+Candelaria	22.739	-82.96	AR	12675
+Carlos Manuel de Céspedes	21.576	-78.283	05
+Casablanca	23.143	-82.34	02	3433
+Cauto Cristo	20.557	-76.473	09	21159
+Cayo Mambí	20.664	-75.269	12
+Centro Habana	23.135	-82.369	02	158151
+Cerro	23.108	-82.384	02	132351
+Chambas	22.193	-78.914	07	24114
+Chorrerón	22.536	-79.713	16	614
+Ciego de Ávila	21.842	-78.76	07	142027
+Cienfuegos	22.147	-80.448	08	186644
+Cifuentes	22.649	-80.049	16	40142
+Ciro Redondo	22.019	-78.704	07	29560
+Ciudad Camilo Cienfuegos	23.161	-82.328	02	178041
+Cojímar	23.165	-82.301	02	20390
+Colombia	20.986	-77.426	13	20096
+Colón	22.721	-80.904	03	63882
+Condado	21.876	-79.84	14	38248
+Consolación del Sur	22.505	-83.513	01	69857
+Contramaestre	20.299	-76.245	15	70438
+Corojal	22.961	-83.204	AR	625
+Corralillo	22.982	-80.585	16	51881
+Crucero Carmita	22.455	-79.792	16	704
+Cruces	22.343	-80.271	08	24906
+Cueto	20.649	-75.93	12	26527
+Cumanayagua	22.152	-80.204	08	38687
+Cárdenas	23.036	-81.206	03	98515
+Diez de Octubre	23.088	-82.36	02	227293
+El Caney	21.3	-78.483	05	4597
+El Cobre	20.05	-75.947	15	4768
+Encrucijada	22.618	-79.865	16	26155
+Esmeralda	21.852	-78.117	05	20274
+Esperanza	22.446	-80.096	16	10462
+Florencia	22.146	-78.972	07	19811
+Florida	21.526	-78.226	05	63007
+Fomento	22.103	-79.72	14	19991
+Fontanar	23.024	-82.408	02	178601
+Gaspar	21.74	-78.544	07
+Gibara	21.11	-76.13	12	27603
+Guanabacoa	23.125	-82.301	02	112964
+Guanabo	23.168	-82.137	02	5087
+Guanajay	22.926	-82.687	AR	25258
+Guane	22.204	-84.088	01	16548
+Guantánamo	20.144	-75.209	10	272801
+Guara	22.81	-82.203	MA
+Guayos	22.049	-79.461	14	15000
+Guisa	20.256	-76.539	09	18408
+Guáimaro	21.054	-77.349	05	39358
+Güines	22.838	-82.027	MA	68935
+Güira de Melena	22.797	-82.507	AR	69879
+Havana	23.133	-82.383	02	2163824
+Holguín	20.887	-76.263	12	319102
+Isabela de Sagua	22.939	-80.012	16	3187
+Jagüey Grande	22.526	-81.129	03	54363
+Jamaica	22.976	-82.169	MA	15000
+Jaruco	23.044	-82.009	MA	20207
+Jatibonico	21.943	-79.167	14	19644
+Jesús Menéndez	21.162	-76.478	13	51002
+Jiguaní	20.368	-76.429	09	41106
+Jimaguayú	21.242	-77.826	05	21169
+Jobabo	20.91	-77.285	13	49403
+Jobabo	20.969	-76.299	12	17804
+Jovellanos	22.805	-81.192	03	47164
+La Casualidad	23	-82.217	MA	5110
+La Habana Vieja	23.13	-82.353	02	95383
+La Luz	22.525	-79.798	16	733
+La Máquina	20.191	-74.227	10
+La Palma	22.748	-83.555	01
+La Salud	22.874	-82.42	MA	28796
+La Sierpe	21.772	-79.268	14	16937
+Lajas	22.414	-80.294	08	22602
+Las Tunas	20.961	-76.952	13	203684
+Leader	23.033	-82.25	02	5612
+Limonar	22.95	-81.411	03	25421
+Los Arabos	22.73	-80.721	03	12504
+Los Palacios	22.588	-83.248	01	25703
+Luis Arcos Bergnes	22.504	-79.815	16	2279
+Madruga	22.91	-81.857	MA	33798
+Maisí	20.247	-74.152	10	28276
+Majagua	21.917	-79.003	07
+Manatí	21.311	-76.935	13	13278
+Manguito	22.587	-80.914	03	3155
+Manicaragua	22.15	-79.979	16	41532
+Mantilla	23.068	-82.341	02	206918
+Mantua	22.292	-84.283	01	10797
+Manzanillo	20.342	-77.119	09	128188
+Marianao	23.074	-82.43	02	134057
+Mariel	22.99	-82.754	AR	28987
+Martí	22.947	-80.919	03	13439
+Matanzas	23.044	-81.583	03	146733
+Mayarí	20.655	-75.679	12
+Mañalich	22.811	-82.147	MA
+Media Luna	20.142	-77.436	09	16713
+Melena del Sur	22.788	-82.151	MA
+Minas	21.488	-77.609	05	20863
+Minas de Matahambre	22.587	-83.946	01	34419
+Moa	20.658	-74.951	12	92852
+Morón	22.109	-78.627	07	66060
+Najasa	21.072	-77.744	05
+Naranjito	23.079	-82.377	02	27209
+Naval Station Guantanamo Bay	19.916	-75.144	10	6100
+Niquero	20.046	-77.58	09	18771
+Nueva Gerona	21.888	-82.807	04	20264
+Nueva Paz	22.762	-81.756	MA
+Nuevitas	21.544	-77.265	05	54022
+Palenque	20.365	-74.97	10
+Palma Soriano	20.211	-75.994	15	102826
+Palmira	22.242	-80.392	08	23078
+Pedro Betancourt	22.728	-81.289	03	26761
+Perico	22.769	-81.018	03	24073
+Pilón	19.906	-77.322	09	28752
+Pinar del Río	22.416	-83.697	01	186990
+Placetas	22.314	-79.654	16	55408
+Playa Baracoa	23.046	-82.567	AR	7000
+Plaza de la Revolución	23.119	-82.392	02	139135
+Primero de Enero	21.946	-78.429	07	17934
+Puentes Grandes	23.1	-82.4	02	5830
+Puerto Esperanza	22.769	-83.732	01	3331
+Puerto Padre	21.196	-76.604	13	76838
+Quemado de Güines	22.788	-80.253	16	12736
+Quivicán	22.823	-82.356	MA	12919
+Rancho Veloz	22.881	-80.391	16	4549
+Ranchuelo	22.373	-80.15	16	43695
+Regla	23.126	-82.331	02	44431
+Remedios	22.495	-79.545	16	34108
+Rodas	22.342	-80.556	08	19212
+Río Cauto	20.56	-76.917	09	23737
+Río Guayabal de Yateras	20.367	-75.017	10	25753
+Sagua de Tánamo	20.583	-75.241	12	18282
+Sagua la Grande	22.806	-80.074	16	62073
+San Antonio de los Baños	22.889	-82.506	AR	42724
+San Antonio del Sur	20.057	-74.81	10
+San Cristobal	22.717	-83.056	AR	59579
+San Diego de Los Baños	22.647	-83.368	01	1643
+San Francisco de Paula	23.063	-82.296	02	1425
+San Germán	20.6	-76.135	12	43892
+San José de las Lajas	22.961	-82.152	MA	54847
+San Juan y Martínez	22.28	-83.84	01
+San Luis	20.188	-75.85	15	67293
+San Luis	22.278	-83.761	01	6690
+San Miguel del Padrón	23.095	-82.327	02	159273
+San Nicolás de Bari	22.784	-81.913	MA	14914
+Sancti Spíritus	21.934	-79.44	14	127069
+Santa Clara	22.407	-79.966	16	250512
+Santa Cruz del Norte	23.154	-81.923	MA	18402
+Santa Cruz del Sur	20.715	-77.996	05	34601
+Santa Lucía	21.029	-75.993	12
+Santiago de Cuba	20.023	-75.822	15	555865
+Santiago de las Vegas	22.97	-82.387	02	35241
+Santo Domingo	22.587	-80.243	16	45476
+Segundo Frente	20.414	-75.496	15
+Sibanicú	21.236	-77.526	05	16856
+Soroa	22.798	-83.013	AR	7205
+Taguasco	22.003	-79.264	14
+Tarará	23.175	-82.207	02	4512
+Topes de Collantes	21.914	-80.015	14	9729
+Trinidad	21.8	-79.983	14	60206
+Unión de Reyes	22.795	-81.537	03	33646
+Varadero	23.157	-81.244	03	20000
+Vedado	23.138	-82.393	02	108369
+Vedado del Cotorro	23.05	-82.25	02	74650
+Vega Alta	22.55	-79.819	16	1061
+Venezuela	21.738	-78.793	07	16601
+Vertientes	21.259	-78.149	05	29704
+Viñales	22.619	-83.707	01	27129
+Víbora	23.094	-82.372	02	23118
+Víbora Park	23.081	-82.354	02	23000
+Yaguajay	22.327	-79.237	14	42218
+Yara	20.274	-76.952	09	28944
+Zaza del Medio	21.997	-79.367	14	8667

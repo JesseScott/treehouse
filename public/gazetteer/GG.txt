@@ -1,0 +1,12 @@
+Castel	49.468	-2.6	6417229
+Forest Parish	49.43	-2.602	6417223	1624
+Saint Andrew	49.444	-2.58	6417226
+Saint Peter Port	49.46	-2.535	6417228	16488
+Saint Pierre du Bois Parish	49.454	-2.638	6417213	2001
+Saint Sampson	49.484	-2.523	6417233	8966
+Saint Saviour	49.457	-2.636	6417215
+Sark	49.433	-2.356	00	600
+St Anne	49.715	-2.208	8989934
+St Martin	49.437	-2.555	6417224
+Torteval	49.433	-2.65	6417214
+Vale Parish	49.494	-2.518		9646

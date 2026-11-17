@@ -1,0 +1,14 @@
+Bandabou	12.272	-69.065		13125
+Bandariba	12.093	-68.831		20838
+Barber	12.29	-69.074	00	2424
+Brievengat	12.15	-68.9	00	4695
+Dorp Soto	12.277	-69.112	00	2233
+Grote Berg	12.192	-68.998		841
+Otrabanda	12.109	-68.938		1369
+Sabana Westpunt	12.37	-69.154	00	783
+Saliña	12.1	-68.9	00	2538
+Santa Rosa	12.117	-68.883	00	5198
+Sint Michiel Liber	12.15	-68.983	00	5138
+St. Michiel	12.143	-68.995		5732
+Tera Kora	12.224	-69.029		4388
+Willemstad	12.122	-68.886		125000

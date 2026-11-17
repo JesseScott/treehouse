@@ -1,0 +1,25 @@
+Anse-Bertrand	16.472	-61.507	GP	5146
+Baie-Mahault	16.267	-61.585	GP	30837
+Baillif	16.02	-61.746	GP	5705
+Basse-Terre	15.997	-61.732	GP	11472
+Beauséjour	16.304	-61.074	GP	1716
+Capesterre-Belle-Eau	16.045	-61.564	GP	19821
+Deshaies	16.307	-61.794	GP	3792
+Gourbeyre	15.995	-61.692	GP	8571
+Grand-Bourg	15.884	-61.315	GP	5867
+Lamentin	16.27	-61.632	GP	14891
+Le Gosier	16.206	-61.493	GP	28698
+Le Moule	16.332	-61.347	GP	22692
+Les Abymes	16.273	-61.505	GP	53514
+Petit-Bourg	16.192	-61.591	GP	24994
+Petit-Canal	16.379	-61.487	GP	8554
+Petites Anses	15.85	-61.645	GP	1314
+Pointe-Noire	16.232	-61.789	GP	7749
+Pointe-à-Pitre	16.236	-61.535	GP	15181
+Port-Louis	16.417	-61.53	GP	5515
+Saint-Claude	16.025	-61.7	GP	10134
+Saint-François	16.252	-61.273	GP	12732
+Sainte-Anne	16.226	-61.381	GP	22859
+Sainte-Rose	16.333	-61.697	GP	20192
+Trois-Rivières	15.976	-61.645	GP	8812
+Vieux-Habitants	16.059	-61.767	GP	7728

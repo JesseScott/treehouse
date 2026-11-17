@@ -294,3 +294,21 @@ body,
     max-height: 60%;
   }
 }
+
+.button[aria-pressed='true'] {
+  border-color: var(--accent);
+}
+
+.place-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.3rem 0.5rem 0.5rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+}

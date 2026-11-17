@@ -46,7 +46,8 @@ test('the shell loads with a working offline globe', async ({ page }) => {
   });
   expect(state.focusedPersonId).toBeNull();
   expect(state.threads).toEqual({ lineage: 0, family: 0, ancestors: 0, migration: 0 });
-  expect(state.geocode).toEqual({ places: 0, resolved: 0, approximate: 0, unresolved: 0 });
+  expect(state.geocode).toMatchObject({ busy: false, error: null, places: 0, resolved: 0 });
+  expect(state.onlineLookup.enabled).toBe(false);
 
   expect(errors).toEqual([]);
   await page.screenshot({ path: 'reports/e2e/screenshots/shell.png' });

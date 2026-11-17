@@ -1,0 +1,228 @@
+Abafadouro	17.019	-25.072	21	871
+Aboboreiro	15.084	-23.648	26	532
+Achada Abaixo	15.152	-23.562	16	697
+Achada Eugénio Lima	14.929	-23.521	14	6874
+Achada Fatima	15.139	-23.535	16	1022
+Achada Fazenda	15.119	-23.519	16	2498
+Achada Galego	15.093	-23.683	15	981
+Achada Gomes	15.102	-23.68	15	582
+Achada Grande Frente	14.918	-23.501	14	4032
+Achada Grande Trás	14.921	-23.487	14	4141
+Achada Igreja	15.08	-23.629	26	850
+Achada Laje	15.166	-23.576	16	649
+Achada Leitão	15.097	-23.618	26	1025
+Achada Lem	15.139	-23.678	15	1841
+Achada Limpo	14.943	-23.503	14	2436
+Achada Mato/Covão Mendes	14.928	-23.499	14	3031
+Achada Monte	15.235	-23.644	19	1400
+Achada Riba	15.092	-23.666	15	2013
+Achada Santo Antonio	14.91	-23.517	14	10843
+Achada Tenda	15.248	-23.66	20	1242
+Achada Tossa	15.13	-23.696	15	869
+Achada da Água Funda	14.948	-23.49	14	2452
+Achadinha	14.928	-23.512	14	7359
+Achadinha Pires	14.929	-23.505	14	964
+Alto Electra	16.756	-22.937	08	812
+Alto Fontainhas	16.561	-24.356	27	555
+Alto Mira	17.1	-25.217	21	1003
+Alto Santo Cruz	16.765	-22.944	08	1600
+Alto Solarine	16.889	-24.983	11	690
+Amarelo Pintado	16.569	-24.354	27	584
+Assomada	15.1	-23.683	15	21297
+Atrás do Cemitério	16.872	-24.988	11	2513
+Bairro Craveiro Lopes	14.922	-23.512	14	1278
+Bairro Novo I	16.759	-22.938	08	1359
+Bairro Novo II	16.755	-22.932	08	1268
+Bel Bel	15.147	-23.582	16	654
+Bela Vista	16.88	-24.973	11	5099
+Bela Vista	14.926	-23.524	14	4014
+Berlim	17.021	-25.072	21	2115
+Boa Entrada	15.115	-23.668	15	1071
+Bolanha	15.097	-23.661	15	716
+Bom Sossego	16.177	-22.918	01	1671
+Bombardeiro	15.085	-23.678	15	879
+Cabo da Ribeira	17.122	-25.05	05	631
+Calabaceira	14.934	-23.515	14	4970
+Calhau	16.852	-24.867	11	1177
+Calheta	15.23	-23.214	04	1081
+Calheta de São Miguel	15.186	-23.592	19	6329
+Camp de Cão	17.134	-25.04	05	686
+Campanas de Baixo	15.016	-24.409	18	609
+Campinho	16.879	-24.99	11	1168
+Cancelo	15.149	-23.567	16	1811
+Centro (Cidade)	15.096	-23.666	15	661
+Centro Histórico	14.895	-24.499	18	1493
+Cha de Tanque	15.092	-23.702	15	1164
+Chã da Igreja	17.158	-25.164	07	593
+Chã da Silva	15.115	-23.552	16	1211
+Chã de Alecrim	16.899	-24.987	11	5875
+Chã de Monte Sossego	16.875	-24.988	11	1608
+Chã de Pedras	17.126	-25.114	07	1266
+Chão Bom	15.256	-23.739	20	4856
+Chão de Matias	16.763	-22.94	08	4624
+Cidade Velha	14.915	-23.605	23	3319
+City Center of Mindelo	16.886	-24.988	11	1158
+Coqueiro Castelão	14.936	-23.495	14	3497
+Corda	17.136	-25.088	07	833
+Cova Figueira	14.891	-24.293	24	1052
+Cova do Minhoto	14.905	-23.53	14	2708
+Cruz Grande	15.13	-23.672	15	919
+Cruz João Évora	16.89	-24.98	11	2002
+Cumbem	15.091	-23.668	15	1006
+Cutelinho	15.138	-23.529	19	1208
+Cutelo	15.109	-23.675	15	641
+Cutelo Gomes	15.163	-23.647	19	509
+Dji d'Sal	16.879	-24.992	11	657
+Eito	17.143	-25.024		853
+Espargos	16.755	-22.945	08	24500
+Espinho Branco	15.208	-23.635	19	778
+Estância de Baixo	16.138	-22.875	01	554
+Faja de Baixo	16.649	-24.324	22	681
+Fajã de Domingas Bento	17.153	-25.071	07	594
+Fazenda	14.926	-23.508	14	1667
+Fernando Pau	16.874	-24.981	11	1634
+Figueira das Naus	15.182	-23.732	15	1157
+Figueiral	17.156	-25.099	07	531
+Fonte Filipe	16.888	-24.982	11	2524
+Fonte Francês	16.879	-24.981	11	3331
+Fonte Inês	16.891	-24.978	11	5630
+Fonte Lima	15.089	-23.659	15	840
+Fonteana	15.115	-23.677	15	1008
+Fontes Almeida	15.001	-23.552	17	745
+Fontona	15.144	-23.213	04	517
+Fundura	15.168	-23.696	15	1070
+Furna	14.887	-24.681	02	594
+Galinheiros	14.999	-24.444	18	691
+Garça de Cima	17.114	-25.165	07	1138
+Gil Bispo	15.109	-23.66	15	1252
+Horta Seca	16.87	-24.979	11	1278
+Hortelã de Baixo	16.758	-22.939	08	1634
+Hortelã de Cima	16.754	-22.94	08	2561
+Igreja	15.033	-24.333	13	4084
+Imobiliária Fundiária e Habitat	16.753	-22.944	08	1288
+Janela	17.12	-24.986	05	1167
+João Dias	15.151	-23.668	15	555
+João Teves	15.067	-23.589	25	627
+Junco	15.082	-23.653	26	708
+Lajedo	17.02	-25.172	21	510
+Leitão Grande	15.083	-23.63	26	745
+Lem Cachorro	14.932	-23.506	14	1719
+Lem Ferreira	14.922	-23.502	14	1214
+Lem Rural	14.882	-24.699	02	525
+Lem de Cima	14.896	-24.497	18	520
+Lomba	14.969	-24.45		632
+Lugar de Guene	17.169	-25.07	07	538
+Madeiralzinho	16.895	-24.985	11	3232
+Mancholy	15.133	-23.686	15	842
+Matinho	15.103	-23.579	16	615
+Mato Gege	15.07	-23.674	15	694
+Milho Branco	15.027	-23.521	17	556
+Mindelo	16.89	-24.98	11	69013
+Montagarro	14.946	-23.515	14	1943
+Monte Negro	15.064	-23.518	16	528
+Monte Sossego	16.878	-24.988	11	4249
+Monte/Craca	16.881	-24.989	11	866
+Nhagar	15.105	-23.673		1381
+Nova Sintra	14.871	-24.696	02	2225
+Paiol	14.927	-23.505	14	1723
+Palha Carga	15.072	-23.698	15	750
+Palmarejo	14.91	-23.531	14	13416
+Palmarejo Grande	14.92	-23.54	14	2396
+Palmeira	16.758	-22.983	08	2320
+Patim	14.873	-24.426	18	803
+Pedra Badejo	15.138	-23.531	16	10038
+Pedra Barro	15.099	-23.673	15	544
+Pedra Rolada	16.882	-24.969	11	2138
+Pensamento	14.934	-23.52	14	2322
+Pico Leao	15.044	-23.652	23	539
+Picos	15.084	-23.632	26	2040
+Picos Acima	15.075	-23.646	26	1361
+Pilão Cão	15.197	-23.632	19	863
+Pinha de Engenho	15.079	-23.664	15	558
+Pinhão	17.165	-25.057	07	551
+Platô	14.918	-23.508	14	1019
+Pombas	17.15	-25.02	05	1429
+Ponta Verde	15.199	-23.6	18	1117
+Ponta Verde	14.982	-24.46	18	1072
+Ponta da Achada	15.133	-23.54	16	807
+Ponta de Água	14.936	-23.511	14	8656
+Ponta do Sol	17.202	-25.092	07	3300
+Porto Baixo	15.14	-23.529	16	704
+Porto Mosquito	14.951	-23.685	23	867
+Porto Novo	17.02	-25.065	21	11138
+Praia	14.932	-23.513	14	137868
+Praia Baixo	15.059	-23.472	17	883
+Praia Formosa	15.039	-23.514	17	752
+Preguiça	16.758	-22.947	08	783
+Preguiça	16.563	-24.281	22	557
+Principal	15.203	-23.673	19	1193
+Queimada Guincho	15.041	-24.334	13	1194
+Rabil	16.13	-22.887	01	1401
+Relva	14.977	-24.298	13	1061
+Renque de Purga	15.081	-23.525	16	801
+Ribeira Bote	16.884	-24.984	11	3347
+Ribeira Brava	16.616	-24.298	22	2851
+Ribeira Filipe	14.987	-24.431	18	526
+Ribeira Funda	16.762	-22.946	08	1405
+Ribeira Grande	17.183	-25.065	07	3000
+Ribeira Ilhéu	15.037	-24.377	13	635
+Ribeira Julião	16.856	-24.987	11	820
+Ribeira Seca	15.102	-23.533	16	638
+Ribeira da Barca	15.137	-23.759	15	2048
+Ribeira da Prata	15.229	-23.745	20	1009
+Ribeira da Vinha	16.862	-25	11	532
+Ribeira de Craquinha	16.87	-24.98	11	2659
+Ribeira de Julião	16.863	-24.984	11	2261
+Ribeira de Passarão	16.868	-24.975	11	884
+Ribeirao Manuel	15.108	-23.705	15	1086
+Ribeirinha	16.888	-24.976	11	8205
+Ribeirão Chiqueiro	15.006	-23.524	17	1064
+Rincão	15.061	-23.765	15	1210
+Rocha Lama	15.128	-23.531	16	631
+Rui Vaz	15.035	-23.6	14	1078
+Safende	14.941	-23.515	14	6858
+Sal Rei	16.176	-22.917	01	10936
+Salamansa	16.903	-24.944	11	1172
+Salinas	15.134	-23.532	16	1604
+Salineiro	14.938	-23.603	23	1022
+Saltos de Cima	15.139	-23.642	15	506
+Santa Cruz	15.134	-23.559	16	9488
+Santa Filomena	14.896	-24.489	18	1423
+Santa Maria	16.598	-22.905	08	8400
+Santa Maria Centro	16.599	-22.904	08	1957
+Santana	14.991	-23.636	23	744
+Santo António	14.944	-24.48	18	540
+Simão Ribeiro	14.936	-23.528	14	1289
+São Domingos	15.024	-23.562	17	2960
+São Filipe	14.896	-24.496	18	10097
+São Filipe Praia	14.956	-23.516	14	7698
+São Francisco	14.979	-23.493	14	1166
+São Jorge	15.013	-24.429	18	602
+São João	16.76	-22.948	08	668
+São Martinho Grande	14.925	-23.568	23	618
+São Martinho Pequeno	14.945	-23.563	14	2178
+São Paulo	16.602	-22.903	08	3198
+São Pedro	16.829	-25.066	11	1060
+São Pedro Latada	14.938	-23.524	14	4627
+Tagarra	15.163	-23.619	19	630
+Tarrafal	15.279	-23.752	20	13483
+Tarrafal de Monte Trigo	16.959	-25.31	21	679
+Tarrafal de São Nicolau	16.566	-24.358	27	4371
+Telha	16.565	-24.357	27	561
+Terra Boa	16.792	-22.952	08	589
+Terra Branca	14.921	-23.523	14	6970
+Terra Branca	15.133	-23.554	16	551
+Tira Chapeu	14.914	-23.523	14	4678
+Tira Chapeu Industrial	14.917	-23.521	14	1260
+Tomé Barraz	14.857	-24.726	02	573
+Tongom	14.925	-24.475	18	765
+Vale Palmarejo	14.922	-23.545	14	1743
+Veneza	15.193	-23.597	19	1228
+Vila Nova	14.933	-23.511	14	3504
+Vila Nova/Lombo Tanque	16.888	-24.983	11	3940
+Vila do Maio	15.138	-23.212	04	4472
+Várzea	14.917	-23.513	17	5520
+Zona Militar	16.895	-24.987	11	1020
+Zona Tenda	15.136	-23.54	16	1357
+África 70	16.761	-22.936	08	1462
+Água de Gato	15.035	-23.582	17	943

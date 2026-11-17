@@ -1,0 +1,29 @@
+Angaur State	6.906	134.13	03	188
+Idid Hamlet	7.343	134.484	06	537
+Ikelau Hamlet	7.341	134.482	06	511
+Imeong Hamlet	7.531	134.527	13	132
+Iyebukel Hamlet	7.349	134.486	06	640
+Kayangel	8.082	134.717	05	188
+Kloulklubed	7.042	134.256	15	702
+Koror	7.34	134.473	06	14000
+Koror Town	7.343	134.479	06	12676
+Medalaii Hamlet	7.344	134.466	06	2284
+Meketii Hamlet	7.347	134.483	06	637
+Melekeok Village	7.496	134.637	07	271
+Mengellang	7.696	134.631	09	488
+Meyungs Hamlet	7.354	134.46	06	938
+Ngardmau	7.61	134.574	10	221
+Ngchemiangel	7.446	134.477	01	270
+Ngchesar Hamlet	7.469	134.61	12	300
+Ngerbeched Hamlet	7.332	134.476	06	1404
+Ngerchemai Hamlet	7.35	134.489	06	1376
+Ngerekebesang Hamlet	7.354	134.446	06	693
+Ngereklmadel	7.488	134.486	11
+Ngerkeai	7.555	134.636	14	223
+Ngerkeseuaol Hamlet	7.343	134.489	06	639
+Ngermid Hamlet	7.34	134.502	06	1045
+Ngerulmud	7.501	134.624	07
+Ngetkib	7.365	134.515	02	62
+Sonsorol Village	5.326	132.219	16	30
+Tobi Village	3.005	131.122	04	44
+Ulimang	7.624	134.642	08	581

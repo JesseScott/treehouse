@@ -1,0 +1,543 @@
+Agalteca	14.45	-87.267	08	1029
+Agua Azul	14.917	-87.967	06	1079
+Agua Azul Rancho	14.9	-87.95	06	1043
+Agua Blanca Sur	15.25	-87.883	18	7592
+Agua Caliente	14.883	-88.817	05	1075
+Agua Caliente de Linaca	13.435	-87.232	02	973
+Agua Fría	13.469	-87.551	17	3196
+Agualote	15.336	-88.553	16	1759
+Aguanqueterique	13.951	-87.663	12	4807
+Aguas del Padre	14.581	-87.879	04	1104
+Ajuterique	14.383	-87.71	04	11356
+Alauca	13.85	-86.683	07	9273
+Alubarén	13.796	-87.469	08	5558
+Amapala	13.292	-87.654	17	12743
+Antigua Ocotepeque	14.401	-89.2	14	1862
+Arada	14.846	-88.301	16	2913
+Aramecina	13.742	-87.71	17	7173
+Araulí	13.973	-86.545	07	1160
+Arenal	15.35	-86.833	18	1722
+Arimís	14.783	-86	15	1817
+Arizona	15.633	-87.317	01	25320
+Armenia	15.467	-86.367	18	1488
+Armenta	15.5	-88.05	06	2989
+Atenas de San Cristóbal	15.683	-87.317	01	1783
+Atima	14.933	-88.49	16	17648
+Auas	15.483	-84.333	09	1505
+Auka	14.941	-83.832	09	1254
+Ayapa	15.112	-87.176	18	1559
+Azacualpa	14.712	-88.09	16	20210
+Azacualpa	15.344	-88.552	16	5949
+Azacualpa	14.267	-88.383	10	966
+Baja Mar	15.889	-87.855	06	1064
+Baracoa	15.776	-87.853	06	9202
+Barra Patuca	15.8	-84.283	09	2758
+Bejuco	15.133	-87.933	06	1276
+Belén Gualcho	14.483	-88.8	14	15983
+Berlín	14.843	-88.495	16	1050
+Bonito Oriental	15.748	-85.736	03	3732
+Brus Laguna	15.75	-84.483	09	13224
+Buenos Aires	15.033	-88.967	05	1131
+Buenos Aires	15.467	-86.4	18	980
+Buenos Aires	15.483	-88.183	06	979
+Bálsamo Oriental	15.483	-86.333	18	1465
+Callejones	15.167	-88.65	16	1033
+Camalote	15.333	-88.333	16	1319
+Camasca	13.997	-88.38	10	6873
+Campamento	14.55	-86.65	15	6560
+Cane	14.279	-87.658	12	3859
+Carbajales	15.517	-86.35	18	1102
+Caridad	13.827	-87.693	17	3927
+Casa Quemada	15.117	-88.083	06	3036
+Casa Quemada	15.267	-88.55	16	1030
+Catacamas	14.851	-85.894	15	140548
+Cañaveral	14.984	-88.025	06	2137
+Cedros	14.6	-87.117	08	1041
+Ceguaca	14.802	-88.204	16	1239
+Cerro Blanco	14.663	-87.785	04	1169
+Cerro Grande	13.817	-87.25	08	1093
+Chalmeca	15.096	-88.68	05	2008
+Chinacla	14.167	-88	12	8096
+Chinda	15.117	-88.2	16	4702
+Chiquila	15.233	-88.583	16	983
+Chirinos	15.4	-86.583	18	921
+Chivana	15.75	-87.983	06	1018
+Choloma	15.614	-87.953	06	139100
+Chotepe	15.417	-87.983	06	1564
+Ciudad Choluteca	13.306	-87.179	02	75872
+Cofradía	15.4	-88.15	06	20353
+Cofradía	14.224	-87.18	08	1301
+Cololaca	14.3	-88.883	13	1014
+Colomoncagua	13.95	-88.283	10	18484
+Comayagua	14.456	-87.64	04	58784
+Concepción de Guasistagua	14.608	-87.655	04	1470
+Concepción de María	13.217	-87	02	923
+Concepción de la Barranca	15.167	-88.717	05	1014
+Concepción del Norte	15.167	-88.133	16	8989
+Concepción del Sur	14.8	-88.167	16	1049
+Concordia	14.617	-86.65	15	1272
+Copán Ruinas	14.839	-89.156	05	6336
+Corinto	15.583	-88.367	06	954
+Corocito	15.75	-85.783	03	2855
+Corozal	15.8	-86.717	01	2261
+Corpus	13.289	-87.035	02	1199
+Corquín	14.567	-88.867	05	19145
+Correderos	15.418	-88.455	16	1162
+Coxen Hole	16.316	-86.54	11	7514
+Coyoles	15.467	-86.683	18	949
+Coyoles Central	15.4	-86.667	18	1144
+Cucuyagua	14.648	-88.874	05	16707
+Cusuna	15.85	-85.233	03	1441
+Cuyalí	13.883	-86.55	07	1572
+Cuyamel	15.665	-88.195	06	5022
+Danlí	14.033	-86.583	07	233789
+Dolores	14.875	-88.816	05	6652
+Dolores	14.533	-89.117	14	3997
+Dulce Nombre	14.848	-88.832	05	3589
+Dulce Nombre de Culmí	15.1	-85.533	15	30543
+Duyure	13.633	-86.817	02	3519
+El Achiotal	14.083	-88.75	13	1210
+El Agua Dulcita	14.7	-87.75	04	1017
+El Benque	14.033	-86.467	07	1101
+El Buen Pastor	14.867	-87.783	04	942
+El Bálsamo	15.067	-87.467	18	1741
+El Chichicaste	14.067	-86.3	07	1671
+El Chimbo	14.136	-87.119	08	1145
+El Ciruelo	15.294	-88.508	16	2980
+El Corozal	15.067	-88.617	16	1039
+El Corpús	14.698	-88.909	05	1193
+El Cubolero	13.467	-87.667	17	1286
+El Derrumbo	14.75	-88.783	05	929
+El Durazno	14.137	-87.264	08	923
+El Edén	14.95	-88.017	06	954
+El Ermitano	15.25	-88.683	16	947
+El Escanito	14.667	-87.1	08	1184
+El Escaño de Tepale	14.75	-87.067	08	1026
+El Granzal	14.4	-88.867	14	876
+El Guante	14.55	-87.1	08	1082
+El Guantillo	14.6	-87.3	08	1223
+El Guapinol	13.767	-87.467	08	1817
+El Guayabito	14.833	-86.033	15	1404
+El Guayabo	13.489	-87.444	17	889
+El Juncal	15.501	-86.431	18	1286
+El Llano	15.179	-87.88	06	1923
+El Lolo	14.135	-87.254	08	1438
+El Marañón	15.395	-88.054	06	1836
+El Milagro	15.4	-87.967	06	1917
+El Mochito	14.867	-88.083	16	1950
+El Negrito	15.317	-87.7	18	50550
+El Níspero	14.767	-88.333	16	2474
+El Obraje	14	-86.433	07	1703
+El Obraje	13.154	-87.131	02	1172
+El Ocote	15.417	-86.567	18	1908
+El Ocotón	15.033	-88.883	05	1038
+El Olivar	15.083	-87.883	06	1279
+El Paraíso	13.867	-86.55	07	18779
+El Pedernal	14.7	-87.117	08	1648
+El Perico	15.083	-88.1	06	1141
+El Perico	13.139	-87.032	02	957
+El Pescadero	13.933	-86.55	07	909
+El Pino	15.7	-86.933	01	3004
+El Plan	15.326	-87.95	06	2176
+El Portillo de González	15.283	-87.6	18	958
+El Porvenir	13.762	-87.346	08	3153
+El Porvenir	15.833	-87.933	06	2940
+El Porvenir	15.75	-86.933	01	2269
+El Porvenir	14.588	-87.893	04	1337
+El Progreso	15.4	-87.8	18	100810
+El Puente	13.283	-87.117	02	1325
+El Rancho	15.667	-87.95	06	1101
+El Rincón	14.578	-87.928	04	1522
+El Rodeo	14.283	-86.6	07	893
+El Rosario	14.579	-87.727	04	30042
+El Rosario	14.8	-87.767	04	2575
+El Rosario	14.9	-86.683	15	962
+El Rusio	14.467	-86.367	15	1016
+El Sauce	14.529	-87.666	04	1389
+El Socorro	14.627	-87.905	04	1092
+El Suyatal	14.517	-87.217	08	2027
+El Tablón	14.033	-87.167	08	1121
+El Terrero	14.064	-87.066	08	1087
+El Tigre	14.933	-87.983	06	1435
+El Tizatillo	14.002	-87.198	08	798
+El Triunfo	13.117	-87	02	7182
+El Triunfo de la Cruz	15.767	-87.433	01	2190
+El Tránsito	14.383	-88.917	14	1025
+El Tular	13.466	-87.515	17	1927
+El Zapotal del Norte	15.517	-88.05	06	2508
+El Zapote	15.017	-87.85	06	970
+Elíxir	15.483	-86.3	03	3079
+Erandique	14.238	-88.464	13	15633
+Esquipulas del Norte	15.3	-86.533	15	10781
+Esquías	14.744	-87.371	04	21009
+Flores	14.294	-87.571	04	3018
+Florida	15.027	-88.836	05	5340
+Francia	15.85	-85.583	03	1331
+French Harbor	16.35	-86.433	11	2698
+Goascorán	13.583	-87.617	17	14342
+Gracias	14.591	-88.586	13	7909
+Guacamaya	15.02	-88.15	16	1250
+Guaimaca	14.533	-86.817	08	12899
+Guaimitas	15.5	-87.717	18	2321
+Guajiquiro	14.117	-87.833	12	14959
+Gualaco	15.025	-86.071	15	22327
+Gualcince	14.117	-88.55	13	11564
+Gualjoco	14.96	-88.237	16	1432
+Guanaja	16.442	-85.887	11	5538
+Guarita	14.183	-88.817	13	8509
+Guarizama	14.917	-86.333	15	1300
+Guatemalita	14.117	-88.617	13	950
+Guayape	14.717	-86.833	15	12907
+Güinope	13.883	-86.933	07	8794
+Hicaque	15.717	-87.367	01	903
+Humuya	14.25	-87.667	04	1319
+Ilama	15.068	-88.223	16	1811
+Intibucá	14.312	-88.176	10	13741
+Iralaya	15	-83.233	09	1520
+Iriona	15.968	-85.093	03	21207
+Jacaleapa	14.017	-86.667	07	2578
+Jamalteca	14.696	-87.579	04	1107
+Jardines	14.7	-87.983	04	953
+Jericó	15.95	-85.967	03	2364
+Jesús de Otoro	14.488	-87.982	10	6988
+Jiquinlaca	14.006	-88.352	10	1248
+Joconal	15.355	-88.633	16	1206
+Jocón	15.283	-86.967	18	9659
+Jutiapa	15.767	-86.517	01	2815
+Jutiapa	13.983	-86.4	07	1153
+Juticalpa	14.664	-86.222	15	33686
+Jutiquile	14.717	-86.083	15	3585
+Jícaro Galán	13.532	-87.439	17	1370
+La Alianza	13.512	-87.724	17	6923
+La Brea	15.8	-85.967	03	1055
+La Bueso	15.617	-87.857	06	1139
+La Ceiba	15.76	-86.782	01	222055
+La Colorada	15.617	-86.817	01	979
+La Concepción	14.7	-86.233	15	1985
+La Criba	13.454	-87.413	17	1001
+La Curva	15.8	-85.767	03	981
+La Empalizada	14.65	-86.133	15	933
+La Encarnación	14.667	-89.088	14	1484
+La Entrada	15.064	-88.746	05	14739
+La Ermita	14.467	-87.067	08	2495
+La Esperanza	14.302	-88.167	10	5318
+La Esperanza	15.633	-85.767	03	2014
+La Esperanza	15.417	-88.183	06	985
+La Esperanza	15.051	-89.098	05	919
+La Estancia	15.283	-87.55	18	1668
+La Estancia	15.05	-86.35	15	1508
+La Flecha	15.292	-88.49	16	2136
+La Florida	14.067	-87.983	12	899
+La Guacamaya	15.25	-87.8	18	2525
+La Guama	14.886	-87.937	06	1242
+La Guata	15.083	-86.383	15	12084
+La Iguala	14.617	-88.467	13	26805
+La Jigua	15.033	-88.8	05	971
+La Jutosa	15.642	-87.992	06	4183
+La Labor	14.486	-89.003	14	9838
+La Laguna del Pedernal	14.817	-88.567	13	888
+La Libertad	14.758	-87.608	04	4673
+La Libertad	14.811	-88.587	13	1444
+La Lima	15.433	-87.917	06	45955
+La Masica	15.617	-87.117	01	4022
+La Mina	15.317	-87.833	18	2690
+La Paz	14.321	-87.676	12	17555
+La Playona	15.118	-88.982	05	1285
+La Reina	15.117	-88.633	16	954
+La Rosa	15.35	-87.067	18	1552
+La Ruidosa	15.236	-88.751	05	800
+La Sabana	15.374	-87.932	06	1524
+La Sarrosa	15.233	-87.833	18	2188
+La Trinidad	15.1	-87.2	18	1314
+La Trinidad	14.717	-87.667	04	880
+La Unión	14.814	-88.408	13	3054
+La Unión	15.717	-87	01	2382
+La Unión	15.133	-88.55	16	827
+La Virtud	14.061	-88.695	13	1315
+La Zumbadora	15.014	-88.901	05	1086
+Laguna Seca	14.7	-86.1	15	1131
+Laguna Verde	15.2	-88.167	16	1460
+Lagunas	14.617	-88.483	13	986
+Lamaní	14.196	-87.621	04	7117
+Langue	13.621	-87.652	17	20944
+Las Lajas	14.783	-87.75	04	3011
+Las Mercedes	14.283	-87.567	04	1000
+Las Tapias	14.067	-87.282	08	814
+Las Tejeras	14.804	-88.595	13	1140
+Las Trojes	14.067	-85.983	07	6253
+Las Vegas	15.017	-87.45	18	1308
+Las Vegas, Santa Barbara	14.876	-88.075	16	7487
+Las Ánimas	14.25	-86.567	07	1117
+Lauterique	13.854	-87.661	12	3021
+Lejamaní	14.367	-87.707	04	5781
+Lepaera	14.779	-88.59	13	37876
+Lepaterique	14.067	-87.467	08	2090
+Limón	15.867	-85.5	03	14421
+Liure	13.536	-87.092	07	10760
+Llano Largo	14.467	-89.017	14	910
+Loma Alta	15.398	-88.563	16	1067
+Lomitas	15.1	-87.217	18	1552
+Los Arroyos	14.65	-88.883	05	916
+Los Caminos	14.95	-87.975	06	1146
+Los Llanitos	13.287	-87.334	02	1040
+Los Naranjos	14.944	-88.037	06	1684
+Los Planes	14.05	-88.017	12	1320
+Los Tangos	15.146	-88.679	05	1424
+Lucerna	14.558	-88.934	14	6009
+Macholoa	14.917	-88.3	16	989
+Macuelizo	15.313	-88.541	16	34401
+Magdalena	13.867	-88.3	10	966
+Mandasta	13.733	-86.917	07	940
+Mangrove Bight	16.467	-85.883	11	1060
+Mangulile	15.067	-86.8	15	1263
+Manto	14.917	-86.383	15	11641
+Mapulaca	14.033	-88.617	13	4314
+Maraita	13.884	-87.04	08	6809
+Marale	14.883	-87.15	08	1523
+Marcala	14.157	-88.035	12	10054
+Marcovia	13.288	-87.31	02	24646
+Mata de Plátano	14.6	-87.283	08	1151
+Matarras	15.517	-87.4	01	941
+Mateo	14.077	-87.317	08	1021
+Mercedes	14.433	-89.15	14	984
+Mercedes de Oriente	13.91	-87.776	12	1111
+Mezapa	15.583	-87.65	01	6324
+Mezapa	15.55	-87.383	01	917
+Meámbar	14.783	-87.767	04	12522
+Minas de Oro	14.796	-87.347	04	13341
+Mojimán	15.281	-87.587	18	1498
+Monjarás	13.201	-87.374	02	6772
+Monterrey	15.589	-87.881	06	2234
+Morazán	15.317	-87.6	18	11076
+Morocelí	14.117	-86.867	07	17153
+Morolica	13.567	-86.9	02	5472
+Nacaome	13.539	-87.489	17	13929
+Naco	15.391	-88.183	06	3966
+Namasigüe	13.205	-87.139	02	1804
+Naranjito	14.953	-88.683	16	3813
+Nombre de Jesús	15.35	-86.683	18	1250
+Nueva Armenia	15.796	-86.498	01	1392
+Nueva Armenia	15.033	-89.1	05	875
+Nueva Esperanza	15.267	-87.6	18	2120
+Nueva Florida	15.467	-87.5	18	904
+Nueva Granada	15.117	-88.1	06	939
+Nueva Jalapa	14.917	-88.333	16	1094
+Nueva Ocotepeque	14.434	-89.183	14	8780
+Nuevo Celilac	14.983	-88.333	16	8086
+Nuevo Chamelecón	15.383	-88.017	06	2098
+Ocote Paulino	15.417	-87.6	18	1697
+Ojo de Agua	14.017	-86.35	07	2330
+Ojojona	13.934	-87.296	08	2790
+Ojos de Agua	14.706	-88.816	05	1340
+Ojos de Agua	14.6	-87.933	04	1146
+Olanchito	15.481	-86.574	18	124286
+Omoa	15.776	-88.038	06	58172
+Opatoro	14.083	-87.9	12	7572
+Orica	14.7	-86.95	08	2342
+Orocuina	13.482	-87.105	02	1655
+Oropolí	13.817	-86.817	07	6013
+Oropéndolas	15.017	-87.933	06	1333
+Ostumán	14.833	-89.167	05	862
+Palkaka	15.317	-83.867	09	909
+Palo Pintado	14.517	-87.683	04	909
+Paptalaya	15.5	-84.317	09	1227
+Paujiles	15.1	-87.35	18	1244
+Pespire	13.592	-87.362	02	3172
+Petoa	15.269	-88.289	16	12135
+Peña Blanca	15.533	-88.05	06	3552
+Piedras Amarillas	15.683	-86.567	01	999
+Pimienta Vieja	15.233	-87.967	06	8761
+Pinalejo	15.387	-88.392	16	3767
+Piraera	14.067	-88.467	13	14124
+Potrerillos	15.23	-87.964	06	26954
+Potrerillos	14.551	-87.877	04	1334
+Potrerillos	15.633	-88.3	06	1102
+Potrerillos	15.267	-88.433	16	900
+Prieta	15.581	-86.137	03	1103
+Protección	15.028	-88.647	16	2101
+Pueblo Nuevo	15.347	-87.99	06	3556
+Pueblo Nuevo	15	-88.75	05	1053
+Pueblo Nuevo	14.383	-87.283	08	958
+Puerto Alto	15.7	-87.867	06	1385
+Puerto Castilla	16.017	-85.967	03	1220
+Puerto Cortez	15.826	-87.93	06	142311
+Puerto Lempira	15.266	-83.774	09	5000
+Punta Ocote	15.2	-87.283	18	1399
+Punta Piedra	15.9	-85.283	03	1188
+Punuare	14.733	-85.967	15	1905
+Quebrada Larga	14.1	-86.367	07	1217
+Quebrada Seca	15.661	-87.949	06	2248
+Quebrada de Arena	15.767	-85.917	03	2723
+Quebrada de Yoro	15.433	-87.783	18	896
+Quebradas	14.5	-87.35	08	1405
+Quezailica	14.877	-88.727	05	1115
+Quimistán	15.348	-88.405	16	47993
+Rancho Grande	14.689	-87.495	04	1484
+Reitoca	13.826	-87.465	08	1094
+Río Abajo	14.169	-87.205	08	2055
+Río Amarillo	14.967	-89.133	05	1000
+Río Blanquito	15.728	-87.902	06	2458
+Río Bonito	14.767	-87.883	04	1054
+Río Chiquito	15.634	-88.241	06	1405
+Río Esteban	15.833	-86.3	03	1208
+Río Lindo	15.046	-87.986	06	3479
+Sabana Abajo	14.6	-86.583	15	884
+Sabanagrande	13.808	-87.259	08	23943
+Sabá	15.467	-86.25	03	33879
+Salamá	14.833	-86.583	15	2820
+Salamá	15.75	-85.967	03	1737
+Sambo Creek	15.817	-86.683	01	2532
+San Agustín	14.82	-88.936	05	1777
+San Agustín	13.2	-87.117	02	938
+San Andrés	14.217	-88.55	13	13585
+San Antonio	15.333	-87.15	18	1711
+San Antonio	15.6	-87.15	01	1151
+San Antonio	14.517	-88.967	14	962
+San Antonio de Cortés	15.116	-88.041	06	22884
+San Antonio de la Cuesta	14.643	-87.602	04	1033
+San Antonio del Norte	13.884	-87.703	12	1002
+San Buenaventura	15.024	-87.994	06	1452
+San Diego	14.05	-86.467	07	1306
+San Esteban	15.212	-85.77	15	3439
+San Fernando	14.683	-89.117	14	1026
+San Francisco	14.117	-88.367	13	9146
+San Francisco	15.65	-87.05	01	2806
+San Francisco	13.367	-86.9	02	883
+San Francisco de Becerra	14.633	-86.1	15	2411
+San Francisco de Cones	14.517	-88.9	14	1066
+San Francisco de Coray	13.661	-87.533	17	9742
+San Francisco de Ojuera	14.75	-88.183	16	7000
+San Francisco de Yojoa	15.014	-87.972	06	24740
+San Francisco de la Paz	14.9	-86.2	15	5411
+San Francisco del Valle	14.435	-88.956	14	9839
+San Ignacio	14.65	-87.033	08	2330
+San Jerónimo	13.177	-87.136	02	2381
+San Jerónimo	14.627	-87.607	04	1789
+San Jerónimo	14.967	-88.867	05	1046
+San Joaquín	15.061	-88.912	05	1130
+San José	15.317	-87.167	18	1897
+San José	14.902	-88.721	05	1789
+San José	14.248	-87.96	12	1463
+San José de Colinas	15.041	-88.302	16	18791
+San José de Comayagua	14.733	-88.033	04	7856
+San José de Las Conchas	13.325	-87.396	02	1084
+San José de Oriente	15.033	-88.117	16	888
+San José de Pane	14.483	-87.833	04	958
+San José de Río Tinto	14.933	-85.7	15	1071
+San José de Tarros	15.3	-88.7	16	1634
+San José del Boquerón	15.519	-87.898	06	1432
+San José del Potrero	14.84	-87.284	04	1091
+San Juan Guarita	14.183	-88.817	13	2678
+San Juan Pueblo	15.583	-87.233	01	5735
+San Juan de Flores	14.267	-87.033	08	16070
+San Juan de Opoa	14.779	-88.696	05	9709
+San Juan de Planes	14.933	-88.783	05	1048
+San Juancito	14.22	-87.066	08	895
+San Lorenzo	13.424	-87.447	17	22289
+San Lucas	13.733	-86.95	07	1307
+San Luis	15.127	-88.439	16	24606
+San Luis	14.749	-87.408	04	1967
+San Luis de Planes	14.976	-88.125	16	1111
+San Manuel	15.331	-87.921	06	6389
+San Manuel de Colohete	14.45	-88.667	13	14583
+San Marcos	14.408	-88.955	14	5346
+San Marcos	15.302	-88.416	16	3923
+San Marcos de Colón	13.433	-86.8	02	8821
+San Matías	13.983	-86.633	07	1251
+San Nicolás	14.942	-88.328	16	3522
+San Nicolás	15.003	-88.752	05	2231
+San Nicolás	14.55	-86.25	15	1313
+San Nicolás	14.717	-87.35	04	976
+San Pedro Sula	15.506	-88.026	06	801259
+San Pedro Zacapa	14.757	-88.114	16	10535
+San Pedro de Copán	14.617	-88.867	05	63829
+San Pedro de Tutule	14.251	-87.854	12	7165
+San Sebastián	14.25	-88.5	13	10857
+San Sebastián	14.246	-87.64	04	1471
+San Vicente Centenario	14.89	-88.285	16	3601
+Sandy Bay	16.329	-86.564	11	1072
+Santa Ana	15.65	-87.067	01	3579
+Santa Ana	13.932	-87.271	08	1052
+Santa Ana de Yusguare	13.301	-87.114	02	1823
+Santa Bárbara	14.922	-88.238	16	15119
+Santa Cruz	14.017	-88.383	10	7089
+Santa Cruz	13.867	-86.633	07	1430
+Santa Cruz	13.258	-87.348	02	1174
+Santa Cruz	14.75	-88.983	05	863
+Santa Cruz Minas	15.367	-88.3	16	834
+Santa Cruz de Yojoa	14.981	-87.891	06	97848
+Santa Elena	15.383	-88.133	06	1361
+Santa Fe	14.517	-89.233	14	915
+Santa Lucía	14.116	-87.114	08	2288
+Santa Lucía	14.417	-89.2	14	1224
+Santa María del Real	14.767	-85.95	15	10767
+Santa Rita	15.2	-87.883	18	21536
+Santa Rita	15.167	-87.283	18	12869
+Santa Rita	14.917	-88.217	16	1687
+Santa Rita, Copan	14.867	-89.1	05	2704
+Santa Rosa de Aguán	15.95	-85.717	03	5432
+Santa Rosa de Copán	14.774	-88.776	05	27753
+Santa Teresa	14.383	-89	14	914
+Santiago de Puringla	14.358	-87.904	12	2433
+Savannah Bight	16.485	-85.845	11	1031
+Sensenti	14.494	-88.938	14	11668
+Siguatepeque	14.597	-87.831	04	127468
+Silca	14.833	-86.533	15	1112
+Sinuapa	14.443	-89.186	14	9145
+Sonaguera	15.633	-86.333	03	48087
+Subirana	15.2	-87.45	18	1362
+Sula	15.248	-88.56	16	2502
+Sulaco	14.917	-87.267	18	18161
+Talanga	14.4	-87.083	08	13492
+Talgua	14.7	-88.7	13	10744
+Taragual	14.75	-88.483	13	1043
+Taujica	15.7	-85.917	03	1271
+Taulabé	14.693	-87.965	04	4660
+Teguajinal	15.367	-86.6	18	1117
+Tegucigalpa	14.082	-87.207	08	850848
+Tela	15.774	-87.467	01	29325
+Tepanguare	14.333	-87.75	12	1040
+Tepusteca	15.417	-86.317	18	1638
+Teupasenti	14.217	-86.7	07	43477
+Texíguat	13.65	-87.022	07	1012
+Tikiraya	15.017	-83.633	09	925
+Tocoa	15.683	-86	03	111972
+Tomalá	14.226	-88.784	13	6495
+Tornabé	15.75	-87.55	01	1452
+Toyós	15.55	-87.65	18	2530
+Tras Cerros	15.3	-88.667	16	4174
+Travesía	15.863	-87.905	06	1283
+Trinidad	15.142	-88.233	16	4276
+Trinidad de Copán	14.946	-88.742	05	7031
+Trojas	15.35	-86.7	18	1068
+Trujillo	15.917	-85.953	03	9646
+Támara	14.169	-87.341	08	2683
+Urrutia	14.75	-87.033	08	799
+Valladolid	14.15	-88.733	13	3747
+Valle de Ángeles	14.158	-87.043	08	4649
+Valle de Ángeles	14.499	-87.64	04	1101
+Vallecillo	14.517	-87.4	08	1986
+Veracruz	14.917	-88.783	05	1045
+Victoria	14.938	-87.394	18	34215
+Victoria	15.504	-87.826	18	2884
+Villa Nueva	14.032	-87.141	08	2295
+Villa de San Antonio	14.326	-87.614	04	32419
+Villa de San Francisco	14.167	-86.967	08	10816
+Villanueva	15.315	-87.994	06	31571
+Virginia	14.017	-88.567	13	2574
+Vivistorio	14.9	-88.733	05	949
+Wasma	15.433	-84.4	09	969
+Wawina	15.417	-84.433	09	1481
+Yaguacire	14.016	-87.216	08	1449
+Yamaranguila	14.283	-88.242	10	21633
+Yaruchel	14.528	-88.816	14	1105
+Yarula	14.117	-88.083	12	9185
+Yarumela	14.336	-87.646	12	3059
+Yauyupe	13.743	-87.06	07	1363
+Yocón	15.017	-86.7	15	12182
+Yorito	15.067	-87.283	18	19824
+Yoro	15.138	-87.128	18	15774
+Yuscarán	13.944	-86.852	07	2371
+Zambrano	14.267	-87.4	08	3873
+Zamora	15.633	-86.067	03	2999
+Zopilotepe	14.6	-86.267	15	1300

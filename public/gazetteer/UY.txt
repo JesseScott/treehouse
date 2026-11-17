@@ -1,0 +1,155 @@
+25 de Agosto	-34.412	-56.402	07	1849
+25 de Mayo	-34.189	-56.339	07	1852
+Abayuba	-34.764	-56.214	10	924
+Aceguá	-31.872	-54.164	03	1511
+Agraciada	-33.81	-58.267	17	586
+Aguas Corrientes	-34.522	-56.394	02	1047
+Aiguá	-34.205	-54.757	09	2465
+Albisu	-31.384	-57.815	15	544
+Alejandro Gallinal	-33.863	-55.543	07	1357
+Algorta	-32.421	-57.389	12	779
+Artigas	-30.404	-56.469	01	43897
+Atlántida	-34.772	-55.758	02	5562
+Baltasar Brum	-30.719	-57.326	01	2531
+Barra de Carrasco	-34.877	-56.03	02	5410
+Barra del Chuy	-33.749	-53.379	14	905
+Barros Blancos	-34.752	-56.003	02	31650
+Bella Unión	-30.26	-57.599	01	12200
+Belén	-30.787	-57.776	15	2033
+Blanquillo	-32.767	-55.633	05	1084
+Canelones	-34.524	-56.282	02	24185
+Capurro	-34.437	-56.464	16	771
+Cardal	-34.291	-56.389	07	1291
+Cardona	-33.87	-57.37	17	4600
+Carlos Reyles	-33.057	-56.477	05	976
+Carmelo	-34	-58.284	04	18041
+Castillos	-34.199	-53.859	14	7541
+Casupá	-34.1	-55.648	07	2402
+Cebollatí	-33.267	-53.794	14	1609
+Chapicuy	-31.66	-57.888	11	735
+Chui	-33.698	-53.459	14	9675
+Colonia Lavalleja	-31.094	-57.023	15	956
+Colonia Nicolich	-34.815	-56.024	02	8902
+Colonia Valdense	-34.34	-57.262	04	3235
+Colonia del Sacramento	-34.463	-57.84	04	32164
+Costa Azul	-34.629	-54.153	14	1090
+Cuareim	-30.225	-57.568	01	1025
+Curtina	-32.15	-56.117	18	1037
+Delta del Tigre	-34.765	-56.364	16	17973
+Dieciocho de Julio	-33.682	-53.553	14	977
+Dolores	-33.53	-58.217	17	17174
+Durazno	-33.381	-56.523	05	40279
+Ecilda Paullier	-34.358	-57.049	16	2585
+Empalme Olmos	-34.698	-55.893	02	4199
+Estación Porvenir	-32.371	-57.854	11	1055
+Florencio Sánchez	-33.878	-57.372	04	3716
+Florida	-34.1	-56.215	07	36471
+Fraile Muerto	-32.517	-54.533	03	3168
+Fray Bentos	-33.117	-58.311	12	26297
+Fray Marcos	-34.194	-55.734	07	2701
+Gallinal	-31.885	-57.48	11	700
+General Enrique Martínez	-33.204	-53.805	14	1430
+Guichón	-32.358	-57.198	11	5051
+Ingeniero Agrónomo Alfredo Mones Quintela	-30.374	-57.664	01	531
+Isidoro Noblía	-31.962	-54.123	03	2331
+Ituzaingó	-34.42	-56.425	16	771
+Joaquín Suárez	-34.735	-56.035	02	6570
+José Batlle y Ordóñez	-33.467	-55.117	08	2203
+José Enrique Rodó	-33.696	-57.532	17	2120
+José Pedro Varela	-33.455	-54.536	08	5118
+Juan L. Lacaze	-34.419	-57.453	04	12816
+Juanicó	-34.595	-56.253	02	1305
+La Coronilla	-33.558	-53.858	14	510
+La Floresta	-34.756	-55.681	02	1107
+La Paloma	-34.663	-54.165	14	3495
+La Paloma	-32.727	-55.583	05	1567
+La Paz	-34.76	-56.226	02	19913
+Las Piedras	-34.73	-56.219	02	69682
+Las Piedras	-30.262	-57.582	01	2185
+Las Toscas	-34.733	-55.717	02	3146
+Lascano	-33.672	-54.206	14	6976
+Libertad	-34.635	-56.617	16	10166
+Los Cerrillos	-34.605	-56.356	02	2508
+Maldonado	-34.898	-54.95	09	102000
+Marindia	-34.774	-55.824	02	3543
+Mariscala	-34.041	-54.777	08	1626
+Melo	-32.368	-54.164	03	56013
+Mercedes	-33.252	-58.03	17	43543
+Merinos	-32.385	-56.904	11	528
+Miguelete	-34.006	-57.648	04	999
+Migues	-34.488	-55.628	02	2109
+Minas	-34.376	-55.238	08	38645
+Minas de Corrales	-31.574	-55.471	13	3788
+Montes	-34.493	-55.562	02	1760
+Montevideo	-34.903	-56.188	10	1270737
+Nueva Helvecia	-34.3	-57.233	04	10054
+Nueva Palmira	-33.87	-58.412	04	9857
+Nuevo Berlín	-32.98	-58.059	12	2450
+Ombúes de Lavalle	-33.938	-57.81	04	3390
+Pajas Blancas	-34.802	-56.334	10	2000
+Palmitas	-33.507	-57.801	17	2123
+Pan de Azúcar	-34.779	-55.236	09	6597
+Pando	-34.717	-55.958	02	24047
+Paso Bonilla	-31.808	-55.979	18	510
+Paso de Carrasco	-34.86	-56.052	02	15393
+Paso de los Toros	-32.817	-56.517	18	12985
+Paysandú	-32.317	-58.081	11	81550
+Piedras Coloradas	-32.372	-57.609	11	1094
+Piriápolis	-34.863	-55.275	09	7968
+Porvenir	-32.393	-57.97	11	1159
+Progreso	-34.667	-56.218	02	16244
+Pueblo Centenario	-32.867	-56.467	05	1136
+Pueblo Sequeira	-30.989	-56.87	01	1149
+Puimayen	-33.774	-53.409	08	1346
+Punta del Este	-34.947	-54.934	09	9277
+Puntas de Valdéz	-34.585	-56.701	16	1491
+Quebracho	-31.935	-57.901	11	2853
+Rafael Perazza	-34.523	-56.797	16	1274
+Raigón	-34.34	-56.663	16	738
+Rivera	-30.905	-55.551	13	84775
+Rocha	-34.48	-54.331	14	26784
+Rodríguez	-34.381	-56.538	16	2604
+Rosario	-34.317	-57.35	04	10085
+Río Branco	-32.598	-53.386	03	14604
+Salinas	-34.777	-55.84	02	8626
+Salto	-31.388	-57.96	15	114084
+San Antonio	-34.451	-56.08	02	1453
+San Bautista	-34.44	-55.959	02	1905
+San Carlos	-34.791	-54.918	09	27471
+San Félix	-32.346	-58.101	11	1718
+San Gregorio de Polanco	-32.617	-55.833	18	3415
+San Jacinto	-34.545	-55.872	02	3954
+San Javier	-32.665	-58.133	12	1781
+San José de Mayo	-34.339	-56.713	16	35883
+San Ramón	-34.292	-55.956	02	7133
+Santa Bernardina	-33.354	-56.525	05	1094
+Santa Catalina	-33.791	-57.488	17	1067
+Santa Clara de Olimar	-32.923	-54.944	19	2341
+Santa Lucía	-34.453	-56.391	02	16438
+Santa Rosa	-34.498	-56.038	02	3727
+Santa Teresa	-34.433	-57.717	04	2657
+Santiago Vázquez	-34.79	-56.35	10	1468
+Sarandí Grande	-33.733	-56.333	07	6130
+Sarandí del Yi	-33.35	-55.633	05	7176
+Sauce	-34.652	-56.064	02	5910
+Soca	-34.684	-55.702	02	1742
+Solís de Mataojo	-34.6	-55.468	08	2825
+Tacuarembó	-31.719	-55.979	18	60586
+Tala	-34.343	-55.764	02	4949
+Tambores	-31.877	-56.244	18	1561
+Tarariras	-34.266	-57.619	04	6632
+Toledo	-34.738	-56.095	02	4397
+Tomás Gomensoro	-30.429	-57.436	01	2872
+Tranqueras	-31.2	-55.75	13	7235
+Treinta y Tres	-33.231	-54.386	19	25890
+Trinidad	-33.516	-56.9	06	22897
+Tupambaé	-32.833	-54.767	03	1122
+Velázquez	-34.036	-54.281	14	1022
+Vergara	-32.944	-53.938	19	3810
+Vichadero	-31.778	-54.692	13	3698
+Villa Constitución	-31.069	-57.849	15	2846
+Villa Sara	-33.253	-54.419	19	1199
+Villa Soriano	-33.398	-58.322	17	1124
+Villa del Carmen	-33.239	-56.009	05	2703
+Young	-32.698	-57.627	12	16756
+Zapicán	-33.523	-54.942	08	553

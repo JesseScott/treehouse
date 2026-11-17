@@ -9,7 +9,14 @@ export interface FixtureManifest {
   people: number;
   families: number;
   rootId: string;
-  paternalLine: { id: string; name: string; birthYear: number; birthPlace: string }[];
+  paternalLine: {
+    id: string;
+    name: string;
+    birthYear: number;
+    birthPlace: string;
+    lat: number;
+    lng: number;
+  }[];
 }
 
 const fixtureDir = new URL('../fixtures/synthetic/', import.meta.url);

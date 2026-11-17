@@ -1,0 +1,25 @@
+Barrouallie	13.237	-61.273	05	1000
+Biabou	13.194	-61.139	01	1050
+Bottle and Glass	13.24	-61.274	05	1666
+Byera Village	13.256	-61.12	01	1365
+Calliaqua	13.129	-61.192	04	24205
+Chateaubelair	13.291	-61.24	03	735
+Diamond	13.141	-61.168	04	1971
+Dovers	12.892	-61.185	06	525
+Edinboro	13.16	-61.236	02	690
+Friendly Village	13.228	-61.128	01	1074
+Georgetown	13.281	-61.118	01	1680
+Gomea	13.167	-61.195	04	593
+Greiggs	13.211	-61.163	01	1476
+Kingstown	13.155	-61.227	04	24518
+Layou	13.202	-61.27	02	140
+New Montrose	13.163	-61.231	02	1598
+Old Montrose	13.167	-61.229	04	1146
+Peruvian Vale	13.177	-61.144	01	1060
+Petit Bordel	13.287	-61.245	03	1084
+Port Elizabeth	13.011	-61.235	06	839
+Questelles	13.176	-61.249	02	1163
+Redemption	13.164	-61.229	02	1875
+Rosehall	13.273	-61.242	03	954
+Sion Hill	13.152	-61.219	04	1387
+Vermont	13.204	-61.225	02	635

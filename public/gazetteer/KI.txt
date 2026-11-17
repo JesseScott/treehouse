@@ -1,0 +1,37 @@
+Abarao Village	1.363	173.11	01	908
+Ambo Village	1.353	173.043	01	1688
+Bairiki Village	1.329	172.975	01	2766
+Bakaka Village	-2.5	175.98	01	559
+Banana	1.969	-157.394	02	1209
+Banana Village	1.983	-157.365	02	1170
+Banraeaba Village	1.345	173.035	01	1789
+Betio Village	1.358	172.921	01	12509
+Bikenibeu Village	1.367	173.124	01	6170
+Bonriki Village	1.381	173.139	01	2119
+Buariki Village	1.609	172.955	01	597
+Buariki Village	0.177	173.637	01	509
+Buota Village	1.391	173.131	01	1373
+Eita Village	1.362	173.081	01	2299
+Eita Village	-1.178	174.728	01	814
+Kiebu Village	3.323	172.975	01	551
+Kuma Village	3.173	172.96	01	635
+London Village	1.985	-157.475	02	1829
+Makin Village	3.364	172.984	01	1834
+Matang Village	-0.671	174.45	01	548
+Nanikai Village	1.33	172.998	01	803
+Napari Village	3.908	-159.388	02	194
+Nawerewere Village	1.364	173.139	01	1780
+Rawannawi Village	2.054	173.264	01	1075
+Roreti Village	-2.655	176.833	01	764
+Rotuma Village	-0.631	174.414	01	625
+Rungata	-1.342	176.436	01	933
+Tabiang Village	0.486	173.829	01	591
+Taborio Village	1.356	173.054	01	955
+Taborio Village	1.52	173.003	01	845
+Tabwakea Village	2.016	-157.488	02	1881
+Tanaeang Village	-1.138	174.677	01	514
+Tarawa	1.328	172.977	01	40311
+Teaoraereke Village	1.333	173.012	01	3939
+Temaiku Village	1.363	173.162	01	2011
+Toboiaki Village	-0.738	174.454	01	668
+Utiroa	-1.213	174.757	01	571

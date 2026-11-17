@@ -4,6 +4,11 @@
     "cssGzipKb": 14,
     "totalGzipKb": 610
   },
+  "gazetteer": {
+    "indexGzipKb": 100,
+    "largestFileGzipKb": 700,
+    "totalMb": 16
+  },
   "lighthouse": {
     "performanceScore": 0.7,
     "accessibilityScore": 0.95,

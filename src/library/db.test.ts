@@ -5,12 +5,16 @@ import { parseGedcom } from '../gedcom/parse';
 import {
   closeDb,
   deleteImport,
+  deletePlace,
   findImportByHash,
   listImports,
+  listPlaces,
   loadTree,
   saveImport,
+  savePlace,
   updateImport,
   type ImportRecord,
+  type StoredPlace,
 } from './db';
 
 const tree = parseGedcom(
@@ -86,5 +90,33 @@ describe('library database', () => {
     expect((await listImports()).map((r) => r.id)).toEqual(['b']);
     expect(await loadTree('a')).toBeUndefined();
     expect(await loadTree('b')).toEqual(tree);
+  });
+});
+
+describe('stored places', () => {
+  const pin: StoredPlace = {
+    key: 'elmford, northmark',
+    source: 'manual',
+    location: { lng: 10.1, lat: 12.1 },
+    label: '',
+    updatedAt: '2026-01-01T00:00:00.000Z',
+  };
+
+  it('keeps pins and online answers, one per place, apart from the imports', async () => {
+    expect(await listPlaces()).toEqual([]);
+    await savePlace(pin);
+    await savePlace({ key: 'nowhere', source: 'online', location: null, label: '', updatedAt: '' });
+    await savePlace({ ...pin, location: { lng: 11, lat: 13 } });
+    const stored = await listPlaces();
+    expect(stored).toHaveLength(2);
+    expect(stored.find((p) => p.key === pin.key)?.location).toEqual({ lng: 11, lat: 13 });
+
+    // Deleting an import leaves the places alone: they are shared by every import.
+    await saveImport(record('a', '2026-01-01T00:00:00.000Z'), tree);
+    await deleteImport('a');
+    expect(await listPlaces()).toHaveLength(2);
+
+    await deletePlace(pin.key);
+    expect((await listPlaces()).map((p) => p.key)).toEqual(['nowhere']);
   });
 });

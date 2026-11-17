@@ -1,0 +1,23 @@
+Basse-Pointe	14.869	-61.115	MQ	4037
+Ducos	14.575	-60.975	MQ	17394
+Fort-de-France	14.604	-61.074	MQ	89995
+Grand'Rivière	14.874	-61.18	MQ	666
+L'Ajoupa-Bouillon	14.821	-61.117	MQ	1815
+La Trinité	14.738	-60.963	MQ	15040
+Le François	14.615	-60.903	MQ	19682
+Le Gros-Morne	14.7	-61	MQ	11025
+Le Lamentin	14.613	-61	MQ	40581
+Le Lorrain	14.833	-61.056	MQ	8341
+Le Marin	14.472	-60.87	MQ	7943
+Le Morne-Rouge	14.776	-61.136	MQ	5469
+Le Robert	14.678	-60.942	MQ	23814
+Le Vauclin	14.545	-60.838	MQ	7812
+Les Trois-Îlets	14.539	-61.034	MQ	5657
+Rivière-Pilote	14.487	-60.903	MQ	13359
+Saint-Esprit	14.55	-60.933	MQ	8508
+Saint-Joseph	14.671	-61.039	MQ	16974
+Saint-Pierre	14.743	-61.175	MQ	4125
+Sainte-Anne	14.435	-60.881	MQ	4306
+Sainte-Luce	14.468	-60.921	MQ	9196
+Sainte-Marie	14.784	-60.992	MQ	20380
+Schoelcher	14.618	-61.099	MQ

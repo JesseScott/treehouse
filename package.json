@@ -21,6 +21,7 @@
     "smoke": "node harness/smoke.mjs",
     "fixtures": "node tools/fixtures/generate.mjs",
     "basemap": "node tools/basemap/build.mjs",
+    "gazetteer": "node tools/gazetteer/build.mjs",
     "check:privacy": "node harness/privacy-guard.mjs",
     "lockfile:check": "node tools/lockfile/check.mjs",
     "lockfile:fix": "node tools/lockfile/check.mjs --fix",

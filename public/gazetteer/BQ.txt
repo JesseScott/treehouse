@@ -1,0 +1,10 @@
+Belnem	12.123	-68.287	BO	881
+Dorp Antriol	12.166	-68.27	BO	3811
+Dorp Nikiboko	12.144	-68.261	BO	3475
+Dorp Rincon	12.238	-68.331	BO	1875
+Dorp Tera Kora	12.137	-68.26	BO	1186
+Golden Rock	17.491	-62.981	SE	823
+Kralendijk	12.15	-68.267	BO	10620
+Oranjestad	17.483	-62.986	SE	1097
+The Bottom	17.627	-63.25	SB	488
+Upper Hell's Gate	17.643	-63.226	SB	2810

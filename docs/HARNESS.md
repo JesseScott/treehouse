@@ -27,7 +27,11 @@ and the whole ladder before you commit.
 `npm run check:data -- <path to a .ged or .zip>` is local only and not part of `verify`. It runs the importer over a
 real export on this machine and prints aggregate numbers: counts, warnings by code, date and place coverage, and
 the masked shape of any date it could not get a year from (letters become `a`, digits `9`). It never prints or
-stores a name, place or date; the summary goes to git-ignored `reports/data.json`. Geocode coverage joins it in M2.
+stores a name, place or date; the summary goes to git-ignored `reports/data.json`. It also matches the export's
+places against the bundled gazetteer (never online) and reports how many were placed exactly, approximately (and at
+what level: place, area, region or country) or not at all, by place and by event. The places that were not placed
+exactly are written, as text, to git-ignored `reports/data-places.json` for Jesse to read; that file holds real
+place names, so an agent does not print it or copy from it.
 
 First-time setup: `npm ci`, then `npx playwright install chromium`.
 
@@ -58,6 +62,7 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
 | --------------------------------------------- | -------------------------------------------------------------------------- |
 | `__treehouse.state()`                         | A plain-JSON snapshot (below)                                              |
 | `await __treehouse.whenIdle()`                | Resolves when the map has loaded, stopped moving and rendered              |
+| `__treehouse.place(text)`                     | Where a place string of the open tree is (below), or `null`                |
 | `await __treehouse.focus(id)`                 | Focus a person. A stub until M3: always `{ ok: false, reason: 'no-tree' }` |
 | `await __treehouse.flyTo({ lng, lat, zoom })` | Move the camera the way a focus will, then wait for idle                   |
 
@@ -77,7 +82,7 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
     "bearing": 0,
     "pitch": 0,
   },
-  "screen": "tree", // "library", "root-picker" or "tree"
+  "screen": "tree", // "library", "root-picker", "tree" or "places"
   "library": {
     "loaded": true, // false until IndexedDB has been read
     "imports": [
@@ -108,9 +113,33 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
   },
   "focusedPersonId": null, // until M3
   "threads": { "lineage": 0, "family": 0, "ancestors": 0, "migration": 0 }, // arcs drawn; M4
-  "geocode": { "places": 0, "resolved": 0, "approximate": 0, "unresolved": 0 }, // coverage; M2
+  "geocode": {
+    // the open tree's distinct places; resolved + approximate + unresolved = places
+    "busy": false, // true while they are being matched against the bundled gazetteer
+    "error": null, // "gazetteer-unavailable" when the place data could not be loaded
+    "places": 28,
+    "resolved": 25,
+    "approximate": 3,
+    "unresolved": 0,
+    "pinned": 0, // resolved places that are pins the user set
+    "online": 0, // resolved places that came from an online lookup
+  },
+  "placeReview": { "selected": false, "pinning": false }, // pinning: the next map click sets the place
+  "onlineLookup": {
+    "enabled": false, // the user's opt-in; nothing is sent without it
+    "running": false,
+    "done": 0,
+    "total": 0,
+    "error": null, // "online-unavailable" when the lookup service could not be reached
+  },
 }
 ```
+
+`state()` never contains a place string, so it stays safe to paste. To ask about one place, call
+`__treehouse.place('Barvas, Lewis, Ross and Cromarty, Scotland')`: it returns `{ status: 'unresolved' }`, or
+`{ status: 'resolved' | 'approximate', lng, lat, level, source }` where `level` is `place`, `area`, `region` or
+`country` and `source` is `gazetteer`, `online` or `manual`; `null` when the open tree does not name that place.
+Spelling differences in case, accents and spacing do not matter.
 
 The contract is `src/harness/types.ts`. When a feature adds something worth asserting, add it there, to
 `debugApi.ts`, and to an e2e test, in the same change.
@@ -121,7 +150,8 @@ URL flags:
 - `?motion=off`: camera moves are instant. Use it in tests unless the test is about animation. The app also treats
   the reduced-motion system setting as motion off.
 
-`whenIdle()` waits for the map, for the library to have been read from IndexedDB, and for any import to finish.
+`whenIdle()` waits for the map, for the library to have been read from IndexedDB, and for any import, geocoding or
+online lookup to finish.
 In a test, wait for `state().import.attempts` to go up after choosing a file, then call `whenIdle()`; see
 `importFile` in `e2e/helpers.ts`.
 
@@ -134,7 +164,14 @@ Stable `data-testid`s so far:
 - Home-person picker: `root-picker`, `root-search`, `root-result-count`, `root-options`, `root-option` (carries
   `data-person-id`), `root-cancel`, `back-to-library`.
 - Tree: `tree-panel`, `tree-name`, `tree-counts`, `home-person` (carries `data-person-id`), `tree-warnings`,
-  `already-imported`, `change-root`, `back-to-library`.
+  `already-imported`, `change-root`, `back-to-library`, `geocode-summary`, `review-places`.
+- Places: `places-panel`, `places-summary`, `geocode-error`, `filter-attention`, `filter-all`, `places-empty`,
+  `place-list`, `place-option` (carries `data-status`), `place-actions`, `pin-place`, `reset-place`, `pin-hint`,
+  `online-opt-in`, `online-start`, `online-stop`, `online-status`, `online-error`, `back-to-tree`, and `place-pin`
+  (the marker on the map).
+
+End-to-end tests never reach the real lookup service: `e2e/places.spec.ts` answers requests to Nominatim itself with
+`page.route`, and asserts that nothing is requested until the user opts in. Keep it that way.
 
 To import a fixture by hand in the browser pane (the dev server serves the repository's files):
 
@@ -176,13 +213,30 @@ lowercase places, street addresses and croft numbers inside places, people with 
 as well as the one on Lewis.
 
 `fixtures/synthetic/manifest.json` gives, per file, the root id, the paternal line with approximate coordinates for
-each birthplace (use a tolerance), and the ids of the people carrying each structural quirk. Later milestones should
-assert against the manifest rather than hard-coding ids.
+each birthplace (use a tolerance), and the ids of the people carrying each structural quirk. Its top-level `places`
+lists every place the fixtures use with approximate coordinates; `tests/geocode-fixtures.test.ts` checks that the
+geocoder puts every fixture place within 15 km of them. Later milestones should assert against the manifest rather
+than hard-coding ids.
+
+## The gazetteer
+
+`public/gazetteer/` is the bundled place data, built from GeoNames by `tools/gazetteer/build.mjs`
+(`npm run gazetteer`) and committed, like the basemap. It is not part of the page load: `index.json` (countries and
+first-level regions) and one `<country code>.txt` per country a tree names are fetched by a worker when a tree is
+opened, plus `world.txt` (towns of 15,000 or more) when a place names no country. Every country has its places of
+500 people or more; the countries in `DETAIL` in the build script (Canada, the United Kingdom, Ireland) also have
+every village and their counties, parishes and islands. Adding a country to `DETAIL` is the way to improve coverage
+for it; rebuild and commit the result on its own. Downloads are cached in git-ignored `tools/gazetteer/.cache/`.
+
+Unit tests for the matcher's rules use a tiny made-up gazetteer (`src/geocode/geocode.test.ts`); tests of the real
+data live in `tests/geocode-*.test.ts` and read `public/gazetteer/` from disk.
 
 ## Budgets
 
-`harness/budgets.json` holds the ceilings (bundle gzip sizes, largest contentful paint, total blocking time, layout
-shift) and floors (Lighthouse scores). They were set from the M0 shell with a little headroom: MapLibre and its
+`harness/budgets.json` holds the ceilings (bundle gzip sizes, gazetteer sizes, largest contentful paint, total
+blocking time, layout shift) and floors (Lighthouse scores). The gazetteer is counted apart from the bundle, since
+it is fetched one country at a time after a tree is opened: its index, its largest single file and its total size
+each have a ceiling. They were set from the M0 shell with a little headroom: MapLibre and its
 worker are most of the JavaScript. If a change needs more room, raise the budget on purpose in its own commit and
 say why.
 
