@@ -45,6 +45,9 @@ test('the shell loads with a working offline globe', async ({ page }) => {
     alreadyImported: false,
   });
   expect(state.focusedPersonId).toBeNull();
+  expect(state.focus).toBeNull();
+  expect(state.markers).toEqual({ places: 0, rendered: 0 });
+  expect(state.placeCard).toEqual({ open: false, people: 0 });
   expect(state.threads).toEqual({ lineage: 0, family: 0, ancestors: 0, migration: 0 });
   expect(state.geocode).toMatchObject({ busy: false, error: null, places: 0, resolved: 0 });
   expect(state.onlineLookup.enabled).toBe(false);
@@ -149,7 +152,7 @@ test('with motion on the camera flies and whenIdle waits for it to land', async 
   expect(landed.map.center.lat).toBeCloseTo(STORNOWAY.lat, 2);
 });
 
-test('focus is a stub until a tree can be imported', async ({ page }) => {
+test('focus needs an open tree', async ({ page }) => {
   await openApp(page);
   const result = await page.evaluate(() => window.__treehouse?.focus('@I420000000001@'));
   expect(result).toEqual({ ok: false, reason: 'no-tree' });
