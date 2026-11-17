@@ -8,7 +8,7 @@ uploaded.
 
 ## Status
 
-Early. Three milestones exist so far:
+Early. Four milestones exist so far:
 
 - **M0, the shell and test harness:** a globe that renders from a bundled offline map, a debug API for automated
   checks, synthetic test trees, and a check ladder.
@@ -18,9 +18,14 @@ Early. Three milestones exist so far:
   screen shows the places that were only placed approximately or not at all; you can set any of them by clicking the
   map or dragging its pin, or turn on an online lookup for them.
 
-Only the place selected on the review screen is drawn on the map so far. Place markers, profiles, journeys and
-threads are planned; see
-[`docs/PLAN.md`](docs/PLAN.md).
+- **M3, map and focus:** every place has a marker, sized by how many people have events there and grouped when
+  zoomed out; click one to see who was there. Opening a tree shows the home person; choosing anyone (by search, a
+  relative's name, the breadcrumb, the small pedigree chart or the arrow keys) flies the camera to where they were
+  born and opens their profile: how they are related to the home person, a timeline with clickable places, and their
+  family. Someone with no birthplace on the map is shown at their baptism, home, marriage or death place, or a close
+  relative's, and marked approximate. The map can be flat or a globe.
+
+Journeys, threads and syncing an import are planned; see [`docs/PLAN.md`](docs/PLAN.md).
 
 ## Develop
 
