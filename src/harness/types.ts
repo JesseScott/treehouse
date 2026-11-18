@@ -72,8 +72,23 @@ export interface TreehouseState {
   markers: { places: number; rendered: number };
   /** The list of people at a clicked place. */
   placeCard: { open: boolean; people: number };
-  /** Number of arcs drawn per thread type (all zero until M4). */
+  /**
+   * Number of arcs drawn per thread type. A type that is switched off draws none; an arc joins
+   * two people's own places (or two of one person's places for `migration`) a km or more apart.
+   */
   threads: { lineage: number; family: number; ancestors: number; migration: number };
+  /** Which thread types are switched on. */
+  threadToggles: { lineage: boolean; family: boolean; ancestors: boolean; migration: boolean };
+  /** The journey being shown, or null. `index` counts stops from the home person (0). */
+  journey: {
+    line: 'paternal' | 'maternal' | 'ancestor';
+    stops: number;
+    index: number;
+    /** The person at the current stop. */
+    personId: string;
+    playing: boolean;
+    speed: number;
+  } | null;
   /**
    * Where the open tree's distinct places are on the map. `resolved` + `approximate` +
    * `unresolved` = `places`. Counts only: a place string never appears in the state.

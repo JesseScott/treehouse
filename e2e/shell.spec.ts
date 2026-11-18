@@ -49,6 +49,7 @@ test('the shell loads with a working offline globe', async ({ page }) => {
   expect(state.markers).toEqual({ places: 0, rendered: 0 });
   expect(state.placeCard).toEqual({ open: false, people: 0 });
   expect(state.threads).toEqual({ lineage: 0, family: 0, ancestors: 0, migration: 0 });
+  expect(state.journey).toBeNull();
   expect(state.geocode).toMatchObject({ busy: false, error: null, places: 0, resolved: 0 });
   expect(state.onlineLookup.enabled).toBe(false);
 

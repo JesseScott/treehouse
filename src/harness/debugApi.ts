@@ -6,6 +6,8 @@ import { placeVisits, peopleCountAt } from '../geocode/treePlaces';
 import { MARKER_LAYERS, MARKER_SOURCE, markerCollection } from '../map/markerData';
 import { screenOf, useAppStore } from '../state/appStore';
 import { focusOf } from '../state/focus';
+import { threadsOf } from '../state/threads';
+import { threadCounts } from '../map/threadData';
 import { flags } from './flags';
 import type { PlaceLocation, TreehouseDebugApi, TreehouseState } from './types';
 
@@ -70,7 +72,16 @@ function state(): TreehouseState {
           ? peopleCountAt(placeVisits(store.open.tree).get(store.openedPlaceKey))
           : 0,
     },
-    threads: { lineage: 0, family: 0, ancestors: 0, migration: 0 },
+    threads: threadCounts(threadsOf(store)),
+    threadToggles: { ...store.threadsOn },
+    journey: store.journey && {
+      line: store.journey.line,
+      stops: store.journey.stops.length,
+      index: store.journey.index,
+      personId: store.journey.stops[store.journey.index] ?? '',
+      playing: store.journey.playing,
+      speed: store.journey.speed,
+    },
     geocode: {
       busy: store.geocoding,
       error: store.geocodeError,
