@@ -1,4 +1,4 @@
-// check:perf — bundle-size and Lighthouse budgets for the built app.
+// check:perf — bundle-size, Lighthouse and journey frame-time budgets for the built app.
 // Lighthouse runs three times (LIGHTHOUSE_RUNS) and each metric is judged by its median.
 //
 // Budgets live in harness/budgets.json. Writes reports/perf.json and
@@ -9,6 +9,7 @@ import { gzipSync } from 'node:zlib';
 import { chromium } from '@playwright/test';
 import lighthouse from 'lighthouse';
 import { WEBGL_ARGS } from './lib/browser.mjs';
+import { measureJourneyFrames } from './lib/journeyFrames.mjs';
 import { startPreview } from './lib/preview.mjs';
 import { median } from './lib/stats.mjs';
 
@@ -150,6 +151,13 @@ try {
   judge('lighthouse: largest contentful paint', 'lcp', lh.largestContentfulPaintMs, 'ms', 0);
   judge('lighthouse: total blocking time', 'tbt', lh.totalBlockingTimeMs, 'ms', 0);
   judge('lighthouse: cumulative layout shift', 'cls', lh.cumulativeLayoutShift, '', 3);
+
+  // ---- Journey frame times ----------------------------------------------------
+  // The paternal journey of the 30-person fixture at 4x, with motion on: about 700 frames.
+  const frames = await measureJourneyFrames(server.url);
+  measure('journey: frame time p95', frames.p95, budgets.journey.frameTimeP95Ms, 'ms');
+  results.at(-1).frames = frames.frames;
+  results.at(-1).medianMs = frames.median;
 } finally {
   await server.close();
 }
