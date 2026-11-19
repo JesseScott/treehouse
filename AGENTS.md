@@ -6,8 +6,8 @@ plan with its milestones, and `docs/HARNESS.md` explains how to validate a chang
 treehouse is a world-map family tree viewer: a static web app with no backend. It reads a GEDCOM file in the browser,
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
 uploaded. Status: **M0** (harness and empty shell), **M1** (GEDCOM import, library, home-person picker), **M2**
-(geocoding, place review, pins, opt-in online lookup) and **M3** (place markers, focus fly-to, profile, navigation,
-search) are built; M4 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
+(geocoding, place review, pins, opt-in online lookup), **M3** (place markers, focus fly-to, profile, navigation,
+search) and **M4** (threads and journey mode) are built; M5 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
 
 ## Privacy rules (these come first)
 
@@ -77,7 +77,7 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 
 - **Stack:** Vite, React, TypeScript (strict, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`),
   MapLibre GL JS with the globe projection, Zustand, `idb` (IndexedDB) and `fflate` (reading `.zip` exports).
-- `src/main.tsx` installs the debug API and the focus camera, and renders `src/App.tsx`.
+- `src/main.tsx` installs the debug API, the focus camera and the journey player, and renders `src/App.tsx`.
 - `src/map/`: `MapView.tsx` owns the one MapLibre map and registers it in `mapRegistry.ts`. `camera.ts` is the single
   place that moves the camera (`moveCamera`: a flight, or a jump cut when motion is off) and decides when the map is
   idle. `offlineStyle.ts` is a style with no network needs: one bundled Natural Earth land GeoJSON
@@ -86,6 +86,9 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   `PlaceMarkers.tsx` draws one clustered circle per place on the map (`markerData.ts` builds the GeoJSON);
   `focusCamera.ts` is a store subscription that flies to each newly focused person, so the flight has started
   before anything awaits idle; `FocusPin.tsx` marks where the focused person is shown.
+  `Threads.tsx` draws great-circle lines between relatives under the markers (`threadData.ts` builds them: lineage,
+  close family, all ancestors, one person's moves; a thread joins people's own places, never a place borrowed from a
+  relative). `journeyPlayer.ts` is a store subscription that moves a playing journey on once the camera has landed.
 - `src/gedcom/`: everything about reading a file. `parse.ts` (text to `Tree`; forgiving, problems become coded
   `warnings`), `dates.ts` (free-text dates), `types.ts` (the data model), `people.ts` (lifespan, name search),
   `readGedcom.ts` (unzip, decode, check, parse, hash; throws `ImportError` with a fixed code),
@@ -93,7 +96,8 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   cross-reference ids, kept as written, because later milestones match people across re-exports by them.
   `relatives.ts` reads parents, spouses, children and siblings, labels the relationship to the home person
   (genealogists' terms: "2nd great-grandfather", "1st cousin once removed", "Wife of uncle") with the line between
-  them, and decides where each arrow key goes. `testTree.ts` builds small made-up trees for unit tests.
+  them, and decides where each arrow key goes. `lines.ts` gives the stops of a journey (father's line, mother's
+  line, or up to one ancestor) and every ancestor link. `testTree.ts` builds small made-up trees for unit tests.
 - `src/geocode/`: putting place strings on the map. `normalize.ts` (how names are compared; `placeKey` is the
   identity of a place, shared by every spelling), `gazetteer.ts` (the bundled data in memory), `match.ts` (the
   matching rules: most specific known part wins, the country and region the string names are never left, a broader
@@ -108,11 +112,12 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   stored: they are recomputed when a tree is opened, so a better gazetteer improves old imports.
 - `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`, `PlacesPanel`), the focused person's
   `Profile`, `Navigation.tsx` (search, breadcrumb, pedigree), `useArrowKeys.ts`, `PlaceCard` (the people at a
-  clicked marker) and `messages.ts`, which holds the wording for error codes, counts, events and place outcomes.
+  clicked marker), `Journey.tsx` (thread check boxes, journey buttons and the play, scrubber and speed bar) and `messages.ts`, which holds the wording for error codes, counts, events and place outcomes.
 - `src/state/appStore.ts`: Zustand store: the library, the open tree and its places, import and lookup progress,
   and the actions the panels call. `screenOf` derives which panel shows; a tree with no home person goes to the
   picker. Opening a tree focuses its home person. `src/state/focus.ts` derives the focused person, where they are
-  shown and their relationship, memoised so components and the debug API share one answer.
+  shown and their relationship, memoised so components and the debug API share one answer; `threads.ts` does the
+  same for the threads. Focusing someone by hand pauses a journey (and moves its scrubber if they are a stop).
   `src/map/PlacePin.tsx` draws the selected place's pin and turns map clicks and drags into pins.
 - `src/harness/`: `flags.ts` reads `?harness=1` and `?motion=off`; `debugApi.ts` builds `window.__treehouse`;
   `types.ts` is its contract, shared with the e2e tests. When a feature adds state an agent should be able to

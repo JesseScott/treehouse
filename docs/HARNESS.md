@@ -129,7 +129,17 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
   },
   "markers": { "places": 25, "rendered": 9 }, // places with a marker; markers and clusters drawn right now
   "placeCard": { "open": false, "people": 0 }, // the people list of a clicked marker
-  "threads": { "lineage": 0, "family": 0, "ancestors": 0, "migration": 0 }, // arcs drawn; M4
+  "threads": { "lineage": 3, "family": 0, "ancestors": 0, "migration": 0 }, // arcs drawn, per kind
+  "threadToggles": { "lineage": true, "family": false, "ancestors": false, "migration": false },
+  "journey": {
+    // null unless a journey is on
+    "line": "paternal", // or maternal, ancestor
+    "stops": 8, // the home person and one person per generation back
+    "index": 3, // the stop shown; 0 is the home person
+    "personId": "@I420000000006@",
+    "playing": true,
+    "speed": 1, // 0.5, 1, 2 or 4
+  },
   "geocode": {
     // the open tree's distinct places; resolved + approximate + unresolved = places
     "busy": false, // true while they are being matched against the bundled gazetteer
@@ -193,6 +203,11 @@ Stable `data-testid`s so far:
 - Place card: `place-card`, `place-people`, `place-person` (carries `data-person-id`), `close-place-card`. Markers
   are drawn on the map canvas, not as elements: click one with `project()` and `page.mouse.click`, as
   `e2e/focus.spec.ts` does.
+- Threads and journeys: `thread-toggles`, `thread-lineage`, `thread-family`, `thread-ancestors`, `thread-migration`
+  (check boxes), `journey-paternal`, `journey-maternal`, `journey-ancestor`, `journey-bar` (carries
+  `data-playing`), `journey-position`, `journey-play`, `journey-scrubber` (a range input: `fill('3')` moves it),
+  `journey-speed`, `journey-close`. `whenIdle()` does not wait for a playing journey to finish; wait for
+  `state().journey.playing` to turn false, as `e2e/journey.spec.ts` does.
 - Places: `places-panel`, `places-summary`, `geocode-error`, `filter-attention`, `filter-all`, `places-empty`,
   `place-list`, `place-option` (carries `data-status`), `place-actions`, `pin-place`, `reset-place`, `pin-hint`,
   `online-opt-in`, `online-start`, `online-stop`, `online-status`, `online-error`, `back-to-tree`, and `place-pin`

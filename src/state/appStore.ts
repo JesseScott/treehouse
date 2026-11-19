@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { importFile as readInWorker } from '../gedcom/importFile';
 import type { ImportErrorCode } from '../gedcom/readGedcom';
+import { journeyStops, type JourneyLine } from '../gedcom/lines';
 import { indexTree, step, type Direction } from '../gedcom/relatives';
+import type { ThreadKind, ThreadToggles } from '../map/threadData';
 import type { Tree } from '../gedcom/types';
 import { geocodePlaces } from '../geocode/geocodePlaces';
 import { lookUpOnline, NOMINATIM_INTERVAL_MS } from '../geocode/nominatim';
@@ -68,11 +70,36 @@ export interface OpenTree {
   tree: Tree;
 }
 
-/** App-wide state. Threads arrive in a later milestone. */
+/** A journey along one line of the tree, a generation at a time. */
+export interface Journey {
+  line: JourneyLine;
+  /** Person ids, the home person first. */
+  stops: string[];
+  /** The stop being shown. */
+  index: number;
+  playing: boolean;
+  /** 0.5, 1, 2 or 4: how much faster than normal the journey moves on. */
+  speed: number;
+}
+
+export const JOURNEY_SPEEDS = [0.5, 1, 2, 4] as const;
+
+/** Lineage threads are on from the start; the others are opt-in. */
+const DEFAULT_THREADS: ThreadToggles = {
+  lineage: true,
+  family: false,
+  ancestors: false,
+  migration: false,
+};
+
+/** App-wide state. */
 interface AppState {
   mapLoaded: boolean;
   /** The person whose profile is open and whose place the camera is over. */
   focusedPersonId: string | null;
+  /** Which kinds of thread are drawn between relatives. */
+  threadsOn: ThreadToggles;
+  journey: Journey | null;
   /** The people the left and right arrows move between, kept so a step back returns. */
   navRow: string[] | null;
   /** `key` of the place whose marker was clicked, listing the people there. */
@@ -115,6 +142,17 @@ interface AppState {
   /** Moves the focus the way an arrow key does. False when there is nobody that way. */
   stepFocus: (direction: Direction) => boolean;
   openPlace: (key: string | null) => void;
+  setThread: (kind: ThreadKind, on: boolean) => void;
+  /**
+   * Starts a journey from the home person along a line, or up to the focused person for
+   * `ancestor`, and plays it. False when the line has nobody beyond the home person.
+   */
+  startJourney: (line: JourneyLine) => boolean;
+  /** Shows one stop of the journey, as the scrubber does. */
+  journeyTo: (index: number) => void;
+  setJourneyPlaying: (playing: boolean) => void;
+  setJourneySpeed: (speed: number) => void;
+  endJourney: () => void;
   loadLibrary: () => Promise<void>;
   importFile: (file: File) => Promise<void>;
   openImport: (id: string) => Promise<void>;
@@ -143,6 +181,7 @@ const NO_TREE_PLACES = {
   focusedPersonId: null,
   navRow: null,
   openedPlaceKey: null,
+  journey: null,
   places: [],
   geocoding: false,
   geocodeError: null,
@@ -204,8 +243,17 @@ export const useAppStore = create<AppState>((set, get) => {
     set({ places: get().places.map((p) => (p.key === key ? { ...p, ...patch } : p)) });
   };
 
+  /** Focusing someone by hand keeps the scrubber on them if they are a stop, and pauses. */
+  const journeyAfterFocus = (personId: string): Journey | null => {
+    const journey = get().journey;
+    if (!journey) return null;
+    const at = journey.stops.indexOf(personId);
+    return { ...journey, index: at === -1 ? journey.index : at, playing: false };
+  };
+
   return {
     mapLoaded: false,
+    threadsOn: DEFAULT_THREADS,
     library: [],
     libraryLoaded: false,
     open: null,
@@ -225,7 +273,7 @@ export const useAppStore = create<AppState>((set, get) => {
     focusPerson: (personId) => {
       const open = get().open;
       if (!open || !indexTree(open.tree).people.has(personId)) return false;
-      set({ focusedPersonId: personId, navRow: null });
+      set({ focusedPersonId: personId, navRow: null, journey: journeyAfterFocus(personId) });
       return true;
     },
 
@@ -240,12 +288,64 @@ export const useAppStore = create<AppState>((set, get) => {
         navRow,
       );
       if (!next) return false;
-      set({ focusedPersonId: next.personId, navRow: next.row });
+      set({
+        focusedPersonId: next.personId,
+        navRow: next.row,
+        journey: journeyAfterFocus(next.personId),
+      });
       return true;
     },
 
     openPlace: (openedPlaceKey) => {
       set({ openedPlaceKey });
+    },
+
+    setThread: (kind, on) => {
+      set({ threadsOn: { ...get().threadsOn, [kind]: on } });
+    },
+
+    startJourney: (line) => {
+      const { open, focusedPersonId, journey } = get();
+      if (!open || open.record.rootId === null) return false;
+      const stops = journeyStops(
+        indexTree(open.tree),
+        open.record.rootId,
+        line,
+        focusedPersonId ?? undefined,
+      );
+      if (stops.length < 2) return false;
+      set({
+        journey: { line, stops, index: 0, playing: true, speed: journey?.speed ?? 1 },
+        focusedPersonId: stops[0] ?? null,
+        navRow: null,
+        openedPlaceKey: null,
+      });
+      return true;
+    },
+
+    journeyTo: (index) => {
+      const journey = get().journey;
+      const personId = journey?.stops[index];
+      if (!journey || personId === undefined) return;
+      set({ journey: { ...journey, index }, focusedPersonId: personId, navRow: null });
+    },
+
+    setJourneyPlaying: (playing) => {
+      const journey = get().journey;
+      if (!journey) return;
+      // Play from the end starts again from the home person.
+      const restart = playing && journey.index === journey.stops.length - 1;
+      set({ journey: { ...journey, playing } });
+      if (restart) get().journeyTo(0);
+    },
+
+    setJourneySpeed: (speed) => {
+      const journey = get().journey;
+      if (journey) set({ journey: { ...journey, speed } });
+    },
+
+    endJourney: () => {
+      set({ journey: null });
     },
 
     loadLibrary: async () => {
@@ -328,6 +428,7 @@ export const useAppStore = create<AppState>((set, get) => {
         pickingRoot: false,
         focusedPersonId: personId,
         navRow: null,
+        journey: null,
         library: await listImports(),
       });
     },

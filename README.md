@@ -8,7 +8,7 @@ uploaded.
 
 ## Status
 
-Early. Four milestones exist so far:
+Early. Five milestones exist so far:
 
 - **M0, the shell and test harness:** a globe that renders from a bundled offline map, a debug API for automated
   checks, synthetic test trees, and a check ladder.
@@ -24,8 +24,12 @@ Early. Four milestones exist so far:
   born and opens their profile: how they are related to the home person, a timeline with clickable places, and their
   family. Someone with no birthplace on the map is shown at their baptism, home, marriage or death place, or a close
   relative's, and marked approximate. The map can be flat or a globe.
+- **M4, threads and journeys:** lines on the map join relatives' places: the line from the home person to whoever
+  is shown, their close family, every ancestor, or one person's moves through life, each switched on or off. A
+  journey plays the father's line, the mother's line or the line to any ancestor a generation at a time, with a
+  scrubber and a speed control; with reduced motion it cuts between places instead of flying.
 
-Journeys, threads and syncing an import are planned; see [`docs/PLAN.md`](docs/PLAN.md).
+Syncing an import and remembering where you were are planned; see [`docs/PLAN.md`](docs/PLAN.md).
 
 ## Develop
 

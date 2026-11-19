@@ -3,6 +3,7 @@ import { MapView } from './map/MapView';
 import { FocusPin } from './map/FocusPin';
 import { PlaceMarkers } from './map/PlaceMarkers';
 import { PlacePin } from './map/PlacePin';
+import { Threads } from './map/Threads';
 import { screenOf, useAppStore } from './state/appStore';
 import { LibraryPanel } from './ui/LibraryPanel';
 import { PlaceCard } from './ui/PlaceCard';
@@ -52,6 +53,7 @@ export function App() {
       </header>
       <main className="app-main">
         <MapView />
+        <Threads />
         <PlaceMarkers />
         <FocusPin />
         <PlacePin />

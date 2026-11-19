@@ -7,6 +7,7 @@ import { projectionName } from '../map/camera';
 import { useAppStore, type OpenTree } from '../state/appStore';
 import { focusOf } from '../state/focus';
 import { coverageSummary, familyCount, peopleCount } from './messages';
+import { JourneyBar, JourneyStart, ThreadToggles } from './Journey';
 import { Breadcrumb, Pedigree, PersonSearch } from './Navigation';
 import { useArrowKeys } from './useArrowKeys';
 import { Profile } from './Profile';
@@ -71,6 +72,15 @@ export function TreePanel({ open }: { open: OpenTree }) {
           Arrow keys walk the tree: up for the father (shift for the mother), down for a child, left
           and right for siblings and spouses.
         </p>
+
+        <h3>Journeys</h3>
+        <p className="hint">
+          Fly from the home person back through the generations, one at a time.
+        </p>
+        <JourneyStart open={open} />
+
+        <h3>Threads</h3>
+        <ThreadToggles />
 
         <h3>Home person</h3>
         <p data-testid="home-person" data-person-id={root?.id}>
@@ -143,6 +153,7 @@ export function TreePanel({ open }: { open: OpenTree }) {
         </div>
       </section>
       {focus && <Pedigree open={open} person={focus.person} />}
+      <JourneyBar open={open} />
     </>
   );
 }
