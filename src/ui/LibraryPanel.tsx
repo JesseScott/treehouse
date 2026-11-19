@@ -1,14 +1,39 @@
-import { useRef, useState, type SyntheticEvent } from 'react';
-import type { ImportRecord } from '../library/db';
+import { useEffect, useRef, useState, type SyntheticEvent } from 'react';
+import type { Tree } from '../gedcom/types';
+import { loadTree, type ImportRecord } from '../library/db';
 import { useAppStore } from '../state/appStore';
-import { IMPORT_ERRORS, importedOn, peopleCount } from './messages';
+import { IMPORT_ERRORS, importedOn, PLACE_FILE_ERRORS, peopleCount, pinCount } from './messages';
+import { SyncReview } from './SyncReview';
+
+/** The stored tree of an import, read while its sync is being reviewed (for removed names). */
+function useStoredTree(id: string, wanted: boolean): Tree | undefined {
+  const [tree, setTree] = useState<{ id: string; tree: Tree } | undefined>();
+  useEffect(() => {
+    if (!wanted) return;
+    let live = true;
+    void loadTree(id).then((loaded) => {
+      if (live && loaded) setTree({ id, tree: loaded });
+    });
+    return () => {
+      live = false;
+    };
+  }, [id, wanted]);
+  return wanted && tree?.id === id ? tree.tree : undefined;
+}
 
 function LibraryItem({ record }: { record: ImportRecord }) {
   const openImport = useAppStore((s) => s.openImport);
   const renameImport = useAppStore((s) => s.renameImport);
   const deleteImport = useAppStore((s) => s.deleteImport);
+  const syncImport = useAppStore((s) => s.syncImport);
+  const syncFromFile = useAppStore((s) => s.syncFromFile);
+  const sync = useAppStore((s) => (s.sync?.importId === record.id ? s.sync : null));
+  const remembered = useAppStore((s) => s.fileHandleIds.includes(record.id));
   const [mode, setMode] = useState<'view' | 'rename' | 'delete'>('view');
   const [name, setName] = useState(record.name);
+  const syncInput = useRef<HTMLInputElement>(null);
+  const oldTree = useStoredTree(record.id, sync?.phase === 'review');
+  const syncing = sync?.phase === 'reading' || sync?.phase === 'applying';
 
   const submitRename = (event: SyntheticEvent) => {
     event.preventDefault();
@@ -56,6 +81,7 @@ function LibraryItem({ record }: { record: ImportRecord }) {
             <span className="library-name">{record.name}</span>
             <span className="library-meta">
               {peopleCount(record.people)} · added {importedOn(record.importedAt)}
+              {record.syncedAt && ` · synced ${importedOn(record.syncedAt)}`}
             </span>
           </button>
           {mode === 'delete' ? (
@@ -81,6 +107,41 @@ function LibraryItem({ record }: { record: ImportRecord }) {
             </div>
           ) : (
             <div className="row">
+              <input
+                ref={syncInput}
+                type="file"
+                accept=".ged,.gedcom,.zip"
+                className="visually-hidden"
+                data-testid="sync-file-input"
+                aria-label={`New version of ${record.name}`}
+                tabIndex={-1}
+                onChange={(event) => {
+                  const file = event.target.files?.[0];
+                  event.target.value = '';
+                  if (file) void syncFromFile(record.id, file);
+                }}
+              />
+              <button
+                type="button"
+                className="button quiet"
+                data-testid="sync-button"
+                aria-label={`Sync ${record.name} with its file`}
+                title={
+                  remembered
+                    ? 'Read the file again and show what changed'
+                    : 'Choose the newer export of this tree and see what changed'
+                }
+                disabled={syncing}
+                onClick={() => {
+                  // Without a picker that remembers files, the input has to be opened now,
+                  // while the click still counts as the user's.
+                  void syncImport(record.id).then((started) => {
+                    if (!started) syncInput.current?.click();
+                  });
+                }}
+              >
+                {syncing ? 'Syncing…' : 'Sync'}
+              </button>
               <button
                 type="button"
                 className="button quiet"
@@ -105,6 +166,7 @@ function LibraryItem({ record }: { record: ImportRecord }) {
               </button>
             </div>
           )}
+          {sync && <SyncReview record={record} sync={sync} oldTree={oldTree} />}
         </>
       )}
     </li>
@@ -117,6 +179,7 @@ export function LibraryPanel() {
   const importing = useAppStore((s) => s.importing);
   const importError = useAppStore((s) => s.importError);
   const importFile = useAppStore((s) => s.importFile);
+  const pickAndImport = useAppStore((s) => s.pickAndImport);
   const fileInput = useRef<HTMLInputElement>(null);
 
   return (
@@ -157,7 +220,12 @@ export function LibraryPanel() {
         className="button primary"
         data-testid="open-file-button"
         disabled={importing}
-        onClick={() => fileInput.current?.click()}
+        onClick={() => {
+          // Chromium's picker lets the file be remembered for syncing; elsewhere, the input.
+          void pickAndImport().then((picked) => {
+            if (!picked) fileInput.current?.click();
+          });
+        }}
       >
         {importing ? 'Reading…' : 'Open a GEDCOM file'}
       </button>
@@ -172,9 +240,89 @@ export function LibraryPanel() {
         </p>
       )}
 
+      <PlaceFileSection />
+
       <p className="privacy-note">
         Your file is read in this browser and stored only here. It is never uploaded.
       </p>
+    </section>
+  );
+}
+
+/** Saving pins and online answers to a file, and reading them back (in another browser, say). */
+function PlaceFileSection() {
+  const stored = useAppStore((s) => s.storedPlaces);
+  const busy = useAppStore((s) => s.placeFileBusy);
+  const status = useAppStore((s) => s.placeFileStatus);
+  const exportPlaces = useAppStore((s) => s.exportPlaces);
+  const importPlaces = useAppStore((s) => s.importPlaces);
+  const input = useRef<HTMLInputElement>(null);
+
+  return (
+    <section className="place-file" data-testid="place-file" aria-labelledby="place-file-title">
+      <h3 id="place-file-title">Your pins</h3>
+      <p className="hint" data-testid="stored-places">
+        {stored === 0
+          ? 'No pins or online answers yet. Pins you set and places found online are shared by all your trees.'
+          : `${pinCount(stored)}, shared by all your trees. The file holds place names and where they are, nothing else.`}
+      </p>
+      <input
+        ref={input}
+        type="file"
+        accept=".json,application/json"
+        className="visually-hidden"
+        data-testid="place-file-input"
+        aria-label="File of pins to read"
+        tabIndex={-1}
+        onChange={(event) => {
+          const file = event.target.files?.[0];
+          event.target.value = '';
+          if (file) void importPlaces(file);
+        }}
+      />
+      <div className="row">
+        <button
+          type="button"
+          className="button quiet"
+          data-testid="export-places"
+          disabled={busy || stored === 0}
+          onClick={() => void exportPlaces()}
+        >
+          Save pins to a file
+        </button>
+        <button
+          type="button"
+          className="button quiet"
+          data-testid="import-places"
+          disabled={busy}
+          onClick={() => input.current?.click()}
+        >
+          Read pins from a file
+        </button>
+      </div>
+      {status?.kind === 'exported' && (
+        <p className="hint" role="status" data-testid="place-file-status">
+          Saved {pinCount(status.places)}.
+        </p>
+      )}
+      {status?.kind === 'imported' && (
+        <p className="hint" role="status" data-testid="place-file-status">
+          Read {status.added.toLocaleString('en')} new and {status.updated.toLocaleString('en')}{' '}
+          updated
+          {status.skipped > 0 && `; ${status.skipped.toLocaleString('en')} already here`}
+          {status.invalid > 0 && `; ${status.invalid.toLocaleString('en')} could not be read`}.
+        </p>
+      )}
+      {status?.kind === 'error' && (
+        <p
+          className="error"
+          role="alert"
+          data-testid="place-file-error"
+          data-error-code={status.code}
+        >
+          {PLACE_FILE_ERRORS[status.code]}
+        </p>
+      )}
     </section>
   );
 }

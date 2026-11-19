@@ -12,6 +12,7 @@ import { HOME_VIEW } from './camera';
 import { registerMap } from './mapRegistry';
 import { offlineStyle } from './offlineStyle';
 import { useAppStore } from '../state/appStore';
+import { cameraMoved } from '../state/viewMemory';
 
 // The worker script and the land file are loaded from a worker, so they need absolute URLs.
 const absolute = (url: string) => new URL(url, document.baseURI).href;
@@ -35,6 +36,7 @@ export function MapView() {
     void map.once('load').then(() => {
       setMapLoaded(true);
     });
+    map.on('moveend', cameraMoved);
     registerMap(map);
     return () => {
       registerMap(null);

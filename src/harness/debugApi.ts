@@ -8,6 +8,7 @@ import { screenOf, useAppStore } from '../state/appStore';
 import { focusOf } from '../state/focus';
 import { threadsOf } from '../state/threads';
 import { threadCounts } from '../map/threadData';
+import { viewSaving, whenViewSaved } from '../state/viewMemory';
 import { flags } from './flags';
 import type { PlaceLocation, TreehouseDebugApi, TreehouseState } from './types';
 
@@ -31,12 +32,14 @@ function state(): TreehouseState {
     screen: screenOf(store),
     library: {
       loaded: store.libraryLoaded,
-      imports: store.library.map(({ id, name, people, families, rootId }) => ({
+      imports: store.library.map(({ id, name, people, families, rootId, syncedAt }) => ({
         id,
         name,
         people,
         families,
         rootId,
+        syncedAt: syncedAt ?? null,
+        fileRemembered: store.fileHandleIds.includes(id),
       })),
     },
     tree: store.open && {
@@ -46,6 +49,13 @@ function state(): TreehouseState {
       families: store.open.record.families,
       warnings: store.open.record.warnings,
       rootId: store.open.record.rootId,
+    },
+    view: { restored: store.viewRestored, saving: viewSaving() },
+    sync: syncState(store),
+    placeCache: {
+      stored: store.storedPlaces,
+      busy: store.placeFileBusy,
+      last: store.placeFileStatus && { ...store.placeFileStatus },
     },
     import: {
       busy: store.importing,
@@ -94,6 +104,24 @@ function state(): TreehouseState {
   };
 }
 
+function syncState(store: ReturnType<typeof useAppStore.getState>): TreehouseState['sync'] {
+  const sync = store.sync;
+  if (!sync) return null;
+  const diff = sync.diff;
+  return {
+    importId: sync.importId,
+    phase: sync.phase,
+    error: sync.error,
+    added: diff?.added.length ?? 0,
+    removed: diff?.removed.length ?? 0,
+    changed: diff?.changed.length ?? 0,
+    families: { ...(diff?.families ?? { added: 0, removed: 0, changed: 0 }) },
+    newPlaces: diff?.newPlaces.length ?? 0,
+    droppedPlaces: diff?.droppedPlaces.length ?? 0,
+    rootLost: sync.rootLost,
+  };
+}
+
 function focusState(store: ReturnType<typeof useAppStore.getState>): TreehouseState['focus'] {
   const focus = focusOf(store);
   if (!focus) return null;
@@ -127,8 +155,18 @@ function place(text: string): PlaceLocation | null {
 /** Resolves once the library has been read and no import, geocoding or lookup is running. */
 function whenDataSettled(): Promise<void> {
   const settled = () => {
-    const { libraryLoaded, importing, geocoding, online } = useAppStore.getState();
-    return libraryLoaded && !importing && !geocoding && !online.running;
+    const { libraryLoaded, importing, geocoding, online, sync, placeFileBusy, cameraRestore } =
+      useAppStore.getState();
+    const syncing = sync?.phase === 'reading' || sync?.phase === 'applying';
+    return (
+      libraryLoaded &&
+      !importing &&
+      !geocoding &&
+      !online.running &&
+      !syncing &&
+      !placeFileBusy &&
+      cameraRestore === null
+    );
   };
   if (settled()) return Promise.resolve();
   return new Promise((resolve) => {
@@ -144,6 +182,8 @@ function whenDataSettled(): Promise<void> {
 async function whenIdle(): Promise<void> {
   await whenDataSettled();
   await whenMapIdle(await mapWhenCreated());
+  // A camera that has just stopped is written a moment later; wait for that too.
+  await whenViewSaved();
 }
 
 const api: TreehouseDebugApi = {

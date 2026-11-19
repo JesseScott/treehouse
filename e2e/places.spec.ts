@@ -127,8 +127,7 @@ test('a place can be pinned by clicking the map, and the pin is remembered', asy
   // The pin belongs to the place, not the visit: it is still there after a reload.
   await page.reload();
   await page.waitForFunction(() => window.__treehouse !== undefined);
-  await settledState(page);
-  await page.getByTestId('library-open').first().click();
+  // The tree that was open opens again.
   await page.getByTestId('tree-panel').waitFor();
   const reopened = await settledState(page);
   expect(reopened.geocode.pinned).toBe(1);
@@ -196,8 +195,7 @@ test('online lookup is off until allowed, and then sends only the place text', a
   // The answers and the consent are both remembered.
   await page.reload();
   await page.waitForFunction(() => window.__treehouse !== undefined);
-  await settledState(page);
-  await page.getByTestId('library-open').first().click();
+  // The tree that was open opens again.
   await page.getByTestId('tree-panel').waitFor();
   const reopened = await settledState(page);
   expect(reopened.geocode.online).toBe(before.geocode.approximate);

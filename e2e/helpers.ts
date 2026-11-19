@@ -82,3 +82,65 @@ export async function importAndChooseRoot(page: Page): Promise<TreehouseState> {
   await page.getByTestId('tree-panel').waitFor();
   return settledState(page);
 }
+
+/** What `modifiedFixture` changed, for checking a sync's diff against. */
+export const MODIFIED = {
+  removedId: '@I420000000018@',
+  renamedId: '@I420000000002@',
+  addedId: '@I420000009999@',
+  newPlace: 'Halifax, Halifax, Nova Scotia, Canada',
+} as const;
+
+/**
+ * The 30-person fixture as a later export of the same tree might be: one person removed (and
+ * their link from their parents' family), one renamed, and one made-up person added with a
+ * birthplace the tree did not name. Built from the generated fixture, line by line, keeping
+ * its byte-order mark and CRLF line endings.
+ */
+export function modifiedFixture(): { name: string; mimeType: string; buffer: Buffer } {
+  const lines = fixtureBytes(30).toString('utf8').split('\r\n');
+  const out: string[] = [];
+  let skipping = false;
+  for (const line of lines) {
+    if (line.startsWith('0 ')) skipping = line === `0 ${MODIFIED.removedId} INDI`;
+    if (skipping || line === `1 CHIL ${MODIFIED.removedId}`) continue;
+    if (line === '0 TRLR') {
+      out.push(
+        `0 ${MODIFIED.addedId} INDI`,
+        '1 NAME Ailsa /Testbrook/',
+        '2 GIVN Ailsa',
+        '2 SURN Testbrook',
+        '1 SEX F',
+        '1 BIRT',
+        '2 DATE 1990',
+        `2 PLAC ${MODIFIED.newPlace}`,
+      );
+    }
+    out.push(line === '1 NAME Stanley /MacBriar/' ? '1 NAME Stanley Ewan /MacBriar/' : line);
+  }
+  if (out.length === lines.length) throw new Error('modifiedFixture changed nothing');
+  return {
+    name: fixture(30).file,
+    mimeType: 'application/octet-stream',
+    buffer: Buffer.from(out.join('\r\n'), 'utf8'),
+  };
+}
+
+/** Pins the first place on the review screen at a point, through the UI; returns its text. */
+export async function pinFirstPlace(page: Page, at: { lng: number; lat: number }): Promise<string> {
+  await page.getByTestId('review-places').click();
+  const option = page.getByTestId('place-option').first();
+  const text = (await option.locator('.person-name').textContent()) ?? '';
+  await option.click();
+  await settledState(page);
+  await page.evaluate((t) => window.__treehouse?.flyTo({ ...t, zoom: 7 }), at);
+  await page.getByTestId('pin-place').click();
+  const box = await page.getByTestId('map').boundingBox();
+  if (!box) throw new Error('no map');
+  await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+  await page.getByTestId('place-option').filter({ hasText: 'Pinned by you' }).first().waitFor();
+  await page.getByTestId('back-to-tree').click();
+  await page.getByTestId('tree-panel').waitFor();
+  await settledState(page);
+  return text;
+}

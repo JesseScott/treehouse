@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { displayName, lifespan } from '../gedcom/people';
 import { indexTree } from '../gedcom/relatives';
 import { coverageOf } from '../geocode/treePlaces';
-import { currentMap } from '../map/mapRegistry';
-import { projectionName } from '../map/camera';
 import { useAppStore, type OpenTree } from '../state/appStore';
 import { focusOf } from '../state/focus';
 import { coverageSummary, familyCount, peopleCount } from './messages';
@@ -14,10 +11,9 @@ import { Profile } from './Profile';
 
 function ProjectionToggle() {
   const mapLoaded = useAppStore((s) => s.mapLoaded);
-  const [globe, setGlobe] = useState(() => {
-    const map = currentMap();
-    return !map || projectionName(map) === 'globe';
-  });
+  const projection = useAppStore((s) => s.projection);
+  const setProjection = useAppStore((s) => s.setProjection);
+  const globe = projection === 'globe';
   return (
     <button
       type="button"
@@ -25,8 +21,7 @@ function ProjectionToggle() {
       data-testid="projection-toggle"
       disabled={!mapLoaded}
       onClick={() => {
-        currentMap()?.setProjection({ type: globe ? 'mercator' : 'globe' });
-        setGlobe(!globe);
+        setProjection(globe ? 'mercator' : 'globe');
       }}
     >
       {globe ? 'Flat map' : 'Globe'}

@@ -55,6 +55,8 @@ test('importing a GEDCOM asks for the home person, then opens the tree', async (
       people: 30,
       families: small.families,
       rootId: small.rootId,
+      syncedAt: null,
+      fileRemembered: false,
     },
   ]);
   await expect(page.getByTestId('tree-name')).toHaveText('treehouse-30');
@@ -71,6 +73,9 @@ test('a reload remembers the import and its home person', async ({ page }) => {
   await openApp(page);
   const opened = await importAndChooseRoot(page);
 
+  // Reloading with the tree open opens it again (see sync.spec.ts); from the library, the
+  // library comes back.
+  await page.getByTestId('back-to-library').click();
   await page.reload();
   await page.waitForFunction(() => window.__treehouse !== undefined);
   const reloaded = await settledState(page);
