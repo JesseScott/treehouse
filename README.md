@@ -8,7 +8,7 @@ uploaded.
 
 ## Status
 
-Early. Five milestones exist so far:
+Early. Six milestones exist so far:
 
 - **M0, the shell and test harness:** a globe that renders from a bundled offline map, a debug API for automated
   checks, synthetic test trees, and a check ladder.
@@ -28,8 +28,13 @@ Early. Five milestones exist so far:
   is shown, their close family, every ancestor, or one person's moves through life, each switched on or off. A
   journey plays the father's line, the mother's line or the line to any ancestor a generation at a time, with a
   scrubber and a speed control; with reduced motion it cuts between places instead of flying.
+- **M5, sync and memory:** each tree in your library has a Sync action: choose the newer export (in Chrome and
+  Edge the file is remembered, so Sync just reads it again after asking permission), see who was added, removed or
+  changed and which places are new, then apply it. Your home person, the person you were looking at and your pins
+  are kept. Each tree remembers who you were looking at, which threads were on and where the map was, and a reload
+  opens the tree you had open. Your pins and online answers can be saved to a file and read into another browser.
 
-Syncing an import and remembering where you were are planned; see [`docs/PLAN.md`](docs/PLAN.md).
+Polish, accessibility and opt-in telemetry come next; see [`docs/PLAN.md`](docs/PLAN.md).
 
 ## Develop
 
@@ -53,7 +58,8 @@ Real family data never goes into this repository. The only GEDCOM files here are
 The app itself sends nothing about your tree anywhere. Places are looked up in a list that ships with the app. The
 one exception is the online lookup on the place-review screen, which is off until you turn it on: it then sends the
 text of the places it could not place (for example "Barvas, Lewis, Scotland"), one at a time, to OpenStreetMap's
-Nominatim service, and nothing else.
+Nominatim service, and nothing else. The pins file you can save from the library holds place names and where
+they are, and nothing else from your trees; it stays wherever you save it.
 
 ## Licence
 

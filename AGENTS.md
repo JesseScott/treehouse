@@ -7,7 +7,8 @@ treehouse is a world-map family tree viewer: a static web app with no backend. I
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
 uploaded. Status: **M0** (harness and empty shell), **M1** (GEDCOM import, library, home-person picker), **M2**
 (geocoding, place review, pins, opt-in online lookup), **M3** (place markers, focus fly-to, profile, navigation,
-search) and **M4** (threads and journey mode) are built; M5 to M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
+search), **M4** (threads and journey mode) and **M5** (sync from the file, remembered state per import, pins
+file) are built; M6 and M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
 
 ## Privacy rules (these come first)
 
@@ -47,7 +48,7 @@ npm run preview      # serve dist/ on http://localhost:4173
 
 npm run check:fast   # privacy guard, typecheck, lint, format check, unit tests (seconds)
 npm run check:e2e    # build, then Playwright against the built app
-npm run check:perf   # build, then bundle-size and Lighthouse budgets
+npm run check:perf   # build, then bundle-size, Lighthouse and journey frame-time budgets
 npm run verify       # the whole ladder; writes reports/verify.json and reports/verify.md
 
 npm run check:data -- <path>   # local only: aggregate import report for a real export (never names or places)
@@ -109,13 +110,24 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 - `src/library/db.ts`: the IndexedDB library. An `ImportRecord` (name, file hash, counts, home person) and its
   parsed `Tree` are stored together; a file with a hash already in the library is opened, not stored again. The
   `places` store holds pins and online answers by `placeKey`, shared by every import. Gazetteer matches are not
-  stored: they are recomputed when a tree is opened, so a better gazetteer improves old imports.
+  stored: they are recomputed when a tree is opened, so a better gazetteer improves old imports. Version 3 (M5)
+  adds the `handles` store (a File System Access handle per import id, Chromium only) and, on the record, `view`
+  (focused person, camera, projection, thread toggles) and `syncedAt`. `syncDiff.ts` compares two readings of a
+  file by GEDCOM id (people added, removed, changed; family changes; new and dropped place keys).
+  `fileAccess.ts` wraps `showOpenFilePicker`, the permission re-request and dropped handles; other browsers use
+  a file input. `placeCache.ts` writes, validates and merges the pins file (a pin beats an online answer,
+  otherwise the newer wins); it holds place keys, coordinates and labels, never names or dates.
 - `src/ui/`: the side panels (`LibraryPanel`, `RootPicker`, `TreePanel`, `PlacesPanel`), the focused person's
   `Profile`, `Navigation.tsx` (search, breadcrumb, pedigree), `useArrowKeys.ts`, `PlaceCard` (the people at a
-  clicked marker), `Journey.tsx` (thread check boxes, journey buttons and the play, scrubber and speed bar) and `messages.ts`, which holds the wording for error codes, counts, events and place outcomes.
+  clicked marker), `Journey.tsx` (thread check boxes, journey buttons and the play, scrubber and speed bar),
+  `SyncReview.tsx` (a sync's diff and its Apply button, inside a library item) and `messages.ts`, which holds the wording for error codes, counts, events and place outcomes.
 - `src/state/appStore.ts`: Zustand store: the library, the open tree and its places, import and lookup progress,
   and the actions the panels call. `screenOf` derives which panel shows; a tree with no home person goes to the
-  picker. Opening a tree focuses its home person. `src/state/focus.ts` derives the focused person, where they are
+  picker. Opening a tree restores its remembered view (focus, threads, projection, and `cameraRestore`, which
+  `focusCamera.ts` applies as a jump cut instead of flying), or else focuses its home person; the open import's id
+  is kept in `localStorage` so a reload reopens it before the library counts as loaded. `viewMemory.ts` writes
+  the view back (debounced, and on `moveend` via `MapView.tsx`); `whenIdle` waits for the write. Sync and the
+  pins file are store actions too (`syncImport`, `syncFromFile`, `applySync`, `exportPlaces`, `importPlaces`). `src/state/focus.ts` derives the focused person, where they are
   shown and their relationship, memoised so components and the debug API share one answer; `threads.ts` does the
   same for the threads. Focusing someone by hand pauses a journey (and moves its scrubber if they are a stop).
   `src/map/PlacePin.tsx` draws the selected place's pin and turns map clicks and drags into pins.
@@ -150,3 +162,5 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 - Error and warning values that reach the UI or the debug API are fixed codes (`ImportErrorCode`, `ParseWarning`),
   never text from the file. The debug state has place counts only; `__treehouse.place(text)` answers for a string
   the caller already has. Keep it that way: the debug state and the reports must be safe to paste anywhere.
+- A reload reopens the import that was open. In the dev build's own library (which may hold a real tree), only open
+  `treehouse-…` imports and go back to the library before you finish, so the next visit opens on the library.

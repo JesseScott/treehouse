@@ -21,7 +21,7 @@ and the whole ladder before you commit.
 | `npm run check:privacy` | `harness/privacy-guard.mjs`                                          | Family data about to be committed                              |
 | `npm run check:fast`    | privacy guard, lockfile check, `tsc`, ESLint, Prettier check, Vitest | Type errors, logic bugs, fixture drift                         |
 | `npm run check:e2e`     | build, then Playwright against `vite preview`                        | What a user would see: rendering, camera, flags, accessibility |
-| `npm run check:perf`    | build, then bundle sizes and Lighthouse                              | Size and speed regressions against `harness/budgets.json`      |
+| `npm run check:perf`    | build, then bundle sizes, Lighthouse and journey frame times         | Size and speed regressions against `harness/budgets.json`      |
 | `npm run verify`        | all of the above plus a local smoke test, once each                  | Everything; writes the report                                  |
 
 `npm run check:data -- <path to a .ged or .zip>` is local only and not part of `verify`. It runs the importer over a
@@ -93,6 +93,8 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
         "people": 30,
         "families": 11,
         "rootId": "@I420000000001@",
+        "syncedAt": null, // when a sync last changed it
+        "fileRemembered": false, // true when the browser keeps its file handle (Chromium)
       },
     ],
   },
@@ -104,6 +106,29 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
     "families": 11,
     "warnings": 0, // lines and links in the file that could not be read
     "rootId": "@I420000000001@", // the home person; null until one is chosen
+  },
+  // How each import is looked at is remembered (focus, threads, camera, projection).
+  "view": {
+    "restored": true, // the open tree's view came back from storage (reopened, or reloaded)
+    "saving": false, // a change of view is waiting to be written; whenIdle() waits for it
+  },
+  "sync": {
+    // the sync on the library screen; null when there is none. Counts only, never names or places
+    "importId": "<uuid>",
+    "phase": "review", // reading, review, unchanged, applying, done or error
+    "error": null, // a fixed code: an import error such as "not-gedcom", or permission-denied, file-missing
+    "added": 1,
+    "removed": 1,
+    "changed": 1, // people matched by GEDCOM id whose name, sex, events, notes or links differ
+    "families": { "added": 0, "removed": 0, "changed": 1 },
+    "newPlaces": 1,
+    "droppedPlaces": 0,
+    "rootLost": false, // the home person is not in the new file
+  },
+  "placeCache": {
+    "stored": 1, // pins and online answers, for every import together
+    "busy": false,
+    "last": { "kind": "exported", "places": 1 }, // or imported (added, updated, skipped, invalid), error (code), null
   },
   "import": {
     "busy": false,
@@ -178,8 +203,9 @@ URL flags:
 - `?motion=off`: camera moves are instant. Use it in tests unless the test is about animation. The app also treats
   the reduced-motion system setting as motion off.
 
-`whenIdle()` waits for the map, for the library to have been read from IndexedDB, and for any import, geocoding or
-online lookup to finish.
+`whenIdle()` waits for the map, for the library to have been read from IndexedDB (and the tree that was open
+reopened), for any import, sync, geocoding, online lookup or pins file to finish, for a remembered camera to have
+been applied, and for any change of view to have been written.
 In a test, wait for `state().import.attempts` to go up after choosing a file, then call `whenIdle()`; see
 `importFile` in `e2e/helpers.ts`.
 
@@ -189,6 +215,12 @@ Stable `data-testid`s so far:
 - Library: `library-panel`, `empty-state`, `file-input`, `open-file-button`, `import-status`, `import-error` (carries
   `data-error-code`), `library-list`, `library-item` (carries `data-import-id`), `library-open`, `rename-button`,
   `rename-input`, `rename-save`, `delete-button`, `delete-confirm`.
+- Sync (inside a `library-item`): `sync-button`, `sync-file-input` (choose the new version directly with
+  `setInputFiles`, as `e2e/sync.spec.ts` does; the button opens the system picker in Chromium), `sync-review`
+  (carries `data-phase`), `sync-status`, `sync-error` (carries `data-error-code`), `sync-summary`, `sync-added`,
+  `sync-removed`, `sync-changed`, `sync-root-lost`, `sync-apply`, `sync-close`.
+- Pins file: `place-file`, `stored-places`, `export-places`, `import-places`, `place-file-input`,
+  `place-file-status`, `place-file-error` (carries `data-error-code`).
 - Home-person picker: `root-picker`, `root-search`, `root-result-count`, `root-options`, `root-option` (carries
   `data-person-id`), `root-cancel`, `back-to-library`.
 - Tree: `tree-panel`, `tree-name`, `tree-counts`, `home-person` (carries `data-person-id`), `focus-home`,
@@ -226,6 +258,9 @@ const input = document.querySelector('[data-testid=file-input]');
 input.files = transfer.files;
 input.dispatchEvent(new Event('change', { bubbles: true }));
 ```
+
+A reload with a tree open opens that tree again. In the dev build's own library, which may hold a real tree, go back
+to the library before leaving the pane, so the next visit does not reopen a real tree on screen.
 
 ## Checking a change in the browser pane
 
@@ -293,6 +328,12 @@ The timing budgets have to hold on the GitHub runner, which is much slower at dr
 laptop with a GPU. On the first CI run of the M0 shell, total blocking time was 976 ms on the runner against 54 to
 195 ms locally, and the performance score was 0.78 against 0.90 to 0.97. The total blocking time ceiling is
 therefore 1,500 ms: it is sized for the runner, so a local run sits far below it.
+
+`journey: frame time p95` (`harness/lib/journeyFrames.mjs`) opens the built app with motion on, imports the 30-person
+fixture, plays the paternal journey at 4x and records the gap between animation frames, about 700 of them; the
+p95 is judged against `budgets.journey.frameTimeP95Ms` and the median is kept in `reports/perf.json`. It was 16.7 ms
+(60 fps) locally in software rendering; the 50 ms ceiling leaves room for the runner. Import time per 1,000 people,
+also listed in the plan, is not measured yet.
 
 ## CI, deploys and the monitor
 
