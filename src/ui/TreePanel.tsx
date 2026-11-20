@@ -4,6 +4,7 @@ import { coverageOf } from '../geocode/treePlaces';
 import { useAppStore, type OpenTree } from '../state/appStore';
 import { focusOf } from '../state/focus';
 import { coverageSummary, familyCount, peopleCount } from './messages';
+import { DisplaySettings } from './DisplaySettings';
 import { JourneyBar, JourneyStart, ThreadToggles } from './Journey';
 import { Breadcrumb, Pedigree, PersonSearch } from './Navigation';
 import { useArrowKeys } from './useArrowKeys';
@@ -48,7 +49,13 @@ export function TreePanel({ open }: { open: OpenTree }) {
   return (
     <>
       <section className="panel" data-testid="tree-panel" aria-labelledby="tree-title">
-        <h2 id="tree-title" className="tree-title" data-testid="tree-name">
+        <h2
+          id="tree-title"
+          className="tree-title"
+          data-testid="tree-name"
+          tabIndex={-1}
+          data-panel-heading
+        >
           {open.record.name}
         </h2>
         {alreadyImported && (
@@ -60,6 +67,11 @@ export function TreePanel({ open }: { open: OpenTree }) {
           {peopleCount(open.record.people)}, {familyCount(open.record.families)}.
         </p>
 
+        <p className="visually-hidden" role="status" data-testid="focus-announcement">
+          {focus
+            ? `Showing ${displayName(focus.person)}, ${focus.relationship.label.toLowerCase()}.`
+            : ''}
+        </p>
         <PersonSearch open={open} />
         {focus && <Breadcrumb open={open} path={focus.relationship.path} />}
         {focus && <Profile open={open} focus={focus} />}
@@ -76,6 +88,9 @@ export function TreePanel({ open }: { open: OpenTree }) {
 
         <h3>Threads</h3>
         <ThreadToggles />
+
+        <h3>Display</h3>
+        <DisplaySettings />
 
         <h3>Home person</h3>
         <p data-testid="home-person" data-person-id={root?.id}>

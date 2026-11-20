@@ -138,7 +138,9 @@ export function PlacesPanel({ open }: { open: OpenTree }) {
 
   return (
     <section className="panel" data-testid="places-panel" aria-labelledby="places-title">
-      <h2 id="places-title">Places in {open.record.name}</h2>
+      <h2 id="places-title" tabIndex={-1} data-panel-heading>
+        Places in {open.record.name}
+      </h2>
       <p role="status" data-testid="places-summary">
         {geocoding ? 'Finding places on the map…' : coverageSummary(coverage)}
       </p>

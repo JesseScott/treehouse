@@ -45,5 +45,13 @@ export function MapView() {
     };
   }, [setMapLoaded]);
 
-  return <div ref={container} className="map" data-testid="map" />;
+  return (
+    <div
+      ref={container}
+      className="map"
+      data-testid="map"
+      role="region"
+      aria-label="Map of the places in the tree"
+    />
+  );
 }

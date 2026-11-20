@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { displayName, lifespan } from '../gedcom/people';
 import { indexTree } from '../gedcom/relatives';
 import { placeVisits, type Visit } from '../geocode/treePlaces';
@@ -10,6 +11,11 @@ export function PlaceCard({ open }: { open: OpenTree }) {
   const place = useAppStore((s) => s.places.find((p) => p.key === s.openedPlaceKey));
   const focusPerson = useAppStore((s) => s.focusPerson);
   const openPlace = useAppStore((s) => s.openPlace);
+  const heading = useRef<HTMLHeadingElement>(null);
+  // Opening a place moves keyboard focus to its card, so its list is next in the tab order.
+  useEffect(() => {
+    if (key !== null) heading.current?.focus();
+  }, [key]);
   if (key === null || !place) return null;
 
   const index = indexTree(open.tree);
@@ -21,9 +27,18 @@ export function PlaceCard({ open }: { open: OpenTree }) {
   }
 
   return (
-    <aside className="place-card" data-testid="place-card" aria-labelledby="place-card-title">
+    <aside
+      className="place-card"
+      data-testid="place-card"
+      aria-labelledby="place-card-title"
+      onKeyDown={(event) => {
+        if (event.key === 'Escape') openPlace(null);
+      }}
+    >
       <div className="place-card-head">
-        <h2 id="place-card-title">{place.text}</h2>
+        <h2 id="place-card-title" ref={heading} tabIndex={-1} data-card-heading>
+          {place.text}
+        </h2>
         <button
           type="button"
           className="button quiet"

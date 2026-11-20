@@ -179,6 +179,8 @@ test('clicking a marker lists the people there; a cluster zooms in', async ({ pa
   expect(state.placeCard.open).toBe(true);
   expect(state.placeCard.people).toBeGreaterThan(0);
   await expect(nessPerson).toBeVisible();
+  // Keyboard focus moves to the card, so its people are next in the tab order.
+  await expect(page.locator('#place-card-title')).toBeFocused();
 
   const results = await new AxeBuilder({ page }).analyze();
   expect(results.violations.map((v) => `${v.id}: ${v.help}`)).toEqual([]);
@@ -186,6 +188,12 @@ test('clicking a marker lists the people there; a cluster zooms in', async ({ pa
   await nessPerson.click();
   expect((await settledState(page)).focusedPersonId).toBe(ness.id);
   await page.getByTestId('close-place-card').click();
+  expect((await settledState(page)).placeCard.open).toBe(false);
+
+  // Escape closes the card too.
+  await clickPlace(page, ness.birthPlace, 10);
+  await expect(page.getByTestId('place-card')).toBeVisible();
+  await page.keyboard.press('Escape');
   expect((await settledState(page)).placeCard.open).toBe(false);
 
   // Zoomed out, the island's places are one cluster; clicking it zooms in.

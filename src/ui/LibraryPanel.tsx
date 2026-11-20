@@ -184,7 +184,9 @@ export function LibraryPanel() {
 
   return (
     <section className="panel" data-testid="library-panel" aria-labelledby="library-title">
-      <h2 id="library-title">Your trees</h2>
+      <h2 id="library-title" tabIndex={-1} data-panel-heading>
+        Your trees
+      </h2>
 
       {libraryLoaded && library.length === 0 && (
         <p data-testid="empty-state">
