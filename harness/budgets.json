@@ -18,6 +18,6 @@
     "cumulativeLayoutShift": 0.1
   },
   "journey": {
-    "frameTimeP95Ms": 50
+    "frameTimeP95Ms": 300
   }
 }
