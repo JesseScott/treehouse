@@ -4,6 +4,7 @@ import { FocusPin } from './map/FocusPin';
 import { PlaceMarkers } from './map/PlaceMarkers';
 import { PlacePin } from './map/PlacePin';
 import { Threads } from './map/Threads';
+import { droppedHandle } from './library/fileAccess';
 import { screenOf, useAppStore } from './state/appStore';
 import { LibraryPanel } from './ui/LibraryPanel';
 import { PlaceCard } from './ui/PlaceCard';
@@ -44,7 +45,9 @@ export function App() {
         event.preventDefault();
         setDragging(false);
         const file = event.dataTransfer.files[0];
-        if (file) void importFile(file);
+        // Where the browser offers it, the file's handle is kept so the import can be synced.
+        const handle = droppedHandle(event.dataTransfer.items);
+        if (file) void handle.then((h) => importFile(file, h));
       }}
     >
       <header className="app-header" data-testid="app-header">

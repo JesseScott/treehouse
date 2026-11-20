@@ -38,9 +38,12 @@ export default tseslint.config(
     languageOptions: { globals: globals.node },
   },
   {
-    // The smoke test passes functions to Playwright that run inside the page.
-    files: ['harness/smoke.mjs'],
-    languageOptions: { globals: { ...globals.node, window: 'readonly' } },
+    // The smoke test and the journey frame timer pass functions to Playwright that run
+    // inside the page.
+    files: ['harness/smoke.mjs', 'harness/lib/journeyFrames.mjs'],
+    languageOptions: {
+      globals: { ...globals.node, window: 'readonly', requestAnimationFrame: 'readonly' },
+    },
   },
   prettier,
 );

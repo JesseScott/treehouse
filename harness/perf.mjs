@@ -1,4 +1,4 @@
-// check:perf — bundle-size and Lighthouse budgets for the built app.
+// check:perf — bundle-size, Lighthouse and journey frame-time budgets for the built app.
 // Lighthouse runs three times (LIGHTHOUSE_RUNS) and each metric is judged by its median.
 //
 // Budgets live in harness/budgets.json. Writes reports/perf.json and
@@ -9,6 +9,7 @@ import { gzipSync } from 'node:zlib';
 import { chromium } from '@playwright/test';
 import lighthouse from 'lighthouse';
 import { WEBGL_ARGS } from './lib/browser.mjs';
+import { measureJourneyFrames } from './lib/journeyFrames.mjs';
 import { startPreview } from './lib/preview.mjs';
 import { median } from './lib/stats.mjs';
 
@@ -150,6 +151,17 @@ try {
   judge('lighthouse: largest contentful paint', 'lcp', lh.largestContentfulPaintMs, 'ms', 0);
   judge('lighthouse: total blocking time', 'tbt', lh.totalBlockingTimeMs, 'ms', 0);
   judge('lighthouse: cumulative layout shift', 'cls', lh.cumulativeLayoutShift, '', 3);
+
+  // ---- Journey frame times ----------------------------------------------------
+  // The paternal journey of the 30-person fixture at 4x, with motion on: about 700 frames.
+  // Like Lighthouse, one run is noisy on the runner, so run it as often and judge the median p95.
+  const journeys = [];
+  for (let i = 0; i < RUNS; i++) journeys.push(await measureJourneyFrames(server.url));
+  const frames = [...journeys].sort((a, b) => a.p95 - b.p95)[journeys.length >> 1];
+  measure('journey: frame time p95', frames.p95, budgets.journey.frameTimeP95Ms, 'ms');
+  results.at(-1).frames = frames.frames;
+  results.at(-1).medianMs = frames.median;
+  results.at(-1).samples = journeys.map((j) => j.p95);
 } finally {
   await server.close();
 }

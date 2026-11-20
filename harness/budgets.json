@@ -16,5 +16,8 @@
     "largestContentfulPaintMs": 4000,
     "totalBlockingTimeMs": 1500,
     "cumulativeLayoutShift": 0.1
+  },
+  "journey": {
+    "frameTimeP95Ms": 300
   }
 }

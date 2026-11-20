@@ -26,6 +26,10 @@ export interface TreehouseState {
       people: number;
       families: number;
       rootId: string | null;
+      /** ISO timestamp of the last sync that changed it, or null. */
+      syncedAt: string | null;
+      /** True when the browser remembers its file, so a sync reads it without asking. */
+      fileRemembered: boolean;
     }[];
   };
   /** The open tree, or null on the library screen. */
@@ -38,6 +42,39 @@ export interface TreehouseState {
     warnings: number;
     rootId: string | null;
   } | null;
+  /**
+   * Remembering how each import is looked at. `restored` is true when the open tree's focus,
+   * threads and camera came back from storage; `saving` while a change is waiting to be written.
+   */
+  view: { restored: boolean; saving: boolean };
+  /**
+   * The sync on the library screen, or null. Counts and ids only: what the file added, removed
+   * and changed is never in the state as names or place text.
+   */
+  sync: {
+    importId: string;
+    phase: 'reading' | 'review' | 'unchanged' | 'applying' | 'done' | 'error';
+    /** A fixed code, such as `not-gedcom` or `permission-denied`. */
+    error: string | null;
+    added: number;
+    removed: number;
+    changed: number;
+    families: { added: number; removed: number; changed: number };
+    newPlaces: number;
+    droppedPlaces: number;
+    /** True when the home person is not in the new file. */
+    rootLost: boolean;
+  } | null;
+  /** Pins and online answers, shared by every import, and the last place file saved or read. */
+  placeCache: {
+    stored: number;
+    busy: boolean;
+    last:
+      | { kind: 'exported'; places: number }
+      | { kind: 'imported'; added: number; updated: number; skipped: number; invalid: number }
+      | { kind: 'error'; code: string }
+      | null;
+  };
   /** The file import in progress or just finished. `error` is a fixed code, never file content. */
   import: {
     busy: boolean;
@@ -142,8 +179,8 @@ export interface TreehouseDebugApi {
   /** A plain-JSON snapshot of what the app is showing. */
   state(): TreehouseState;
   /**
-   * Resolves once the map is idle, the library has loaded, and no import, geocoding or
-   * online lookup is running.
+   * Resolves once the map is idle, the library has loaded, no import, sync, geocoding, online
+   * lookup or place file is running, and any change of view has been remembered.
    */
   whenIdle(): Promise<void>;
   /** Where a place string of the open tree is, or null when the tree does not name it. */

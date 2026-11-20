@@ -1,4 +1,7 @@
 import type { ImportErrorCode } from '../gedcom/readGedcom';
+import type { FileAccessErrorCode } from '../library/fileAccess';
+import type { PlaceFileError } from '../library/placeCache';
+import type { SyncDiff } from '../library/syncDiff';
 import type { FamilyEventType, PersonEventType } from '../gedcom/types';
 import type { FocusPlace, OwnBasis } from '../geocode/focusPlace';
 import type { Coverage } from '../geocode/treePlaces';
@@ -12,6 +15,20 @@ export const IMPORT_ERRORS: Record<ImportErrorCode, string> = {
   'bad-zip': 'That zip file could not be read.',
   'no-gedcom-in-zip': 'That zip file has no .ged file inside it.',
   unknown: 'Something went wrong reading that file. Nothing was imported.',
+};
+
+/** The wording for each reason a sync could not read the file. */
+export const SYNC_ERRORS: Record<ImportErrorCode | FileAccessErrorCode, string> = {
+  ...IMPORT_ERRORS,
+  unknown: 'Something went wrong reading that file. Nothing was changed.',
+  'permission-denied': 'The browser was not allowed to read the file again. Nothing was changed.',
+  'file-missing':
+    'The file is no longer where it was. Choose it again with “Sync from a file”. Nothing was changed.',
+};
+
+export const PLACE_FILE_ERRORS: Record<PlaceFileError, string> = {
+  'not-a-place-file': 'That is not a file of places saved by treehouse.',
+  'newer-version': 'That file was saved by a newer version of treehouse.',
 };
 
 const plural = (count: number, one: string, many: string) =>
@@ -91,4 +108,21 @@ export function focusNote(place: FocusPlace | null, relativeName?: string): stri
       : 'Shown at their birthplace.';
   }
   return `Approximate: shown at their ${BASIS_PLACES[place.basis]}, as their birthplace is not on the map.`;
+}
+
+export const pinCount = (count: number) =>
+  plural(count, 'pin or online answer', 'pins and online answers');
+
+/** What a sync will change, as short phrases; empty when nothing changed. */
+export function diffSummary(diff: SyncDiff): string[] {
+  const parts: string[] = [];
+  if (diff.added.length > 0) parts.push(`${peopleCount(diff.added.length)} added`);
+  if (diff.removed.length > 0) parts.push(`${peopleCount(diff.removed.length)} removed`);
+  if (diff.changed.length > 0) parts.push(`${peopleCount(diff.changed.length)} changed`);
+  const families = diff.families.added + diff.families.removed + diff.families.changed;
+  if (families > 0) parts.push(`${familyCount(families)} added, removed or changed`);
+  if (diff.newPlaces.length > 0) parts.push(`${placeCount(diff.newPlaces.length)} new`);
+  if (diff.droppedPlaces.length > 0)
+    parts.push(`${placeCount(diff.droppedPlaces.length)} no longer named`);
+  return parts;
 }

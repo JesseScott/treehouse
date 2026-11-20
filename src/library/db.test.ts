@@ -1,12 +1,19 @@
 import 'fake-indexeddb/auto';
 import { IDBFactory } from 'fake-indexeddb';
+import { openDB } from 'idb';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { parseGedcom } from '../gedcom/parse';
 import {
   closeDb,
+  DB_NAME,
   deleteImport,
   deletePlace,
   findImportByHash,
+  getImport,
+  listFileHandleIds,
+  loadFileHandle,
+  saveFileHandle,
+  savePlaces,
   listImports,
   listPlaces,
   loadTree,
@@ -82,6 +89,20 @@ describe('library database', () => {
     expect(await updateImport('missing', { name: 'x' })).toBeUndefined();
   });
 
+  it('remembers how an import was looked at, and reads one record by id', async () => {
+    await saveImport(record('a', '2026-11-01T10:00:00.000Z'), tree);
+    expect((await getImport('a'))?.view).toBeUndefined();
+    const view = {
+      focusedPersonId: '@I1@',
+      camera: { lng: -4.2, lat: 57.5, zoom: 6, projection: 'mercator' as const },
+      threads: { lineage: true, family: true, ancestors: false, migration: false },
+    };
+    await updateImport('a', { view });
+    await closeDb();
+    expect((await getImport('a'))?.view).toEqual(view);
+    expect(await getImport('missing')).toBeUndefined();
+  });
+
   it('deletes an import together with its tree', async () => {
     await saveImport(record('a', '2026-11-01T10:00:00.000Z'), tree);
     await saveImport(record('b', '2026-11-02T10:00:00.000Z'), tree);
@@ -90,6 +111,53 @@ describe('library database', () => {
     expect((await listImports()).map((r) => r.id)).toEqual(['b']);
     expect(await loadTree('a')).toBeUndefined();
     expect(await loadTree('b')).toEqual(tree);
+  });
+});
+
+describe('upgrading', () => {
+  it('keeps imports, trees and pins from a version 2 library', async () => {
+    // A library as M2 to M4 left it: no handles store, records without a view.
+    const old = await openDB(DB_NAME, 2, {
+      upgrade(database) {
+        database.createObjectStore('imports', { keyPath: 'id' }).createIndex('hash', 'hash');
+        database.createObjectStore('trees');
+        database.createObjectStore('places', { keyPath: 'key' });
+      },
+    });
+    await old.put('imports', record('a', '2026-11-01T10:00:00.000Z'));
+    await old.put('trees', tree, 'a');
+    await old.put('places', {
+      key: 'elmford',
+      source: 'manual',
+      location: null,
+      label: '',
+      updatedAt: '',
+    });
+    old.close();
+
+    expect((await listImports()).map((r) => r.id)).toEqual(['a']);
+    expect(await loadTree('a')).toEqual(tree);
+    expect(await listPlaces()).toHaveLength(1);
+    expect(await listFileHandleIds()).toEqual([]);
+  });
+});
+
+describe('file handles', () => {
+  it('keeps one per import and forgets it with the import', async () => {
+    await saveImport(record('a', '2026-11-01T10:00:00.000Z'), tree);
+    // fake-indexeddb clones values as browsers do; a plain object stands in for a handle.
+    const handle = { kind: 'file', name: 'a.ged' } as unknown as FileSystemFileHandle;
+    expect(await saveFileHandle('a', handle)).toBe(true);
+    expect(await listFileHandleIds()).toEqual(['a']);
+    expect(await loadFileHandle('a')).toEqual(handle);
+
+    // A value the browser cannot store is refused quietly.
+    const unclonable = { getFile: () => null } as unknown as FileSystemFileHandle;
+    expect(await saveFileHandle('b', unclonable)).toBe(false);
+
+    await deleteImport('a');
+    expect(await loadFileHandle('a')).toBeUndefined();
+    expect(await listFileHandleIds()).toEqual([]);
   });
 });
 
@@ -118,5 +186,12 @@ describe('stored places', () => {
 
     await deletePlace(pin.key);
     expect((await listPlaces()).map((p) => p.key)).toEqual(['nowhere']);
+  });
+
+  it('stores several places at once', async () => {
+    await savePlaces([pin, { ...pin, key: 'ashby' }]);
+    expect((await listPlaces()).map((p) => p.key).sort()).toEqual(['ashby', 'elmford, northmark']);
+    await savePlaces([]);
+    expect(await listPlaces()).toHaveLength(2);
   });
 });

@@ -190,6 +190,8 @@ test('clicking a marker lists the people there; a cluster zooms in', async ({ pa
 
   // Zoomed out, the island's places are one cluster; clicking it zooms in.
   await clickPlace(page, ness.birthPlace, 4);
+  // The zoom starts once the map's worker has said how far: wait for it before settling.
+  await page.waitForFunction(() => (window.__treehouse?.state().map.zoom ?? 0) > 4);
   const after = await settledState(page);
   expect(after.placeCard.open).toBe(false);
   expect(after.map.zoom).toBeGreaterThan(4);

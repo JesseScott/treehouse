@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { median } from './stats.mjs';
+import { median, percentile } from './stats.mjs';
 
 describe('median', () => {
   it('ignores one outlier among three runs', () => {
@@ -17,5 +17,19 @@ describe('median', () => {
     median(values);
     expect(values).toEqual([3, 1, 2]);
     expect(() => median([])).toThrow();
+  });
+});
+
+describe('percentile', () => {
+  it('takes the nearest rank, so a p95 of 20 values is the 19th smallest', () => {
+    const values = Array.from({ length: 20 }, (_, i) => 20 - i);
+    expect(percentile(values, 0.95)).toBe(19);
+    expect(percentile(values, 0.5)).toBe(10);
+    expect(percentile(values, 1)).toBe(20);
+    expect(percentile([7], 0.95)).toBe(7);
+  });
+
+  it('rejects an empty list', () => {
+    expect(() => percentile([], 0.95)).toThrow();
   });
 });
