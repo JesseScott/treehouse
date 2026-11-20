@@ -7,8 +7,9 @@ treehouse is a world-map family tree viewer: a static web app with no backend. I
 keeps it in IndexedDB, and flies the camera to each person's birthplace as you walk the tree. The file is never
 uploaded. Status: **M0** (harness and empty shell), **M1** (GEDCOM import, library, home-person picker), **M2**
 (geocoding, place review, pins, opt-in online lookup), **M3** (place markers, focus fly-to, profile, navigation,
-search), **M4** (threads and journey mode) and **M5** (sync from the file, remembered state per import, pins
-file) are built; M6 and M7 in `docs/PLAN.md` are not. The live site is https://jessescott.github.io/treehouse/.
+search), **M4** (threads and journey mode), **M5** (sync from the file, remembered state per import, pins
+file) and **M6** (hide living people, a motion setting, keyboard and screen-reader polish, a phone layout) are
+built; M7 in `docs/PLAN.md` is not. The live site is https://jessescott.github.io/treehouse/.
 
 ## Privacy rules (these come first)
 
@@ -90,6 +91,8 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   `Threads.tsx` draws great-circle lines between relatives under the markers (`threadData.ts` builds them: lineage,
   close family, all ancestors, one person's moves; a thread joins people's own places, never a place borrowed from a
   relative). `journeyPlayer.ts` is a store subscription that moves a playing journey on once the camera has landed.
+  `panelPadding.ts` pads the map by the height of the panel when, on a phone, the panel is a sheet along the
+  bottom, so flights land in the part of the map you can see.
 - `src/gedcom/`: everything about reading a file. `parse.ts` (text to `Tree`; forgiving, problems become coded
   `warnings`), `dates.ts` (free-text dates), `types.ts` (the data model), `people.ts` (lifespan, name search),
   `readGedcom.ts` (unzip, decode, check, parse, hash; throws `ImportError` with a fixed code),
@@ -98,7 +101,9 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   `relatives.ts` reads parents, spouses, children and siblings, labels the relationship to the home person
   (genealogists' terms: "2nd great-grandfather", "1st cousin once removed", "Wife of uncle") with the line between
   them, and decides where each arrow key goes. `lines.ts` gives the stops of a journey (father's line, mother's
-  line, or up to one ancestor) and every ancestor link. `testTree.ts` builds small made-up trees for unit tests.
+  line, or up to one ancestor) and every ancestor link. `living.ts` decides who is presumed living (no death or
+  burial, and born, or guessed from relatives to be born, within 100 years) and builds the tree as shown with them
+  hidden: kept in the tree as "Living", with no events or notes. `testTree.ts` builds small made-up trees for unit tests.
 - `src/geocode/`: putting place strings on the map. `normalize.ts` (how names are compared; `placeKey` is the
   identity of a place, shared by every spelling), `gazetteer.ts` (the bundled data in memory), `match.ts` (the
   matching rules: most specific known part wins, the country and region the string names are never left, a broader
@@ -127,10 +132,16 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
   `focusCamera.ts` applies as a jump cut instead of flying), or else focuses its home person; the open import's id
   is kept in `localStorage` so a reload reopens it before the library counts as loaded. `viewMemory.ts` writes
   the view back (debounced, and on `moveend` via `MapView.tsx`); `whenIdle` waits for the write. Sync and the
-  pins file are store actions too (`syncImport`, `syncFromFile`, `applySync`, `exportPlaces`, `importPlaces`). `src/state/focus.ts` derives the focused person, where they are
+  pins file are store actions too (`syncImport`, `syncFromFile`, `applySync`, `exportPlaces`, `importPlaces`).
+  `OpenTree` holds `full` (as read from the file; places are geocoded from it, and the home-person picker lists it)
+  and `tree` (as shown: `full`, or with living people hidden when `hideLiving` is on), so everything that draws or
+  searches people reads `tree`. `hideLiving` and `motion` are kept in `localStorage` for every tree;
+  `src/state/motion.ts` says whether the camera flies now (`?motion=off`, then the setting, then the system). `src/state/focus.ts` derives the focused person, where they are
   shown and their relationship, memoised so components and the debug API share one answer; `threads.ts` does the
   same for the threads. Focusing someone by hand pauses a journey (and moves its scrubber if they are a stop).
   `src/map/PlacePin.tsx` draws the selected place's pin and turns map clicks and drags into pins.
+- `src/ui/DisplaySettings.tsx` is the Display section (hide living people, camera motion); `panelFocus.ts` moves
+  keyboard focus to the panel's heading when the panel changes, and the skip link uses it too.
 - `src/harness/`: `flags.ts` reads `?harness=1` and `?motion=off`; `debugApi.ts` builds `window.__treehouse`;
   `types.ts` is its contract, shared with the e2e tests. When a feature adds state an agent should be able to
   assert, extend `TreehouseState` and the e2e tests in the same change.
@@ -144,7 +155,10 @@ Node 22 or newer. Run `npx playwright install chromium` once before the e2e, smo
 ## Conventions and gotchas
 
 - UI elements a test or agent needs get a stable `data-testid`. Do not rename one without updating `e2e/`.
-- All camera movement goes through `moveCamera`, so `?motion=off` and reduced motion keep working.
+- All camera movement goes through `moveCamera` with `motionOn()`, so `?motion=off`, the motion setting and reduced
+  motion keep working.
+- Anything that shows people reads `open.tree`, never `open.full`, so hiding living people cannot be bypassed.
+  Each panel's `h2` carries `tabIndex={-1}` and `data-panel-heading` so focus can move to it.
 - MapLibre 6 is ESM-only, has named exports (no default export) and loads its worker from a URL set with
   `setWorkerUrl`. Its `ProjectionSpecification` type sends type-aware ESLint into a very long loop if you chain
   through it; go through `projectionName()` in `camera.ts`.

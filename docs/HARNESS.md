@@ -156,6 +156,8 @@ in the dev server, and in a production build only when the URL has `?harness=1`.
   "placeCard": { "open": false, "people": 0 }, // the people list of a clicked marker
   "threads": { "lineage": 3, "family": 0, "ancestors": 0, "migration": 0 }, // arcs drawn, per kind
   "threadToggles": { "lineage": true, "family": false, "ancestors": false, "migration": false },
+  "settings": { "hideLiving": false, "motion": "system" }, // kept in this browser; motion is system, on or off
+  "livingHidden": 0, // people shown as "Living" in the open tree (0 when hideLiving is off)
   "journey": {
     // null unless a journey is on
     "line": "paternal", // or maternal, ancestor
@@ -200,8 +202,9 @@ The contract is `src/harness/types.ts`. When a feature adds something worth asse
 URL flags:
 
 - `?harness=1`: expose the debug API in a production build.
-- `?motion=off`: camera moves are instant. Use it in tests unless the test is about animation. The app also treats
-  the reduced-motion system setting as motion off.
+- `?motion=off`: camera moves are instant. Use it in tests unless the test is about animation. Without it, the
+  Camera setting decides: `system` (the default) treats the reduced-motion system setting as motion off, and `on`
+  or `off` override it. `flags.motion` in the state is whether the camera flies now, all three considered.
 
 `whenIdle()` waits for the map, for the library to have been read from IndexedDB (and the tree that was open
 reopened), for any import, sync, geocoding, online lookup or pins file to finish, for a remembered camera to have
