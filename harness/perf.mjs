@@ -154,10 +154,14 @@ try {
 
   // ---- Journey frame times ----------------------------------------------------
   // The paternal journey of the 30-person fixture at 4x, with motion on: about 700 frames.
-  const frames = await measureJourneyFrames(server.url);
+  // Like Lighthouse, one run is noisy on the runner, so run it as often and judge the median p95.
+  const journeys = [];
+  for (let i = 0; i < RUNS; i++) journeys.push(await measureJourneyFrames(server.url));
+  const frames = [...journeys].sort((a, b) => a.p95 - b.p95)[journeys.length >> 1];
   measure('journey: frame time p95', frames.p95, budgets.journey.frameTimeP95Ms, 'ms');
   results.at(-1).frames = frames.frames;
   results.at(-1).medianMs = frames.median;
+  results.at(-1).samples = journeys.map((j) => j.p95);
 } finally {
   await server.close();
 }
