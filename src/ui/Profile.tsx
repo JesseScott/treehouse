@@ -11,7 +11,7 @@ import type { FamilyEventType, Person, PersonEventType } from '../gedcom/types';
 import type { ParsedDate } from '../gedcom/dates';
 import { placeKey } from '../geocode/normalize';
 import type { PlaceLevel } from '../geocode/types';
-import { flags } from '../harness/flags';
+import { motionOn } from '../state/motion';
 import { moveCamera } from '../map/camera';
 import { FOCUS_ZOOM } from '../map/focusCamera';
 import { currentMap } from '../map/mapRegistry';
@@ -52,8 +52,7 @@ function timelineOf(index: TreeIndex, person: Person): TimelineEvent[] {
 
 function showPlace(at: { lng: number; lat: number; level: PlaceLevel }) {
   const map = currentMap();
-  if (map)
-    moveCamera(map, { lng: at.lng, lat: at.lat, zoom: FOCUS_ZOOM[at.level] }, flags().motion);
+  if (map) moveCamera(map, { lng: at.lng, lat: at.lat, zoom: FOCUS_ZOOM[at.level] }, motionOn());
 }
 
 function Chips({ title, people, relation }: { title: string; people: Person[]; relation: string }) {

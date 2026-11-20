@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Marker, type MapMouseEvent } from 'maplibre-gl';
 import type { PlaceLevel } from '../geocode/types';
-import { flags } from '../harness/flags';
+import { motionOn } from '../state/motion';
 import { useAppStore } from '../state/appStore';
 import { moveCamera } from './camera';
 import { currentMap } from './mapRegistry';
@@ -41,7 +41,7 @@ export function PlacePin() {
     marker.addTo(map);
     if (shownKey.current !== key) {
       shownKey.current = key;
-      moveCamera(map, { lng, lat, zoom: ZOOM[level ?? 'place'] }, flags().motion);
+      moveCamera(map, { lng, lat, zoom: ZOOM[level ?? 'place'] }, motionOn());
     }
     return () => {
       marker.remove();

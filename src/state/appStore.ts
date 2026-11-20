@@ -1,10 +1,12 @@
 import { create } from 'zustand';
 import { importFile as readInWorker } from '../gedcom/importFile';
 import type { ImportErrorCode } from '../gedcom/readGedcom';
+import { hideLiving as hideLivingIn, livingIds } from '../gedcom/living';
 import { journeyStops, type JourneyLine } from '../gedcom/lines';
 import { indexTree, step, type Direction } from '../gedcom/relatives';
 import type { ThreadKind, ThreadToggles } from '../map/threadData';
 import type { Tree } from '../gedcom/types';
+import type { MotionSetting } from './motion';
 import { geocodePlaces } from '../geocode/geocodePlaces';
 import { lookUpOnline, NOMINATIM_INTERVAL_MS } from '../geocode/nominatim';
 import { collectPlaces } from '../geocode/treePlaces';
@@ -90,8 +92,42 @@ export const lookupCandidates = (places: ReviewPlace[]) =>
 
 export interface OpenTree {
   record: ImportRecord;
+  /** The tree as shown: with living people hidden when `hideLiving` is on, else `full`. */
   tree: Tree;
+  /** The tree as read from the file. Places are geocoded from this one. */
+  full: Tree;
 }
+
+/** The tree to show: the same object while nobody is hidden, so memoised views stay put. */
+const shownTrees = new WeakMap<Tree, Tree>();
+export function shownTree(full: Tree, hide: boolean): Tree {
+  if (!hide) return full;
+  let shown = shownTrees.get(full);
+  if (!shown) {
+    shown = hideLivingIn(full, livingIds(full, new Date().getFullYear()));
+    shownTrees.set(full, shown);
+  }
+  return shown;
+}
+
+const MOTION_KEY = 'treehouse.motion';
+const readMotion = (): MotionSetting => {
+  try {
+    const value = localStorage.getItem(MOTION_KEY);
+    return value === 'on' || value === 'off' ? value : 'system';
+  } catch {
+    return 'system';
+  }
+};
+
+const HIDE_LIVING_KEY = 'treehouse.hideLiving';
+const readHideLiving = () => {
+  try {
+    return localStorage.getItem(HIDE_LIVING_KEY) === 'on';
+  } catch {
+    return false;
+  }
+};
 
 /** A journey along one line of the tree, a generation at a time. */
 export interface Journey {
@@ -254,6 +290,12 @@ interface AppState {
   /** Forgets a pin or an online answer and goes back to what the gazetteer says. */
   resetPlace: (key: string) => Promise<void>;
   setOnlineEnabled: (enabled: boolean) => void;
+  /** Hides the names, dates and places of people presumed living (`gedcom/living.ts`). */
+  hideLiving: boolean;
+  setHideLiving: (hide: boolean) => void;
+  /** Whether camera moves fly or cut; `system` follows the reduced-motion setting (`motion.ts`). */
+  motion: MotionSetting;
+  setMotion: (motion: MotionSetting) => void;
   /** Looks up the places the gazetteer could not place exactly, one a second. Opt-in only. */
   lookUpPlacesOnline: () => Promise<void>;
   stopOnlineLookup: () => void;
@@ -319,8 +361,13 @@ export const useAppStore = create<AppState>((set, get) => {
    * was being looked at (focus, threads, camera) comes back; otherwise it opens on its home
    * person with the lineage threads on.
    */
-  const show = (open: OpenTree, extra: Partial<AppState> = {}) => {
+  const show = (loaded: { record: ImportRecord; tree: Tree }, extra: Partial<AppState> = {}) => {
     onlineRun += 1;
+    const open: OpenTree = {
+      record: loaded.record,
+      full: loaded.tree,
+      tree: shownTree(loaded.tree, get().hideLiving),
+    };
     const view: ImportView | undefined = open.record.view;
     rememberOpen(open.record.id);
     set({
@@ -336,7 +383,7 @@ export const useAppStore = create<AppState>((set, get) => {
       online: { ...get().online, running: false, done: 0, total: 0, error: null },
       ...extra,
     });
-    void geocode(open.tree);
+    void geocode(open.full);
   };
 
   const refreshStoredPlaces = async () => {
@@ -406,6 +453,8 @@ export const useAppStore = create<AppState>((set, get) => {
     open: null,
     pickingRoot: false,
     ...NO_TREE_PLACES,
+    hideLiving: readHideLiving(),
+    motion: readMotion(),
     online: { enabled: readOnlineOptIn(), running: false, done: 0, total: 0, error: null },
     importing: false,
     importAttempts: 0,
@@ -610,7 +659,7 @@ export const useAppStore = create<AppState>((set, get) => {
       const record = await updateImport(open.record.id, { rootId: personId });
       if (!record) return;
       set({
-        open: { record, tree: open.tree },
+        open: { ...open, record },
         pickingRoot: false,
         focusedPersonId: personId,
         navRow: null,
@@ -630,7 +679,7 @@ export const useAppStore = create<AppState>((set, get) => {
       const open = get().open;
       set({
         library: await listImports(),
-        ...(record && open?.record.id === id ? { open: { record, tree: open.tree } } : {}),
+        ...(record && open?.record.id === id ? { open: { ...open, record } } : {}),
       });
     },
 
@@ -853,6 +902,30 @@ export const useAppStore = create<AppState>((set, get) => {
       }
       if (!enabled) onlineRun += 1;
       set({ online: { ...get().online, enabled, running: enabled && get().online.running } });
+    },
+
+    setHideLiving: (hide) => {
+      try {
+        if (hide) localStorage.setItem(HIDE_LIVING_KEY, 'on');
+        else localStorage.removeItem(HIDE_LIVING_KEY);
+      } catch {
+        // Private browsing: the choice lasts for this visit only.
+      }
+      const open = get().open;
+      set({
+        hideLiving: hide,
+        ...(open ? { open: { ...open, tree: shownTree(open.full, hide) } } : {}),
+      });
+    },
+
+    setMotion: (motion) => {
+      try {
+        if (motion === 'system') localStorage.removeItem(MOTION_KEY);
+        else localStorage.setItem(MOTION_KEY, motion);
+      } catch {
+        // Private browsing: the choice lasts for this visit only.
+      }
+      set({ motion });
     },
 
     lookUpPlacesOnline: async () => {

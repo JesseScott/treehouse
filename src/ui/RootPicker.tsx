@@ -10,12 +10,15 @@ export function RootPicker({ open }: { open: OpenTree }) {
   const closeTree = useAppStore((s) => s.closeTree);
   const [query, setQuery] = useState('');
 
-  const matches = useMemo(() => searchPeople(open.tree, query, MAX_RESULTS), [open.tree, query]);
+  // Choosing the home person is setup, not showing the tree, so living people are listed by name.
+  const matches = useMemo(() => searchPeople(open.full, query, MAX_RESULTS), [open.full, query]);
   const hasRoot = open.record.rootId !== null;
 
   return (
     <section className="panel" data-testid="root-picker" aria-labelledby="root-picker-title">
-      <h2 id="root-picker-title">Who is the home person?</h2>
+      <h2 id="root-picker-title" tabIndex={-1} data-panel-heading>
+        Who is the home person?
+      </h2>
       <p>
         <strong>{open.record.name}</strong> is drawn from one person&apos;s point of view, usually
         you. You can change this later.

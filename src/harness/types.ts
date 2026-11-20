@@ -4,6 +4,7 @@
  */
 export interface TreehouseState {
   app: { name: 'treehouse'; version: string; commit: string };
+  /** `motion` is whether camera moves animate now: `?motion=off`, the setting and the system. */
   flags: { harness: boolean; motion: boolean };
   map: {
     loaded: boolean;
@@ -116,6 +117,10 @@ export interface TreehouseState {
   threads: { lineage: number; family: number; ancestors: number; migration: number };
   /** Which thread types are switched on. */
   threadToggles: { lineage: boolean; family: boolean; ancestors: boolean; migration: boolean };
+  /** The display settings, kept in this browser for every tree. */
+  settings: { hideLiving: boolean; motion: 'system' | 'on' | 'off' };
+  /** People presumed living whose names, dates and places are hidden in the open tree. */
+  livingHidden: number;
   /** The journey being shown, or null. `index` counts stops from the home person (0). */
   journey: {
     line: 'paternal' | 'maternal' | 'ancestor';

@@ -26,12 +26,14 @@ export function searchKey(text: string): string {
 
 /**
  * People whose name contains every word of the query, in file order. An empty
- * query returns the first people in the file (an export lists its home person first).
+ * query returns the first people in the file (an export lists its home person first). A
+ * hidden living person is never found by name.
  */
 export function searchPeople(tree: Tree, query: string, limit: number): Person[] {
   const words = searchKey(query).split(/\s+/).filter(Boolean);
   const matches: Person[] = [];
   for (const person of tree.people) {
+    if (person.living && words.length > 0) continue;
     const key = searchKey(person.name);
     if (words.every((word) => key.includes(word))) {
       matches.push(person);
