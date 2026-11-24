@@ -16,12 +16,24 @@ export function coveredBottom(panel: Box, map: Box): number {
   return Math.max(0, Math.round(map.bottom - panel.top));
 }
 
-/** Keeps the map's padding in step with the panel, so flights land in the part you can see. */
+/** The screens where the camera flies to people and places, so the padding matters. */
+const FLYING_SCREENS = new Set(['tree', 'places']);
+
+/**
+ * Keeps the map's padding in step with the panel, so flights land in the part you can see.
+ * Only where the camera flies: on the library and the picker the panel grows as it fills,
+ * and repainting the globe at every step costs a slow phone a lot of main-thread time.
+ */
 export function usePanelPadding(screen: string, mapLoaded: boolean): void {
   useEffect(() => {
     const map = currentMap();
+    if (!map || !mapLoaded) return;
+    if (!FLYING_SCREENS.has(screen)) {
+      if (map.getPadding().bottom !== 0) map.setPadding({ top: 0, right: 0, bottom: 0, left: 0 });
+      return;
+    }
     const panel = document.querySelector<HTMLElement>('.panel');
-    if (!map || !mapLoaded || !panel) return;
+    if (!panel) return;
     const update = () => {
       const bottom = coveredBottom(
         panel.getBoundingClientRect(),
