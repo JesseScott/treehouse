@@ -1,8 +1,9 @@
-import { useEffect, useState, type DragEvent } from 'react';
+import { useEffect, useRef, useState, type DragEvent } from 'react';
 import { MapView } from './map/MapView';
 import { FocusPin } from './map/FocusPin';
 import { PlaceMarkers } from './map/PlaceMarkers';
 import { PlacePin } from './map/PlacePin';
+import { usePanelPadding } from './map/panelPadding';
 import { Threads } from './map/Threads';
 import { droppedHandle } from './library/fileAccess';
 import { screenOf, useAppStore } from './state/appStore';
@@ -11,6 +12,7 @@ import { PlaceCard } from './ui/PlaceCard';
 import { PlacesPanel } from './ui/PlacesPanel';
 import { RootPicker } from './ui/RootPicker';
 import { TreePanel } from './ui/TreePanel';
+import { focusPanelHeading } from './ui/panelFocus';
 
 const hasFiles = (event: DragEvent) => event.dataTransfer.types.includes('Files');
 
@@ -25,6 +27,17 @@ export function App() {
   useEffect(() => {
     void loadLibrary();
   }, [loadLibrary]);
+
+  // When the side panel changes (library, picker, tree, places), keyboard focus follows it, so
+  // a keyboard or screen reader user is not left on a button that has gone. Not on first load.
+  usePanelPadding(screen, mapLoaded);
+
+  const shownScreen = useRef(screen);
+  useEffect(() => {
+    if (shownScreen.current === screen) return;
+    shownScreen.current = screen;
+    focusPanelHeading();
+  }, [screen]);
 
   return (
     <div
@@ -50,11 +63,22 @@ export function App() {
         if (file) void handle.then((h) => importFile(file, h));
       }}
     >
+      <a
+        className="skip-link"
+        href="#main"
+        data-testid="skip-link"
+        onClick={(event) => {
+          event.preventDefault();
+          focusPanelHeading();
+        }}
+      >
+        Skip to the side panel
+      </a>
       <header className="app-header" data-testid="app-header">
         <h1 className="app-title">treehouse</h1>
         <p className="app-tagline">Walk your family tree across the world.</p>
       </header>
-      <main className="app-main">
+      <main className="app-main" id="main">
         <MapView />
         <Threads />
         <PlaceMarkers />

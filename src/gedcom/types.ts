@@ -26,6 +26,8 @@ export interface Person {
   /** Families this person is a partner in. */
   familyIds: string[];
   notes: string[];
+  /** Set on the copy shown while living people are hidden (`living.ts`): name, events and notes are gone. */
+  living?: true;
 }
 
 export interface Family {

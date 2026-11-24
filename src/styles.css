@@ -274,6 +274,34 @@ body,
   pointer-events: none;
 }
 
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 100;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+[data-panel-heading]:focus,
+[data-card-heading]:focus {
+  outline: none;
+}
+
+[data-panel-heading]:focus-visible,
+[data-card-heading]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -286,12 +314,6 @@ body,
 @media (max-width: 480px) {
   .app-tagline {
     display: none;
-  }
-
-  .panel {
-    right: 1rem;
-    width: auto;
-    max-height: 60%;
   }
 }
 
@@ -592,14 +614,35 @@ body,
   }
 }
 
-@media (max-width: 480px) {
-  .place-card {
+/* Phones: the panel is a sheet along the bottom, and the map (padded to match, see
+   panelPadding.ts) keeps the focused place in view above it. The journey bar and a place's card
+   move to the top, clear of the zoom buttons. */
+@media (max-width: 600px) {
+  .panel {
     top: auto;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
+    right: 0.5rem;
+    bottom: 2.4rem;
+    left: 0.5rem;
     width: auto;
-    max-height: 40%;
+    max-width: none;
+    max-height: 48%;
+    /* No blur here: blurring the globe behind a full-width sheet at every frame cost a slow
+       phone over a second of main-thread time in Lighthouse. A more opaque panel stands in. */
+    background: rgb(13 34 51 / 95%);
+    backdrop-filter: none;
+  }
+
+  .journey-bar,
+  .place-card {
+    top: 0.5rem;
+    right: 3.2rem;
+    bottom: auto;
+    left: 0.5rem;
+    width: auto;
+  }
+
+  .place-card {
+    max-height: 38%;
   }
 }
 

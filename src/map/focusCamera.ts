@@ -1,5 +1,5 @@
 import type { PlaceLevel } from '../geocode/types';
-import { flags } from '../harness/flags';
+import { motionOn } from '../state/motion';
 import { useAppStore } from '../state/appStore';
 import { focusOf } from '../state/focus';
 import { moveCamera, projectionName } from './camera';
@@ -42,10 +42,6 @@ export function installFocusCamera(): () => void {
     const place = focusOf(state)?.place;
     if (!place) return;
     shown = state.focusedPersonId;
-    moveCamera(
-      map,
-      { lng: place.lng, lat: place.lat, zoom: FOCUS_ZOOM[place.level] },
-      flags().motion,
-    );
+    moveCamera(map, { lng: place.lng, lat: place.lat, zoom: FOCUS_ZOOM[place.level] }, motionOn());
   });
 }

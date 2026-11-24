@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { parseFlags } from './flags';
 
-const prod = { dev: false, reducedMotion: false };
+const prod = { dev: false };
 
 describe('parseFlags', () => {
   it('keeps the debug API off in production by default', () => {
@@ -15,12 +15,11 @@ describe('parseFlags', () => {
   });
 
   it('always exposes the debug API in dev', () => {
-    expect(parseFlags('', { dev: true, reducedMotion: false }).harness).toBe(true);
+    expect(parseFlags('', { dev: true }).harness).toBe(true);
   });
 
-  it('turns animation off with ?motion=off or reduced motion', () => {
+  it('turns animation off with ?motion=off, whatever the settings say', () => {
     expect(parseFlags('?harness=1&motion=off', prod).motion).toBe(false);
-    expect(parseFlags('', { dev: false, reducedMotion: true }).motion).toBe(false);
     expect(parseFlags('?motion=on', prod).motion).toBe(true);
   });
 });

@@ -10,6 +10,7 @@ import { threadsOf } from '../state/threads';
 import { threadCounts } from '../map/threadData';
 import { viewSaving, whenViewSaved } from '../state/viewMemory';
 import { flags } from './flags';
+import { motionOn } from '../state/motion';
 import type { PlaceLocation, TreehouseDebugApi, TreehouseState } from './types';
 
 function state(): TreehouseState {
@@ -18,7 +19,7 @@ function state(): TreehouseState {
   const center = map?.getCenter();
   return {
     app: { name: 'treehouse', version: __APP_VERSION__, commit: __APP_COMMIT__ },
-    flags: { ...flags() },
+    flags: { harness: flags().harness, motion: motionOn() },
     map: {
       loaded: store.mapLoaded,
       moving: map?.isMoving() ?? false,
@@ -84,6 +85,8 @@ function state(): TreehouseState {
     },
     threads: threadCounts(threadsOf(store)),
     threadToggles: { ...store.threadsOn },
+    settings: { hideLiving: store.hideLiving, motion: store.motion },
+    livingHidden: store.open?.tree.people.filter((person) => person.living).length ?? 0,
     journey: store.journey && {
       line: store.journey.line,
       stops: store.journey.stops.length,
@@ -209,7 +212,7 @@ const api: TreehouseDebugApi = {
   flyTo: async (target) => {
     const map = await mapWhenCreated();
     await whenMapIdle(map);
-    moveCamera(map, target, flags().motion);
+    moveCamera(map, target, motionOn());
     await whenMapIdle(map);
   },
 };

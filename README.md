@@ -8,7 +8,7 @@ uploaded.
 
 ## Status
 
-Early. Six milestones exist so far:
+Early. Seven milestones exist so far:
 
 - **M0, the shell and test harness:** a globe that renders from a bundled offline map, a debug API for automated
   checks, synthetic test trees, and a check ladder.
@@ -33,8 +33,13 @@ Early. Six milestones exist so far:
   changed and which places are new, then apply it. Your home person, the person you were looking at and your pins
   are kept. Each tree remembers who you were looking at, which threads were on and where the map was, and a reload
   opens the tree you had open. Your pins and online answers can be saved to a file and read into another browser.
+- **M6, polish:** a switch hides living people (anyone born in the last 100 years with no death recorded): they
+  stay in the tree as "Living", with no name, dates or places, so the map can be shown to others. The camera can
+  fly or cut between places whatever the system's reduced-motion setting says. The side panel takes keyboard
+  focus when it changes, a skip link reaches it, and a change of person is announced to screen readers. On a
+  phone the panel is a sheet along the bottom and the map centres places above it.
 
-Polish, accessibility and opt-in telemetry come next; see [`docs/PLAN.md`](docs/PLAN.md).
+Opt-in telemetry comes next; see [`docs/PLAN.md`](docs/PLAN.md).
 
 ## Develop
 

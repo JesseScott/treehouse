@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import type { GeoJSONSource, MapLayerMouseEvent } from 'maplibre-gl';
 import { placeVisits } from '../geocode/treePlaces';
-import { flags } from '../harness/flags';
+import { motionOn } from '../state/motion';
 import { useAppStore } from '../state/appStore';
 import { moveCamera } from './camera';
 import { currentMap } from './mapRegistry';
@@ -80,7 +80,7 @@ export function PlaceMarkers() {
       const source = map.getSource<GeoJSONSource>(MARKER_SOURCE);
       if (typeof clusterId !== 'number' || !source || useAppStore.getState().pinning) return;
       void source.getClusterExpansionZoom(clusterId).then((zoom) => {
-        moveCamera(map, { lng: event.lngLat.lng, lat: event.lngLat.lat, zoom }, flags().motion);
+        moveCamera(map, { lng: event.lngLat.lng, lat: event.lngLat.lat, zoom }, motionOn());
       });
     };
     const pointer = () => {
