@@ -626,6 +626,10 @@ body,
     width: auto;
     max-width: none;
     max-height: 48%;
+    /* No blur here: blurring the globe behind a full-width sheet at every frame cost a slow
+       phone over a second of main-thread time in Lighthouse. A more opaque panel stands in. */
+    background: rgb(13 34 51 / 95%);
+    backdrop-filter: none;
   }
 
   .journey-bar,
